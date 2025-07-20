@@ -51,8 +51,16 @@ async function fetchArtifacts({ title, authors, year }) {
   // Step 1: Try to get DOI from CrossRef
   let doi = '';
   console.log('[Artifacts] Searching for DOI using title:', title);
-  doi = await fetchDOIFromCrossRef(title, authors, year);
 
+  const providers = ['crossref', 'openalex']
+
+  let i = 0
+  while (i < providers.length && !doi) {
+    doi = await fetchDOIFromProvider(providers[i], title, authors, year)
+    i++
+  }
+
+  const results = [];
   if (!doi) {
     results.push({
       label: 'No DOI found for this paper.',
@@ -62,8 +70,6 @@ async function fetchArtifacts({ title, authors, year }) {
   }
 
   // Step 2: Use DOI to get artifacts from CrossRef Event Data
-  const results = [];
-
   results.push(...await fetchArtifactsFromCrossRefEventData(doi));
 
   if (results.length === 0) {
@@ -78,94 +84,88 @@ async function fetchArtifacts({ title, authors, year }) {
 
 }
 
-async function fetchDOIFromCrossRef(title, authors, year) {
+async function fetchDOIFromProvider(provider, title, authors, year) {
   try {
-    const crUrl = `https://api.crossref.org/works?query.title=${encodeURIComponent(title)}&rows=10`;
-    console.log('[Artifacts] CrossRef query:', crUrl);
-    const crRes = await fetch(crUrl);
-    const crJson = await crRes.json();
-    console.log('[Artifacts] CrossRef response:', crJson);
-    if (crJson.message && crJson.message.items && crJson.message.items.length > 0) {
-      let best = null;
-      let bestScore = -Infinity;
-      crJson.message.items.forEach(item => {
-        let score = 0;
-        if (item.title && item.title[0] && item.title[0].toLowerCase() === title.toLowerCase()) {
-          score += 100;
-        } else if (item.title && item.title[0] && item.title[0].toLowerCase().includes(title.toLowerCase())) {
-          score += 50;
-        } else if (item.title && item.title[0] && title.toLowerCase().includes(item.title[0].toLowerCase())) {
-          score += 30;
-        }
-        if (year && item.published && item.published['date-parts'] && item.published['date-parts'][0] && item.published['date-parts'][0][0] && String(item.published['date-parts'][0][0]) === String(year)) {
-          score += 20;
-        }
-        if (authors && item.author && item.author.length > 0) {
-          const authorStr = item.author.map(a => a.family).join(', ');
-          if (authorStr && authors.toLowerCase().includes(authorStr.toLowerCase())) {
-            score += 10;
-          }
-        }
-        if (score > bestScore) {
-          bestScore = score;
-          best = item;
-        }
-        console.log('[Artifacts] CrossRef candidate:', item.title ? item.title[0] : '', 'score:', score);
-      });
-      console.log('[Artifacts] CrossRef best match:', best, 'score:', bestScore);
-      if (best && best.DOI) {
-        console.log('[Artifacts] DOI found from CrossRef:', best.DOI);
-        return best.DOI;
+    const normalizedTitle = title.trim().toLowerCase();
+
+    const providerConfig = {
+      crossref: {
+        url: `https://api.crossref.org/works?query.title=${encodeURIComponent(title)}&rows=20`,
+        extractItems: (json) =>
+          json.message?.items?.map((item) => ({
+            title: item.title?.[0] || '',
+            doi: item.DOI,
+            year: item.published?.['date-parts']?.[0]?.[0],
+            authors: item.author?.map((a) => a.family),
+            raw: item,
+          })) || [],
+      },
+      openalex: {
+        url: `https://api.openalex.org/works?search=${encodeURIComponent(title)}&per-page=100`,
+        extractItems: (json) =>
+          json.results?.map((item) => ({
+            title: item.title || '',
+            doi: item.doi,
+            year: item.publication_year,
+            authors: item.authorships?.map((a) => a.author.display_name),
+            raw: item,
+          })) || [],
+      },
+    }[provider];
+
+    if (!providerConfig) {
+      throw new Error(`Unsupported provider: ${provider}`);
+    }
+
+    console.log(`[Artifacts] ${provider} query:`, providerConfig.url);
+
+    const response = await fetch(providerConfig.url);
+    const data = await response.json();
+    console.log(`[Artifacts] ${provider} response:`, data);
+
+    const items = providerConfig.extractItems(data);
+    if (!items.length) return '';
+
+    let best = null;
+    let bestScore = 40;
+
+    for (const item of items) {
+      let score = 0;
+      const itemTitle = item.title.trim().toLowerCase();
+
+      if (itemTitle === normalizedTitle) score += 100;
+      else if (itemTitle.includes(normalizedTitle)) score += 50;
+      else if (normalizedTitle.includes(itemTitle)) score += 30;
+
+      if (year && item.year && String(item.year) === String(year)) score += 20;
+
+      if (authors && item.authors?.length) {
+        const authorStr = item.authors.join(', ').toLowerCase();
+        if (authors.toLowerCase().includes(authorStr)) score += 10;
+      }
+
+      console.log(`[Artifacts] ${provider} candidate:`, item.title, 'score:', score);
+      if (score > bestScore) {
+        bestScore = score;
+        best = item;
       }
     }
-  } catch (e) { console.error('[Artifacts] CrossRef error:', e); }
+
+    if (best) {
+      console.log(`[Artifacts] ${provider} best match:`, best.title, 'score:', bestScore);
+      if (best.doi) {
+        console.log(`[Artifacts] DOI found from ${provider}:`, best.doi);
+        return best.doi;
+      }
+    }
+  } catch (e) {
+    console.error(`[Artifacts] ${provider} error:`, e);
+  }
+
   return '';
 }
 
-// async function fetchArtifactsFromDataCite(doi) {
-//   const results= [];
 
-//   try {
-//     // Reverse query: Find all items that mention this DOI in relatedIdentifiers
-//     const dcUrl = `https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier:"${doi}"`;
-//     console.log('[Artifacts] DataCite related search query:', dcUrl);
-    
-//     const dcRes = await fetch(dcUrl);
-//     const dcJson = await dcRes.json();
-//     console.log('[Artifacts] DataCite related search response:', dcJson);
-
-//     if (dcJson.data && Array.isArray(dcJson.data)) {
-//       dcJson.data.forEach((item) => {
-//         const attrs = item.attributes;
-//         const related = attrs.relatedIdentifiers || [];
-
-//         // Ensure it actually references the given DOI with the correct relation
-//         const hasCorrectRelation = related.some((r) =>
-//           r.relatedIdentifier === doi &&
-//           ['IsSupplementTo', 'HasPart', 'References', 'IsDocumentedBy'].includes(r.relationType)
-//         );
-
-//         if (
-//           hasCorrectRelation &&
-//           attrs.resourceTypeGeneral &&
-//           ['Dataset', 'Software', 'Image', 'Audiovisual', 'PhysicalObject', 'Model'].includes(attrs.resourceTypeGeneral)
-//         ) {
-//           results.push({
-//             url: `https://doi.org/${item.id}`,
-//             label: (attrs.titles?.[0]?.title ?? attrs.resourceTypeGeneral).trim(),
-//             source: 'DataCite',
-//           });
-
-//           console.log('[Artifacts] DataCite artifact:', item);
-//         }
-//       });
-//     }
-//   } catch (e) {
-//     console.error('[Artifacts] DataCite error:', e);
-//   }
-
-//   return results;
-// }
 
 async function fetchArtifactsFromCrossRefEventData(doi) {
   const results = [];
