@@ -1,87 +1,46 @@
-// content.js
-// Main entry point for the extension
-
-function styleArtifactBtn(btn) {
-  const styles = {
-    marginLeft: '8px',
-    background: '#4285f4', // Google blue
-    color: '#fff',
-    border: 'none',
-    borderRadius: '4px',
-    padding: '4px 8px',
-    fontSize: '14px',
-    cursor: 'pointer',
-    boxShadow: '0 1px 2px rgba(60,64,67,.3)',
-    transition: 'background 0.2s',
-  };
-  Object.assign(btn.style, styles);
-  btn.onmouseover = () => btn.style.background = '#3367d6';
-  btn.onmouseout = () => btn.style.background = '#4285f4';
-}
-
-// --- Modal Components ---
-function createArtifactCloseBtn(action) {
-  const closeBtn = document.createElement('button');
-  closeBtn.textContent = '×';
-  closeBtn.setAttribute('aria-label', 'Close modal');
-  Object.assign(closeBtn.style, {
-    position: 'absolute',
-    top: '8px',
-    right: '12px',
-    background: 'transparent',
-    border: 'none',
-    fontSize: '24px',
-    color: '#888',
-    cursor: 'pointer',
-  });
-  closeBtn.onclick = () => action();
-  return closeBtn;
-}
-
-async function abcArtifacts(title) {
+async function fetchArtifacts(title) {
   // Step 1: fetch DOI
-  let artifacts = [];
+  const artifacts = [];
   let errorMsg = '';
   let doi = '';
+  const normalizedTitle = title.trim().toLowerCase();
 
-  if (!title) {
+  if (!normalizedTitle) {
     return [[], 'Error while fetching paper title'];
   }
 
-  console.log('[Artifacts] Searching for DOI using title:', title);
-
+  $logger.info(fetchArtifacts.name, 'Searching for DOI using title: ', normalizedTitle)
   try {
-    doi = await fetchDOI(title)
+    doi = await $api.fetchDOI({ title: normalizedTitle })
     if (!doi) {
-      errorMsg = 'No DOI found for paper of title: ' + title;
-      console.log('[Artifacts] ' + errorMsg);
+      errorMsg = 'No DOI found for paper.';
+      $logger.info(fetchArtifacts.name, errorMsg)
       return [[], errorMsg];
     }
   } catch (error) {
-    errorMsg = 'Error retrieving DOI for paper of title: ' + title;
-    console.log('[Artifacts] ' + errorMsg);
+    errorMsg = 'Error retrieving DOI for paper';
+    $logger.error(fetchArtifacts.name, errorMsg, error)
     return [[], errorMsg];
   }
   
 
   // Step 2: Use DOI to get artifacts
   try {
-    artifacts = await fetchArtifacts(doi);
+    artifacts.push(...await $api.fetchArtifacts({ doi }));
 
     if (artifacts.length === 0) {
       errorMsg = `No artifact found for paper with DOI ${doi}`;
-      console.log('[Artifacts] ' + doi);
+      $logger.info(fetchArtifacts.name, errorMsg)
       return [[], errorMsg];
     }
   } catch (error) {
     errorMsg = `Error while retrieving artifacts from paper with DOI ${doi}`;
-    console.log('[Artifacts] ' + errorMsg);
+    $logger.error(fetchArtifacts.name, errorMsg, error)
     return [[], errorMsg];
   }
   
-  console.log('[Artifacts] Final results:', artifacts);
+  $logger.info(fetchArtifacts.name, 'Final results: ', artifacts)
   return [artifacts, errorMsg];
-
 }
 
 // async function fetchDOI(title) {
@@ -282,7 +241,7 @@ function createArtifactList(artifacts, errorMsg) {
   return list;
 }
 
-function createArtifactModalContent(paperTitle, closeBtn, artifacts, errorMsg) {
+function createArtifactModalContent(paperTitle, closeBtn, list) {
   const content = document.createElement('div');
   Object.assign(content.style, {
     background: '#fff',
@@ -310,8 +269,6 @@ function createArtifactModalContent(paperTitle, closeBtn, artifacts, errorMsg) {
   paperTitleElem.style.fontSize = '1.05em';
   paperTitleElem.style.color = '#222';
 
-  const list = createArtifactList(artifacts, errorMsg);
-
   content.appendChild(closeBtn);
   content.appendChild(title);
   content.appendChild(paperTitleElem);
@@ -320,7 +277,12 @@ function createArtifactModalContent(paperTitle, closeBtn, artifacts, errorMsg) {
 }
 
 async function createArtifactModal(paperTitle) {
-  if (document.getElementById('artifact-modal')) return;
+  if (document.getElementById('artifact-modal')) { 
+    $logger.info(createArtifactModal.name, 'Modal already open.'); 
+    return;
+  }
+
+  // modal structure
   const modal = document.createElement('div');
   modal.id = 'artifact-modal';
   modal.setAttribute('role', 'dialog');
@@ -340,7 +302,22 @@ async function createArtifactModal(paperTitle) {
     zIndex: '9999',
   });
 
-  const closeBtn = createArtifactCloseBtn(() => modal.remove());
+  // Modal close button
+  const closeBtn = document.createElement('button');
+  closeBtn.textContent = '×';
+  closeBtn.setAttribute('aria-label', 'Close modal');
+  Object.assign(closeBtn.style, {
+    position: 'absolute',
+    top: '8px',
+    right: '12px',
+    background: 'transparent',
+    border: 'none',
+    fontSize: '24px',
+    color: '#888',
+    cursor: 'pointer',
+  });
+  closeBtn.onclick = () => modal.remove();
+
   // Loading spinner
   const loading = document.createElement('div');
   loading.textContent = 'Searching for artifacts...';
@@ -351,7 +328,8 @@ async function createArtifactModal(paperTitle) {
   modal.appendChild(loading);
   document.body.appendChild(modal);
 
-  setTimeout(() => modal.focus(), 0);
+  
+  // modal event listener
   modal.addEventListener('keydown', function handleKeyDown(e) {
     if (e.key === 'Escape') modal.remove();
     if (e.key === 'Tab') {
@@ -368,44 +346,59 @@ async function createArtifactModal(paperTitle) {
     }
   });
   
-  console.log('[Artifacts] Modal opened for:', paperTitle);
+  $logger.info(createArtifactModal.name, 'Modal opened for: ', paperTitle) 
   // Fetch artifacts
-  let [artifacts, errorMsg] = await abcArtifacts(paperTitle);
+  const [artifacts, errorMsg] = await fetchArtifacts(paperTitle);
 
+  const list = createArtifactList(artifacts, errorMsg);
+  const content = createArtifactModalContent(paperTitle, closeBtn, list);
+  
+  // change loading for real content
   modal.removeChild(loading);
-  const content = createArtifactModalContent(paperTitle, closeBtn, artifacts, errorMsg);
   modal.appendChild(content);
+
+  // defers the focus call until after the browser has had a chance to render the new content
   setTimeout(() => content.focus(), 0);
 }
 
-function createArtifactBtn(titleElem, paperTitle) {
+function createArtifactBtn(paperTitle) {
   const btn = document.createElement('button');
   btn.textContent = 'Show Artifacts';
   btn.className = 'artifact-btn';
-  styleArtifactBtn(btn);
+  Object.assign(btn.style, {
+    marginLeft: '8px',
+    background: '#4285f4', // Google blue
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    padding: '4px 8px',
+    fontSize: '14px',
+    cursor: 'pointer',
+    boxShadow: '0 1px 2px rgba(60,64,67,.3)',
+    transition: 'background 0.2s',
+  });
+  btn.onmouseover = () => btn.style.background = '#3367d6';
+  btn.onmouseout = () => btn.style.background = '#4285f4';
   btn.onclick = () => {
     createArtifactModal(paperTitle);
   };
-  titleElem.appendChild(btn);
+  return btn;
 }
 
-function addArtifactButtons() {
+function addButtons() {
   const entries = document.querySelectorAll('.gs_ri');
   entries.forEach(entry => {
-    if (entry.querySelector('.artifact-btn')) return;
+    if (entry.querySelector('.artifact-btn')) {
+      $logger.info(addButtons.name, 'Paper already has Button for Artifacts') 
+      return;
+    }
     const titleElem = entry.querySelector('.gs_rt');
-    if (!titleElem || !titleElem.querySelector('a')) return;
+    if (!titleElem || !titleElem.querySelector('a')) {
+      $logger.info(addButtons.name, 'No element found with class .gs_rt or with "a" tag') 
+      return;
+    }
     const link = titleElem.querySelector('a');
-    let paperTitle = link ? link.textContent.trim().toLowerCase() : title.textContent.trim().toLowerCase();
-    createArtifactBtn(titleElem, paperTitle);
+    const btn = createArtifactBtn(link.textContent);
+    titleElem.appendChild(btn);
   });
 }
-
-function main() {
-  $logger.log(main.name, 'Started content.js')
-  addArtifactButtons();
-  const observer = new MutationObserver(addArtifactButtons);
-  observer.observe(document.body, { childList: true, subtree: true });
-}
-
-main();

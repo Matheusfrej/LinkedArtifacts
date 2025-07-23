@@ -31,7 +31,8 @@
       "js": [
         "logger.js",
         "api.js", 
-        "content.js"
+        "content.js",
+        "main.js"
       ]
     }
   ],
