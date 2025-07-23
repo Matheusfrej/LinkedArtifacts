@@ -28,7 +28,11 @@
         "https://scholar.google.ca/*",
         "https://scholar.google.com.au/*"
       ],
-      "js": ["content.js"]
+      "js": [
+        "logger.js",
+        "api.js", 
+        "content.js"
+      ]
     }
   ],
   "action": {
