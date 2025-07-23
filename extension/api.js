@@ -13,11 +13,11 @@ const $api = {
   }) => {
     const result = [
       {
-        url: 'www.google.com',
+        url: 'https://www.google.com',
         label: 'Dataset'
       },
       {
-        url: 'www.google.com',
+        url: 'https://www.google.com',
         label: 'Code'
       },
     ]
