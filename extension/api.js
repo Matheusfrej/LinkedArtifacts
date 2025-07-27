@@ -129,59 +129,54 @@ const $api = {
       let itemsSeen = 0;
 
       while (itemsSeen < totalResults) {
-        try {
-          let crEventUrl = `https://api.eventdata.crossref.org/v1/events?${direction}=doi:${encodeURIComponent(doi)}&rows=100`;
-          if (cursor) crEventUrl += `&cursor=${encodeURIComponent(cursor)}`;
+        let crEventUrl = `https://api.eventdata.crossref.org/v1/events?${direction}=doi:${encodeURIComponent(doi)}&rows=100`;
+        if (cursor) crEventUrl += `&cursor=${encodeURIComponent(cursor)}`;
 
-          $logger.info('$api.fetchArtifacts', `CrossRef Event Data query (${direction}):`, crEventUrl);
-          const crEventRes = await fetch(crEventUrl);
-          if (!crEventRes.ok) break;
+        $logger.info('$api.fetchArtifacts', `CrossRef Event Data query (${direction}):`, crEventUrl);
+        const crEventRes = await fetch(crEventUrl);
+        if (!crEventRes.ok) break;
 
-          const crEventJson = await crEventRes.json();
-          const events = crEventJson.message?.events || [];
+        const crEventJson = await crEventRes.json();
+        const events = crEventJson.message?.events || [];
 
-          for (const ev of events) {
-            const otherId = direction === 'obj-id' ? ev.subj_id : ev.obj_id;
-            const artifactMeta = direction === 'obj-id' ? ev.subj : ev.obj;
+        for (const ev of events) {
+          const otherId = direction === 'obj-id' ? ev.subj_id : ev.obj_id;
+          const artifactMeta = direction === 'obj-id' ? ev.subj : ev.obj;
 
-            if (typeof otherId === 'string') {
-              const isDOI = otherId.toLowerCase().startsWith('doi:');
-              const doiStr = isDOI ? otherId.replace(/^doi:/i, '') : null;
+          if (typeof otherId === 'string') {
+            const isDOI = otherId.toLowerCase().startsWith('doi:');
+            const doiStr = isDOI ? otherId.replace(/^doi:/i, '') : null;
 
-              // Check if matches known repository pattern
-              if (doiStr || otherId) {
-                Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
-                  const idToCheck = doiStr || otherId;
-                  if (patterns.some(pattern => idToCheck.includes(pattern))) {
-                    const finalUrl = isDOI ? `https://doi.org/${doiStr}` : otherId;
-                    const label = getArtifactLabel(artifactMeta, repo);
+            // Check if matches known repository pattern
+            if (doiStr || otherId) {
+              Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
+                const idToCheck = doiStr || otherId;
+                if (patterns.some(pattern => idToCheck.includes(pattern))) {
+                  const finalUrl = isDOI ? `https://doi.org/${doiStr}` : otherId;
+                  const label = getArtifactLabel(artifactMeta, repo);
 
-                    const existingIndex = results.findIndex(r => r.url === finalUrl);
-                    // if stored label is smaller than current one, use new label, because it probably has more value
-                    if (seenUrls.has(otherId) && existingIndex !== -1 && results[existingIndex].label.length < label?.length) {
-                      results[existingIndex].label = label;
-                    }
-                    else if (!seenUrls.has(otherId)) {
-                      results.push({
-                        url: finalUrl,
-                        label,
-                        source: 'CrossRef',
-                      });
-                      seenUrls.add(otherId);
-                    }
+                  const existingIndex = results.findIndex(r => r.url === finalUrl);
+                  // if stored label is smaller than current one, use new label, because it probably has more value
+                  if (seenUrls.has(otherId) && existingIndex !== -1 && results[existingIndex].label.length < label?.length) {
+                    results[existingIndex].label = label;
                   }
-                });
-              }
+                  else if (!seenUrls.has(otherId)) {
+                    results.push({
+                      url: finalUrl,
+                      label,
+                      source: 'CrossRef',
+                    });
+                    seenUrls.add(otherId);
+                  }
+                }
+              });
             }
           }
-
-          cursor = crEventJson.message['next-cursor'];
-          totalResults = crEventJson.message['total-results'];
-          itemsSeen += crEventJson.message['items-per-page'];
-        } catch (e) {
-          $logger.error('$api.fetchArtifacts', `CrossRef Event Data error (${direction}):`, e);
-          break;
         }
+
+        cursor = crEventJson.message['next-cursor'];
+        totalResults = crEventJson.message['total-results'];
+        itemsSeen += crEventJson.message['items-per-page'];
       }
     }
 
@@ -189,33 +184,28 @@ const $api = {
     // ------------------------------
     // 2. Busca por DOI na API do Zenodo
     // ------------------------------
-    try {
-      const zenodoUrl = `https://zenodo.org/api/records/?q=related_identifiers.identifier:"${encodeURIComponent(doi)}"`;
-      $logger.info('$api.fetchArtifacts', 'Zenodo query:', zenodoUrl);
+    const zenodoUrl = `https://zenodo.org/api/records/?q=related_identifiers.identifier:"${encodeURIComponent(doi)}"`;
+    $logger.info('$api.fetchArtifacts', 'Zenodo query:', zenodoUrl);
 
-      const zenodoRes = await fetch(zenodoUrl);
-      if (zenodoRes.ok) {
-        const zenodoJson = await zenodoRes.json();
-        for (const record of zenodoJson.hits?.hits || []) {
-          const link = record.links?.html;
-          if (link && !seenUrls.has(link)) {
-            results.push({
-              url: link,
-              label: record.metadata?.title || 'Zenodo Record',
-              source: 'Zenodo',
-            });
-            seenUrls.add(link);
-          }
+    const zenodoRes = await fetch(zenodoUrl);
+    if (zenodoRes.ok) {
+      const zenodoJson = await zenodoRes.json();
+      for (const record of zenodoJson.hits?.hits || []) {
+        const link = record.links?.html;
+        if (link && !seenUrls.has(link)) {
+          results.push({
+            url: link,
+            label: record.metadata?.title || 'Zenodo Record',
+            source: 'Zenodo',
+          });
+          seenUrls.add(link);
         }
       }
-    } catch (e) {
-      $logger.error('$api.fetchArtifacts', 'Zenodo API error:', e);
     }
 
     // // ------------------------------
     // // 3. Busca na API do OpenAlex
     // // ------------------------------
-    // try {
     //   const openAlexUrl = `https://api.openalex.org/works/https://doi.org/${encodeURIComponent(doi)}`;
     //   $logger.info('$api.fetchArtifacts', 'OpenAlex query:', openAlexUrl);
 
@@ -248,9 +238,6 @@ const $api = {
     //       }
     //     }
     //   }
-    // } catch (e) {
-    //   $logger.error('$api.fetchArtifacts', 'OpenAlex API error:', e);
-    // }
 
       // -------------------------------------------------
       // 4. Scraping do conteúdo do artigo
