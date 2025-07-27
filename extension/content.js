@@ -127,11 +127,6 @@ async function fetchArtifacts(title) {
 //   return '';
 // }
 
-// async function fetchArtifactsByDOI(doi) {
-//   // TODO: implement
-//   return []
-// }
-
 // async function fetchArtifactsFromCrossRefEventData(doi) {
 //   const results = [];
 //   const seenUrls = new Set();
@@ -389,15 +384,22 @@ function addButtons() {
   const entries = document.querySelectorAll('.gs_ri');
   entries.forEach(entry => {
     if (entry.querySelector('.artifact-btn')) {
-      $logger.info(addButtons.name, 'Paper already has Button for Artifacts') 
+      $logger.info(addButtons.name, 'Paper already has Button for Artifacts');
       return;
     }
     const titleElem = entry.querySelector('.gs_rt');
     if (!titleElem || !titleElem.querySelector('a')) {
-      $logger.info(addButtons.name, 'No element found with class .gs_rt or with "a" tag') 
+      $logger.info(addButtons.name, 'No element found with class .gs_rt or with "a" tag');
       return;
     }
     const link = titleElem.querySelector('a');
+    let year = '';
+    const metaElem = entry.querySelector('.gs_a');
+    if (metaElem) {
+      const yearMatch = metaElem.textContent.match(/\b(19|20)\d{2}\b/);
+      if (yearMatch) year = yearMatch[0]; // ano não muito preciso
+    }
+    
     const btn = createArtifactBtn(link.textContent);
     titleElem.appendChild(btn);
   });

@@ -1,6 +1,23 @@
+function getWorkType(meta) {
+  return meta?.work_type_id || meta?.['work_type_id'] || meta?.['work-type-id'] || '';
+}
+
+function getArtifactLabel(artifactMeta, repo) {
+  let label = artifactMeta?.title;
+  if (Array.isArray(label)) label = label[0];
+
+  if (!label || typeof label !== 'string') {
+    const type = getWorkType(artifactMeta);
+    label = `${repo}${type ? ' ' + type : ''}`;
+  }
+
+  return label;
+}
+
 const $api = { 
   fetchDOI: async (parms = {
-    title: ''
+    title: '',
+    year: 0
   }) => {
     // BSI Identify não é focado para pesquisa científica
     // ChinaDOI = ISTIC
@@ -16,18 +33,10 @@ const $api = {
           json.message?.items?.map((item) => ({
             title: item.title?.[0] || '',
             doi: item.DOI,
+            year: item.published?.['date-parts']?.[0]?.[0],
             raw: item,
           })) || [],
       },
-      // openalex: {
-      //   url: `https://api.openalex.org/works?search=${encodeURIComponent(title)}&per-page=100`,
-      //   extractItems: (json) =>
-      //     json.results?.map((item) => ({
-      //       title: item.title || '',
-      //       doi: item.doi,
-      //       raw: item,
-      //     })) || [],
-      // },
     }['crossref'];
 
     $logger.info('$api.fetchDOI', `query:`, providerConfig.url);
@@ -88,22 +97,166 @@ const $api = {
     return best.doi;
   }, 
 
-  fetchArtifacts: async (parms = {
-    doi: ''
-  }) => {
-    const result = [
-      {
-        url: 'https://www.google.com',
-        label: 'Dataset'
-      },
-      {
-        url: 'https://www.google.com',
-        label: 'Code'
-      },
-    ]
+  fetchArtifacts: async (params = { doi: '' }) => {
+    const { doi } = params;
+    const results = [];
+    const seenUrls = new Set();
 
-    $logger.info('$api.fetchArtifacts', { parms, result })
-    return result;
+    const repositoriesPatterns = {
+      'Zenodo': ['10.5281', 'zenodo'],
+      'Figshare': ['10.6084', 'figshare', 'm9.figshare'],
+      'Dryad': ['10.5061', 'dryad'],
+      'GitHub': ['github'],
+      'Dataverse': ['10.7910', '/DVN/'],
+      'OSF': ['10.17605', 'osf.io'],
+      'Software Heritage': ['SWHID'],
+      'Mendeley Data': ['10.17632'],
+      'EUDAT B2Share': ['10.23728', 'B2SHARE']
+    };
+
+    // ------------------------------
+    // 1. Busca no CrossRef Event Data
+    // ------------------------------
+    // Finds artifact from paper below
+    // https://scholar.google.com.br/scholar?hl=pt-BR&as_sdt=0%2C5&q=corner.py%3A+Scatterplot+matrices+in+Python&btnG=
+
+    // Finds artifact that is cited by paper below
+    // https://scholar.google.com.br/scholar?hl=pt-BR&as_sdt=0%2C5&q=Open+collaborative+writing+with+Manubot&btnG=
+    const eventTypes = ['obj-id', 'subj-id'];
+    for (const direction of eventTypes) {
+      let cursor = null;
+      let totalResults = Infinity;
+      let itemsSeen = 0;
+
+      while (itemsSeen < totalResults) {
+        try {
+          let crEventUrl = `https://api.eventdata.crossref.org/v1/events?${direction}=doi:${encodeURIComponent(doi)}&rows=100`;
+          if (cursor) crEventUrl += `&cursor=${encodeURIComponent(cursor)}`;
+
+          $logger.info('$api.fetchArtifacts', `CrossRef Event Data query (${direction}):`, crEventUrl);
+          const crEventRes = await fetch(crEventUrl);
+          if (!crEventRes.ok) break;
+
+          const crEventJson = await crEventRes.json();
+          const events = crEventJson.message?.events || [];
+
+          for (const ev of events) {
+            const otherId = direction === 'obj-id' ? ev.subj_id : ev.obj_id;
+            const artifactMeta = direction === 'obj-id' ? ev.subj : ev.obj;
+
+            if (typeof otherId === 'string') {
+              const isDOI = otherId.toLowerCase().startsWith('doi:');
+              const doiStr = isDOI ? otherId.replace(/^doi:/i, '') : null;
+
+              // Check if matches known repository pattern
+              if (doiStr || otherId) {
+                Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
+                  const idToCheck = doiStr || otherId;
+                  if (patterns.some(pattern => idToCheck.includes(pattern))) {
+                    const finalUrl = isDOI ? `https://doi.org/${doiStr}` : otherId;
+                    const label = getArtifactLabel(artifactMeta, repo);
+
+                    const existingIndex = results.findIndex(r => r.url === finalUrl);
+                    // if stored label is smaller than current one, use new label, because it probably has more value
+                    if (seenUrls.has(otherId) && existingIndex !== -1 && results[existingIndex].label.length < label?.length) {
+                      results[existingIndex].label = label;
+                    }
+                    else if (!seenUrls.has(otherId)) {
+                      results.push({
+                        url: finalUrl,
+                        label,
+                        source: 'CrossRef',
+                      });
+                      seenUrls.add(otherId);
+                    }
+                  }
+                });
+              }
+            }
+          }
+
+          cursor = crEventJson.message['next-cursor'];
+          totalResults = crEventJson.message['total-results'];
+          itemsSeen += crEventJson.message['items-per-page'];
+        } catch (e) {
+          $logger.error('$api.fetchArtifacts', `CrossRef Event Data error (${direction}):`, e);
+          break;
+        }
+      }
+    }
+
+
+    // ------------------------------
+    // 2. Busca por DOI na API do Zenodo
+    // ------------------------------
+    try {
+      const zenodoUrl = `https://zenodo.org/api/records/?q=related_identifiers.identifier:"${encodeURIComponent(doi)}"`;
+      $logger.info('$api.fetchArtifacts', 'Zenodo query:', zenodoUrl);
+
+      const zenodoRes = await fetch(zenodoUrl);
+      if (zenodoRes.ok) {
+        const zenodoJson = await zenodoRes.json();
+        for (const record of zenodoJson.hits?.hits || []) {
+          const link = record.links?.html;
+          if (link && !seenUrls.has(link)) {
+            results.push({
+              url: link,
+              label: record.metadata?.title || 'Zenodo Record',
+              source: 'Zenodo',
+            });
+            seenUrls.add(link);
+          }
+        }
+      }
+    } catch (e) {
+      $logger.error('$api.fetchArtifacts', 'Zenodo API error:', e);
+    }
+
+    // // ------------------------------
+    // // 3. Busca na API do OpenAlex
+    // // ------------------------------
+    // try {
+    //   const openAlexUrl = `https://api.openalex.org/works/https://doi.org/${encodeURIComponent(doi)}`;
+    //   $logger.info('$api.fetchArtifacts', 'OpenAlex query:', openAlexUrl);
+
+    //   const openAlexRes = await fetch(openAlexUrl);
+    //   if (openAlexRes.ok) {
+    //     const work = await openAlexRes.json();
+
+    //     // Verifica `primary_location` (às vezes aponta para datasets, etc.)
+    //     const maybeUrl = work.primary_location?.source?.host_venue?.url;
+    //     if (maybeUrl && !seenUrls.has(maybeUrl)) {
+    //       results.push({
+    //         url: maybeUrl,
+    //         label: 'Primary Location',
+    //         source: 'OpenAlex',
+    //       });
+    //       seenUrls.add(maybeUrl);
+    //     }
+
+    //     // Verifica `related_works`
+    //     for (const related of work.related_works || []) {
+    //       const relatedDoi = related.replace(/^https:\/\/doi\.org\//, '');
+    //       const fullUrl = `https://doi.org/${relatedDoi}`;
+    //       if (!seenUrls.has(fullUrl)) {
+    //         results.push({
+    //           url: fullUrl,
+    //           label: 'Related Work',
+    //           source: 'OpenAlex',
+    //         });
+    //         seenUrls.add(fullUrl);
+    //       }
+    //     }
+    //   }
+    // } catch (e) {
+    //   $logger.error('$api.fetchArtifacts', 'OpenAlex API error:', e);
+    // }
+
+      // -------------------------------------------------
+      // 4. Scraping do conteúdo do artigo
+      // -------------------------------------------------
+
+      return results;
   }
 
 }
