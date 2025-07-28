@@ -1,19 +1,3 @@
-function getWorkType(meta) {
-  return meta?.work_type_id || meta?.['work_type_id'] || meta?.['work-type-id'] || '';
-}
-
-function getArtifactLabel(artifactMeta, repo) {
-  let label = artifactMeta?.title;
-  if (Array.isArray(label)) label = label[0];
-
-  if (!label || typeof label !== 'string') {
-    const type = getWorkType(artifactMeta);
-    label = `${repo}${type ? ' ' + type : ''}`;
-  }
-
-  return label;
-}
-
 const $api = { 
   fetchDOI: async (parms = {
     title: '',
@@ -28,7 +12,7 @@ const $api = {
 
     const providerConfig = {
       crossref: {
-        url: `https://api.crossref.org/works?query.title=${encodeURIComponent(title)}&rows=3`,
+        url: `https://api.crossref.org/works?query.title=${encodeURIComponent(title)}&rows=3&mailto=${encodeURIComponent($constant.MAILTO)}`,
         extractItems: (json) =>
           json.message?.items?.map((item) => ({
             title: item.title?.[0] || '',
@@ -98,6 +82,182 @@ const $api = {
   }, 
 
   fetchArtifacts: async (params = { doi: '' }) => {
+    async function fetchArtifactsFromCrossref(doi, results, repositoriesPatterns, seenUrls) {
+      const url = `https://api.crossref.org/works/${encodeURIComponent(doi)}?mailto=${encodeURIComponent($constant.MAILTO)}`;
+      $logger.info('$api.fetchArtifacts.fetchArtifactsFromCrossref', 'query:', url);
+
+      const response = await fetch(url);
+      if (!response.ok) return results;
+      const data = await response.json();
+      $logger.info('$api.fetchArtifacts.fetchArtifactsFromCrossref', `response:`, data);
+
+      const relation = data.message.relation;
+      if (!relation) return results;
+
+      Object.values(relation).forEach((relations) => {
+        relations.forEach((relation) => {
+          const id = relation.id;
+          Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
+            if (patterns.some(pattern => id.includes(pattern)) && !seenUrls.has(id)) {
+              results.push({
+                url: id,
+                label: `${repo} Artifact`,
+                source: 'CrossRef',
+              });
+              seenUrls.add(id);
+            }
+          })
+        })
+      })
+
+      return results;
+    }
+
+    async function fetchArtifactsFromCrossrefEventData(doi, results, repositoriesPatterns, seenUrls) {
+      function getWorkType(meta) {
+        return meta?.work_type_id || meta?.['work_type_id'] || meta?.['work-type-id'] || '';
+      }
+
+      function getArtifactLabel(artifactMeta, repo) {
+        let label = artifactMeta?.title;
+        if (Array.isArray(label)) label = label[0];
+
+        if (!label || typeof label !== 'string') {
+          const type = getWorkType(artifactMeta);
+          label = `${repo}${type ? ' ' + type : ''}`;
+        }
+
+        return label;
+      }
+
+      const eventTypes = ['obj-id', 'subj-id'];
+      for (const direction of eventTypes) {
+        let cursor = null;
+        let totalResults = Infinity;
+        let itemsSeen = 0;
+
+        while (itemsSeen < totalResults) {
+          let crEventUrl = `https://api.eventdata.crossref.org/v1/events?${direction}=doi:${encodeURIComponent(doi)}&rows=100`;
+          if (cursor) crEventUrl += `&cursor=${encodeURIComponent(cursor)}`;
+
+          $logger.info('$api.fetchArtifacts.fetchArtifactsFromCrossrefEventData', `CrossRef Event Data query (${direction}):`, crEventUrl);
+          const crEventRes = await fetch(crEventUrl);
+          if (!crEventRes.ok) break;
+
+          const crEventJson = await crEventRes.json();
+          const events = crEventJson.message?.events || [];
+
+          for (const ev of events) {
+            const otherId = direction === 'obj-id' ? ev.subj_id : ev.obj_id;
+            const artifactMeta = direction === 'obj-id' ? ev.subj : ev.obj;
+
+            if (typeof otherId === 'string') {
+              const isDOI = otherId.toLowerCase().startsWith('doi:');
+              const doiStr = isDOI ? otherId.replace(/^doi:/i, '') : null;
+
+              // Check if matches known repository pattern
+              if (doiStr || otherId) {
+                Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
+                  const idToCheck = doiStr || otherId;
+                  if (patterns.some(pattern => idToCheck.includes(pattern))) {
+                    const finalUrl = isDOI ? `https://doi.org/${doiStr}` : otherId;
+                    const label = getArtifactLabel(artifactMeta, repo);
+
+                    const existingIndex = results.findIndex(r => r.url === finalUrl);
+                    // if stored label is smaller than current one, use new label, because it probably has more value
+                    if (seenUrls.has(otherId) && existingIndex !== -1 && results[existingIndex].label.length < label?.length) {
+                      results[existingIndex].label = label;
+                    }
+                    else if (!seenUrls.has(otherId)) {
+                      results.push({
+                        url: finalUrl,
+                        label,
+                        source: 'CrossRef',
+                      });
+                      seenUrls.add(otherId);
+                    }
+                  }
+                });
+              }
+            }
+          }
+
+          cursor = crEventJson.message['next-cursor'];
+          totalResults = crEventJson.message['total-results'];
+          itemsSeen += crEventJson.message['items-per-page'];
+        }
+      }
+
+      return results;
+    }
+
+    async function fetchArtifactsFromZenodo(doi, results, seenUrls) {
+      const zenodoUrl = `https://zenodo.org/api/records/?q=related_identifiers.identifier:"${encodeURIComponent(doi)}"`;
+      $logger.info('$api.fetchArtifacts.fetchArtifactsFromZenodo', 'Zenodo query:', zenodoUrl);
+
+      const zenodoRes = await fetch(zenodoUrl);
+
+      if (!zenodoRes.ok) return results;
+
+      const zenodoJson = await zenodoRes.json();
+      for (const record of zenodoJson.hits?.hits || []) {
+        const link = record.links?.html;
+        if (link && !seenUrls.has(link)) {
+          results.push({
+            url: link,
+            label: record.metadata?.title || 'Zenodo Record',
+            source: 'Zenodo',
+          });
+          seenUrls.add(link);
+        }
+      }
+
+      return results;
+    }
+
+    async function fetchArtifactsFromOpenAlex(doi, results, seenUrls) {
+      const openAlexUrl = `https://api.openalex.org/works/https://doi.org/${encodeURIComponent(doi)}`;
+      $logger.info('$api.fetchArtifacts.fetchArtifactsFromOpenAlex', 'OpenAlex query:', openAlexUrl);
+
+      const openAlexRes = await fetch(openAlexUrl);
+
+      if (!openAlexRes.ok) return results;
+
+      const work = await openAlexRes.json();
+
+      // Verifica `primary_location` (às vezes aponta para datasets, etc.)
+      const maybeUrl = work.primary_location?.source?.host_venue?.url;
+      if (maybeUrl && !seenUrls.has(maybeUrl)) {
+        results.push({
+          url: maybeUrl,
+          label: 'Primary Location',
+          source: 'OpenAlex',
+        });
+        seenUrls.add(maybeUrl);
+      }
+
+      // Verifica `related_works`
+      for (const related of work.related_works || []) {
+        const relatedDoi = related.replace(/^https:\/\/doi\.org\//, '');
+        const fullUrl = `https://doi.org/${relatedDoi}`;
+        if (!seenUrls.has(fullUrl)) {
+          results.push({
+            url: fullUrl,
+            label: 'Related Work',
+            source: 'OpenAlex',
+          });
+          seenUrls.add(fullUrl);
+        }
+      }
+
+      return results;
+    }
+    
+    async function fetchArtifactsFromPdfScrapping(doi, results, repositoriesPatterns, seenUrls) {
+      // TODO: implement
+      return results;
+    }
+
     const { doi } = params;
     const results = [];
     const seenUrls = new Set();
@@ -115,133 +275,37 @@ const $api = {
     };
 
     // ------------------------------
-    // 1. Busca no CrossRef Event Data
+    // 1. Busca no CrossRef
+    // ------------------------------
+    // Finds artifacts from paper below
+    // https://api.crossref.org/works/10.21105%2Fjoss.00024
+    results.push(...await fetchArtifactsFromCrossref(doi, [...results], repositoriesPatterns, seenUrls));
+
+    // ------------------------------
+    // 2. Busca no CrossRef Event Data
     // ------------------------------
     // Finds artifact from paper below
     // https://scholar.google.com.br/scholar?hl=pt-BR&as_sdt=0%2C5&q=corner.py%3A+Scatterplot+matrices+in+Python&btnG=
 
     // Finds artifact that is cited by paper below
     // https://scholar.google.com.br/scholar?hl=pt-BR&as_sdt=0%2C5&q=Open+collaborative+writing+with+Manubot&btnG=
-    const eventTypes = ['obj-id', 'subj-id'];
-    for (const direction of eventTypes) {
-      let cursor = null;
-      let totalResults = Infinity;
-      let itemsSeen = 0;
-
-      while (itemsSeen < totalResults) {
-        let crEventUrl = `https://api.eventdata.crossref.org/v1/events?${direction}=doi:${encodeURIComponent(doi)}&rows=100`;
-        if (cursor) crEventUrl += `&cursor=${encodeURIComponent(cursor)}`;
-
-        $logger.info('$api.fetchArtifacts', `CrossRef Event Data query (${direction}):`, crEventUrl);
-        const crEventRes = await fetch(crEventUrl);
-        if (!crEventRes.ok) break;
-
-        const crEventJson = await crEventRes.json();
-        const events = crEventJson.message?.events || [];
-
-        for (const ev of events) {
-          const otherId = direction === 'obj-id' ? ev.subj_id : ev.obj_id;
-          const artifactMeta = direction === 'obj-id' ? ev.subj : ev.obj;
-
-          if (typeof otherId === 'string') {
-            const isDOI = otherId.toLowerCase().startsWith('doi:');
-            const doiStr = isDOI ? otherId.replace(/^doi:/i, '') : null;
-
-            // Check if matches known repository pattern
-            if (doiStr || otherId) {
-              Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
-                const idToCheck = doiStr || otherId;
-                if (patterns.some(pattern => idToCheck.includes(pattern))) {
-                  const finalUrl = isDOI ? `https://doi.org/${doiStr}` : otherId;
-                  const label = getArtifactLabel(artifactMeta, repo);
-
-                  const existingIndex = results.findIndex(r => r.url === finalUrl);
-                  // if stored label is smaller than current one, use new label, because it probably has more value
-                  if (seenUrls.has(otherId) && existingIndex !== -1 && results[existingIndex].label.length < label?.length) {
-                    results[existingIndex].label = label;
-                  }
-                  else if (!seenUrls.has(otherId)) {
-                    results.push({
-                      url: finalUrl,
-                      label,
-                      source: 'CrossRef',
-                    });
-                    seenUrls.add(otherId);
-                  }
-                }
-              });
-            }
-          }
-        }
-
-        cursor = crEventJson.message['next-cursor'];
-        totalResults = crEventJson.message['total-results'];
-        itemsSeen += crEventJson.message['items-per-page'];
-      }
-    }
-
+    // results.push(...await fetchArtifactsFromCrossrefEventData(doi, [...results], repositoriesPatterns, seenUrls));
 
     // ------------------------------
-    // 2. Busca por DOI na API do Zenodo
+    // 3. Busca por DOI na API do Zenodo
     // ------------------------------
-    const zenodoUrl = `https://zenodo.org/api/records/?q=related_identifiers.identifier:"${encodeURIComponent(doi)}"`;
-    $logger.info('$api.fetchArtifacts', 'Zenodo query:', zenodoUrl);
+    // results.push(...await fetchArtifactsFromZenodo(doi, [...results], seenUrls));
 
-    const zenodoRes = await fetch(zenodoUrl);
-    if (zenodoRes.ok) {
-      const zenodoJson = await zenodoRes.json();
-      for (const record of zenodoJson.hits?.hits || []) {
-        const link = record.links?.html;
-        if (link && !seenUrls.has(link)) {
-          results.push({
-            url: link,
-            label: record.metadata?.title || 'Zenodo Record',
-            source: 'Zenodo',
-          });
-          seenUrls.add(link);
-        }
-      }
-    }
+    // ------------------------------
+    // 4. Busca na API do OpenAlex
+    // ------------------------------
+    // results.push(...await fetchArtifactsFromOpenAlex(doi, [...results], seenUrls));
 
-    // // ------------------------------
-    // // 3. Busca na API do OpenAlex
-    // // ------------------------------
-    //   const openAlexUrl = `https://api.openalex.org/works/https://doi.org/${encodeURIComponent(doi)}`;
-    //   $logger.info('$api.fetchArtifacts', 'OpenAlex query:', openAlexUrl);
+    // -------------------------------------------------
+    // 5. Scraping do conteúdo do artigo
+    // -------------------------------------------------
+    // results.push(...await fetchArtifactsFromPdfScrapping(doi, [...results], repositoriesPatterns, seenUrls));
 
-    //   const openAlexRes = await fetch(openAlexUrl);
-    //   if (openAlexRes.ok) {
-    //     const work = await openAlexRes.json();
-
-    //     // Verifica `primary_location` (às vezes aponta para datasets, etc.)
-    //     const maybeUrl = work.primary_location?.source?.host_venue?.url;
-    //     if (maybeUrl && !seenUrls.has(maybeUrl)) {
-    //       results.push({
-    //         url: maybeUrl,
-    //         label: 'Primary Location',
-    //         source: 'OpenAlex',
-    //       });
-    //       seenUrls.add(maybeUrl);
-    //     }
-
-    //     // Verifica `related_works`
-    //     for (const related of work.related_works || []) {
-    //       const relatedDoi = related.replace(/^https:\/\/doi\.org\//, '');
-    //       const fullUrl = `https://doi.org/${relatedDoi}`;
-    //       if (!seenUrls.has(fullUrl)) {
-    //         results.push({
-    //           url: fullUrl,
-    //           label: 'Related Work',
-    //           source: 'OpenAlex',
-    //         });
-    //         seenUrls.add(fullUrl);
-    //       }
-    //     }
-    //   }
-
-      // -------------------------------------------------
-      // 4. Scraping do conteúdo do artigo
-      // -------------------------------------------------
 
       return results;
   }

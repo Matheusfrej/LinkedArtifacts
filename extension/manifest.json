@@ -29,6 +29,7 @@
         "https://scholar.google.com.au/*"
       ],
       "js": [
+        "constant.js",
         "logger.js",
         "api.js", 
         "content.js",
