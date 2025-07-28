@@ -10,6 +10,9 @@ const $api = {
 
     const title = parms.title
 
+    const cachedDoi = $cache.getPaper(title)?.doi
+    if (cachedDoi !== undefined) return cachedDoi
+
     const providerConfig = {
       crossref: {
         url: `https://api.crossref.org/works?query.title=${encodeURIComponent(title)}&rows=3&mailto=${encodeURIComponent($constant.MAILTO)}`,
@@ -30,7 +33,10 @@ const $api = {
     $logger.info('$api.fetchDOI', `response:`, providerConfig.url);
 
     const items = providerConfig.extractItems(data);
-    if (!items.length) return '';
+    if (!items.length) {
+      $cache.setPaper(title, '', { normalizedTitle: title, doi: '' });
+      return '';
+    }
 
     // Levenshtein distance for proximity
     function levenshtein(a, b) {
@@ -68,17 +74,26 @@ const $api = {
       }
     }
     
-    if (!best?.doi) return '';
+    if (!best?.doi) {
+      $cache.setPaper(title, '', { normalizedTitle: title, doi: '' });
+      return '';
+    } 
     
     // 95% similarity threshold
     const maxLen = Math.max(title.length, best.title.trim().toLowerCase().length);
     const similarity = maxLen === 0 ? 1 : 1 - (bestDistance / maxLen);
-    if (similarity < 0.95) return '';
+    if (similarity < 0.95) {
+      $cache.setPaper(title, '', { normalizedTitle: title, doi: '' });
+      return '';
+    }
     
     $logger.info('$api.fetchDOI', `best match:`, best.title, 'distance:', bestDistance, 'similarity:', similarity);
     $logger.info('$api.fetchDOI', `DOI found from ${'crossref'}:`, best.doi);
     
-    return best.doi;
+    const doi = best.doi;
+    $cache.setPaper(title, doi, { normalizedTitle: title, doi })
+
+    return doi;
   }, 
 
   fetchArtifacts: async (params = { doi: '' }) => {
@@ -259,6 +274,10 @@ const $api = {
     }
 
     const { doi } = params;
+
+    const cachedArtifacts = $cache.getPaper(undefined, doi)?.artifacts
+    if (cachedArtifacts !== undefined) return cachedArtifacts;
+
     const results = [];
     const seenUrls = new Set();
 
@@ -306,8 +325,9 @@ const $api = {
     // -------------------------------------------------
     // results.push(...await fetchArtifactsFromPdfScrapping(doi, [...results], repositoriesPatterns, seenUrls));
 
+    $cache.setPaper(undefined, doi, { artifacts: results })
 
-      return results;
+    return results;
   }
 
 }
