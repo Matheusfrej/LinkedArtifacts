@@ -356,51 +356,62 @@ async function createArtifactModal(paperTitle) {
   setTimeout(() => content.focus(), 0);
 }
 
-function createArtifactBtn(paperTitle) {
-  const btn = document.createElement('button');
-  btn.textContent = 'Show Artifacts';
-  btn.className = 'artifact-btn';
-  Object.assign(btn.style, {
-    marginLeft: '8px',
-    background: '#4285f4', // Google blue
-    color: '#fff',
-    border: 'none',
-    borderRadius: '4px',
-    padding: '4px 8px',
-    fontSize: '14px',
-    cursor: 'pointer',
-    boxShadow: '0 1px 2px rgba(60,64,67,.3)',
-    transition: 'background 0.2s',
-  });
-  btn.onmouseover = () => btn.style.background = '#3367d6';
-  btn.onmouseout = () => btn.style.background = '#4285f4';
-  btn.onclick = () => {
+
+function createArtifactIcon(paperTitle, artifacts) {
+  // Only show icon if artifacts are present
+  if (!artifacts || artifacts.length === 0) return null;
+  const icon = document.createElement('span');
+  icon.className = 'artifact-icon';
+  icon.title = 'Show Artifacts';
+  icon.style.marginLeft = '8px';
+  icon.style.cursor = 'pointer';
+  icon.style.display = 'inline-block';
+  icon.style.verticalAlign = 'middle';
+  icon.style.width = '18px';
+  icon.style.height = '18px';
+  icon.style.background = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%234285f4\'><circle cx=\'12\' cy=\'12\' r=\'10\' fill=\'%234285f4\'/><text x=\'12\' y=\'16\' text-anchor=\'middle\' font-size=\'12\' fill=\'white\'>A</text></svg>") no-repeat center/contain';
+  icon.onclick = (e) => {
+    e.stopPropagation();
     createArtifactModal(paperTitle);
   };
-  return btn;
+  return icon;
 }
 
-function addButtons() {
+async function addArtifactIcons() {
   const entries = document.querySelectorAll('.gs_ri');
-  entries.forEach(entry => {
-    if (entry.querySelector('.artifact-btn')) {
-      $logger.info(addButtons.name, 'Paper already has Button for Artifacts');
-      return;
-    }
+  // Track in-progress titles to avoid duplicate fetches
+  const inProgress = $constant.artifactInProgress;
+  for (const entry of entries) {
     const titleElem = entry.querySelector('.gs_rt');
     if (!titleElem || !titleElem.querySelector('a')) {
-      $logger.info(addButtons.name, 'No element found with class .gs_rt or with "a" tag');
-      return;
+      $logger.info('addArtifactIcons', 'No element found with class .gs_rt or with "a" tag');
+      continue;
     }
     const link = titleElem.querySelector('a');
-    let year = '';
-    const metaElem = entry.querySelector('.gs_a');
-    if (metaElem) {
-      const yearMatch = metaElem.textContent.match(/\b(19|20)\d{2}\b/);
-      if (yearMatch) year = yearMatch[0]; // ano não muito preciso
+    const paperTitle = link.textContent.trim();
+    // If .gs_rt already has a child with class artifact-icon, skip
+    if ([...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
+      continue;
     }
-    
-    const btn = createArtifactBtn(link.textContent);
-    titleElem.appendChild(btn);
-  });
+    // If already in progress, skip
+    if (inProgress.has(paperTitle)) {
+      continue;
+    }
+    inProgress.add(paperTitle);
+    // Fetch artifacts for this paper
+    fetchArtifacts(paperTitle).then(([artifacts, errorMsg]) => {
+      if (errorMsg) {
+        $logger.warn(errorMsg);
+      } else if (artifacts?.length > 0) {
+        // Double-check icon not already present (race condition)
+        if (![...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
+          const icon = createArtifactIcon(paperTitle, artifacts);
+          if (icon) {
+            titleElem.appendChild(icon);
+          }
+        }
+      }
+      inProgress.delete(paperTitle);
+    });
+  }
 }

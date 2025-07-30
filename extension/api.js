@@ -106,24 +106,77 @@ const $api = {
       const data = await response.json();
       $logger.info('$api.fetchArtifacts.fetchArtifactsFromCrossref', `response:`, data);
 
+      // 1. Check relation field
       const relation = data.message.relation;
-      if (!relation) return results;
-
-      Object.values(relation).forEach((relations) => {
-        relations.forEach((relation) => {
-          const id = relation.id;
-          Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
-            if (patterns.some(pattern => id.includes(pattern)) && !seenUrls.has(id)) {
-              results.push({
-                url: id,
-                label: `${repo} Artifact`,
-                source: 'CrossRef',
-              });
-              seenUrls.add(id);
-            }
-          })
+      if (relation) {
+        Object.entries(relation).forEach(([relation,relations]) => {
+          if (relation !== 'has-review') {
+            relations.forEach((relation) => {
+              const id = relation.id;
+              // Extract DOI if possible and sanitize
+              let doiKey = undefined;
+              const doiMatch = id && id.match(/10\.\d{4,9}\/[^\s"'<>\]\)\.,;:]+/i);
+              if (doiMatch) {
+                // Remove trailing punctuation/quotes
+                doiKey = doiMatch[0].replace(/[”"'\]\)\.,;:]+$/, '').trim().toLowerCase();
+              }
+              Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
+                if (patterns.some(pattern => id.includes(pattern)) && !(doiKey ? seenUrls.has(doiKey) : seenUrls.has(id))) {
+                  results.push({
+                    url: id,
+                    label: `${repo} Artifact`,
+                    source: 'CrossRef',
+                  });
+                  if (doiKey) seenUrls.add(doiKey); else seenUrls.add(id);
+                }
+              })
+            })
+          }
         })
-      })
+      }
+
+      // 2. Check reference field for DOIs or URLs
+      const references = data.message.reference;
+      if (Array.isArray(references)) {
+        references.forEach(ref => {
+          // Prefer DOI if present, else try unstructured or URL
+          let id = ref.DOI ? `https://doi.org/${ref.DOI}` : undefined;
+          let doiKey = ref.DOI ? ref.DOI.replace(/[”"'\]\)\.,;:]+$/, '').trim().toLowerCase() : undefined;
+          if (!id && ref['unstructured']) {
+            // Try to extract a URL from unstructured
+            const urlMatch = ref['unstructured'].match(/https?:\/\/\S+/);
+            if (urlMatch) {
+              id = urlMatch[0];
+              // Try to extract DOI from URL and sanitize
+              const doiMatch = id.match(/10\.\d{4,9}\/[^\s"'<>\]\)\.,;:]+/i);
+              if (doiMatch) doiKey = doiMatch[0].replace(/[”"'\]\)\.,;:]+$/, '').trim().toLowerCase();
+            }
+          }
+          // Normalize DOI URLs to https://doi.org/ form
+          if (id) {
+            id = id.replace(/^https?:\/\/(dx\.)?doi\.org\//i, 'https://doi.org/');
+            if (id.startsWith('https://doi.org/')) {
+              let doiPart = id.replace('https://doi.org/', '').replace(/[”"'\]\)\.,;:]+$/, '').trim();
+              id = `https://doi.org/${doiPart}`;
+            }
+          }
+          if (doiKey) {
+            doiKey = doiKey.replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/[”"'\]\)\.,;:]+$/, '').trim().toLowerCase();
+          }
+          if (id) {
+            Object.entries(repositoriesPatterns).forEach(([repo, patterns]) => {
+              if (patterns.some(pattern => id.includes(pattern)) && !(doiKey ? seenUrls.has(doiKey) : seenUrls.has(id))) {
+                results.push({
+                  url: id,
+                  label: `${repo} Artifact (reference)`,
+                  source: 'CrossRef',
+                });
+                if (doiKey) seenUrls.add(doiKey); else seenUrls.add(id);
+              }
+            });
+          }
+        });
+      }
 
       return results;
     }
