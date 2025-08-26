@@ -378,40 +378,61 @@ function createArtifactIcon(paperTitle, artifacts) {
 }
 
 async function addArtifactIcons() {
-  const entries = document.querySelectorAll('.gs_ri');
-  // Track in-progress titles to avoid duplicate fetches
+  // Throttle requests: process one paper at a time with delay
+  const DELAY_MS = 1000; // 1 second between requests
   const inProgress = $constant.artifactInProgress;
+  // Collect all papers to process (main results and researcher profile)
+  const tasks = [];
+
+  // Main search results
+  const entries = document.querySelectorAll('.gs_ri');
   for (const entry of entries) {
     const titleElem = entry.querySelector('.gs_rt');
-    if (!titleElem || !titleElem.querySelector('a')) {
-      $logger.info('addArtifactIcons', 'No element found with class .gs_rt or with "a" tag');
-      continue;
-    }
+    if (!titleElem || !titleElem.querySelector('a')) continue;
     const link = titleElem.querySelector('a');
     const paperTitle = link.textContent.trim();
-    // If .gs_rt already has a child with class artifact-icon, skip
-    if ([...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
-      continue;
-    }
-    // If already in progress, skip
-    if (inProgress.has(paperTitle)) {
-      continue;
-    }
+    if ([...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) continue;
+    if (inProgress.has(paperTitle)) continue;
+    tasks.push({ paperTitle, inject: (artifacts) => {
+      if (![...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
+        const icon = createArtifactIcon(paperTitle, artifacts);
+        if (icon) titleElem.appendChild(icon);
+      }
+    }});
+  }
+
+  // Researcher profile page: table rows
+  const tableRows = document.querySelectorAll('.gsc_a_tr');
+  for (const row of tableRows) {
+    const titleLink = row.querySelector('.gsc_a_at');
+    if (!titleLink) continue;
+    const paperTitle = titleLink.textContent.trim();
+    if (titleLink.nextSibling && titleLink.nextSibling.classList && titleLink.nextSibling.classList.contains('artifact-icon')) continue;
+    if (inProgress.has(paperTitle)) continue;
+    tasks.push({ paperTitle, inject: (artifacts) => {
+      if (!(titleLink.nextSibling && titleLink.nextSibling.classList && titleLink.nextSibling.classList.contains('artifact-icon'))) {
+        const icon = createArtifactIcon(paperTitle, artifacts);
+        if (icon) titleLink.parentNode.insertBefore(icon, titleLink.nextSibling);
+      }
+    }});
+  }
+
+  // Process tasks sequentially with delay to avoid API rate limits
+  async function processQueue(idx) {
+    if (idx >= tasks.length) return;
+    const { paperTitle, inject } = tasks[idx];
     inProgress.add(paperTitle);
-    // Fetch artifacts for this paper
-    fetchArtifacts(paperTitle).then(([artifacts, errorMsg]) => {
+    try {
+      const [artifacts, errorMsg] = await fetchArtifacts(paperTitle);
       if (errorMsg) {
         $logger.warn(errorMsg);
       } else if (artifacts?.length > 0) {
-        // Double-check icon not already present (race condition)
-        if (![...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
-          const icon = createArtifactIcon(paperTitle, artifacts);
-          if (icon) {
-            titleElem.appendChild(icon);
-          }
-        }
+        inject(artifacts);
       }
+    } finally {
       inProgress.delete(paperTitle);
-    });
+      setTimeout(() => processQueue(idx + 1), DELAY_MS);
+    }
   }
+  if (tasks.length > 0) processQueue(0);
 }
