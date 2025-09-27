@@ -57,7 +57,6 @@ export default async function Page({ params }: PageProps) {
     {
       id: "1",
       title: "Corner plot visualization examples",
-      version: "v2.1.0",
       license: "CC BY 4.0",
       views: 567,
       downloads: 123,

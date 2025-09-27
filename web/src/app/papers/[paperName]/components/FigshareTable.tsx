@@ -3,7 +3,6 @@ import BaseRepositoryTable from "./BaseRepositoryTable"
 export interface FigshareArtifact {
   id: string
   title: string
-  version: string
   license: string
   views: number
   downloads: number
@@ -21,15 +20,6 @@ export default function FigshareTable({ data }: FigshareTableProps) {
       key: "title" as const,
       header: "Title",
       render: (value: string) => <span className="font-medium text-foreground">{value}</span>,
-    },
-    {
-      key: "version" as const,
-      header: "Version",
-      render: (value: string) => (
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-500/20 text-green-300">
-          {value}
-        </span>
-      ),
     },
     {
       key: "license" as const,
