@@ -356,6 +356,9 @@ async function createArtifactModal(paperTitle) {
   setTimeout(() => content.focus(), 0);
 }
 
+function openArtifactPage(paperTitle) {
+  window.open(`http://localhost:3000/papers/${encodeURIComponent(paperTitle)}`)
+}
 
 function createArtifactIcon(paperTitle, artifacts) {
   // Only show icon if artifacts are present
@@ -372,7 +375,8 @@ function createArtifactIcon(paperTitle, artifacts) {
   icon.style.background = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%234285f4\'><circle cx=\'12\' cy=\'12\' r=\'10\' fill=\'%234285f4\'/><text x=\'12\' y=\'16\' text-anchor=\'middle\' font-size=\'12\' fill=\'white\'>A</text></svg>") no-repeat center/contain';
   icon.onclick = (e) => {
     e.stopPropagation();
-    createArtifactModal(paperTitle);
+    openArtifactPage(paperTitle);
+    // createArtifactModal(paperTitle);
   };
   return icon;
 }
