@@ -1,6 +1,7 @@
 "use client";
 import { useState, useMemo } from "react";
 import SearchBar from "./SearchBar";
+import Link from "next/link";
 
 const papers = [
   'corner. py: Scatterplot matrices in Python.',
@@ -38,13 +39,13 @@ export default function Page() {
               key={paper + index}
               className="mb-8 text-left pl-8"
             >
-              <a
-                href="#"
+              <Link
+                href={`/papers/${encodeURIComponent(paper)}`}
                 className="text-[20px] font-serif leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8]"
                 tabIndex={0}
               >
                 {paper}
-              </a>
+              </Link>
             </li>
           ))
         )}
