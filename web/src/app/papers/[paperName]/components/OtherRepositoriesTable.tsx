@@ -1,5 +1,5 @@
-import { Zap, ExternalLink } from "lucide-react"
-import BaseRepositoryTableHeader from "./BaseRepositoryTableHeader"
+import { Zap, ExternalLink } from 'lucide-react'
+import BaseRepositoryTableHeader from './BaseRepositoryTableHeader'
 
 interface OtherRepository {
   id: string
@@ -10,7 +10,9 @@ interface OtherRepositoriesTableProps {
   data: OtherRepository[]
 }
 
-export default function OtherRepositoriesTable({ data }: OtherRepositoriesTableProps) {
+export default function OtherRepositoriesTable({
+  data,
+}: OtherRepositoriesTableProps) {
   if (data.length === 0) return null
 
   return (
@@ -25,7 +27,10 @@ export default function OtherRepositoriesTable({ data }: OtherRepositoriesTableP
         <table className="w-full">
           <tbody>
             {data.map((repo) => (
-              <tr key={repo.id} className="border-b border-foreground/5 hover:bg-foreground/5 transition-colors">
+              <tr
+                key={repo.id}
+                className="border-b border-foreground/5 hover:bg-foreground/5 transition-colors"
+              >
                 <td className="py-3 px-6">
                   <a
                     href={repo.url}

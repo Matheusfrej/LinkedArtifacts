@@ -1,27 +1,27 @@
-"use client"
+'use client'
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { ChevronRight } from "lucide-react"
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { ChevronRight } from 'lucide-react'
 
 export default function Breadcrumb() {
   const pathname = usePathname()
 
   // Don't show breadcrumb on home page
-  if (pathname === "/") {
+  if (pathname === '/') {
     return null
   }
 
-  const pathSegments = pathname.split("/").filter(Boolean)
+  const pathSegments = pathname.split('/').filter(Boolean)
 
   // Build breadcrumb items
   const breadcrumbItems = []
 
   // Handle papers routes
-  if (pathSegments[0] === "papers") {
+  if (pathSegments[0] === 'papers') {
     breadcrumbItems.push({
-      label: "Papers",
-      href: "/papers",
+      label: 'Papers',
+      href: '/papers',
       current: pathSegments.length === 1,
     })
 
@@ -41,9 +41,13 @@ export default function Breadcrumb() {
       <div className="flex items-center space-x-2 text-sm">
         {breadcrumbItems.map((item, index) => (
           <div key={item.href} className="flex items-center">
-            {index > 0 && <ChevronRight className="w-4 h-4 mx-2 text-foreground/40" />}
+            {index > 0 && (
+              <ChevronRight className="w-4 h-4 mx-2 text-foreground/40" />
+            )}
             {item.current ? (
-              <span className="text-foreground font-medium truncate max-w-xs">{item.label}</span>
+              <span className="text-foreground font-medium truncate max-w-xs">
+                {item.label}
+              </span>
             ) : (
               <Link
                 href={item.href}

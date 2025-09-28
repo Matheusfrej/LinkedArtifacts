@@ -1,5 +1,5 @@
-import BaseRepositoryTable from "./BaseRepositoryTable"
-import { Eye, Download, FileText } from "lucide-react"
+import BaseRepositoryTable from './BaseRepositoryTable'
+import { Eye, Download, FileText } from 'lucide-react'
 
 export interface ZenodoArtifact {
   id: string
@@ -19,13 +19,15 @@ interface ZenodoTableProps {
 export default function ZenodoTable({ data }: ZenodoTableProps) {
   const columns = [
     {
-      key: "title" as const,
-      header: "Title",
-      render: (value: string) => <span className="font-medium text-foreground">{value}</span>,
+      key: 'title' as const,
+      header: 'Title',
+      render: (value: string) => (
+        <span className="font-medium text-foreground">{value}</span>
+      ),
     },
     {
-      key: "version" as const,
-      header: "Version",
+      key: 'version' as const,
+      header: 'Version',
       render: (value: string) => (
         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/20 text-blue-300">
           {value}
@@ -33,14 +35,16 @@ export default function ZenodoTable({ data }: ZenodoTableProps) {
       ),
     },
     {
-      key: "license" as const,
-      header: "License",
-      render: (value: string) => <span className="text-foreground">{value}</span>,
+      key: 'license' as const,
+      header: 'License',
+      render: (value: string) => (
+        <span className="text-foreground">{value}</span>
+      ),
     },
     {
-      key: "views" as const,
-      header: "Views",
-      align: "right" as const,
+      key: 'views' as const,
+      header: 'Views',
+      align: 'right' as const,
       render: (value: number) => (
         <div className="flex items-center justify-end gap-1">
           <Eye className="h-3 w-3" />
@@ -49,9 +53,9 @@ export default function ZenodoTable({ data }: ZenodoTableProps) {
       ),
     },
     {
-      key: "downloads" as const,
-      header: "Downloads",
-      align: "right" as const,
+      key: 'downloads' as const,
+      header: 'Downloads',
+      align: 'right' as const,
       render: (value: number) => (
         <div className="flex items-center justify-end gap-1">
           <Download className="h-3 w-3" />
@@ -60,10 +64,12 @@ export default function ZenodoTable({ data }: ZenodoTableProps) {
       ),
     },
     {
-      key: "citations" as const,
-      header: "Citations",
-      align: "right" as const,
-      render: (value: number) => <span className="text-foreground">{value}</span>,
+      key: 'citations' as const,
+      header: 'Citations',
+      align: 'right' as const,
+      render: (value: number) => (
+        <span className="text-foreground">{value}</span>
+      ),
     },
   ]
 

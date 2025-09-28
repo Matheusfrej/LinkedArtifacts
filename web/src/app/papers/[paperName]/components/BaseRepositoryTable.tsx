@@ -1,11 +1,11 @@
-import { ExternalLink } from "lucide-react"
-import type { ReactNode } from "react"
-import BaseRepositoryTableHeader from "./BaseRepositoryTableHeader"
+import { ExternalLink } from 'lucide-react'
+import type { ReactNode } from 'react'
+import BaseRepositoryTableHeader from './BaseRepositoryTableHeader'
 
 interface Column<T> {
   key: keyof T
   header: string
-  align?: "left" | "center" | "right"
+  align?: 'left' | 'center' | 'right'
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   render?: (value: any, item: T) => ReactNode
 }
@@ -18,22 +18,18 @@ interface BaseRepositoryTableProps<T> {
   columns: Column<T>[]
 }
 
-export default function BaseRepositoryTable<T extends { id: string; url: string }>({
-  title,
-  description,
-  icon,
-  data,
-  columns,
-}: BaseRepositoryTableProps<T>) {
+export default function BaseRepositoryTable<
+  T extends { id: string; url: string },
+>({ title, description, icon, data, columns }: BaseRepositoryTableProps<T>) {
   if (data.length === 0) return null
 
   return (
     <div className="bg-background border border-foreground/20 rounded-lg shadow-sm">
-      <BaseRepositoryTableHeader 
+      <BaseRepositoryTableHeader
         title={title}
         description={description}
         icon={icon}
-        length={data.length} 
+        length={data.length}
       />
       <div className="overflow-x-auto">
         <table className="w-full">
@@ -43,7 +39,11 @@ export default function BaseRepositoryTable<T extends { id: string; url: string 
                 <th
                   key={String(column.key)}
                   className={`px-6 py-3 text-xs font-medium text-foreground/60 uppercase tracking-wider ${
-                    column.align === "center" ? "text-center" : column.align === "right" ? "text-right" : "text-left"
+                    column.align === 'center'
+                      ? 'text-center'
+                      : column.align === 'right'
+                        ? 'text-right'
+                        : 'text-left'
                   }`}
                 >
                   {column.header}
@@ -61,10 +61,16 @@ export default function BaseRepositoryTable<T extends { id: string; url: string 
                   <td
                     key={String(column.key)}
                     className={`px-6 py-4 text-sm ${
-                      column.align === "center" ? "text-center" : column.align === "right" ? "text-right" : "text-left"
+                      column.align === 'center'
+                        ? 'text-center'
+                        : column.align === 'right'
+                          ? 'text-right'
+                          : 'text-left'
                     }`}
                   >
-                    {column.render ? column.render(item[column.key], item) : String(item[column.key])}
+                    {column.render
+                      ? column.render(item[column.key], item)
+                      : String(item[column.key])}
                   </td>
                 ))}
                 <td className="px-6 py-4 text-center">
