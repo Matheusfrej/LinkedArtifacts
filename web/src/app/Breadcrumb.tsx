@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { ChevronRight } from "lucide-react"
 
 export default function Breadcrumb() {
   const pathname = usePathname()
@@ -40,15 +41,7 @@ export default function Breadcrumb() {
       <div className="flex items-center space-x-2 text-sm">
         {breadcrumbItems.map((item, index) => (
           <div key={item.href} className="flex items-center">
-            {index > 0 && (
-              <svg className="w-4 h-4 mx-2 text-foreground/40" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            )}
+            {index > 0 && <ChevronRight className="w-4 h-4 mx-2 text-foreground/40" />}
             {item.current ? (
               <span className="text-foreground font-medium truncate max-w-xs">{item.label}</span>
             ) : (
