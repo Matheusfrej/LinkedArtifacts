@@ -1,6 +1,6 @@
 'use client'
 import { useState, useMemo } from 'react'
-import SearchBar from './SearchBar'
+import SearchBar from './components/SearchBar'
 import Link from 'next/link'
 
 const papers = [
