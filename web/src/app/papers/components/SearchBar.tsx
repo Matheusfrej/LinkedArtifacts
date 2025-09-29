@@ -1,5 +1,7 @@
 'use client'
 
+import type React from 'react'
+
 interface SearchBarProps {
   value: string
   onChange: (value: string) => void
@@ -7,6 +9,8 @@ interface SearchBarProps {
 }
 
 import { useState } from 'react'
+import { Button } from 'components/ui/Button'
+import { Input } from 'components/ui/Input'
 
 export default function SearchBar({
   value,
@@ -17,7 +21,7 @@ export default function SearchBar({
 
   // Keep local input in sync if parent resets value
   // (optional, can be omitted if not needed)
-  // useEffect(() => { setInput(value); }, [value]);
+  // useEffect(() => { setInput(value); }, [value])
 
   const handleSearch = () => {
     onChange(input)
@@ -31,21 +35,17 @@ export default function SearchBar({
 
   return (
     <div className="flex justify-center mb-8 gap-2">
-      <input
+      <Input
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={handleKeyDown}
         placeholder={placeholder || 'Search...'}
-        className="w-full max-w-xl px-4 py-2 border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-300 dark:bg-gray-800 dark:text-gray-100"
+        className="w-full max-w-xl"
       />
-      <button
-        onClick={handleSearch}
-        className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
-        aria-label="Search papers"
-      >
+      <Button onClick={handleSearch} aria-label="Search papers">
         Search
-      </button>
+      </Button>
     </div>
   )
 }

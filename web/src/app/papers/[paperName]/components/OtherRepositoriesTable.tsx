@@ -1,5 +1,6 @@
 import { Zap, ExternalLink } from 'lucide-react'
 import BaseRepositoryTableHeader from './BaseRepositoryTableHeader'
+import { Table, TableBody, TableCell, TableRow } from 'components/ui/Table'
 
 interface OtherRepository {
   id: string
@@ -24,14 +25,11 @@ export default function OtherRepositoriesTable({
         length={data.length}
       />
       <div className="overflow-x-auto">
-        <table className="w-full">
-          <tbody>
+        <Table>
+          <TableBody>
             {data.map((repo) => (
-              <tr
-                key={repo.id}
-                className="border-b border-foreground/5 hover:bg-foreground/5 transition-colors"
-              >
-                <td className="py-3 px-6">
+              <TableRow key={repo.id}>
+                <TableCell className="py-3 px-6">
                   <a
                     href={repo.url}
                     target="_blank"
@@ -41,11 +39,11 @@ export default function OtherRepositoriesTable({
                     {repo.url}
                     <ExternalLink className="w-3 h-3" />
                   </a>
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
     </div>
   )

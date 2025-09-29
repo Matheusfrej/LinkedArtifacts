@@ -29,7 +29,7 @@ export default function ZenodoTable({ data }: ZenodoTableProps) {
       key: 'version' as const,
       header: 'Version',
       render: (value: string) => (
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/20 text-blue-300">
+        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-500/20">
           {value}
         </span>
       ),

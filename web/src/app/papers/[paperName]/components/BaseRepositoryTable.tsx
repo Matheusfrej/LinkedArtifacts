@@ -1,6 +1,14 @@
 import { ExternalLink } from 'lucide-react'
 import type { ReactNode } from 'react'
 import BaseRepositoryTableHeader from './BaseRepositoryTableHeader'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from 'components/ui/Table'
 
 interface Column<T> {
   key: keyof T
@@ -32,13 +40,13 @@ export default function BaseRepositoryTable<
         length={data.length}
       />
       <div className="overflow-x-auto">
-        <table className="w-full">
-          <thead className="bg-foreground/5">
-            <tr>
+        <Table>
+          <TableHeader className="bg-foreground/5">
+            <TableRow>
               {columns.map((column) => (
-                <th
+                <TableHead
                   key={String(column.key)}
-                  className={`px-6 py-3 text-xs font-medium text-foreground/60 uppercase tracking-wider ${
+                  className={`${
                     column.align === 'center'
                       ? 'text-center'
                       : column.align === 'right'
@@ -47,20 +55,18 @@ export default function BaseRepositoryTable<
                   }`}
                 >
                   {column.header}
-                </th>
+                </TableHead>
               ))}
-              <th className="px-6 py-3 text-center text-xs font-medium text-foreground/60 uppercase tracking-wider">
-                Link
-              </th>
-            </tr>
-          </thead>
-          <tbody className="bg-background divide-y divide-foreground/10">
+              <TableHead className="text-center">Link</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
             {data.map((item) => (
-              <tr key={item.id} className="hover:bg-foreground/5">
+              <TableRow key={item.id}>
                 {columns.map((column) => (
-                  <td
+                  <TableCell
                     key={String(column.key)}
-                    className={`px-6 py-4 text-sm ${
+                    className={`${
                       column.align === 'center'
                         ? 'text-center'
                         : column.align === 'right'
@@ -71,9 +77,9 @@ export default function BaseRepositoryTable<
                     {column.render
                       ? column.render(item[column.key], item)
                       : String(item[column.key])}
-                  </td>
+                  </TableCell>
                 ))}
-                <td className="px-6 py-4 text-center">
+                <TableCell className="text-center">
                   <a
                     href={item.url}
                     target="_blank"
@@ -82,11 +88,11 @@ export default function BaseRepositoryTable<
                   >
                     <ExternalLink className="h-4 w-4" />
                   </a>
-                </td>
-              </tr>
+                </TableCell>
+              </TableRow>
             ))}
-          </tbody>
-        </table>
+          </TableBody>
+        </Table>
       </div>
     </div>
   )
