@@ -43,6 +43,7 @@ export default function BaseRepositoryTable<
         <Table>
           <TableHeader className="bg-foreground/5">
             <TableRow>
+              <TableHead>Link</TableHead>
               {columns.map((column) => (
                 <TableHead
                   key={String(column.key)}
@@ -57,12 +58,22 @@ export default function BaseRepositoryTable<
                   {column.header}
                 </TableHead>
               ))}
-              <TableHead className="text-center">Link</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {data.map((item) => (
               <TableRow key={item.id}>
+                <TableCell>
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 transition-colors"
+                  >
+                    {item.url}
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </TableCell>
                 {columns.map((column) => (
                   <TableCell
                     key={String(column.key)}
@@ -79,16 +90,6 @@ export default function BaseRepositoryTable<
                       : String(item[column.key])}
                   </TableCell>
                 ))}
-                <TableCell className="text-center">
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center h-8 w-8 rounded-md hover:bg-foreground/10 transition-colors text-foreground/60 hover:text-foreground"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                </TableCell>
               </TableRow>
             ))}
           </TableBody>
