@@ -5,6 +5,11 @@ export async function GET(
   _request: Request,
   _params: { params: { paperName: string } },
 ) {
+  const manualValidation = {
+    type: 'manual' as const,
+    verifiedBy: 'Matheus',
+    verifiedAt: '2025-10-27T00:00:00.000Z',
+  }
   const automaticValidation = {
     type: 'automatic' as const,
     ups: 0,
@@ -21,11 +26,7 @@ export async function GET(
       downloads: 340,
       citations: 15,
       url: 'https://zenodo.org/record/123456',
-      validation: {
-        type: 'manual' as const,
-        verifiedBy: 'Matheus',
-        verifiedAt: '2025-10-27T00:00:00.000Z',
-      },
+      validation: manualValidation,
     },
     {
       id: '2',
@@ -57,7 +58,7 @@ export async function GET(
       stars: 89,
       forks: 23,
       url: 'https://github.com/corner-py/examples',
-      validation: automaticValidation,
+      validation: manualValidation,
     },
   ]
 
@@ -83,7 +84,7 @@ export async function GET(
     {
       id: '2',
       url: 'https://researchgate.net/publication/123456789',
-      validation: automaticValidation,
+      validation: manualValidation,
     },
     {
       id: '3',
