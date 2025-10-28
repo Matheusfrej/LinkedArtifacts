@@ -1,4 +1,4 @@
-import PaperDetailClient from './components/PaperDetailClient'
+import PaperDetailClient from './components/PaperDetail'
 
 interface PageProps {
   params: Promise<{ paperName: string }>

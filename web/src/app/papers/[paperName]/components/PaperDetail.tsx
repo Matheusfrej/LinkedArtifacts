@@ -1,10 +1,10 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { listByPaperName } from '@/lib/service/artifacts/listByPaperName'
-import ZenodoTable from '../components/ZenodoTable'
-import GitHubTable from '../components/GitHubTable'
-import FigshareTable from '../components/FigshareTable'
-import OtherRepositoriesTable from '../components/OtherRepositoriesTable'
+import ZenodoTable from './ZenodoTable'
+import GitHubTable from './GitHubTable'
+import FigshareTable from './FigshareTable'
+import OtherRepositoriesTable from './OtherRepositoriesTable'
 import {
   FigshareArtifact,
   GitHubArtifact,
@@ -16,7 +16,7 @@ interface Props {
   paperName: string
 }
 
-export default function PaperDetailClient({ paperName }: Props) {
+export default function PaperDetail({ paperName }: Props) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [data, setData] = useState<{
