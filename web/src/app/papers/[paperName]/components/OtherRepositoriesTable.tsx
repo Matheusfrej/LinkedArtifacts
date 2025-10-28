@@ -2,6 +2,7 @@ import { Zap } from 'lucide-react'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { OtherRepository } from '@/@types'
 import ValidationAction from '@/components/ValidationAction'
+import { ValidationField } from './ValidationField'
 
 interface OtherRepositoriesTableProps {
   paperName: string
@@ -23,7 +24,7 @@ export default function OtherRepositoriesTable({
       columns={[
         {
           key: 'validation' as const,
-          header: 'Validation',
+          header: <ValidationField />,
           align: 'right' as const,
           render: (_value: unknown, item: OtherRepository) => (
             <ValidationAction

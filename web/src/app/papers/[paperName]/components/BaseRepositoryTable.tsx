@@ -12,7 +12,7 @@ import {
 
 interface Column<T> {
   key: keyof T
-  header: string
+  header: string | ReactNode
   align?: 'left' | 'center' | 'right'
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   render?: (value: any, item: T) => ReactNode

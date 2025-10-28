@@ -1,4 +1,4 @@
-import PaperDetailClient from './components/PaperDetail'
+import PaperDetail from './components/PaperDetail'
 
 interface PageProps {
   params: Promise<{ paperName: string }>
@@ -17,7 +17,7 @@ export default async function Page({ params }: PageProps) {
         <h2 className="text-xl text-foreground/70">Artifacts</h2>
       </div>
 
-      <PaperDetailClient paperName={decodedPaperName} />
+      <PaperDetail paperName={decodedPaperName} />
     </div>
   )
 }

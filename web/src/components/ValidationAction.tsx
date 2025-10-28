@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { ThumbsUp, ThumbsDown, CheckCircle } from 'lucide-react'
+import { ThumbsUp, ThumbsDown } from 'lucide-react'
 import { ArtifactValidation, AutomaticValidation } from '../@types'
 import {
   unvoteDown,
@@ -8,6 +8,7 @@ import {
   voteDown,
   voteUp,
 } from '../lib/service/artifacts'
+import { ArtifactVerified } from './ArtifactVerified'
 
 interface ValidationActionProps {
   paperName: string
@@ -63,9 +64,8 @@ export default function ValidationAction({
 
   if (validation.type === 'manual') {
     return (
-      <div className="flex items-center justify-end gap-1 text-emerald-600 dark:text-emerald-500">
-        <CheckCircle className="w-5 h-5" />
-        <span className="text-sm">Verified</span>
+      <div className="flex items-center justify-end">
+        <ArtifactVerified />
       </div>
     )
   }

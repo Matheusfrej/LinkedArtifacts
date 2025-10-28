@@ -2,6 +2,7 @@ import { FigshareArtifact } from '../../../../@types'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { Eye, Download, Database } from 'lucide-react'
 import ValidationAction from '@/components/ValidationAction'
+import { ValidationField } from './ValidationField'
 
 interface FigshareTableProps {
   paperName: string
@@ -56,7 +57,7 @@ export default function FigshareTable({ paperName, data }: FigshareTableProps) {
     },
     {
       key: 'validation' as const,
-      header: 'Validation',
+      header: <ValidationField />,
       align: 'right' as const,
       render: (_value: unknown, item: FigshareArtifact) => (
         <ValidationAction

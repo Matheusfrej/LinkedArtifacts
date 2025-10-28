@@ -1,7 +1,9 @@
-import { Star, GitFork } from 'lucide-react'
+import { Star, GitFork, HelpCircle } from 'lucide-react'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { GitHubArtifact } from '@/@types'
 import ValidationAction from '@/components/ValidationAction'
+import Link from 'next/link'
+import { ValidationField } from './ValidationField'
 
 interface GitHubTableProps {
   paperName: string
@@ -48,7 +50,7 @@ export default function GitHubTable({ paperName, data }: GitHubTableProps) {
     },
     {
       key: 'validation' as const,
-      header: 'Validation',
+      header: <ValidationField />,
       align: 'right' as const,
       render: (_value: unknown, item: GitHubArtifact) => (
         <ValidationAction

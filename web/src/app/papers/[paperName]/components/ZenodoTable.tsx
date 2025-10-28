@@ -2,6 +2,7 @@ import { ZenodoArtifact } from '@/@types'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { Eye, Download, FileText } from 'lucide-react'
 import ValidationAction from '@/components/ValidationAction'
+import { ValidationField } from './ValidationField'
 
 interface ZenodoTableProps {
   paperName: string
@@ -65,7 +66,7 @@ export default function ZenodoTable({ paperName, data }: ZenodoTableProps) {
     },
     {
       key: 'validation' as const,
-      header: 'Validation',
+      header: <ValidationField />,
       align: 'right' as const,
       render: (_value: unknown, item: ZenodoArtifact) => (
         <ValidationAction
