@@ -1,21 +1,19 @@
+import { useState } from 'react'
+import { FigshareArtifact } from '../../../@types/types'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { Eye, Download, Database } from 'lucide-react'
-
-export interface FigshareArtifact {
-  id: string
-  title: string
-  license: string
-  views: number
-  downloads: number
-  citations: number
-  url: string
-}
+import ValidationAction from '../../../../components/ValidationAction'
+import { vote } from '../../../../lib/service/artifacts'
 
 interface FigshareTableProps {
   data: FigshareArtifact[]
 }
 
-export default function FigshareTable({ data }: FigshareTableProps) {
+export default function FigshareTable({
+  data: initialData,
+}: FigshareTableProps) {
+  const [data, setData] = useState(initialData)
+
   const columns = [
     {
       key: 'title' as const,
@@ -59,6 +57,32 @@ export default function FigshareTable({ data }: FigshareTableProps) {
       align: 'right' as const,
       render: (value: number) => (
         <span className="text-foreground">{value}</span>
+      ),
+    },
+    {
+      key: 'validation' as const,
+      header: 'Validation',
+      align: 'right' as const,
+      render: (_value: unknown, item: FigshareArtifact) => (
+        <ValidationAction
+          artifactId={item.id}
+          validation={item.validation}
+          onVote={async (type, { increasing }) => {
+            const result = await vote({
+              artifactId: item.id,
+              type,
+              increasing,
+            })
+            // Update the local state with the new validation
+            setData(
+              data.map((artifact) =>
+                artifact.id === item.id
+                  ? { ...artifact, validation: result }
+                  : artifact,
+              ),
+            )
+          }}
+        />
       ),
     },
   ]

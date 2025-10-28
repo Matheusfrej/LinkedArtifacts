@@ -1,20 +1,16 @@
+import { useState } from 'react'
 import { Star, GitFork } from 'lucide-react'
 import BaseRepositoryTable from './BaseRepositoryTable'
-
-export interface GitHubArtifact {
-  id: string
-  name: string
-  license: string
-  stars: number
-  forks: number
-  url: string
-}
+import { GitHubArtifact } from '../../../@types/types'
+import ValidationAction from '../../../../components/ValidationAction'
+import { vote } from '../../../../lib/service/artifacts'
 
 interface GitHubTableProps {
   data: GitHubArtifact[]
 }
 
-export default function GitHubTable({ data }: GitHubTableProps) {
+export default function GitHubTable({ data: initialData }: GitHubTableProps) {
+  const [data, setData] = useState(initialData)
   const columns = [
     {
       key: 'name' as const,
@@ -50,6 +46,31 @@ export default function GitHubTable({ data }: GitHubTableProps) {
           <GitFork className="h-3 w-3" />
           {value.toLocaleString()}
         </div>
+      ),
+    },
+    {
+      key: 'validation' as const,
+      header: 'Validation',
+      align: 'right' as const,
+      render: (_value: unknown, item: GitHubArtifact) => (
+        <ValidationAction
+          artifactId={item.id}
+          validation={item.validation}
+          onVote={async (type, { increasing }) => {
+            const result = await vote({
+              artifactId: item.id,
+              type,
+              increasing,
+            })
+            setData(
+              data.map((artifact) =>
+                artifact.id === item.id
+                  ? { ...artifact, validation: result }
+                  : artifact,
+              ),
+            )
+          }}
+        />
       ),
     },
   ]

@@ -1,14 +1,16 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { listArtifactsByPaperName } from '../../../../lib/api/papers/listArtifactsByPaperName'
-import ZenodoTable, { type ZenodoArtifact } from '../components/ZenodoTable'
-import GitHubTable, { type GitHubArtifact } from '../components/GitHubTable'
-import FigshareTable, {
-  type FigshareArtifact,
-} from '../components/FigshareTable'
-import OtherRepositoriesTable, {
-  type OtherRepository,
-} from '../components/OtherRepositoriesTable'
+import { listByPaperName } from '../../../../lib/service/artifacts/listByPaperName'
+import ZenodoTable from '../components/ZenodoTable'
+import GitHubTable from '../components/GitHubTable'
+import FigshareTable from '../components/FigshareTable'
+import OtherRepositoriesTable from '../components/OtherRepositoriesTable'
+import {
+  FigshareArtifact,
+  GitHubArtifact,
+  OtherRepository,
+  ZenodoArtifact,
+} from '../../../@types/types'
 
 interface Props {
   paperName: string
@@ -30,7 +32,7 @@ export default function PaperDetailClient({ paperName }: Props) {
       setLoading(true)
       setError(null)
       try {
-        const res = await listArtifactsByPaperName({ paperName })
+        const res = await listByPaperName({ paperName })
         if (!cancelled)
           setData({
             zenodo: res.artifacts?.zenodo,

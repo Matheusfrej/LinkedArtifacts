@@ -1,22 +1,16 @@
+import { useState } from 'react'
+import { ZenodoArtifact } from '../../../@types/types'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { Eye, Download, FileText } from 'lucide-react'
-
-export interface ZenodoArtifact {
-  id: string
-  title: string
-  version: string
-  license: string
-  views: number
-  downloads: number
-  citations: number
-  url: string
-}
+import ValidationAction from '../../../../components/ValidationAction'
+import { vote } from '../../../../lib/service/artifacts'
 
 interface ZenodoTableProps {
   data: ZenodoArtifact[]
 }
 
-export default function ZenodoTable({ data }: ZenodoTableProps) {
+export default function ZenodoTable({ data: initialData }: ZenodoTableProps) {
+  const [data, setData] = useState(initialData)
   const columns = [
     {
       key: 'title' as const,
@@ -69,6 +63,31 @@ export default function ZenodoTable({ data }: ZenodoTableProps) {
       align: 'right' as const,
       render: (value: number) => (
         <span className="text-foreground">{value}</span>
+      ),
+    },
+    {
+      key: 'validation' as const,
+      header: 'Validation',
+      align: 'right' as const,
+      render: (_value: unknown, item: ZenodoArtifact) => (
+        <ValidationAction
+          artifactId={item.id}
+          validation={item.validation}
+          onVote={async (type, { increasing }) => {
+            const result = await vote({
+              artifactId: item.id,
+              type,
+              increasing,
+            })
+            setData(
+              data.map((artifact) =>
+                artifact.id === item.id
+                  ? { ...artifact, validation: result }
+                  : artifact,
+              ),
+            )
+          }}
+        />
       ),
     },
   ]

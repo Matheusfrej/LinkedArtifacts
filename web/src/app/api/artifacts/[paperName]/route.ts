@@ -1,10 +1,16 @@
 import { NextResponse } from 'next/server'
-import { ListArtifactsByPaperNameResponse } from '../../../../lib/api/papers/listArtifactsByPaperName'
+import type { ListByPaperNameResponse } from '../../../../lib/service/artifacts/listByPaperName'
 
 export async function GET(
-  request: Request,
-  { params }: { params: { paperName: string } },
+  _request: Request,
+  _params: { params: { paperName: string } },
 ) {
+  const automaticValidation = {
+    type: 'automatic' as const,
+    ups: 0,
+    downs: 0,
+  }
+
   const mockZenodoArtifacts = [
     {
       id: '1',
@@ -15,6 +21,11 @@ export async function GET(
       downloads: 340,
       citations: 15,
       url: 'https://zenodo.org/record/123456',
+      validation: {
+        type: 'manual' as const,
+        verifiedBy: 'Matheus',
+        verifiedAt: '2025-10-27T00:00:00.000Z',
+      },
     },
     {
       id: '2',
@@ -25,6 +36,7 @@ export async function GET(
       downloads: 156,
       citations: 8,
       url: 'https://zenodo.org/record/789012',
+      validation: automaticValidation,
     },
   ]
 
@@ -36,6 +48,7 @@ export async function GET(
       stars: 2340,
       forks: 456,
       url: 'https://github.com/dfm/corner.py',
+      validation: automaticValidation,
     },
     {
       id: '2',
@@ -44,6 +57,7 @@ export async function GET(
       stars: 89,
       forks: 23,
       url: 'https://github.com/corner-py/examples',
+      validation: automaticValidation,
     },
   ]
 
@@ -56,6 +70,7 @@ export async function GET(
       downloads: 123,
       citations: 4,
       url: 'https://figshare.com/articles/123456',
+      validation: automaticValidation,
     },
   ]
 
@@ -63,18 +78,21 @@ export async function GET(
     {
       id: '1',
       url: 'https://arxiv.org/abs/2301.12345',
+      validation: automaticValidation,
     },
     {
       id: '2',
       url: 'https://researchgate.net/publication/123456789',
+      validation: automaticValidation,
     },
     {
       id: '3',
       url: 'https://repository.university.edu/handle/123456789',
+      validation: automaticValidation,
     },
   ]
 
-  const result: ListArtifactsByPaperNameResponse = {
+  const result: ListByPaperNameResponse = {
     artifacts: {
       zenodo: mockZenodoArtifacts,
       github: mockGitHubArtifacts,
