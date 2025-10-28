@@ -360,24 +360,49 @@ function openArtifactPage(paperTitle) {
   window.open(`http://localhost:3000/papers/${encodeURIComponent(paperTitle)}`)
 }
 
-function createArtifactIcon(paperTitle, artifacts) {
-  // Only show icon if artifacts are present
-  if (!artifacts || artifacts.length === 0) return null;
+// Return a random state for demo/testing purposes
+function getRandomState() {
+  const states = ['success', 'processing', 'error', 'no_artifact']
+  return states[Math.floor(Math.random() * states.length)]
+}
+
+function createArtifactIcon(paperTitle, artifacts, state) {
   const icon = document.createElement('span');
   icon.className = 'artifact-icon';
-  icon.title = 'Show Artifacts';
   icon.style.marginLeft = '8px';
-  icon.style.cursor = 'pointer';
   icon.style.display = 'inline-block';
   icon.style.verticalAlign = 'middle';
   icon.style.width = '18px';
   icon.style.height = '18px';
-  icon.style.background = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%234285f4\'><circle cx=\'12\' cy=\'12\' r=\'10\' fill=\'%234285f4\'/><text x=\'12\' y=\'16\' text-anchor=\'middle\' font-size=\'12\' fill=\'white\'>A</text></svg>") no-repeat center/contain';
-  icon.onclick = (e) => {
-    e.stopPropagation();
-    openArtifactPage(paperTitle);
-    // createArtifactModal(paperTitle);
-  };
+  switch (state) {
+    case 'success':
+      icon.title = 'Show Artifacts';
+      // blue circle
+      icon.style.background = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%234285f4\'><circle cx=\'12\' cy=\'12\' r=\'10\' fill=\'%234285f4\'/><text x=\'12\' y=\'16\' text-anchor=\'middle\' font-size=\'12\' fill=\'white\'>A</text></svg>") no-repeat center/contain';
+      icon.style.cursor = 'pointer';
+      icon.onclick = (e) => {
+        e.stopPropagation();
+        openArtifactPage(paperTitle);
+      };
+      break;
+    case 'processing':
+      icon.title = 'Processing Paper...';
+      // yellow circle
+      icon.style.background = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'><circle cx=\'12\' cy=\'12\' r=\'10\' fill=\'%23f59e0b\'/><text x=\'12\' y=\'16\' text-anchor=\'middle\' font-size=\'12\' fill=\'white\'>A</text></svg>") no-repeat center/contain';
+      break;
+    case 'error':
+      icon.title = 'Error Extracting Artifacts';
+      // red circle with exclamation
+      icon.style.background = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'><circle cx=\'12\' cy=\'12\' r=\'10\' fill=\'%23ef4444\'/><text x=\'12\' y=\'16\' text-anchor=\'middle\' font-size=\'12\' fill=\'white\'>!</text></svg>") no-repeat center/contain';
+      break;
+    case 'no_artifact':
+      icon.title = 'No Artifacts';
+      // show a large red X centered
+      icon.style.background = 'url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'><circle cx=\'12\' cy=\'12\' r=\'10\' fill=\'%234285f4\'/><text x=\'12\' y=\'16\' text-anchor=\'middle\' font-size=\'12\' font-weight=\'bold\' fill=\'%23ef4444\'>✖</text></svg>") no-repeat center/contain';
+      break;
+    default:
+      throw new Error('undefined paper state.')
+  }
   return icon;
 }
 
@@ -399,7 +424,7 @@ async function addArtifactIcons() {
     if (inProgress.has(paperTitle)) continue;
     tasks.push({ paperTitle, inject: (artifacts) => {
       if (![...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
-        const icon = createArtifactIcon(paperTitle, artifacts);
+        const icon = createArtifactIcon(paperTitle, artifacts, getRandomState());
         if (icon) titleElem.appendChild(icon);
       }
     }});
@@ -415,7 +440,7 @@ async function addArtifactIcons() {
     if (inProgress.has(paperTitle)) continue;
     tasks.push({ paperTitle, inject: (artifacts) => {
       if (!(titleLink.nextSibling && titleLink.nextSibling.classList && titleLink.nextSibling.classList.contains('artifact-icon'))) {
-        const icon = createArtifactIcon(paperTitle, artifacts);
+        const icon = createArtifactIcon(paperTitle, artifacts, getRandomState());
         if (icon) titleLink.parentNode.insertBefore(icon, titleLink.nextSibling);
       }
     }});
@@ -427,7 +452,8 @@ async function addArtifactIcons() {
     const { paperTitle, inject } = tasks[idx];
     inProgress.add(paperTitle);
     try {
-      const [artifacts, errorMsg] = await fetchArtifacts(paperTitle);
+      // const [artifacts, errorMsg] = await fetchArtifacts(paperTitle);
+      const [artifacts, errorMsg] = [[{}], '']
       if (errorMsg) {
         $logger.warn(errorMsg);
       } else if (artifacts?.length > 0) {
