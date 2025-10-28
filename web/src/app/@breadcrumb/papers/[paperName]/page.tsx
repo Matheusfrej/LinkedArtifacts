@@ -2,7 +2,7 @@ import {
   BreadcrumbItem,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from 'components/ui/Breadcrumb'
+} from '@/components/ui/Breadcrumb'
 
 export default async function Page({
   params,

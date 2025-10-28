@@ -1,7 +1,7 @@
 import { Star, GitFork } from 'lucide-react'
 import BaseRepositoryTable from './BaseRepositoryTable'
-import { GitHubArtifact } from '../../../@types/types'
-import ValidationAction from '../../../../components/ValidationAction'
+import { GitHubArtifact } from '@/@types'
+import ValidationAction from '@/components/ValidationAction'
 
 interface GitHubTableProps {
   paperName: string

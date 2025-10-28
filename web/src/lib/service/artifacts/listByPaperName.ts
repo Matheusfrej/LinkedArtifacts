@@ -4,7 +4,7 @@ import type {
   GitHubArtifact,
   FigshareArtifact,
   OtherRepository,
-} from '../../../app/@types/types'
+} from '@/@types'
 
 export interface ListByPaperNameRequest {
   paperName: string

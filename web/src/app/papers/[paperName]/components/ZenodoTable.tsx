@@ -1,7 +1,7 @@
-import { ZenodoArtifact } from '../../../@types/types'
+import { ZenodoArtifact } from '@/@types'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { Eye, Download, FileText } from 'lucide-react'
-import ValidationAction from '../../../../components/ValidationAction'
+import ValidationAction from '@/components/ValidationAction'
 
 interface ZenodoTableProps {
   paperName: string

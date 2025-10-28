@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { listByPaperName } from '../../../../lib/service/artifacts/listByPaperName'
+import { listByPaperName } from '@/lib/service/artifacts/listByPaperName'
 import ZenodoTable from '../components/ZenodoTable'
 import GitHubTable from '../components/GitHubTable'
 import FigshareTable from '../components/FigshareTable'
@@ -10,7 +10,7 @@ import {
   GitHubArtifact,
   OtherRepository,
   ZenodoArtifact,
-} from '../../../@types/types'
+} from '@/@types'
 
 interface Props {
   paperName: string

@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { ThumbsUp, ThumbsDown, CheckCircle } from 'lucide-react'
-import { ArtifactValidation, AutomaticValidation } from '../app/@types/types'
+import { ArtifactValidation, AutomaticValidation } from '../@types'
 import {
   unvoteDown,
   unvoteUp,

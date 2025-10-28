@@ -1,7 +1,7 @@
-import { FigshareArtifact } from '../../../@types/types'
+import { FigshareArtifact } from '../../../../@types'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { Eye, Download, Database } from 'lucide-react'
-import ValidationAction from '../../../../components/ValidationAction'
+import ValidationAction from '@/components/ValidationAction'
 
 interface FigshareTableProps {
   paperName: string

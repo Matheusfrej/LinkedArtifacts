@@ -1,4 +1,4 @@
-import { Breadcrumb } from 'components/ui/Breadcrumb'
+import { Breadcrumb } from '@/components/ui/Breadcrumb'
 
 export default function Layout({
   children,

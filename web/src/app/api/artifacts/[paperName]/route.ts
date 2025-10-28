@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import type { ListByPaperNameResponse } from '../../../../lib/service/artifacts/listByPaperName'
+import type { ListByPaperNameResponse } from '@/lib/service/artifacts/listByPaperName'
 
 export async function GET(
   _request: Request,

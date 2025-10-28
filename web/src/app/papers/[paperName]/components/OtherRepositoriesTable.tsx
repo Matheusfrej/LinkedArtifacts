@@ -1,7 +1,7 @@
 import { Zap } from 'lucide-react'
 import BaseRepositoryTable from './BaseRepositoryTable'
-import { OtherRepository } from '../../../@types/types'
-import ValidationAction from '../../../../components/ValidationAction'
+import { OtherRepository } from '@/@types'
+import ValidationAction from '@/components/ValidationAction'
 
 interface OtherRepositoriesTableProps {
   paperName: string
