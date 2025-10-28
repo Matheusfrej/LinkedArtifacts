@@ -1,2 +1,5 @@
 export * from './listByPaperName'
-export * from './vote'
+export * from './voteUp'
+export * from './unvoteUp'
+export * from './voteDown'
+export * from './unvoteDown'

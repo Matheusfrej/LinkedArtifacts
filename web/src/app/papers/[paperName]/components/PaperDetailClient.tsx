@@ -68,10 +68,13 @@ export default function PaperDetailClient({ paperName }: Props) {
 
   return (
     <div className="py-8 space-y-8 max-w-6xl mx-auto px-4">
-      <ZenodoTable data={mockZenodoArtifacts} />
-      <GitHubTable data={mockGitHubArtifacts} />
-      <FigshareTable data={mockFigshareArtifacts} />
-      <OtherRepositoriesTable data={mockOtherRepositories} />
+      <ZenodoTable paperName={paperName} data={mockZenodoArtifacts} />
+      <GitHubTable paperName={paperName} data={mockGitHubArtifacts} />
+      <FigshareTable paperName={paperName} data={mockFigshareArtifacts} />
+      <OtherRepositoriesTable
+        paperName={paperName}
+        data={mockOtherRepositories}
+      />
 
       {mockZenodoArtifacts.length === 0 &&
         mockGitHubArtifacts.length === 0 &&

@@ -1,16 +1,14 @@
-import { useState } from 'react'
 import { Star, GitFork } from 'lucide-react'
 import BaseRepositoryTable from './BaseRepositoryTable'
 import { GitHubArtifact } from '../../../@types/types'
 import ValidationAction from '../../../../components/ValidationAction'
-import { vote } from '../../../../lib/service/artifacts'
 
 interface GitHubTableProps {
+  paperName: string
   data: GitHubArtifact[]
 }
 
-export default function GitHubTable({ data: initialData }: GitHubTableProps) {
-  const [data, setData] = useState(initialData)
+export default function GitHubTable({ paperName, data }: GitHubTableProps) {
   const columns = [
     {
       key: 'name' as const,
@@ -54,22 +52,8 @@ export default function GitHubTable({ data: initialData }: GitHubTableProps) {
       align: 'right' as const,
       render: (_value: unknown, item: GitHubArtifact) => (
         <ValidationAction
-          artifactId={item.id}
-          validation={item.validation}
-          onVote={async (type, { increasing }) => {
-            const result = await vote({
-              artifactId: item.id,
-              type,
-              increasing,
-            })
-            setData(
-              data.map((artifact) =>
-                artifact.id === item.id
-                  ? { ...artifact, validation: result }
-                  : artifact,
-              ),
-            )
-          }}
+          paperName={paperName}
+          initialValidation={item.validation}
         />
       ),
     },
