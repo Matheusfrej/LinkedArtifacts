@@ -1,5 +1,5 @@
 import express from 'express';
-import artifactRoutes from './infrastructure/http/routes/artifactRoutes';
+import artifactRoutes from './infrastructure/http/artifact/routes';
 
 const app = express();
 

@@ -1,4 +1,4 @@
-import { IArtifactRepository } from '../../domain/repositories/IArtifactRepository';
+import { IArtifactRepository } from '../../domain/artifact/IRepository';
 
 
 export class ListArtifacts {

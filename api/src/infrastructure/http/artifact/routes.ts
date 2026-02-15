@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { ArtifactController } from '../controllers/ArtifactController';
+import { ArtifactController } from './Controller';
 
 const router = Router();
 

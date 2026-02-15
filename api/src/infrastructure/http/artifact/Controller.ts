@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { ArtifactRepository } from '../../repositories/ArtifactRepository';
+import { DrizzleArtifactRepository } from './DrizzleRepository';
 import { ListArtifacts } from '../../../application/use-cases/ListArtifacts';
 
-const repo = new ArtifactRepository();
+const repo = new DrizzleArtifactRepository();
 const listUseCase = new ListArtifacts(repo);
 
 export class ArtifactController {
