@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/artifacts', artifactRoutes);
-app.use('/api/papers', paperRoutes);
+app.use('/artifacts', artifactRoutes);
+app.use('/papers', paperRoutes);
 
 export default app;

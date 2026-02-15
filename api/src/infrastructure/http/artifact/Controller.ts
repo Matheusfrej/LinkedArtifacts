@@ -1,12 +1,12 @@
 import { Request, Response } from 'express';
 import { DrizzleArtifactRepository } from './DrizzleRepository';
 import { ListArtifacts } from '../../../application/use-cases/ListArtifacts';
-import { FindArtifactsByPaperId } from '../../../application/use-cases/FindArtifactsByPaperId';
+import { ListArtifactsByPaperId } from '../../../application/use-cases/ListArtifactsByPaperId';
 import { Artifact } from '../../../domain/artifact/entity';
 
 const repo = new DrizzleArtifactRepository();
 const listUseCase = new ListArtifacts(repo);
-const findByPaperIdUseCase = new FindArtifactsByPaperId(repo);
+const findByPaperIdUseCase = new ListArtifactsByPaperId(repo);
 
 export class ArtifactController {
   static async list(req: Request, res: Response) {

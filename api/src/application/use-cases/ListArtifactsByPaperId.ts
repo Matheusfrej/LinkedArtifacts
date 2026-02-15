@@ -4,7 +4,7 @@ type Input = {
   paperId: number
 }
 
-export class FindArtifactsByPaperId {
+export class ListArtifactsByPaperId {
   constructor(private repo: IArtifactRepository) {}
 
   async execute({paperId} : Input) {
