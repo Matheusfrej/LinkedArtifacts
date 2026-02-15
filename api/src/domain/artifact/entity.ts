@@ -1,6 +1,7 @@
 export interface Artifact {
   id?: number;
-  title: string;
+  name?: string;
   url: string;
+  paperId: number;
   createdAt?: Date;
 }

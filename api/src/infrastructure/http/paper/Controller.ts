@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
-import { DrizzleArtifactRepository } from './DrizzleRepository';
-import { ListArtifacts } from '../../../application/use-cases/ListArtifacts';
+import { DrizzlePaperRepository } from './DrizzleRepository';
+import { ListPapers } from '../../../application/use-cases/ListPapers';
 
-const repo = new DrizzleArtifactRepository();
-const listUseCase = new ListArtifacts(repo);
+const repo = new DrizzlePaperRepository();
+const listUseCase = new ListPapers(repo);
 
-export class ArtifactController {
+export class PaperController {
   static async list(req: Request, res: Response) {
     try {
       const items = await listUseCase.execute();
