@@ -17,7 +17,7 @@ export interface AutomaticValidation extends BaseArtifactValidation {
 export type ArtifactValidation = ManualValidation | AutomaticValidation
 
 export interface ZenodoArtifact {
-  id: string
+  id: number
   title: string
   version: string
   license: string
@@ -29,13 +29,19 @@ export interface ZenodoArtifact {
 }
 
 interface OtherRepository {
-  id: string
+  id: number
   url: string
   validation?: ArtifactValidation
 }
 
+interface ArtifactTableRegistry {
+  id: number
+  name?: string
+  url: string
+}
+
 export interface GitHubArtifact {
-  id: string
+  id: number
   name: string
   license: string
   stars: number
@@ -45,7 +51,7 @@ export interface GitHubArtifact {
 }
 
 export interface FigshareArtifact {
-  id: string
+  id: number
   title: string
   license: string
   views: number

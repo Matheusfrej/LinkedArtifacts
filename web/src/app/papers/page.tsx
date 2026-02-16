@@ -1,27 +1,55 @@
 'use client'
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import SearchBar from './components/SearchBar'
 import Link from 'next/link'
-
-const papers = [
-  'corner. py: Scatterplot matrices in Python.',
-  'corner. py: Corner plots',
-  'Advanced visualization',
-  'The Journal of Open Source Software',
-  'kalepy: A Python package for kernel density estimation, sampling and plotting',
-  'uravu: Making Bayesian modelling easy (er)',
-  'Probing New physics with high-redshift quasars: axions and non-standard cosmology',
-  'Probing new physics with high-redshift quasars: axions and non-standard cosmology',
-]
+import { listPapers } from '@/lib/service/papers'
+import { AppError } from '@/utils/AppError'
 
 export default function Page() {
   const [query, setQuery] = useState('')
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const [papers, setPapers] = useState<
+    {
+      id: number
+      title: string
+    }[]
+  >([])
 
   const filteredPapers = useMemo(() => {
     const q = query.trim().toLowerCase()
     if (!q) return papers
-    return papers.filter((paper) => paper.toLowerCase().includes(q))
-  }, [query])
+    return papers.filter((paper) => paper.title.toLowerCase().includes(q))
+  }, [papers, query])
+
+  useEffect(() => {
+    let cancelled = false
+    const fetchData = async () => {
+      setLoading(true)
+      setError(null)
+      try {
+        const res = await listPapers()
+        if (!cancelled) setPapers(res)
+      } catch (err: unknown) {
+        console.error(err)
+        if (!cancelled)
+          setError((err as AppError)?.message || 'Failed to fetch data')
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
+    }
+
+    fetchData()
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  if (loading) return <div className="py-8">Loading papers...</div>
+  if (error)
+    return (
+      <div className="py-8 text-red-500">Error loading papers: {error}</div>
+    )
 
   return (
     <div className="py-8">
@@ -36,14 +64,14 @@ export default function Page() {
             No papers found.
           </li>
         ) : (
-          filteredPapers.map((paper, index) => (
-            <li key={paper + index} className="mb-8 text-left pl-8">
+          filteredPapers.map((paper) => (
+            <li key={paper.id} className="mb-8 text-left pl-8">
               <Link
-                href={`/papers/${encodeURIComponent(paper)}`}
+                href={`/papers/${paper.id}`}
                 className="text-[20px] font-serif leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8]"
                 tabIndex={0}
               >
-                {paper}
+                {paper.title}
               </Link>
             </li>
           ))

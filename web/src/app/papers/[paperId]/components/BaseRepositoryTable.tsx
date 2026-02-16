@@ -27,7 +27,7 @@ interface BaseRepositoryTableProps<T> {
 }
 
 export default function BaseRepositoryTable<
-  T extends { id: string; url: string },
+  T extends { id: number; url: string },
 >({ title, description, icon, data, columns }: BaseRepositoryTableProps<T>) {
   if (data.length === 0) return null
 
