@@ -10,7 +10,7 @@ const listUseCase = new ListPapers(repo);
 const listByTitlesUseCase = new ListPapersByTitles(repo);
 
 export class PaperController {
-  static async findById(req: Request, res: Response) {
+  static async findById(req: Request, res: Response, next: Function) {
     const raw = req.params.id
     const id = Number(raw)
 
@@ -22,22 +22,20 @@ export class PaperController {
       const item = await findByIdUseCase.execute({ id })
       return res.json(item)
     } catch (err) {
-      console.error(err);
-      return res.status(500).json({ message: 'Internal server error' });
+      next(err);
     }
   }
 
-  static async list(req: Request, res: Response) {
+  static async list(req: Request, res: Response, next: Function) {
     try {
       const items = await listUseCase.execute();
       return res.json(items);
     } catch (err) {
-      console.error(err);
-      return res.status(500).json({ message: 'Internal server error' });
+      next(err);
     }
   }
 
-  static async listByTitles(req: Request, res: Response) {
+  static async listByTitles(req: Request, res: Response, next: Function) {
     try {
       const titles = req.body?.titles;
 
@@ -74,10 +72,7 @@ export class PaperController {
       return res.json(items);
 
     } catch (err) {
-      console.error(err);
-      return res.status(500).json({
-        message: "Internal server error",
-      });
+      next(err);
     }
   }
 

@@ -9,7 +9,7 @@ const listUseCase = new ListArtifacts(repo);
 const findByPaperIdUseCase = new ListArtifactsByPaperId(repo);
 
 export class ArtifactController {
-  static async list(req: Request, res: Response) {
+  static async list(req: Request, res: Response, next: Function) {
     try {
       const paperId = req.query?.paperId;
       let items: Artifact[] = [];
@@ -25,8 +25,7 @@ export class ArtifactController {
 
       return res.json(items);
     } catch (err) {
-      console.error(err);
-      return res.status(500).json({ message: 'Internal server error' });
+      next(err);
     }
   }
 }

@@ -3,6 +3,7 @@ import { eq, inArray, sql } from "drizzle-orm";
 import { artifacts, papers } from '../../db/drizzle/schema';
 import { IPaperRepository, ListByTitlesRowsType } from '../../../domain/paper/IRepository';
 import { Paper } from '../../../domain/paper/entity';
+import { ResourceNotFoundError } from '../../../application/errors/ApplicationError';
 
 export class DrizzlePaperRepository implements IPaperRepository {
   async findById(id: number): Promise<Paper> {
@@ -12,6 +13,10 @@ export class DrizzlePaperRepository implements IPaperRepository {
       .where(eq(papers.id, id))
 
     const paper = rows[0]
+
+    if (!paper) {
+      throw new ResourceNotFoundError('Paper', id);
+    }
 
     return { 
       id: paper.id, 
