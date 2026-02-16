@@ -1,8 +1,15 @@
 import express from 'express';
+import cors from "cors";
 import artifactRoutes from './infrastructure/http/artifact/routes';
 import paperRoutes from './infrastructure/http/paper/routes';
 
 const app = express();
+
+app.use(cors({
+  origin: "http://localhost:3000", // frontend
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 app.use(express.json());
 
