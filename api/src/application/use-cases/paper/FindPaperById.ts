@@ -1,5 +1,5 @@
-import { Paper } from '../../domain/paper/entity';
-import { IPaperRepository } from '../../domain/paper/IRepository';
+import { Paper } from '../../../domain/paper/entity';
+import { IPaperRepository } from '../../../domain/paper/IRepository';
 
 type Input = {
   id: number

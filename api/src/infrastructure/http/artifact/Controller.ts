@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { DrizzleArtifactRepository } from './DrizzleRepository';
-import { ListArtifacts } from '../../../application/use-cases/ListArtifacts';
-import { ListArtifactsByPaperId } from '../../../application/use-cases/ListArtifactsByPaperId';
+import { ListArtifacts } from '../../../application/use-cases/artifact/ListArtifacts';
+import { ListArtifactsByPaperId } from '../../../application/use-cases/artifact/ListArtifactsByPaperId';
 import { Artifact } from '../../../domain/artifact/entity';
 
 const repo = new DrizzleArtifactRepository();

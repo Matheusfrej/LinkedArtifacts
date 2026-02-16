@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
 import { DrizzlePaperRepository } from './DrizzleRepository';
-import { ListPapers } from '../../../application/use-cases/ListPapers';
-import { ListPapersByTitles } from '../../../application/use-cases/ListPapersByTitles';
-import { FindPaperById } from '../../../application/use-cases/FindPaperById';
+import { ListPapers } from '../../../application/use-cases/paper/ListPapers';
+import { ListPapersByTitles } from '../../../application/use-cases/paper/ListPapersByTitles';
+import { FindPaperById } from '../../../application/use-cases/paper/FindPaperById';
 
 const repo = new DrizzlePaperRepository();
 const findByIdUseCase = new FindPaperById(repo);

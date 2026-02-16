@@ -5,15 +5,16 @@ export const papers = pgTable('papers', {
   id: serial('id').primaryKey(),
   title: text('title').notNull(),
   doi: text('doi').unique(),
-  createdAt: timestamp('created_at').defaultNow()
+  createdAt: timestamp('created_at').notNull().defaultNow()
 });
 
 export const artifacts = pgTable('artifacts', {
   id: serial('id').primaryKey(),
   name: text('name'),
   url: text('url').notNull(),
+  doi: text('doi').unique(),
   paperId: integer('paper_id').notNull().references(() => papers.id),
-  createdAt: timestamp('created_at').defaultNow()
+  createdAt: timestamp('created_at').notNull().defaultNow()
 });
 
 export const papersRelations = relations(papers, ({ many }) => ({
