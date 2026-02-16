@@ -1,5 +1,6 @@
 import { Paper } from '../../../domain/paper/entity';
 import { IPaperRepository } from '../../../domain/paper/IRepository';
+import { ValidationError } from '../../errors/ApplicationError';
 
 type Input = {
   paperTitles: string[]
@@ -21,6 +22,11 @@ export class ListPapersByTitles {
   constructor(private repo: IPaperRepository) {}
 
   async execute({ paperTitles } : Input): Promise<Output> {
+
+    if (paperTitles.length > 50) {
+      throw new ValidationError("maximum number of 'titles' is 50.")
+    }
+
     const sanitizedTitles = paperTitles.map(t => t.trim().toLowerCase())
     const rows = await this.repo.listByTitles(sanitizedTitles);
 
