@@ -11,7 +11,7 @@ const findByPaperIdUseCase = new ListArtifactsByPaperId(repo);
 export class ArtifactController {
   static async list(req: Request, res: Response) {
     try {
-      const { paperId } = req.query;
+      const paperId = req.query?.paperId;
       let items: Artifact[] = [];
       if (paperId) {
         if (paperId !== undefined && isNaN(Number(paperId))) {
