@@ -20,7 +20,7 @@ export class PaperController {
 
   static async listByTitles(req: Request, res: Response) {
     try {
-      const { titles } = req.body;
+      const titles = req.body?.titles;
 
       if (!titles) {
         return res.status(400).json({

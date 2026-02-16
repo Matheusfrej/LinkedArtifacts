@@ -1,18 +1,18 @@
 import { db } from '../../db/drizzle';
-import { eq, inArray } from "drizzle-orm";
+import { eq, inArray, sql } from "drizzle-orm";
 import { artifacts, papers } from '../../db/schema';
 import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { Paper } from '../../../domain/paper/entity';
 
 export class DrizzlePaperRepository implements IPaperRepository {
   async listByTitles(titles: string[]): Promise<Paper[]> {
-
+    const sanitizedTitles = titles.map(t => t.trim().toLowerCase())
 
     const rows = await db
       .select()
       .from(papers)
       .innerJoin(artifacts, eq(artifacts.paperId, papers.id))
-      .where(inArray(papers.title, titles));
+      .where(inArray(sql`lower(trim(${papers.title}))`, sanitizedTitles));
 
     const grouped = new Map<number, Paper>();
 
