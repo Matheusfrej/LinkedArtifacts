@@ -1,7 +1,7 @@
 import { db } from '../../db/drizzle';
 import { eq, inArray, sql } from "drizzle-orm";
 import { artifacts, papers } from '../../db/schema';
-import { IPaperRepository } from '../../../domain/paper/IRepository';
+import { IPaperRepository, ListByTitlesRowsType } from '../../../domain/paper/IRepository';
 import { Paper } from '../../../domain/paper/entity';
 
 export class DrizzlePaperRepository implements IPaperRepository {
@@ -20,38 +20,27 @@ export class DrizzlePaperRepository implements IPaperRepository {
       createdAt: paper.createdAt ?? undefined };
   }
   
-  async listByTitles(titles: string[]): Promise<Paper[]> {
-    const sanitizedTitles = titles.map(t => t.trim().toLowerCase())
-
+  async listByTitles(sanitizedTitles: string[]): Promise<ListByTitlesRowsType> {
     const rows = await db
       .select()
       .from(papers)
       .innerJoin(artifacts, eq(artifacts.paperId, papers.id))
       .where(inArray(sql`lower(trim(${papers.title}))`, sanitizedTitles));
 
-    const grouped = new Map<number, Paper>();
-
-    for (const r of rows) {
-      const paperId = r.papers.id;
-
-      // Create paper entry if not exists
-      if (!grouped.has(paperId)) {
-        grouped.set(paperId, {
-          id: r.papers.id,
-          title: r.papers.title,
-          artifacts: [],
-        });
+    return rows.map((row) => ({
+      papers: {
+        id: row.papers.id,
+        title: row.papers.title,
+        doi: row.papers.doi ?? undefined,
+        createdAt: row.papers.createdAt ?? undefined
+      },
+      artifacts: {
+        id: row.artifacts.id,
+        name: row.artifacts.name ?? undefined,
+        url: row.artifacts.url,
+        paperId: row.artifacts.paperId
       }
-
-      grouped.get(paperId)!.artifacts!.push({
-        id: r.artifacts.id,
-        name: r.artifacts.name ?? undefined,
-        url: r.artifacts.url,
-        paperId: paperId
-      });
-    }
-
-    return Array.from(grouped.values());
+    }));
   }
   async list(): Promise<Paper[]> {
     const rows = await db.select().from(papers);
