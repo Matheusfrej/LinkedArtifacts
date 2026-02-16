@@ -183,8 +183,8 @@ async function createArtifactModal(paperTitle) {
   setTimeout(() => content.focus(), 0);
 }
 
-function openArtifactPage(paperTitle) {
-  window.open(`http://localhost:3000/papers/${encodeURIComponent(paperTitle)}`)
+function openArtifactPage(paperId) {
+  window.open(`http://localhost:3000/papers/${paperId}`)
 }
 
 // Return a random state for demo/testing purposes
@@ -193,7 +193,7 @@ function getRandomState() {
   return states[Math.floor(Math.random() * states.length)]
 }
 
-function createArtifactIcon(paperTitle, artifacts, state) {
+function createArtifactIcon(paperId, artifacts, state) {
   const icon = document.createElement('span');
   icon.className = 'artifact-icon';
   icon.style.marginLeft = '8px';
@@ -209,7 +209,7 @@ function createArtifactIcon(paperTitle, artifacts, state) {
       icon.style.cursor = 'pointer';
       icon.onclick = (e) => {
         e.stopPropagation();
-        openArtifactPage(paperTitle);
+        openArtifactPage(paperId);
       };
       break;
     case 'processing':
@@ -234,11 +234,10 @@ function createArtifactIcon(paperTitle, artifacts, state) {
 }
 
 async function addArtifactIcons() {
-  // Throttle requests: process one paper at a time with delay
-  const DELAY_MS = 1000; // 1 second between requests
   const inProgress = $constant.artifactInProgress;
   // Collect all papers to process (main results and researcher profile)
   const tasks = [];
+  const uniqueTitles = new Set();
 
   // Main search results
   const entries = document.querySelectorAll('.gs_ri');
@@ -249,9 +248,10 @@ async function addArtifactIcons() {
     const paperTitle = link.textContent.trim();
     if ([...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) continue;
     if (inProgress.has(paperTitle)) continue;
-    tasks.push({ paperTitle, inject: (artifacts) => {
+    uniqueTitles.add(paperTitle);
+    tasks.push({ paperTitle, inject: (artifacts, paperId) => {
       if (![...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
-        const icon = createArtifactIcon(paperTitle, artifacts, getRandomState());
+        const icon = createArtifactIcon(paperId, artifacts, 'success');
         if (icon) titleElem.appendChild(icon);
       }
     }});
@@ -265,31 +265,41 @@ async function addArtifactIcons() {
     const paperTitle = titleLink.textContent.trim();
     if (titleLink.nextSibling && titleLink.nextSibling.classList && titleLink.nextSibling.classList.contains('artifact-icon')) continue;
     if (inProgress.has(paperTitle)) continue;
-    tasks.push({ paperTitle, inject: (artifacts) => {
+    uniqueTitles.add(paperTitle);
+    tasks.push({ paperTitle, inject: (artifacts, paperId) => {
       if (!(titleLink.nextSibling && titleLink.nextSibling.classList && titleLink.nextSibling.classList.contains('artifact-icon'))) {
-        const icon = createArtifactIcon(paperTitle, artifacts, getRandomState());
+        const icon = createArtifactIcon(paperId, artifacts, 'success');
         if (icon) titleLink.parentNode.insertBefore(icon, titleLink.nextSibling);
       }
     }});
   }
 
-  // Process tasks sequentially with delay to avoid API rate limits
-  async function processQueue(idx) {
-    if (idx >= tasks.length) return;
-    const { paperTitle, inject } = tasks[idx];
-    inProgress.add(paperTitle);
-    try {
-      // const [artifacts, errorMsg] = await fetchArtifacts(paperTitle);
-      const [artifacts, errorMsg] = [[{}], '']
-      if (errorMsg) {
-        $logger.warn(errorMsg);
-      } else if (artifacts?.length > 0) {
-        inject(artifacts);
-      }
-    } finally {
-      inProgress.delete(paperTitle);
-      setTimeout(() => processQueue(idx + 1), DELAY_MS);
+  if (tasks.length === 0) return;
+
+  // Call API to fetch papers with artifacts
+  try {
+    const titles = Array.from(uniqueTitles);
+    $logger.info(addArtifactIcons.name, 'Fetching papers for titles:', titles);
+    
+    const papers = await $api.listPapersByTitles({ titles })
+    // console.log(papers);
+    
+    // Create a map of titles to papers for quick lookup
+    const papersByTitle = new Map();
+    for (const paper of papers) {
+      papersByTitle.set(paper.title.toLowerCase().trim(), paper);
     }
+
+    // Inject icons for papers with artifacts
+    for (const { paperTitle, inject } of tasks) {
+      const paper = papersByTitle.get(paperTitle.toLowerCase().trim());
+      if (paper && paper.artifacts && paper.artifacts.length > 0) {
+        inProgress.add(paperTitle);
+        inject(paper.artifacts, paper.id);
+        inProgress.delete(paperTitle);
+      }
+    }
+  } catch (error) {
+    $logger.error(addArtifactIcons.name, 'Error fetching papers:', error);
   }
-  if (tasks.length > 0) processQueue(0);
 }
