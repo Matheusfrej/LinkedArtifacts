@@ -6,7 +6,7 @@ import paperRoutes from './infrastructure/http/paper/routes';
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000", // frontend
+  origin: "*", // frontend
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
