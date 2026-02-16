@@ -1,7 +1,7 @@
 {
   "name": "linkedartifacts-api",
   "version": "0.1.0",
-  "description": "Boilerplate REST API (DDD) with Express + TypeScript + Drizzle ORM",
+  "description": "linkedartifacts-api",
   "main": "dist/index.js",
   "type": "commonjs",
   "scripts": {
@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .ts",
     "drizzle:generate": "npx drizzle-kit generate",
     "drizzle:migrate": "npx drizzle-kit migrate",
+    "drizzle:studio": "npx drizzle-kit studio",
     "prepare": "echo \"Run npm install in /api to install dependencies\""
   },
   "keywords": [
