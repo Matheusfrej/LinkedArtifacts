@@ -5,12 +5,14 @@ import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { Paper } from '../../../domain/paper/entity';
 
 export class DrizzlePaperRepository implements IPaperRepository {
-  async listByNames(names: string[]): Promise<Paper[]> {
+  async listByTitles(titles: string[]): Promise<Paper[]> {
+
+
     const rows = await db
       .select()
       .from(papers)
       .innerJoin(artifacts, eq(artifacts.paperId, papers.id))
-      .where(inArray(papers.title, names));
+      .where(inArray(papers.title, titles));
 
     const grouped = new Map<number, Paper>();
 

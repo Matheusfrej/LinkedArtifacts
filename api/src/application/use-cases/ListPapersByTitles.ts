@@ -1,7 +1,7 @@
 import { IPaperRepository } from '../../domain/paper/IRepository';
 
 type Input = {
-  paperNames: string[]
+  paperTitles: string[]
 }
 
 type OutReg = {
@@ -16,11 +16,11 @@ type OutReg = {
 
 type Output = OutReg[]
 
-export class ListPapersByNames {
+export class ListPapersByTitles {
   constructor(private repo: IPaperRepository) {}
 
-  async execute({ paperNames } : Input): Promise<Output> {
-    const papers = await this.repo.listByNames(paperNames);
+  async execute({ paperTitles } : Input): Promise<Output> {
+    const papers = await this.repo.listByTitles(paperTitles);
 
     return papers.map((paper) => ({ 
       id: paper.id, 

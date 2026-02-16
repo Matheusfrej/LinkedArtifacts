@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
 import { DrizzlePaperRepository } from './DrizzleRepository';
 import { ListPapers } from '../../../application/use-cases/ListPapers';
-import { ListPapersByNames } from '../../../application/use-cases/ListPapersByNames';
+import { ListPapersByTitles } from '../../../application/use-cases/ListPapersByTitles';
 
 const repo = new DrizzlePaperRepository();
 const listUseCase = new ListPapers(repo);
-const listByNamesUseCase = new ListPapersByNames(repo);
+const listByTitlesUseCase = new ListPapersByTitles(repo);
 
 export class PaperController {
   static async list(req: Request, res: Response) {
@@ -18,39 +18,39 @@ export class PaperController {
     }
   }
 
-  static async listByNames(req: Request, res: Response) {
+  static async listByTitles(req: Request, res: Response) {
     try {
-      const { names } = req.body;
+      const { titles } = req.body;
 
-      if (!names) {
+      if (!titles) {
         return res.status(400).json({
-          error: "'names' is required",
+          error: "'titles' is required",
         });
       }
 
-      if (!Array.isArray(names)) {
+      if (!Array.isArray(titles)) {
         return res.status(400).json({
-          error: "'names' must be an array",
+          error: "'titles' must be an array",
         });
       }
 
-      if (names.length === 0) {
+      if (titles.length === 0) {
         return res.status(400).json({
-          error: "'names' cannot be empty",
+          error: "'titles' cannot be empty",
         });
       }
 
-      const invalid = names.find(
+      const invalid = titles.find(
         (n) => typeof n !== "string" || n.trim().length === 0
       );
 
       if (invalid !== undefined) {
         return res.status(400).json({
-          error: "'names' must contain only non-empty strings",
+          error: "'titles' must contain only non-empty strings",
         });
       }
 
-      const items = await listByNamesUseCase.execute({ paperNames: names });
+      const items = await listByTitlesUseCase.execute({ paperTitles: titles });
 
       return res.json(items);
 
