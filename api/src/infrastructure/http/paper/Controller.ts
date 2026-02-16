@@ -2,19 +2,38 @@ import { Request, Response } from 'express';
 import { DrizzlePaperRepository } from './DrizzleRepository';
 import { ListPapers } from '../../../application/use-cases/ListPapers';
 import { ListPapersByTitles } from '../../../application/use-cases/ListPapersByTitles';
+import { FindPaperById } from '../../../application/use-cases/FindPaperById';
 
 const repo = new DrizzlePaperRepository();
+const findByIdUseCase = new FindPaperById(repo);
 const listUseCase = new ListPapers(repo);
 const listByTitlesUseCase = new ListPapersByTitles(repo);
 
 export class PaperController {
+  static async findById(req: Request, res: Response) {
+    const raw = req.params.id
+    const id = Number(raw)
+
+    if (Number.isNaN(id)) {
+      return res.status(400).json({ message: 'Invalid paper id' })
+    }
+
+    try {
+      const item = await findByIdUseCase.execute({ id })
+      return res.json(item)
+    } catch (err) {
+      console.error(err);
+      return res.status(500).json({ message: 'Internal server error' });
+    }
+  }
+
   static async list(req: Request, res: Response) {
     try {
       const items = await listUseCase.execute();
       return res.json(items);
     } catch (err) {
       console.error(err);
-      return res.status(500).json({ error: 'Internal server error' });
+      return res.status(500).json({ message: 'Internal server error' });
     }
   }
 
@@ -24,19 +43,19 @@ export class PaperController {
 
       if (!titles) {
         return res.status(400).json({
-          error: "'titles' is required",
+          message: "'titles' is required",
         });
       }
 
       if (!Array.isArray(titles)) {
         return res.status(400).json({
-          error: "'titles' must be an array",
+          message: "'titles' must be an array",
         });
       }
 
       if (titles.length === 0) {
         return res.status(400).json({
-          error: "'titles' cannot be empty",
+          message: "'titles' cannot be empty",
         });
       }
 
@@ -46,7 +65,7 @@ export class PaperController {
 
       if (invalid !== undefined) {
         return res.status(400).json({
-          error: "'titles' must contain only non-empty strings",
+          message: "'titles' must contain only non-empty strings",
         });
       }
 
@@ -57,7 +76,7 @@ export class PaperController {
     } catch (err) {
       console.error(err);
       return res.status(500).json({
-        error: "Internal server error",
+        message: "Internal server error",
       });
     }
   }

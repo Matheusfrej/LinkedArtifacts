@@ -4,6 +4,7 @@ import { PaperController } from './Controller';
 const router = Router();
 
 router.get('/', PaperController.list);
+router.get('/:id', PaperController.findById)
 router.post('/by-titles', PaperController.listByTitles);
 
 export default router;

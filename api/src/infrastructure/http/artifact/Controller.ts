@@ -15,7 +15,7 @@ export class ArtifactController {
       let items: Artifact[] = [];
       if (paperId) {
         if (paperId !== undefined && isNaN(Number(paperId))) {
-          return res.status(400).json({ error: 'paperId must be a number' });
+          return res.status(400).json({ message: 'paperId must be a number' });
         }
 
         items = await findByPaperIdUseCase.execute({ paperId: +paperId });
@@ -26,7 +26,7 @@ export class ArtifactController {
       return res.json(items);
     } catch (err) {
       console.error(err);
-      return res.status(500).json({ error: 'Internal server error' });
+      return res.status(500).json({ message: 'Internal server error' });
     }
   }
 }

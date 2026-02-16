@@ -5,6 +5,21 @@ import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { Paper } from '../../../domain/paper/entity';
 
 export class DrizzlePaperRepository implements IPaperRepository {
+  async findById(id: number): Promise<Paper> {
+    const rows = await db
+      .select()
+      .from(papers)
+      .where(eq(papers.id, id))
+
+    const paper = rows[0]
+
+    return { 
+      id: paper.id, 
+      title: paper.title, 
+      doi: paper.doi ?? undefined, 
+      createdAt: paper.createdAt ?? undefined };
+  }
+  
   async listByTitles(titles: string[]): Promise<Paper[]> {
     const sanitizedTitles = titles.map(t => t.trim().toLowerCase())
 
