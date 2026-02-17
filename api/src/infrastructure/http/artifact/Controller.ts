@@ -6,7 +6,7 @@ import { Artifact } from '../../../domain/artifact/entity';
 
 const repo = new DrizzleArtifactRepository();
 const listUseCase = new ListArtifacts(repo);
-const findByPaperIdUseCase = new ListArtifactsByPaperId(repo);
+const listByPaperIdUseCase = new ListArtifactsByPaperId(repo);
 
 export class ArtifactController {
   static async list(req: Request, res: Response, next: Function) {
@@ -18,7 +18,7 @@ export class ArtifactController {
           return res.status(400).json({ message: 'paperId must be a number' });
         }
 
-        items = await findByPaperIdUseCase.execute({ paperId: +paperId });
+        items = await listByPaperIdUseCase.execute({ paperId: +paperId });
       } else {
         items = await listUseCase.execute();
       }

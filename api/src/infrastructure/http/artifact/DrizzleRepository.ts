@@ -5,7 +5,7 @@ import { Artifact } from '../../../domain/artifact/entity';
 import { eq } from 'drizzle-orm';
 
 export class DrizzleArtifactRepository implements IArtifactRepository {
-  async findByPaperId(paperId: number): Promise<Artifact[]> {
+  async listByPaperId(paperId: number): Promise<Artifact[]> {
     const rows = await db.select({
       id: artifacts.id,
       name: artifacts.name, 
