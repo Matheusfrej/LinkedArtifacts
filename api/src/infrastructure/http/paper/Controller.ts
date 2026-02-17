@@ -3,11 +3,13 @@ import { DrizzlePaperRepository } from './DrizzleRepository';
 import { ListPapers } from '../../../application/use-cases/paper/ListPapers';
 import { ListPapersByTitles } from '../../../application/use-cases/paper/ListPapersByTitles';
 import { FindPaperById } from '../../../application/use-cases/paper/FindPaperById';
+import { DrizzlePaperQuery } from './DrizzleQuery';
 
 const repo = new DrizzlePaperRepository();
+const query = new DrizzlePaperQuery();
 const findByIdUseCase = new FindPaperById(repo);
 const listUseCase = new ListPapers(repo);
-const listByTitlesUseCase = new ListPapersByTitles(repo);
+const listByTitlesUseCase = new ListPapersByTitles(query);
 
 export class PaperController {
   static async findById(req: Request, res: Response, next: Function) {

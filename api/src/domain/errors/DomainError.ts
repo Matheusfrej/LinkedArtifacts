@@ -5,3 +5,10 @@ export class DomainError extends Error {
     Object.setPrototypeOf(this, DomainError.prototype);
   }
 }
+
+export class DomainValidationError extends DomainError {
+  constructor(message: string) {
+    super(message);
+    Object.setPrototypeOf(this, DomainValidationError.prototype);
+  }
+}

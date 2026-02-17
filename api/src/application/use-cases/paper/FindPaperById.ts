@@ -1,16 +1,26 @@
-import { Paper } from '../../../domain/paper/entity';
 import { IPaperRepository } from '../../../domain/paper/IRepository';
 
-type Input = {
+type FindPaperByIdInputDTO = {
   id: number
 }
 
-type Output = Paper
+type FindPaperByIdOutputDTO = {
+  id: number,
+  title: string,
+  doi?: string,
+  createdAt?: Date,
+}
 
 export class FindPaperById {
   constructor(private repo: IPaperRepository) {}
 
-  async execute({ id } : Input): Promise<Output> {
-    return await this.repo.findById(id);
+  async execute({ id } : FindPaperByIdInputDTO): Promise<FindPaperByIdOutputDTO> {
+    const paper = await this.repo.findById(id)
+    return {
+      id: paper.id,
+      title: paper.getTitle(),
+      doi: paper.getDOI()?.value,
+      createdAt: paper.getCreatedAt()
+    };
   }
 }

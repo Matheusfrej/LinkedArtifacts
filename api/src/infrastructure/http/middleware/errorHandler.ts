@@ -17,12 +17,6 @@ export const errorHandler = (
     });
   }
 
-  if (err instanceof ValidationError) {
-    return res.status(400).json({
-      message: err.message,
-    });
-  }
-
   if (err instanceof ApplicationError) {
     return res.status(400).json({
       message: err.message,
