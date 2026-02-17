@@ -3,7 +3,7 @@ import { DOI } from "../../../domain/value-objects/DOI";
 import { URL } from "../../../domain/value-objects/URL";
 import { artifacts } from "../../db/drizzle/schema";
 
-export class ArtifactMapper {
+export class DrizzleArtifactMapper {
   static toDomain(raw: typeof artifacts.$inferSelect): Artifact {
     return new Artifact(
       raw.id,

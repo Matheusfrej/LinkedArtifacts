@@ -2,7 +2,7 @@ import { Paper } from "../../../domain/paper/entity";
 import { DOI } from "../../../domain/value-objects/DOI";
 import { papers } from "../../db/drizzle/schema";
 
-export class PaperMapper {
+export class DrizzlePaperMapper {
   static toDomain(raw: typeof papers.$inferSelect): Paper {
     return new Paper(
       raw.id,
