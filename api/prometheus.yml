@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s  # how often Prometheus collects metrics
+
+scrape_configs:
+  - job_name: "express-api"
+    static_configs:
+      - targets: ["api:4000"]
