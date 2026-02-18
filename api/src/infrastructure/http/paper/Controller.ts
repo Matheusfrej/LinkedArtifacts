@@ -1,9 +1,10 @@
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import { DrizzlePaperRepository } from './DrizzleRepository';
 import { ListPapers } from '../../../application/use-cases/paper/ListPapers';
 import { ListPapersByTitles } from '../../../application/use-cases/paper/ListPapersByTitles';
 import { FindPaperById } from '../../../application/use-cases/paper/FindPaperById';
 import { DrizzlePaperQuery } from './DrizzleQuery';
+import z from 'zod';
 
 const repo = new DrizzlePaperRepository();
 const query = new DrizzlePaperQuery();
@@ -12,15 +13,16 @@ const listUseCase = new ListPapers(repo);
 const listByTitlesUseCase = new ListPapersByTitles(query);
 
 export class PaperController {
-  static async findById(req: Request, res: Response, next: Function) {
-    const raw = req.params.id
-    const id = Number(raw)
-
-    if (Number.isNaN(id)) {
-      return res.status(400).json({ message: 'Invalid paper id' })
-    }
-
+  static async findById(req: Request, res: Response, next: NextFunction) {
     try {
+      const schema = z.object({
+        id: z.coerce.number({
+          error: "'id' must be a number."
+        })
+      })
+      
+      const { id } = schema.parse(req.params)
+
       const item = await findByIdUseCase.execute({ id })
       return res.json(item)
     } catch (err) {
@@ -28,7 +30,7 @@ export class PaperController {
     }
   }
 
-  static async list(req: Request, res: Response, next: Function) {
+  static async list(req: Request, res: Response, next: NextFunction) {
     try {
       const items = await listUseCase.execute();
       return res.json(items);
@@ -37,39 +39,25 @@ export class PaperController {
     }
   }
 
-  static async listByTitles(req: Request, res: Response, next: Function) {
+  static async listByTitles(req: Request, res: Response, next: NextFunction) {
     try {
-      const titles = req.body?.titles;
+      const schema = z.object({
+        titles: z
+          .array(
+            z.string().trim().min(1, {
+              message: "Titles must be non-empty strings",
+            })
+          )
+          .min(1, {
+            message: "'titles' cannot be empty",
+          }),
+      });
 
-      if (!titles) {
-        return res.status(400).json({
-          message: "'titles' is required",
-        });
-      }
+      const { titles } = schema.parse(req.body);
 
-      if (!Array.isArray(titles)) {
-        return res.status(400).json({
-          message: "'titles' must be an array",
-        });
-      }
-
-      if (titles.length === 0) {
-        return res.status(400).json({
-          message: "'titles' cannot be empty",
-        });
-      }
-
-      const invalid = titles.find(
-        (n) => typeof n !== "string" || n.trim().length === 0
-      );
-
-      if (invalid !== undefined) {
-        return res.status(400).json({
-          message: "'titles' must contain only non-empty strings",
-        });
-      }
-
-      const items = await listByTitlesUseCase.execute({ paperTitles: titles });
+      const items = await listByTitlesUseCase.execute({
+        paperTitles: titles,
+      });
 
       return res.json(items);
 

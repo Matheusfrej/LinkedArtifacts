@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { ApplicationError, ResourceNotFoundError, ValidationError } from '../../../application/errors/ApplicationError';
 import { DomainError } from '../../../domain/errors/DomainError';
+import z from 'zod';
 
 export const errorHandler = (
   err: Error,
@@ -9,6 +10,13 @@ export const errorHandler = (
   next: NextFunction
 ) => {
   console.error(err);
+
+  // Zod validation in controller
+  if (err instanceof z.ZodError) {
+      return res.status(400).json({
+        message: err.issues[0].message,
+      });
+    }
 
   // Handle Application Errors
   if (err instanceof ResourceNotFoundError) {
