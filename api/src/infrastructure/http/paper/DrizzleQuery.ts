@@ -1,9 +1,9 @@
 import { db } from '../../db/drizzle';
 import { eq, inArray, sql } from "drizzle-orm";
 import { artifacts, papers } from '../../db/drizzle/schema';
-import { IPaperQuery, PaperWithArtifactsDTO } from '../../../application/use-cases/paper/query/IQuery';
+import { IPaperQueryService, PaperWithArtifactsDTO } from '../../../application/use-cases/paper/service/IQueryService';
 
-export class DrizzlePaperQuery implements IPaperQuery {
+export class DrizzlePaperQueryService implements IPaperQueryService {
   async listByTitles(sanitizedTitles: string[]): Promise<PaperWithArtifactsDTO[]> {
     const rows = await db
       .select()

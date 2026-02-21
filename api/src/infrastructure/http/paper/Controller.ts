@@ -3,14 +3,16 @@ import { DrizzlePaperRepository } from './DrizzleRepository';
 import { ListPapers } from '../../../application/use-cases/paper/ListPapers';
 import { ListPapersByTitles } from '../../../application/use-cases/paper/ListPapersByTitles';
 import { FindPaperById } from '../../../application/use-cases/paper/FindPaperById';
-import { DrizzlePaperQuery } from './DrizzleQuery';
+import { DrizzlePaperQueryService } from './DrizzleQuery';
 import z from 'zod';
+import { RedisCacheService } from '../../redis/RedisCacheService';
 
 const repo = new DrizzlePaperRepository();
-const query = new DrizzlePaperQuery();
+const queryService = new DrizzlePaperQueryService();
+const cacheService = new RedisCacheService();
 const findByIdUseCase = new FindPaperById(repo);
-const listUseCase = new ListPapers(repo);
-const listByTitlesUseCase = new ListPapersByTitles(query);
+const listUseCase = new ListPapers(repo, cacheService);
+const listByTitlesUseCase = new ListPapersByTitles(queryService);
 
 export class PaperController {
   static async findById(req: Request, res: Response, next: NextFunction) {

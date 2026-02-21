@@ -5,6 +5,7 @@ import paperRoutes from './paper/routes';
 import { errorHandler } from './middleware/errorHandler';
 import { register } from '../prometheus/config';
 import { requestDurationMetric } from './middleware/requestDurationMetric';
+import { connectRedis } from '../redis/config';
 
 const app = express();
 
@@ -31,4 +32,12 @@ app.get("/metrics", async (req, res) => {
 // Error middleware must be the last middleware
 app.use(errorHandler);
 
-export default app;
+const PORT = process.env.PORT || 4000;
+
+export async function bootstrap() {
+  await connectRedis();
+
+  app.listen(Number(PORT), "0.0.0.0", () => {
+    console.log(`Server listening on port ${PORT}`);
+  });
+}

@@ -8,6 +8,6 @@ export type PaperWithArtifactsDTO = {
   }[];
 };
 
-export interface IPaperQuery {
+export interface IPaperQueryService {
   listByTitles(sanitizedTitles: string[]): Promise<PaperWithArtifactsDTO[]>;
 }

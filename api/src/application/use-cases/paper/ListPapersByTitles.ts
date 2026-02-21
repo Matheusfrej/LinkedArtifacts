@@ -1,5 +1,5 @@
 import { ValidationError } from '../../errors/ApplicationError';
-import { IPaperQuery, PaperWithArtifactsDTO } from './query/IQuery';
+import { IPaperQueryService, PaperWithArtifactsDTO } from './service/IQueryService';
 
 type ListPapersByTitlesInputDTO = {
   paperTitles: string[]
@@ -8,7 +8,7 @@ type ListPapersByTitlesInputDTO = {
 type ListPapersByTitlesOutputDTO = PaperWithArtifactsDTO[]
 
 export class ListPapersByTitles {
-  constructor(private query: IPaperQuery) {}
+  constructor(private queryService: IPaperQueryService) {}
 
   async execute({ paperTitles } : ListPapersByTitlesInputDTO): Promise<ListPapersByTitlesOutputDTO> {
 
@@ -17,6 +17,6 @@ export class ListPapersByTitles {
     }
 
     const sanitizedTitles = paperTitles.map(t => t.trim().toLowerCase())
-    return await this.query.listByTitles(sanitizedTitles);
+    return await this.queryService.listByTitles(sanitizedTitles);
   }
 }
