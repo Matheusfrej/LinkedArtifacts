@@ -2,11 +2,10 @@ import { IArtifactRepository } from '../../../domain/artifact/IRepository';
 
 type Artifact = {
   id: number,
-  name?: string,
+  name: string | null,
   url: string,
   paperId: number,
-  doi?: string,
-  createdAt?: Date,
+  doi: string | null,
 }
 
 type ListArtifactsOutputDTO = Artifact[]
@@ -17,11 +16,10 @@ export class ListArtifacts {
   async execute(): Promise<ListArtifactsOutputDTO> {
     return (await this.repo.list()).map(a => ({
       id: a.id,
-      name: a.getName(),
+      name: a.getName() ?? null,
       url: a.getUrl().value,
       paperId: a.getPaperId(),
-      doi: a.getDoi()?.value,
-      createdAt: a.getCreatedAt()
+      doi: a.getDoi()?.value ?? null
     }));
   }
 }

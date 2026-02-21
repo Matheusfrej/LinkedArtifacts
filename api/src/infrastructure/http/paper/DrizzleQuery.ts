@@ -24,7 +24,7 @@ export class DrizzlePaperQuery implements IPaperQuery {
       }
       grouped.get(paperId)!.artifacts.push({
         id: r.artifacts.id,
-        name: r.artifacts.name ?? undefined,
+        name: r.artifacts.name,
         url: r.artifacts.url,
       });
     }

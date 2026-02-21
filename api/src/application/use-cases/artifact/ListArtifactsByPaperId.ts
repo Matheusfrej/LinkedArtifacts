@@ -6,11 +6,10 @@ type ListArtifactsByPaperIdInputDTO = {
 
 type ArtifactByPaperId = {
   id: number,
-  name?: string,
+  name: string | null,
   url: string,
   paperId: number,
-  doi?: string,
-  createdAt?: Date,
+  doi: string | null,
 }
 
 type ListArtifactsByPaperIdOutputDTO = ArtifactByPaperId[]
@@ -21,11 +20,10 @@ export class ListArtifactsByPaperId {
   async execute({paperId} : ListArtifactsByPaperIdInputDTO): Promise<ListArtifactsByPaperIdOutputDTO> {
     return (await this.repo.listByPaperId(paperId)).map(a => ({
       id: a.id,
-      name: a.getName(),
+      name: a.getName() ?? null,
       url: a.getUrl().value,
       paperId: a.getPaperId(),
-      doi: a.getDoi()?.value,
-      createdAt: a.getCreatedAt()
+      doi: a.getDoi()?.value ?? null
     }));
   }
 }

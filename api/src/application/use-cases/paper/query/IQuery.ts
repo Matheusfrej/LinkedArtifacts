@@ -3,7 +3,7 @@ export type PaperWithArtifactsDTO = {
   title: string;
   artifacts: {
     id: number;
-    name?: string;
+    name: string | null;
     url: string;
   }[];
 };

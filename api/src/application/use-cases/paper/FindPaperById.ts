@@ -7,8 +7,7 @@ type FindPaperByIdInputDTO = {
 type FindPaperByIdOutputDTO = {
   id: number,
   title: string,
-  doi?: string,
-  createdAt?: Date,
+  doi: string | null,
 }
 
 export class FindPaperById {
@@ -19,8 +18,7 @@ export class FindPaperById {
     return {
       id: paper.id,
       title: paper.getTitle(),
-      doi: paper.getDOI()?.value,
-      createdAt: paper.getCreatedAt()
+      doi: paper.getDOI()?.value ?? null,
     };
   }
 }
