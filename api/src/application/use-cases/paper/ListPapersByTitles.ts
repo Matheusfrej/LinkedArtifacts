@@ -1,4 +1,5 @@
 import { ValidationError } from '../../errors/ApplicationError';
+import { UseCase } from '../base';
 import { IPaperQueryService, PaperWithArtifactsDTO } from './service/IQueryService';
 
 type ListPapersByTitlesInputDTO = {
@@ -7,7 +8,7 @@ type ListPapersByTitlesInputDTO = {
 
 type ListPapersByTitlesOutputDTO = PaperWithArtifactsDTO[]
 
-export class ListPapersByTitles {
+export class ListPapersByTitles implements UseCase<ListPapersByTitlesInputDTO, ListPapersByTitlesOutputDTO> {
   constructor(private queryService: IPaperQueryService) {}
 
   async execute({ paperTitles } : ListPapersByTitlesInputDTO): Promise<ListPapersByTitlesOutputDTO> {

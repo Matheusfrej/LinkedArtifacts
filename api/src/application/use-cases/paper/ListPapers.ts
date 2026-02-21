@@ -1,5 +1,6 @@
 import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { ICacheService } from '../../services/ICacheService';
+import { UseCase } from '../base';
 
 type Paper = {
   id: number,
@@ -10,7 +11,7 @@ type Paper = {
 
 type ListPapersOutputDTO = Paper[]
 
-export class ListPapers {
+export class ListPapers implements UseCase<void, ListPapersOutputDTO> {
   constructor(
     private repo: IPaperRepository, 
     private cache: ICacheService

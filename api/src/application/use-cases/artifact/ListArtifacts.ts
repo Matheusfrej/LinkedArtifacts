@@ -1,4 +1,5 @@
 import { IArtifactRepository } from '../../../domain/artifact/IRepository';
+import { UseCase } from '../base';
 
 type Artifact = {
   id: number,
@@ -10,7 +11,7 @@ type Artifact = {
 
 type ListArtifactsOutputDTO = Artifact[]
 
-export class ListArtifacts {
+export class ListArtifacts implements UseCase<void, ListArtifactsOutputDTO> {
   constructor(private repo: IArtifactRepository) {}
 
   async execute(): Promise<ListArtifactsOutputDTO> {

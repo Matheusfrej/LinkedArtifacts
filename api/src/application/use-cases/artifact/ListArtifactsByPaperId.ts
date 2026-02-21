@@ -1,4 +1,5 @@
 import { IArtifactRepository } from '../../../domain/artifact/IRepository';
+import { UseCase } from '../base';
 
 type ListArtifactsByPaperIdInputDTO = {
   paperId: number
@@ -14,7 +15,7 @@ type ArtifactByPaperId = {
 
 type ListArtifactsByPaperIdOutputDTO = ArtifactByPaperId[]
 
-export class ListArtifactsByPaperId {
+export class ListArtifactsByPaperId implements UseCase<ListArtifactsByPaperIdInputDTO, ListArtifactsByPaperIdOutputDTO> {
   constructor(private repo: IArtifactRepository) {}
 
   async execute({paperId} : ListArtifactsByPaperIdInputDTO): Promise<ListArtifactsByPaperIdOutputDTO> {
