@@ -17,20 +17,26 @@ export class ListPapers {
   ) {}
 
   async execute(): Promise<ListPapersOutputDTO> {
-    const cacheKey = ListPapers.name;
+    const cacheKey = "papers:list:v1";
 
     const cached = await this.cache.get<ListPapersOutputDTO>(cacheKey);
     if (cached) return cached;
 
-    const papers = (await this.repo.list()).map(p => ({
-      id: p.id,
-      title: p.getTitle(),
-      doi: p.getDOI()?.value ?? null,
-      hasArtifact: p.getArtifacts() ? true : false
-    }))
+    const papers = (await this.repo.list()).map(p => {
+      const artifacts = p.getArtifacts()
 
-    const oneHourInSeconds = 3600
-    await this.cache.set(cacheKey, papers, oneHourInSeconds);
+      let hasArtifact = false
+      if (artifacts && artifacts.length > 0) hasArtifact = true
+      return {
+        id: p.id,
+        title: p.getTitle(),
+        doi: p.getDOI()?.value ?? null,
+        hasArtifact
+      }
+    })
+
+    const CACHE_TTL_ONE_HOUR  = 3600
+    await this.cache.set(cacheKey, papers, CACHE_TTL_ONE_HOUR);
 
     return papers;
   }
