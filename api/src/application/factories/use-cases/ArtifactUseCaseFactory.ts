@@ -4,12 +4,12 @@ import { UseCase } from "../../use-cases/UseCase";
 import { UseCaseFactory } from "./UseCaseFactory";
 
 export class ArtifactUseCaseFactory extends UseCaseFactory {
-    makeListArtifacts(): UseCase<void, ListArtifactsOutputDTO> {
-      const repo = this.repoFactory.makeArtifactRepository()
-      return new ListArtifacts(repo)
-    }
-    makeListArtifactsByPaperId(): UseCase<ListArtifactsByPaperIdInputDTO, ListArtifactsByPaperIdOutputDTO> {
-      const repo = this.repoFactory.makeArtifactRepository()
-      return new ListArtifactsByPaperId(repo)
-    }
+  private readonly artifactRepo = this.repoFactory.makeArtifactRepository()
+
+  makeListArtifacts(): UseCase<void, ListArtifactsOutputDTO> {
+    return new ListArtifacts(this.artifactRepo)
+  }
+  makeListArtifactsByPaperId(): UseCase<ListArtifactsByPaperIdInputDTO, ListArtifactsByPaperIdOutputDTO> {
+    return new ListArtifactsByPaperId(this.artifactRepo)
+  }
 }

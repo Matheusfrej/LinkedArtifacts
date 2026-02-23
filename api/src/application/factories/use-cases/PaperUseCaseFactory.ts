@@ -5,30 +5,30 @@ import { ListPapersByTitles, ListPapersByTitlesInputDTO, ListPapersByTitlesOutpu
 import { UseCase } from "../../use-cases/UseCase";
 import { UseCaseFactory } from "./UseCaseFactory";
 
-export class PaperUseCaseFactory extends UseCaseFactory {  
-    makeListPapers(): UseCase<void, ListPapersOutputDTO> {
-      const repo = this.repoFactory.makePaperRepository()
-      const cache = this.cacheFactory.makeCacheService()
-      const useCase = new ListPapers(repo, cache)
-      const CACHE_TTL_ONE_HOUR  = 3600
+export class PaperUseCaseFactory extends UseCaseFactory {
+  private readonly paperRepo = this.repoFactory.makePaperRepository()
+  private readonly cache = this.cacheFactory.makeCacheService()
+  private readonly paperQuery = this.queryFactory.makePaperQueryService()
 
-      const cachedUseCase = new CachedUseCase(
-        useCase,
-        cache,
-        {
-          key: (input) => "papers:list:v1",
-          ttl: CACHE_TTL_ONE_HOUR
-        }
-      )
+  makeListPapers(): UseCase<void, ListPapersOutputDTO> {
+    const useCase = new ListPapers(this.paperRepo, this.cache)
+    const CACHE_TTL_ONE_HOUR  = 3600
 
-      return cachedUseCase
-    }
-    makeListPapersByTitles(): UseCase<ListPapersByTitlesInputDTO, ListPapersByTitlesOutputDTO> {
-      const query = this.queryFactory.makePaperQueryService()
-      return new ListPapersByTitles(query)
-    }
-    makeFindPaperById(): UseCase<FindPaperByIdInputDTO, FindPaperByIdOutputDTO> {
-      const repo = this.repoFactory.makePaperRepository()
-      return new FindPaperById(repo)
-    }
+    const cachedUseCase = new CachedUseCase(
+      useCase,
+      this.cache,
+      {
+        key: (input) => "papers:list:v1",
+        ttl: CACHE_TTL_ONE_HOUR
+      }
+    )
+
+    return cachedUseCase
+  }
+  makeListPapersByTitles(): UseCase<ListPapersByTitlesInputDTO, ListPapersByTitlesOutputDTO> {
+    return new ListPapersByTitles(this.paperQuery)
+  }
+  makeFindPaperById(): UseCase<FindPaperByIdInputDTO, FindPaperByIdOutputDTO> {
+    return new FindPaperById(this.paperRepo)
+  }
 }
