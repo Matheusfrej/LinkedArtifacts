@@ -1,7 +1,7 @@
 import { IArtifactRepository } from '../../../domain/artifact/IRepository';
-import { UseCase } from '../base';
+import { UseCase } from '../UseCase';
 
-type ListArtifactsByPaperIdInputDTO = {
+export type ListArtifactsByPaperIdInputDTO = {
   paperId: number
 }
 
@@ -13,7 +13,7 @@ type ArtifactByPaperId = {
   doi: string | null,
 }
 
-type ListArtifactsByPaperIdOutputDTO = ArtifactByPaperId[]
+export type ListArtifactsByPaperIdOutputDTO = ArtifactByPaperId[]
 
 export class ListArtifactsByPaperId implements UseCase<ListArtifactsByPaperIdInputDTO, ListArtifactsByPaperIdOutputDTO> {
   constructor(private repo: IArtifactRepository) {}

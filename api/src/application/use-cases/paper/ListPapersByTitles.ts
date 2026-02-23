@@ -1,12 +1,12 @@
 import { ValidationError } from '../../errors/ApplicationError';
-import { UseCase } from '../base';
+import { UseCase } from '../UseCase';
 import { IPaperQueryService, PaperWithArtifactsDTO } from './service/IQueryService';
 
-type ListPapersByTitlesInputDTO = {
+export type ListPapersByTitlesInputDTO = {
   paperTitles: string[]
 }
 
-type ListPapersByTitlesOutputDTO = PaperWithArtifactsDTO[]
+export type ListPapersByTitlesOutputDTO = PaperWithArtifactsDTO[]
 
 export class ListPapersByTitles implements UseCase<ListPapersByTitlesInputDTO, ListPapersByTitlesOutputDTO> {
   constructor(private queryService: IPaperQueryService) {}

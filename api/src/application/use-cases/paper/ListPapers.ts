@@ -1,6 +1,6 @@
 import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { ICacheService } from '../../services/ICacheService';
-import { UseCase } from '../base';
+import { UseCase } from '../UseCase';
 
 type Paper = {
   id: number,
@@ -9,7 +9,7 @@ type Paper = {
   hasArtifact: boolean
 }
 
-type ListPapersOutputDTO = Paper[]
+export type ListPapersOutputDTO = Paper[]
 
 export class ListPapers implements UseCase<void, ListPapersOutputDTO> {
   constructor(
@@ -18,11 +18,6 @@ export class ListPapers implements UseCase<void, ListPapersOutputDTO> {
   ) {}
 
   async execute(): Promise<ListPapersOutputDTO> {
-    const cacheKey = "papers:list:v1";
-
-    const cached = await this.cache.get<ListPapersOutputDTO>(cacheKey);
-    if (cached) return cached;
-
     const papers = (await this.repo.list()).map(p => {
       const artifacts = p.getArtifacts()
 
@@ -35,10 +30,6 @@ export class ListPapers implements UseCase<void, ListPapersOutputDTO> {
         hasArtifact
       }
     })
-
-    const CACHE_TTL_ONE_HOUR  = 3600
-    await this.cache.set(cacheKey, papers, CACHE_TTL_ONE_HOUR);
-
     return papers;
   }
 }

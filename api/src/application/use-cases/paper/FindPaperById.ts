@@ -1,11 +1,11 @@
 import { IPaperRepository } from '../../../domain/paper/IRepository';
-import { UseCase } from '../base';
+import { UseCase } from '../UseCase';
 
-type FindPaperByIdInputDTO = {
+export type FindPaperByIdInputDTO = {
   id: number
 }
 
-type FindPaperByIdOutputDTO = {
+export type FindPaperByIdOutputDTO = {
   id: number,
   title: string,
   doi: string | null,

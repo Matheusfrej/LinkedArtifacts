@@ -1,15 +1,18 @@
 import { NextFunction, Request, Response } from 'express';
-import { DrizzleArtifactRepository } from './DrizzleRepository';
-import { ListArtifacts } from '../../../application/use-cases/artifact/ListArtifacts';
-import { ListArtifactsByPaperId } from '../../../application/use-cases/artifact/ListArtifactsByPaperId';
+import { BaseExpressController } from '../BaseExpressController';
+import { ArtifactUseCaseFactory } from '../../../application/factories/use-cases/ArtifactUseCaseFactory';
 import z from 'zod';
 
-const repo = new DrizzleArtifactRepository();
-const listUseCase = new ListArtifacts(repo);
-const listByPaperIdUseCase = new ListArtifactsByPaperId(repo);
+export class ArtifactController extends BaseExpressController<ArtifactUseCaseFactory> {
+  constructor(useCaseFactory: ArtifactUseCaseFactory) {
+    super(useCaseFactory);
+    this.defineRoutes();
+  }
 
-export class ArtifactController {
-  static async list(req: Request, res: Response, next: NextFunction) {
+  defineRoutes(): void {
+    this.router.get('/', this.list);
+  }
+  private list = async (req: Request, res: Response, next: NextFunction) => {
     try {
         const schema = z.object({
           paperId: z.coerce.number({
@@ -20,10 +23,10 @@ export class ArtifactController {
         const { paperId } = schema.parse(req.query)
         
         if (paperId) {
-          const items = await listByPaperIdUseCase.execute({ paperId })
+          const items = await this.useCaseFactory.makeListArtifactsByPaperId().execute({ paperId })
           return res.json(items);
         }
-        const items = await listUseCase.execute()
+        const items = await this.useCaseFactory.makeListArtifacts().execute()
         return res.json(items);
     } catch (err) {
       next(err);

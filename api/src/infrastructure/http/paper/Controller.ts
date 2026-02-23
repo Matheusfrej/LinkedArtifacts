@@ -1,21 +1,22 @@
 import { NextFunction, Request, Response } from 'express';
-import { DrizzlePaperRepository } from './DrizzleRepository';
-import { ListPapers } from '../../../application/use-cases/paper/ListPapers';
-import { ListPapersByTitles } from '../../../application/use-cases/paper/ListPapersByTitles';
-import { FindPaperById } from '../../../application/use-cases/paper/FindPaperById';
-import { DrizzlePaperQueryService } from './DrizzleQuery';
+import { BaseExpressController } from '../BaseExpressController';
+import { PaperUseCaseFactory } from '../../../application/factories/use-cases/PaperUseCaseFactory';
 import z from 'zod';
-import { RedisCacheService } from '../../redis/RedisCacheService';
 
-const repo = new DrizzlePaperRepository();
-const queryService = new DrizzlePaperQueryService();
-const cacheService = new RedisCacheService();
-const findByIdUseCase = new FindPaperById(repo);
-const listUseCase = new ListPapers(repo, cacheService);
-const listByTitlesUseCase = new ListPapersByTitles(queryService);
 
-export class PaperController {
-  static async findById(req: Request, res: Response, next: NextFunction) {
+export class PaperController extends BaseExpressController<PaperUseCaseFactory> {
+  constructor(useCaseFactory: PaperUseCaseFactory) {
+    super(useCaseFactory);
+    this.defineRoutes();
+  }
+
+  defineRoutes(): void {
+    this.router.get('/', this.list);
+    this.router.get('/:id', this.findById)
+    this.router.post('/by-titles', this.listByTitles);
+  }
+
+  private findById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const schema = z.object({
         id: z.coerce.number({
@@ -25,23 +26,23 @@ export class PaperController {
       
       const { id } = schema.parse(req.params)
 
-      const item = await findByIdUseCase.execute({ id })
+      const item = await this.useCaseFactory.makeFindPaperById().execute({ id })
       return res.json(item)
     } catch (err) {
       next(err);
     }
   }
 
-  static async list(req: Request, res: Response, next: NextFunction) {
+  private list = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const items = await listUseCase.execute();
+      const items = await this.useCaseFactory.makeListPapers().execute();
       return res.json(items);
     } catch (err) {
       next(err);
     }
   }
 
-  static async listByTitles(req: Request, res: Response, next: NextFunction) {
+  private listByTitles = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const schema = z.object({
         titles: z
@@ -57,7 +58,7 @@ export class PaperController {
 
       const { titles } = schema.parse(req.body);
 
-      const items = await listByTitlesUseCase.execute({
+      const items = await this.useCaseFactory.makeListPapersByTitles().execute({
         paperTitles: titles,
       });
 

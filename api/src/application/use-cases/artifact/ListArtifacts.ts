@@ -1,5 +1,5 @@
 import { IArtifactRepository } from '../../../domain/artifact/IRepository';
-import { UseCase } from '../base';
+import { UseCase } from '../UseCase';
 
 type Artifact = {
   id: number,
@@ -9,7 +9,7 @@ type Artifact = {
   doi: string | null,
 }
 
-type ListArtifactsOutputDTO = Artifact[]
+export type ListArtifactsOutputDTO = Artifact[]
 
 export class ListArtifacts implements UseCase<void, ListArtifactsOutputDTO> {
   constructor(private repo: IArtifactRepository) {}
