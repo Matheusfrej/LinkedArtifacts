@@ -1,4 +1,5 @@
 import { IArtifactRepository } from '../../../domain/artifact/IRepository';
+import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { UseCase } from '../UseCase';
 
 export type ListArtifactsByPaperIdInputDTO = {
@@ -16,10 +17,15 @@ type ArtifactByPaperId = {
 export type ListArtifactsByPaperIdOutputDTO = ArtifactByPaperId[]
 
 export class ListArtifactsByPaperId implements UseCase<ListArtifactsByPaperIdInputDTO, ListArtifactsByPaperIdOutputDTO> {
-  constructor(private repo: IArtifactRepository) {}
+  constructor(
+    private artifactRepo: IArtifactRepository, 
+    private paperRepo: IPaperRepository
+  ) {}
 
   async execute({paperId} : ListArtifactsByPaperIdInputDTO): Promise<ListArtifactsByPaperIdOutputDTO> {
-    return (await this.repo.listByPaperId(paperId)).map(a => ({
+    await this.paperRepo.findById(paperId)
+
+    return (await this.artifactRepo.listByPaperId(paperId)).map(a => ({
       id: a.id,
       name: a.getName() ?? null,
       url: a.getUrl().value,
