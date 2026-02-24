@@ -7,25 +7,11 @@ import { DrizzleArtifactMapper } from './DrizzleMapper';
 
 export class DrizzleArtifactRepository implements IArtifactRepository {
   async listByPaperId(paperId: number): Promise<Artifact[]> {
-    const rows = await db.select({
-      id: artifacts.id,
-      name: artifacts.name, 
-      url: artifacts.url, 
-      paperId: artifacts.paperId, 
-      doi: artifacts.doi, 
-      createdAt: artifacts.createdAt 
-  }).from(artifacts).where(eq(artifacts.paperId, paperId));
+    const rows = await db.select().from(artifacts).where(eq(artifacts.paperId, paperId));
     return rows.map((r) => DrizzleArtifactMapper.toDomain(r));
   }
   async list(): Promise<Artifact[]> {
-    const rows = await db.select({
-      id: artifacts.id,
-      name: artifacts.name, 
-      url: artifacts.url, 
-      paperId: artifacts.paperId, 
-      doi: artifacts.doi, 
-      createdAt: artifacts.createdAt 
-    }).from(artifacts);
+    const rows = await db.select().from(artifacts);
     return rows.map((r) => DrizzleArtifactMapper.toDomain(r));
   }
 }
