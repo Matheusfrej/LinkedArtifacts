@@ -9,7 +9,7 @@ export async function bootstrap() {
   const drizzleRepoFactory = new DrizzleRepositoryFactory()
   const drizzleQueryFactory = new DrizzleQueryServiceFactory()
   const redisCacheFactory = new RedisCacheServiceFactory()
-  const artifactUseCaseFactory = new ArtifactUseCaseFactory(drizzleRepoFactory, redisCacheFactory, drizzleQueryFactory)
+  const artifactUseCaseFactory = new ArtifactUseCaseFactory(drizzleRepoFactory)
   const paperUseCaseFactory = new PaperUseCaseFactory(drizzleRepoFactory, redisCacheFactory, drizzleQueryFactory)
   const server = new ExpressApiServer(artifactUseCaseFactory, paperUseCaseFactory)
   await server.start();

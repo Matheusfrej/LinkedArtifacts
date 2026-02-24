@@ -1,7 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
 import { BaseExpressController } from '../BaseExpressController';
 import { ArtifactUseCaseFactory } from '../../../application/factories/use-cases/ArtifactUseCaseFactory';
-import z from 'zod';
+import { listSchema, ListSchemaType } from './schemas';
+import { validate } from '../middleware/validate';
 
 export class ArtifactController extends BaseExpressController<ArtifactUseCaseFactory> {
   constructor(useCaseFactory: ArtifactUseCaseFactory) {
@@ -10,17 +11,11 @@ export class ArtifactController extends BaseExpressController<ArtifactUseCaseFac
   }
 
   defineRoutes(): void {
-    this.router.get('/', this.list);
+    this.router.get('/', validate(listSchema), this.list);
   }
   private list = async (req: Request, res: Response, next: NextFunction) => {
     try {
-        const schema = z.object({
-          paperId: z.coerce.number({
-            error: "'paperId' must be a number."
-          }).optional()
-        })
-
-        const { paperId } = schema.parse(req.query)
+        const { paperId } = (req.validatedPayload as ListSchemaType).query
         
         if (paperId) {
           const items = await this.useCaseFactory.makeListArtifactsByPaperId().execute({ paperId })

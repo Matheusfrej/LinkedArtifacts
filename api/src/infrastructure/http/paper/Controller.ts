@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
 import { BaseExpressController } from '../BaseExpressController';
 import { PaperUseCaseFactory } from '../../../application/factories/use-cases/PaperUseCaseFactory';
-import z from 'zod';
-
+import { validate } from '../middleware/validate';
+import { findByIdSchema, FindByIdSchemaType, listByTitlesSchema, ListByTitlesSchemaType } from './schemas';
 
 export class PaperController extends BaseExpressController<PaperUseCaseFactory> {
   constructor(useCaseFactory: PaperUseCaseFactory) {
@@ -12,19 +12,13 @@ export class PaperController extends BaseExpressController<PaperUseCaseFactory> 
 
   defineRoutes(): void {
     this.router.get('/', this.list);
-    this.router.get('/:id', this.findById)
-    this.router.post('/by-titles', this.listByTitles);
+    this.router.get('/:id', validate(findByIdSchema),this.findById)
+    this.router.post('/by-titles', validate(listByTitlesSchema), this.listByTitles);
   }
 
   private findById = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const schema = z.object({
-        id: z.coerce.number({
-          error: "'id' must be a number."
-        })
-      })
-      
-      const { id } = schema.parse(req.params)
+      const { id } = (req.validatedPayload as FindByIdSchemaType).params
 
       const item = await this.useCaseFactory.makeFindPaperById().execute({ id })
       return res.json(item)
@@ -44,19 +38,7 @@ export class PaperController extends BaseExpressController<PaperUseCaseFactory> 
 
   private listByTitles = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const schema = z.object({
-        titles: z
-          .array(
-            z.string().trim().min(1, {
-              message: "Titles must be non-empty strings",
-            })
-          )
-          .min(1, {
-            message: "'titles' cannot be empty",
-          }),
-      });
-
-      const { titles } = schema.parse(req.body);
+      const { titles } = (req.validatedPayload as ListByTitlesSchemaType).body
 
       const items = await this.useCaseFactory.makeListPapersByTitles().execute({
         paperTitles: titles,
