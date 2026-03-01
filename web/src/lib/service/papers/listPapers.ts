@@ -3,8 +3,8 @@ import api from '..'
 type Paper = {
   id: number
   title: string
-  doi?: string
-  createdAt?: Date
+  doi: string | null
+  hasArtifact: boolean
 }
 
 export type ListPapersResponse = Paper[]

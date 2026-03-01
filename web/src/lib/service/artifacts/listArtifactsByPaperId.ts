@@ -6,9 +6,10 @@ export interface ListArtifactsByPaperIdRequest {
 
 type Artifact = {
   id: number
-  name?: string
+  name: string | null
   url: string
   paperId: number
+  doi: string | null
 }
 
 export type ListArtifactsByPaperIdResponse = Artifact[]

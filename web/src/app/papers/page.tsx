@@ -4,23 +4,30 @@ import SearchBar from './components/SearchBar'
 import Link from 'next/link'
 import { listPapers } from '@/lib/service/papers'
 import { AppError } from '@/utils/AppError'
+import ArtifactFilter from './components/ArtifactFilter'
 
 export default function Page() {
   const [query, setQuery] = useState('')
+  const [onlyWithArtifact, setOnlyWithArtifact] = useState(false)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [papers, setPapers] = useState<
     {
       id: number
       title: string
+      hasArtifact: boolean
     }[]
   >([])
 
   const filteredPapers = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!q) return papers
-    return papers.filter((paper) => paper.title.toLowerCase().includes(q))
-  }, [papers, query])
+
+    return papers.filter((paper) => {
+      const matchesQuery = !q || paper.title.toLowerCase().includes(q)
+      const matchesArtifact = !onlyWithArtifact || paper.hasArtifact
+      return matchesQuery && matchesArtifact
+    })
+  }, [papers, query, onlyWithArtifact])
 
   useEffect(() => {
     let cancelled = false
@@ -58,6 +65,12 @@ export default function Page() {
         onChange={setQuery}
         placeholder="Search papers..."
       />
+      <div className="flex flex-col justify-end items-end">
+        <ArtifactFilter
+          checked={onlyWithArtifact}
+          onChange={setOnlyWithArtifact}
+        />
+      </div>
       <ul>
         {filteredPapers.length === 0 ? (
           <li className="text-center text-gray-500 dark:text-gray-400">
@@ -72,6 +85,22 @@ export default function Page() {
                 tabIndex={0}
               >
                 {paper.title}
+
+                {paper.hasArtifact && (
+                  <span
+                    title="Show Artifacts"
+                    style={{
+                      marginLeft: '8px',
+                      display: 'inline-block',
+                      verticalAlign: 'middle',
+                      width: '18px',
+                      height: '18px',
+                      background:
+                        "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234285f4'><circle cx='12' cy='12' r='10' fill='%234285f4'/><text x='12' y='16' text-anchor='middle' font-size='12' fill='white'>A</text></svg>\") no-repeat center/contain",
+                      cursor: 'pointer',
+                    }}
+                  />
+                )}
               </Link>
             </li>
           ))

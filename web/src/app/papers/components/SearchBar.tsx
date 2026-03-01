@@ -19,10 +19,6 @@ export default function SearchBar({
 }: SearchBarProps) {
   const [input, setInput] = useState(value)
 
-  // Keep local input in sync if parent resets value
-  // (optional, can be omitted if not needed)
-  // useEffect(() => { setInput(value); }, [value])
-
   const handleSearch = () => {
     onChange(input)
   }

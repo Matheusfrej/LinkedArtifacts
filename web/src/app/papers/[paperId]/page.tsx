@@ -11,7 +11,10 @@ interface PageProps {
 export default function Page({ params }: PageProps) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [paperTitle, setPaperTitle] = useState<string | undefined>()
+  const [paper, setPaper] = useState<{
+    title: string
+    doi: string | null
+  }>()
   const { paperId } = React.use(params)
   useEffect(() => {
     let cancelled = false
@@ -19,8 +22,8 @@ export default function Page({ params }: PageProps) {
       setLoading(true)
       setError(null)
       try {
-        const paper = await findPaperById({ id: paperId })
-        if (!cancelled) setPaperTitle(paper.title)
+        const paperRes = await findPaperById({ id: paperId })
+        if (!cancelled) setPaper(paperRes)
       } catch (err: unknown) {
         console.error(err)
         if (!cancelled)
@@ -48,8 +51,19 @@ export default function Page({ params }: PageProps) {
   return (
     <div className="py-8 space-y-8 max-w-6xl mx-auto px-4">
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold text-foreground">{paperTitle}</h1>
-        <h2 className="text-xl text-foreground/70">Artifacts</h2>
+        <h1 className="text-3xl font-bold text-foreground">{paper?.title}</h1>
+        {paper?.doi && (
+          <h2 className="text-xl text-foreground/70">
+            <a
+              href={`https://doi.org/${paper.doi}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#1a0dab] hover:underline dark:text-[#8ab4f8]"
+            >
+              {`https://doi.org/${paper.doi}`}
+            </a>
+          </h2>
+        )}
       </div>
 
       <PaperDetail paperId={paperId} />

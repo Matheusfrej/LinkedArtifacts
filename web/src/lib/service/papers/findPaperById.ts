@@ -7,7 +7,7 @@ export interface FindPaperByIdRequest {
 export type FindPaperByIdResponse = {
   id: number
   title: string
-  doi?: string
+  doi: string | null
 }
 
 export async function findPaperById(

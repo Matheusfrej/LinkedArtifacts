@@ -14,7 +14,7 @@ export default function ArtifactTable({ data }: ArtifactTableProps) {
       key: 'name' as const,
       header: 'Name',
       render: (value: string) => (
-        <span className="font-medium text-foreground">{value}</span>
+        <span className="font-medium text-foreground">{value || '-'}</span>
       ),
     },
   ]
