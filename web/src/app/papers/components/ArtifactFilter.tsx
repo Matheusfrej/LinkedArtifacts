@@ -14,7 +14,7 @@ export default function ArtifactFilter({
         className="w-4 h-4"
       />
       <span className="text-sm text-gray-700 dark:text-gray-300">
-        Only with artifacts
+        Only with artifact
       </span>
     </label>
   )
