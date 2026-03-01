@@ -8,12 +8,14 @@ import { findPaperById } from '@/lib/service/papers'
 export default async function Page({
   params,
 }: {
-  params: { paperId: string }
+  params: Promise<{ paperId: string }>
 }) {
-  let idOrTitle = params.paperId
+  const { paperId } = await params
+
+  let idOrTitle = paperId
 
   try {
-    const id = Number(params.paperId)
+    const id = Number(paperId)
     if (!Number.isNaN(id)) {
       const paper = await findPaperById({ id })
       if (paper?.title) idOrTitle = paper.title
