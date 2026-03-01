@@ -93,8 +93,8 @@ export default function Page() {
                       marginLeft: '8px',
                       display: 'inline-block',
                       verticalAlign: 'middle',
-                      width: '18px',
-                      height: '18px',
+                      width: '24px',
+                      height: '24px',
                       background:
                         "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234285f4'><circle cx='12' cy='12' r='10' fill='%234285f4'/><text x='12' y='16' text-anchor='middle' font-size='12' fill='white'>A</text></svg>\") no-repeat center/contain",
                       cursor: 'pointer',
