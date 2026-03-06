@@ -1,9 +1,12 @@
 import { Zap } from 'lucide-react'
 import BaseRepositoryTable from './BaseRepositoryTable'
-import { ArtifactTableRegistry } from '@/@types'
 
 interface ArtifactTableProps {
-  data: ArtifactTableRegistry[]
+  data: {
+    id: number
+    name: string | null
+    url: string
+  }[]
 }
 
 export default function ArtifactTable({ data }: ArtifactTableProps) {

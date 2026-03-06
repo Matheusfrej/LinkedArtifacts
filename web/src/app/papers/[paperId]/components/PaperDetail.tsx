@@ -14,7 +14,7 @@ export default function PaperDetail({ paperId }: Props) {
   const [data, setData] = useState<
     {
       id: number
-      name?: string
+      name: string | null
       url: string
     }[]
   >([])
