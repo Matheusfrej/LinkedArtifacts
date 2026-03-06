@@ -1,7 +1,8 @@
 import { type NextRequest } from 'next/server'
+import { ListPapersByTitlesResponse } from '../../../../lib/service/papers'
 
 export async function POST(_request: NextRequest) {
-  return Response.json([
+  const response: ListPapersByTitlesResponse = [
     {
       id: 1,
       title:
@@ -35,5 +36,7 @@ export async function POST(_request: NextRequest) {
         },
       ],
     },
-  ])
+  ]
+
+  return Response.json(response)
 }

@@ -1,6 +1,2 @@
 export * from './listArtifactsByPaperId'
-export * from './voteUp'
-export * from './unvoteUp'
-export * from './voteDown'
-export * from './unvoteDown'
 export * from './listArtifactsByPaperId'
