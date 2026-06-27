@@ -28,11 +28,13 @@ docker compose up --build
 - [npm](https://www.npmjs.com/)
 - [PostgreSQL](https://www.postgresql.org/)
 
-1. Copy `.env.example` to `.env` and set the `DATABASE_URL` environment variable.
-2. From the `/api` directory, run:
+1. Have a Postgres database running.
+2. Copy `.env.example` to `.env` and set the `DATABASE_URL` environment variable.
+3. From the `/api` directory, run:
 
 ```bash
 npm install
+npm run drizzle:migrate
 npm run dev
 ```
 
@@ -63,6 +65,8 @@ npm run dev
 To build and run the api for production, run the following:
 
 ```bash
+npm install
 npm run build
+npm run drizzle:migrate
 npm start
 ```

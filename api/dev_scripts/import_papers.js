@@ -24,6 +24,7 @@ async function run() {
     });
 
     for (const row of results) {
+      console.log(row);
       const { doi, title, links } = row;
 
       // Insert paper
