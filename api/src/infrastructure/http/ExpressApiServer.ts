@@ -37,6 +37,11 @@ export class ExpressApiServer implements Server {
     this.app.use('/artifacts', artifactController.getRouter());
     this.app.use('/papers', paperController.getRouter());
 
+    // Simple ping/health endpoint
+    this.app.get('/ping', async (req, res) => {
+      res.status(200).json({ status: 'ok' });
+    });
+
     // Prometheus metrics endpoint
     this.app.get("/metrics", async (req, res) => {
       res.set("Content-Type", register.contentType);
