@@ -1,8 +1,8 @@
 import promClient from 'prom-client'
 
-// Register metrics
+// Registry and metric declarations. Registration and collection
+// are performed by `initPrometheus()` when enabled.
 export const register = new promClient.Registry();
-promClient.collectDefaultMetrics({ register });
 
 export const httpRequestDuration = new promClient.Histogram({
   name: "http_request_duration_seconds",
@@ -26,3 +26,14 @@ export const redisRequestsTotal = new promClient.Counter({
 register.registerMetric(httpRequestDuration);
 register.registerMetric(redisRequestDuration);
 register.registerMetric(redisRequestsTotal);
+
+// Initialize Prometheus metrics and default collectors when enabled.
+export function initPrometheus(enabled: boolean = false): void {
+  if (!enabled) return;
+  promClient.collectDefaultMetrics({ register });
+  // Metrics already created above, register them with the registry
+  // (idempotent if called once).
+  register.registerMetric(httpRequestDuration);
+  register.registerMetric(redisRequestDuration);
+  register.registerMetric(redisRequestsTotal);
+}

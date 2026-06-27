@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from "cors";
 import { errorHandler } from './middleware/errorHandler';
-import { register } from '../prometheus/config';
+import { register, initPrometheus } from '../prometheus/config';
 import { requestDurationMetric } from './middleware/requestDurationMetric';
 import { Server } from '../../application/Server';
 import { Express } from 'express-serve-static-core';
@@ -42,11 +42,15 @@ export class ExpressApiServer implements Server {
       res.status(200).json({ status: 'ok' });
     });
 
-    // Prometheus metrics endpoint
-    this.app.get("/metrics", async (req, res) => {
-      res.set("Content-Type", register.contentType);
-      res.end(await register.metrics());
-    });
+    // Prometheus metrics: enable and expose only when configured via env
+    const metricsEnabled = process.env.METRICS_ENABLED === 'true';
+    if (metricsEnabled) {
+      initPrometheus(true);
+      this.app.get("/metrics", async (req, res) => {
+        res.set("Content-Type", register.contentType);
+        res.end(await register.metrics());
+      });
+    }
 
     // Error middleware must be the last middleware
     this.app.use(errorHandler);
