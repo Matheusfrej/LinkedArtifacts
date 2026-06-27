@@ -12,7 +12,6 @@ export const validate =
       });
 
       req.validatedPayload = validated
-      console.log(validated);
       next()
     } catch (err) {
       next(err)

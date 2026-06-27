@@ -3,7 +3,6 @@ import cors from "cors";
 import { errorHandler } from './middleware/errorHandler';
 import { register } from '../prometheus/config';
 import { requestDurationMetric } from './middleware/requestDurationMetric';
-import { connectRedis } from '../redis/config';
 import { Server } from '../../application/Server';
 import { Express } from 'express-serve-static-core';
 import { PaperController } from './paper/Controller';
@@ -49,8 +48,6 @@ export class ExpressApiServer implements Server {
   }
 
   async start(): Promise<void> {
-    await connectRedis();
-
     this.app.listen(this.PORT, "0.0.0.0", () => {
       console.log(`Server listening on port ${this.PORT}`);
     });
