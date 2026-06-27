@@ -1,10 +1,10 @@
 import { type NextRequest } from 'next/server'
 import { FindPaperByIdResponse } from '../../../../lib/service/papers'
 
-export async function GET(
-  _request: NextRequest,
-  { params }: { params: { paperId: string } },
-) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function GET(_request: NextRequest, context: { params: any }) {
+  const { params } = context
+  const { paperId } = await params
   const papers = [
     {
       id: 1,
@@ -48,7 +48,7 @@ export async function GET(
   ]
 
   const response: FindPaperByIdResponse = papers.find(
-    (p) => p.id === Number(params.paperId),
+    (p) => p.id === Number(paperId),
   )!
 
   return Response.json(response)
