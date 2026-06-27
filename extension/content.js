@@ -1,5 +1,5 @@
 function openArtifactPage(paperId) {
-  window.open(`http://localhost:3000/papers/${paperId}`)
+  window.open(`${$constant.WEB_APP_URL}/papers/${paperId}`)
 }
 
 function createArtifactIcon(paperId) {

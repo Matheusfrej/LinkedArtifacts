@@ -1,6 +1,6 @@
 const $api = { 
   listPapersByTitles: async (params = { titles: [''] }) => {
-    const response = await fetch('http://localhost:4000/papers/by-titles', {
+    const response = await fetch(`${$constant.API_URL}/papers/by-titles`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ titles: params.titles })
