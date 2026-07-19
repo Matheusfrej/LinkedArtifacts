@@ -1,13 +1,17 @@
 'use client'
+import Link from 'next/link'
 import { ThemeToggle } from 'components/ThemeToggle'
 
 export default function Header() {
   return (
     <header className="w-full border-b border-gray-200 dark:border-gray-700 shadow-sm mb-8">
       <div className="mx-auto px-6 py-4 flex items-center justify-between">
-        <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+        <Link
+          href="/papers"
+          className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
+        >
           LinkedArtifacts
-        </span>
+        </Link>
         <ThemeToggle />
       </div>
     </header>
