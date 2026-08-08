@@ -6,6 +6,10 @@ export type PaperWithArtifactsDTO = {
     name: string | null;
     url: string;
   }[];
+  badges: {
+    id: number;
+    name: string;
+  }[];
 };
 
 export interface IPaperQueryService {

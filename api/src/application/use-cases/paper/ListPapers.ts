@@ -1,4 +1,3 @@
-import { BadgeName } from '../../../domain/enums/BadgeName';
 import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { ICacheService } from '../../services/ICacheService';
 import { UseCase } from '../UseCase';
@@ -14,7 +13,7 @@ type Paper = {
   hasArtifact: boolean,
   badges: {
     id: number,
-    name: BadgeName
+    name: string
   }[]
 }
 
