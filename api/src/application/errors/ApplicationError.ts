@@ -13,6 +13,13 @@ export class ResourceNotFoundError extends ApplicationError {
   }
 }
 
+export class NonUniqueResultError extends ApplicationError {
+  constructor(resource: string) {
+    super(`Expected a single ${resource}, but multiple results were found`);
+    Object.setPrototypeOf(this, NonUniqueResultError.prototype);
+  }
+}
+
 export class ValidationError extends ApplicationError {
   constructor(message: string) {
     super(message);

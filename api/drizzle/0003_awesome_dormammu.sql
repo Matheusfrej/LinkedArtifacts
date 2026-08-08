@@ -1,0 +1,2 @@
+CREATE TYPE "public"."badge_name" AS ENUM('Available', 'Evaluated & Functional', 'Evaluated & Reusable', 'Results Reproduced', 'Results Replicated');--> statement-breakpoint
+ALTER TABLE "badges" ALTER COLUMN "name" SET DATA TYPE "public"."badge_name" USING "name"::"public"."badge_name";

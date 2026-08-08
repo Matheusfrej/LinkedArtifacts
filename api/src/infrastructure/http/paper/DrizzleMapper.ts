@@ -7,6 +7,10 @@ export class DrizzlePaperMapper {
     return new Paper(
       raw.id,
       raw.title,
+      raw.venue,
+      raw.year,
+      raw.authors,
+      raw.pageCount,
       raw.doi ? new DOI(raw.doi) : undefined,
       raw.createdAt
     )
