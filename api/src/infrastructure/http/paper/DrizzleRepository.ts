@@ -23,10 +23,6 @@ export class DrizzlePaperRepository implements IPaperRepository {
       throw new ResourceNotFoundError('Paper', id);
     }
 
-    if (rows.length > 1) {
-      throw new NonUniqueResultError('Paper');
-    }
-
     return this.buildPapers(rows)[0];
   }
   
