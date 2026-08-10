@@ -13,8 +13,8 @@ export class ListPapersByTitles implements UseCase<ListPapersByTitlesInputDTO, L
 
   async execute({ paperTitles } : ListPapersByTitlesInputDTO): Promise<ListPapersByTitlesOutputDTO> {
 
-    if (paperTitles.length > 50) {
-      throw new ValidationError("maximum number of 'titles' is 50.")
+    if (paperTitles.length > 1000) {
+      throw new ValidationError("maximum number of 'titles' is 1000.")
     }
 
     const sanitizedTitles = paperTitles.map(t => t.trim().toLowerCase())
