@@ -37,7 +37,14 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["icons/icon.svg"],
+      "resources": [
+        "icons/icon.svg",
+        "icons/artifact/available.svg",
+        "icons/artifact/functional.svg",
+        "icons/artifact/replicated.svg",
+        "icons/artifact/reproduced.svg",
+        "icons/artifact/reusable.svg"
+      ],
       "matches": [
         "https://scholar.google.com/*",
         "https://scholar.google.com.br/*",

@@ -1,14 +1,14 @@
 (function main() {
   $logger.log(main.name, 'Started extension');
-  // Debounce wrapper for addArtifactIcons
+  // Debounce wrapper for addIconsToPaper
   let debounceTimer = null;
-  function debouncedAddArtifactIcons() {
+  function debounced() {
     if (debounceTimer) clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
-      addArtifactIcons();
+      addIconsToPaper();
     }, 200); // 200ms debounce
   }
-  addArtifactIcons();
-  const observer = new MutationObserver(debouncedAddArtifactIcons);
+  addIconsToPaper();
+  const observer = new MutationObserver(debounced);
   observer.observe(document.body, { childList: true, subtree: true });
 })();

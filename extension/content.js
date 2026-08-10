@@ -6,88 +6,249 @@ function createArtifactIcon(paperId) {
   const icon = document.createElement('span');
   icon.className = 'artifact-icon';
   icon.style.marginLeft = '8px';
-  icon.style.display = 'inline-block';
-  icon.style.verticalAlign = 'middle';
   icon.style.width = '18px';
   icon.style.height = '18px';
+  icon.style.flexShrink = '0';
   icon.title = 'Show Artifacts';
   icon.style.cursor = 'pointer';
-  // blue circle
   const iconUrl = chrome.runtime.getURL('icons/icon.svg');
-  icon.style.background = `url("${iconUrl}") no-repeat center/contain`;
+  icon.style.background =
+    `url("${iconUrl}") no-repeat center/contain`;
   icon.onclick = (e) => {
     e.stopPropagation();
     openArtifactPage(paperId);
   };
+
   return icon;
 }
 
-async function addArtifactIcons() {
+function createBadgeIcon(badge) {
+  console.log('começo da createBadgeIcon');
+  if (!badge || !badge.id || !badge.name) {
+    return;
+  }
+
+  const icon = document.createElement('span');
+  icon.className = `${badge.id}-badge-icon`;
+  icon.style.marginLeft = '8px';
+  icon.style.display = 'inline-block';
+  icon.style.verticalAlign = 'middle';
+  icon.style.width = '18px';
+  icon.style.flexShrink = '0';
+  icon.style.height = '18px';
+  icon.title = `Artifact ${badge.name}`;
+
+  const domainToFileName = {
+    'Available': 'available',
+    'Evaluated & Functional': 'functional',
+    'Evaluated & Reusable': 'reusable',
+    'Results Reproduced': 'reproduced',
+    'Results Replicated': 'replicated'
+  }
+  const fileName = domainToFileName[badge.name]
+  console.log('fileName: ' + fileName);
+
+  if (!fileName) return;
+  console.log('passou do !filename');
+  
+  const iconUrl = chrome.runtime.getURL(`icons/artifact/${fileName}.svg`);
+  icon.style.background = `url("${iconUrl}") no-repeat center/contain`;
+  console.log('chegou ao final da createBadgeIcon: ' + icon);
+  
+  return icon;
+}
+
+function createIcons(paperId, badges) {
+  const container = document.createElement('span');
+
+  container.className = 'artifact-icons';
+  container.style.display = 'inline-flex';
+  container.style.alignItems = 'center';
+  container.style.whiteSpace = 'nowrap';
+
+  const artifactIcon = createArtifactIcon(paperId);
+
+  if (artifactIcon) {
+    container.appendChild(artifactIcon);
+  }
+
+  for (const badge of badges) {
+    const badgeIcon = createBadgeIcon(badge);
+
+    if (badgeIcon) {
+      container.appendChild(badgeIcon);
+    }
+  }
+
+  return container;
+}
+
+function normalizeTitle(title) {
+  return title.trim().toLowerCase();
+}
+
+function searchTitlesInDOM(
+  page,
+  inProgress,
+  checkedTitles,
+  uniqueTitles,
+  tasks
+) {
+  if (!['search', 'profile'].includes(page)) {
+    throw new Error('Invalid page param: ' + page);
+  }
+
+  const ELEMENTS = {
+    querySelectorAll: {
+      search: '.gs_ri',
+      profile: '.gsc_a_tr'
+    },
+    querySelector: {
+      search: '.gs_rt',
+      profile: '.gsc_a_at'
+    }
+  };
+
+  const isSearch = page === 'search';
+
+  const entries = document.querySelectorAll(
+    ELEMENTS.querySelectorAll[page]
+  );
+
+  for (const entry of entries) {
+    const titleElem = entry.querySelector(
+      ELEMENTS.querySelector[page]
+    );
+
+    if (!titleElem) continue;
+
+    const link = isSearch
+      ? titleElem.querySelector('a')
+      : titleElem;
+
+    if (!link) continue;
+
+    const paperTitle = link.textContent.trim();
+    const normalizedTitle = normalizeTitle(paperTitle);
+
+    const hasArtifactIcon = isSearch
+      ? titleElem.querySelector('.artifact-icons') !== null
+      : titleElem.nextSibling?.classList?.contains('artifact-icons');
+
+    if (hasArtifactIcon) continue;
+    if (inProgress.has(normalizedTitle)) continue;
+    if (checkedTitles.has(normalizedTitle)) continue;
+    if (uniqueTitles.has(normalizedTitle)) continue;
+
+    uniqueTitles.add(normalizedTitle);
+    inProgress.add(normalizedTitle);
+
+    tasks.push({
+      paperTitle,
+      normalizedTitle,
+
+      inject: (paper) => {
+        const hasArtifactIcon = isSearch
+          ? titleElem.querySelector('.artifact-icons') !== null
+          : titleElem.nextSibling?.classList?.contains('artifact-icons');
+
+        if (hasArtifactIcon) return;
+
+        const icons = createIcons(
+          paper.id,
+          paper.badges.sort((a, b) => a.id - b.id) ?? []
+        );
+
+        if (isSearch) {
+          titleElem.appendChild(icons);
+        } else {
+          titleElem.parentNode.insertBefore(
+            icons,
+            titleElem.nextSibling
+          );
+        }
+      }
+    });
+  }
+}
+
+async function addIconsToPaper() {
   const inProgress = $constant.artifactInProgress;
-  // Collect all papers to process (main results and researcher profile)
+  const checkedTitles = $constant.artifactCheckedTitles;
+
   const tasks = [];
   const uniqueTitles = new Set();
 
-  // Main search results
-  const entries = document.querySelectorAll('.gs_ri');
-  for (const entry of entries) {
-    const titleElem = entry.querySelector('.gs_rt');
-    if (!titleElem || !titleElem.querySelector('a')) continue;
-    const link = titleElem.querySelector('a');
-    const paperTitle = link.textContent.trim();
-    if ([...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) continue;
-    if (inProgress.has(paperTitle)) continue;
-    uniqueTitles.add(paperTitle);
-    tasks.push({ paperTitle, inject: (paperId) => {
-      if (![...titleElem.children].some(child => child.classList && child.classList.contains('artifact-icon'))) {
-        const icon = createArtifactIcon(paperId);
-        if (icon) titleElem.appendChild(icon);
-      }
-    }});
-  }
+  searchTitlesInDOM(
+    'search',
+    inProgress,
+    checkedTitles,
+    uniqueTitles,
+    tasks
+  );
 
-  // Researcher profile page: table rows
-  const tableRows = document.querySelectorAll('.gsc_a_tr');
-  for (const row of tableRows) {
-    const titleLink = row.querySelector('.gsc_a_at');
-    if (!titleLink) continue;
-    const paperTitle = titleLink.textContent.trim();
-    if (titleLink.nextSibling && titleLink.nextSibling.classList && titleLink.nextSibling.classList.contains('artifact-icon')) continue;
-    if (inProgress.has(paperTitle)) continue;
-    uniqueTitles.add(paperTitle);
-    tasks.push({ paperTitle, inject: (paperId) => {
-      if (!(titleLink.nextSibling && titleLink.nextSibling.classList && titleLink.nextSibling.classList.contains('artifact-icon'))) {
-        const icon = createArtifactIcon(paperId);
-        if (icon) titleLink.parentNode.insertBefore(icon, titleLink.nextSibling);
-      }
-    }});
-  }
+  searchTitlesInDOM(
+    'profile',
+    inProgress,
+    checkedTitles,
+    uniqueTitles,
+    tasks
+  );
+
+  console.log('Novos títulos:', uniqueTitles);
 
   if (tasks.length === 0) return;
 
-  // Call API to fetch papers with artifacts
   try {
-    const titles = Array.from(uniqueTitles);
-    $logger.info(addArtifactIcons.name, 'Fetching papers for titles:', titles);
-    
-    const papers = await $api.listPapersByTitles({ titles })
-    
-    // Create a map of titles to papers for quick lookup
-    const papersByTitle = new Map();
-    for (const paper of papers) {
-      papersByTitle.set(paper.title.toLowerCase().trim(), paper);
+    const titles = tasks.map(task => task.paperTitle);
+
+    $logger.info(
+      addIconsToPaper.name,
+      'Fetching papers for titles:',
+      titles
+    );
+
+    const papers = await $api.listPapersByTitles({ titles });
+
+    for (const task of tasks) {
+      checkedTitles.add(task.normalizedTitle);
+      inProgress.delete(task.normalizedTitle);
     }
 
-    // Inject icons for papers with artifacts
-    for (const { paperTitle, inject } of tasks) {
-      const paper = papersByTitle.get(paperTitle.toLowerCase().trim());
-      if (paper && paper.artifacts && paper.artifacts.length > 0) {
-        inProgress.add(paperTitle);
-        inject(paper.id);
-        inProgress.delete(paperTitle);
+    const papersByTitle = new Map();
+
+    for (const paper of papers) {
+      papersByTitle.set(
+        normalizeTitle(paper.title),
+        paper
+      );
+    }
+
+    for (const {
+      normalizedTitle,
+      inject
+    } of tasks) {
+      const paper = papersByTitle.get(normalizedTitle);
+
+      if (
+        paper &&
+        paper.artifacts &&
+        paper.artifacts.length > 0
+      ) {
+        console.log(paper);
+        inject(paper);
       }
     }
+
   } catch (error) {
-    $logger.error(addArtifactIcons.name, 'Error fetching papers:', error);
+    $logger.error(
+      addIconsToPaper.name,
+      'Error fetching papers:',
+      error
+    );
+
+    for (const task of tasks) {
+      inProgress.delete(task.normalizedTitle);
+    }
   }
 }
