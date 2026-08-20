@@ -2,32 +2,46 @@
 import { useState, useMemo, useEffect } from 'react'
 import SearchBar from './components/SearchBar'
 import Link from 'next/link'
-import { listPapers } from '@/lib/service/papers'
+import Image from 'next/image'
+import { listPapers, type Paper } from '@/lib/service/papers'
 import { AppError } from '@/utils/AppError'
-import ArtifactFilter from './components/ArtifactFilter'
+import ArtifactFilter, {
+  type ArtifactFilterValue,
+} from './components/ArtifactFilter'
 
 export default function Page() {
   const [query, setQuery] = useState('')
-  const [onlyWithArtifact, setOnlyWithArtifact] = useState(false)
+  const [selectedFilters, setSelectedFilters] = useState<ArtifactFilterValue[]>(
+    [],
+  )
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [papers, setPapers] = useState<
-    {
-      id: number
-      title: string
-      hasArtifact: boolean
-    }[]
+    Paper[]
   >([])
 
   const filteredPapers = useMemo(() => {
     const q = query.trim().toLowerCase()
 
     return papers.filter((paper) => {
-      const matchesQuery = !q || paper.title.toLowerCase().includes(q)
-      const matchesArtifact = !onlyWithArtifact || paper.hasArtifact
-      return matchesQuery && matchesArtifact
+      const matchesQuery =
+        !q ||
+        paper.title.toLowerCase().includes(q) ||
+        paper.authors.toLowerCase().includes(q) ||
+        paper.venue.toLowerCase().includes(q) ||
+        paper.year.toString().includes(q) ||
+        paper.doi?.toLowerCase().includes(q)
+
+      const matchesFilter =
+        selectedFilters.length === 0 ||
+        selectedFilters.every((filter) =>
+          filter === 'artifact'
+            ? paper.hasArtifact
+            : paper.badges.some((badge) => badge.name === filter),
+        )
+      return matchesQuery && matchesFilter
     })
-  }, [papers, query, onlyWithArtifact])
+  }, [papers, query, selectedFilters])
 
   useEffect(() => {
     let cancelled = false
@@ -58,50 +72,137 @@ export default function Page() {
       <div className="py-8 text-red-500">Error loading papers: {error}</div>
     )
 
+  const badgeNameToFileName = {
+    Available: 'available',
+    'Evaluated & Functional': 'functional',
+    'Evaluated & Reusable': 'reusable',
+    'Results Reproduced': 'reproduced',
+    'Results Replicated': 'replicated',
+  } as const
+
+  const formatAuthors = (authors?: string | null): string => {
+    if (!authors) return ''
+    return authors
+      .split(';')
+      .map((a) => a.trim())
+      .filter(Boolean)
+      .join(', ')
+  }
+
+  const formatMetadata = (paper: Paper): string => {
+    const authorText = formatAuthors(paper.authors)
+    const venueYear = [paper.venue, paper.year].filter(Boolean).join(', ')
+    const pagesText =
+      paper.pageCount && paper.pageCount > 0
+        ? `${paper.pageCount} ${paper.pageCount === 1 ? 'page' : 'pages'}`
+        : ''
+
+    return [authorText, venueYear, pagesText].filter(Boolean).join(' - ')
+  }
+
+  const getDoiUrl = (doi: string): string => {
+    if (doi.startsWith('http://') || doi.startsWith('https://')) {
+      return doi
+    }
+    return `https://doi.org/${doi}`
+  }
+
   return (
     <div className="py-8">
       <SearchBar
         value={query}
         onChange={setQuery}
-        placeholder="Search papers..."
       />
-      <div className="flex flex-col justify-end items-end">
+      <div className="flex flex-col items-end justify-end mb-4">
         <ArtifactFilter
-          checked={onlyWithArtifact}
-          onChange={setOnlyWithArtifact}
+          selected={selectedFilters}
+          onChange={setSelectedFilters}
         />
       </div>
-      <ul>
+      <ul className="space-y-6">
         {filteredPapers.length === 0 ? (
-          <li className="text-center text-gray-500 dark:text-gray-400">
+          <li className="text-center text-gray-500 dark:text-gray-400 py-6">
             No papers found.
           </li>
         ) : (
           filteredPapers.map((paper) => (
-            <li key={paper.id} className="mb-8 text-left pl-8">
-              <Link
-                href={`/papers/${paper.id}`}
-                className="text-[20px] font-serif leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8]"
-                tabIndex={0}
-              >
-                {paper.title}
+            <li
+              key={paper.id}
+              className="text-left pb-4 border-b border-border/40 last:border-b-0"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-baseline gap-x-2">
+                    <Link
+                      href={`/papers/${paper.id}`}
+                      className="text-[19px] font-medium leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8]"
+                      tabIndex={0}
+                    >
+                      {paper.title}
+                    </Link>
 
-                {paper.hasArtifact && (
-                  <span
-                    title="Show Artifacts"
-                    style={{
-                      marginLeft: '8px',
-                      display: 'inline-block',
-                      verticalAlign: 'middle',
-                      width: '24px',
-                      height: '24px',
-                      background:
-                        "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234285f4'><circle cx='12' cy='12' r='10' fill='%234285f4'/><text x='12' y='16' text-anchor='middle' font-size='12' fill='white'>A</text></svg>\") no-repeat center/contain",
-                      cursor: 'pointer',
-                    }}
-                  />
+                    {(paper.hasArtifact ||
+                      (paper.badges && paper.badges.length > 0)) && (
+                      <span className="inline-flex items-center gap-1.5 align-middle self-center">
+                        {paper.hasArtifact && (
+                          <Image
+                            src="/icons/artifact/icon.svg"
+                            alt="Show Artifacts"
+                            title="Show Artifacts"
+                            width={20}
+                            height={20}
+                            style={{
+                              cursor: 'pointer',
+                              flexShrink: 0,
+                            }}
+                          />
+                        )}
+
+                        {paper.badges?.map((badge) => {
+                          const fileName =
+                            badgeNameToFileName[
+                              badge.name as keyof typeof badgeNameToFileName
+                            ]
+                          if (!fileName) return null
+
+                          return (
+                            <Image
+                              key={badge.id}
+                              src={`/icons/artifact/${fileName}.svg`}
+                              alt={`Artifact ${badge.name}`}
+                              title={`Artifact ${badge.name}`}
+                              width={20}
+                              height={20}
+                              style={{
+                                flexShrink: 0,
+                              }}
+                            />
+                          )
+                        })}
+                      </span>
+                    )}
+                  </div>
+
+                  {formatMetadata(paper) && (
+                    <div className="text-[14px] text-[#006621] dark:text-[#68b688] leading-relaxed mt-1">
+                      {formatMetadata(paper)}
+                    </div>
+                  )}
+                </div>
+
+                {paper.doi && (
+                  <a
+                    href={getDoiUrl(paper.doi)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[14px] text-[#1a0dab] hover:underline dark:text-[#8ab4f8] whitespace-nowrap shrink-0 inline-flex items-center gap-1 pt-0.5 font-medium"
+                    title={`Open DOI: ${paper.doi}`}
+                  >
+                    <span className="font-bold">[PDF]</span>
+                    <span>doi.org</span>
+                  </a>
                 )}
-              </Link>
+              </div>
             </li>
           ))
         )}

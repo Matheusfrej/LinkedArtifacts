@@ -10,7 +10,13 @@ interface ArtifactTableProps {
 }
 
 export default function ArtifactTable({ data }: ArtifactTableProps) {
-  if (data.length === 0) return null
+  if (data.length === 0) {
+    return (
+      <div className="bg-card border border-border/60 rounded-xl p-8 text-center text-sm text-muted-foreground">
+        No artifacts found for this paper.
+      </div>
+    )
+  }
 
   const columns = [
     {
