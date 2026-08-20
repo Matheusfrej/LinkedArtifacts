@@ -36,7 +36,7 @@ export class Paper {
       this.doi = doi
       this.createdAt = createdAt ?? new Date()
       this.artifacts = artifacts
-      this.badges = badges
+      this.badges = this.sortBadges(badges)
   
       this.validate()
   }
@@ -90,10 +90,14 @@ export class Paper {
   }
 
   addBadge(badge: Badge) {
-    if (!this.badges) {
-      this.badges = [badge]
-    } else {
-      this.badges.push(badge)
-    }
+    this.badges = this.sortBadges([
+      ...(this.badges ?? []),
+      badge,
+    ])
+  }
+
+  private sortBadges(badges: Badge[] | undefined) {
+    if (!badges) return
+    return [...badges].sort((a, b) => a.id - b.id)
   }
 }

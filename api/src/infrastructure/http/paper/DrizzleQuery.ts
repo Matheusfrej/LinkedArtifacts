@@ -11,7 +11,8 @@ export class DrizzlePaperQueryService implements IPaperQueryService {
       .leftJoin(artifacts, eq(artifacts.paperId, papers.id))
       .leftJoin(paperBadges, eq(paperBadges.paperId, papers.id))
       .leftJoin(badges, eq(badges.id, paperBadges.badgeId))
-      .where(inArray(sql`lower(trim(${papers.title}))`, sanitizedTitles));
+      .where(inArray(sql`lower(trim(${papers.title}))`, sanitizedTitles))
+      .orderBy(papers.title, badges.id);
 
     const grouped = new Map<number, PaperWithArtifactsDTO>();
     const artifactIds = new Map<number, Set<number>>();

@@ -3,7 +3,7 @@ import { eq } from "drizzle-orm";
 import { artifacts, badges, paperBadges, papers } from '../../db/drizzle/schema';
 import { IPaperRepository } from '../../../domain/paper/IRepository';
 import { Paper } from '../../../domain/paper/entity';
-import { NonUniqueResultError, ResourceNotFoundError } from '../../../application/errors/ApplicationError';
+import { ResourceNotFoundError } from '../../../application/errors/ApplicationError';
 import { DrizzlePaperMapper } from './DrizzleMapper';
 import { DrizzleArtifactMapper } from '../artifact/DrizzleMapper';
 import { DrizzleBadgeMapper } from '../badge/DrizzleMapper';
