@@ -8,22 +8,22 @@ import { AppError } from '@/utils/AppError'
 import ArtifactFilter, {
   type ArtifactFilterValue,
 } from './components/ArtifactFilter'
+import PaperSort, { type SortOption } from './components/PaperSort'
 
 export default function Page() {
   const [query, setQuery] = useState('')
   const [selectedFilters, setSelectedFilters] = useState<ArtifactFilterValue[]>(
     [],
   )
+  const [sortBy, setSortBy] = useState<SortOption>('default')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [papers, setPapers] = useState<
-    Paper[]
-  >([])
+  const [papers, setPapers] = useState<Paper[]>([])
 
   const filteredPapers = useMemo(() => {
     const q = query.trim().toLowerCase()
 
-    return papers.filter((paper) => {
+    const filtered = papers.filter((paper) => {
       const matchesQuery =
         !q ||
         paper.title.toLowerCase().includes(q) ||
@@ -41,7 +41,42 @@ export default function Page() {
         )
       return matchesQuery && matchesFilter
     })
-  }, [papers, query, selectedFilters])
+
+    if (sortBy === 'default') {
+      return filtered
+    }
+
+    return [...filtered].sort((a, b) => {
+      switch (sortBy) {
+        case 'year-desc':
+          return (b.year || 0) - (a.year || 0)
+        case 'year-asc':
+          return (a.year || 0) - (b.year || 0)
+        case 'title-asc':
+          return a.title.localeCompare(b.title, undefined, {
+            sensitivity: 'base',
+            numeric: true,
+          })
+        case 'title-desc':
+          return b.title.localeCompare(a.title, undefined, {
+            sensitivity: 'base',
+            numeric: true,
+          })
+        case 'venue-asc':
+          return (a.venue || '').localeCompare(b.venue || '', undefined, {
+            sensitivity: 'base',
+            numeric: true,
+          })
+        case 'venue-desc':
+          return (b.venue || '').localeCompare(a.venue || '', undefined, {
+            sensitivity: 'base',
+            numeric: true,
+          })
+        default:
+          return 0
+      }
+    })
+  }, [papers, query, selectedFilters, sortBy])
 
   useEffect(() => {
     let cancelled = false
@@ -113,12 +148,33 @@ export default function Page() {
         value={query}
         onChange={setQuery}
       />
-      <div className="flex flex-col items-end justify-end mb-4">
-        <ArtifactFilter
-          selected={selectedFilters}
-          onChange={setSelectedFilters}
-        />
+
+      {/* Control Bar: Counter, Filters & Sorting */}
+      <div className="flex flex-col gap-3 mb-6">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/40 pb-3">
+          <div className="text-xs sm:text-sm text-muted-foreground font-medium">
+            {papers.length > 0 && (
+              <span>
+                {filteredPapers.length === papers.length
+                  ? `${papers.length} ${papers.length === 1 ? 'paper' : 'papers'}`
+                  : `Showing ${filteredPapers.length} of ${papers.length} papers`}
+              </span>
+            )}
+          </div>
+
+          <div className="flex items-center gap-2">
+            <PaperSort value={sortBy} onChange={setSortBy} />
+          </div>
+        </div>
+
+        <div className="flex justify-end">
+          <ArtifactFilter
+            selected={selectedFilters}
+            onChange={setSelectedFilters}
+          />
+        </div>
       </div>
+
       <ul className="space-y-6">
         {filteredPapers.length === 0 ? (
           <li className="text-center text-gray-500 dark:text-gray-400 py-6">

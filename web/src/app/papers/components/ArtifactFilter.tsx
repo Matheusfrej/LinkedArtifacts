@@ -18,7 +18,7 @@ export default function ArtifactFilter({
   onChange: (value: ArtifactFilterValue[]) => void
 }) {
   return (
-    <fieldset className="mt-4 mb-4 flex flex-wrap justify-end gap-x-4 gap-y-2">
+    <fieldset className="flex flex-wrap justify-end gap-x-4 gap-y-2">
       <legend className="sr-only">Filter papers</legend>
       {artifactFilterOptions.map((option) => (
         <label
