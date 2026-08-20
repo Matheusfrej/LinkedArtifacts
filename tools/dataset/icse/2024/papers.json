@@ -1,0 +1,866 @@
+[
+    {
+        "title": "Learning and Repair of Deep Reinforcement Learning Policies from Fuzz-Testing Data",
+        "authors": [
+            "Martin Tappler",
+            "Andrea Pferscher",
+            "Bernhard K. Aichernig",
+            "Bettina Könighofer"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623311",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623311"
+    },
+    {
+        "title": "VeRe: Verification Guided Synthesis for Repairing Deep Neural Networks",
+        "authors": [
+            "Jianan Ma",
+            "Pengfei Yang",
+            "Jingyi Wang",
+            "Youcheng Sun",
+            "Cheng-Chao Huang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623332",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623332"
+    },
+    {
+        "title": "Predicting Performance and Accuracy of Mixed-Precision Programs for Precision Tuning",
+        "authors": [
+            "Yutong Wang",
+            "Cindy Rubio-González"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623338",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623338"
+    },
+    {
+        "title": "Dataflow Analysis-Inspired Deep Learning for Efficient Vulnerability Detection",
+        "authors": [
+            "Benjamin Steenhoek",
+            "Hongyang Gao",
+            "Wei Le"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623345",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623345"
+    },
+    {
+        "title": "Semantic Analysis of Macro Usage for Portability",
+        "authors": [
+            "Brent Pappas",
+            "Paul Gazzillo"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623323",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623323"
+    },
+    {
+        "title": "Demystifying Compiler Unstable Feature Usage and Impacts in the Rust Ecosystem",
+        "authors": [
+            "Chenghao Li",
+            "Yifei Wu",
+            "Wenbo Shen",
+            "Zichen Zhao",
+            "Rui Chang",
+            "Chengwei Liu"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623352",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623352"
+    },
+    {
+        "title": "Resource Usage and Optimization Opportunities in Workflows of GitHub Actions",
+        "authors": [
+            "Islem Bouzenia",
+            "Michael Pradel"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623303",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623303"
+    },
+    {
+        "title": "Kind Controllers and Fast Heuristics for Non-Well-Separated GR(1) Specifications",
+        "authors": [
+            "Ariel Gorenstein",
+            "Shahar Maoz",
+            "Jan Oliver Ringert"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3608131",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608131"
+    },
+    {
+        "title": "It's Not a Feature, It's a Bug: Fault-Tolerant Model Mining from Noisy Data",
+        "authors": [
+            "Felix Wallner",
+            "Bernhard K. Aichernig",
+            "Christian Burghard"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623346",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623346"
+    },
+    {
+        "title": "Modularizing while Training: A New Paradigm for Modularizing DNN Models",
+        "authors": [
+            "Binhang Qi",
+            "Hailong Sun",
+            "Hongyu Zhang",
+            "Ruobing Zhao",
+            "Xiang Gao"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3608135",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608135"
+    },
+    {
+        "title": "CoderEval: A Benchmark of Pragmatic Code Generation with Generative Pre-trained Models",
+        "authors": [
+            "Hao Yu",
+            "Bo Shen",
+            "Dezhi Ran",
+            "Jiaxin Zhang",
+            "Qi Zhang",
+            "Yuchi Ma"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623316",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623316"
+    },
+    {
+        "title": "Inferring Data Preconditions from Deep Learning Models for Trustworthy Prediction in Deployment",
+        "authors": [
+            "Shibbir Ahmed",
+            "Hongyang Gao",
+            "Hridesh Rajan"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623333",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623333"
+    },
+    {
+        "title": "On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization",
+        "authors": [
+            "Junayed Mahmud",
+            "Nadeeshan De Silva",
+            "Safwat Ali Khan",
+            "Seyed Hooman Mostafavi"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3608139",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608139"
+    },
+    {
+        "title": "BOMs Away! Inside the Minds of Stakeholders: A Comprehensive Study of Bills of Materials for Software Systems",
+        "authors": [
+            "Trevor Stalnaker",
+            "Nathan Wintersgill",
+            "Oscar Chaparro",
+            "Massimiliano Di Penta"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623347",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623347"
+    },
+    {
+        "title": "EDEFuzz: A Web API Fuzzer for Excessive Data Exposures",
+        "authors": [
+            "Lianglu Pan",
+            "Shaanan Cohney",
+            "Toby Murray",
+            "Van-Thuan Pham"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3608133",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608133"
+    },
+    {
+        "title": "Detecting Logic Bugs in Graph Database Management Systems via Injective and Surjective Graph Query Transformation",
+        "authors": [
+            "Yuancheng Jiang",
+            "Jiahao Liu",
+            "Jinsheng Ba",
+            "Roland H. C. Yap",
+            "Zhenkai Liang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623307",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623307"
+    },
+    {
+        "title": "ECFuzz: Effective Configuration Fuzzing for Large-Scale Systems",
+        "authors": [
+            "Junqiang Li",
+            "Senyi Li",
+            "Keyao Li",
+            "Falin Luo",
+            "Hongfang Yu",
+            "Shanshan Li",
+            "Xiang Li"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623315",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623315"
+    },
+    {
+        "title": "SCTrans: Constructing a Large Public Scenario Dataset for Simulation Testing of Autonomous Driving Systems",
+        "authors": [
+            "Jiarun Dai",
+            "Bufan Gao",
+            "Mingyuan Luo",
+            "Zongan Huang",
+            "Zhongrui Li"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623350",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623350"
+    },
+    {
+        "title": "Co-Creation in Fully Remote Software Teams",
+        "authors": [
+            "Victoria Jackson",
+            "Rafael Prikladnicki",
+            "Andre van der Hoek"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623297",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623297"
+    },
+    {
+        "title": "How to Support ML End-User Programmers through a Conversational Agent",
+        "authors": [
+            "Emily Judith Arteaga Garcia",
+            "João Felipe Nicolaci Pimentel",
+            "Zixuan Feng"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3608130",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608130"
+    },
+    {
+        "title": "On the Helpfulness of Answering Developer Questions on Discord with Similar Conversations and Posts from the Past",
+        "authors": [
+            "Alexander Lill",
+            "André N. Meyer",
+            "Thomas Fritz"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623341",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623341"
+    },
+    {
+        "title": "Smart Contract and DeFi Security Tools: Do They Meet the Needs of Practitioners?",
+        "authors": [
+            "Stefanos Chaliasos",
+            "Marcos Antonios Charalambous",
+            "Liyi Zhou",
+            "Rafaila Galanopoulou"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623302",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623302"
+    },
+    {
+        "title": "Toward Improved Deep Learning-based Vulnerability Detection",
+        "authors": [
+            "Adriana Sejfia",
+            "Satyaki Das",
+            "Saad Shafiq",
+            "Nenad Medvidović"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3608141",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608141"
+    },
+    {
+        "title": "FuzzSlice: Pruning False Positives in Static Analysis Warnings through Function-Level Fuzzing",
+        "authors": [
+            "Aniruddhan Murali",
+            "Noble Mathews",
+            "Mahmoud Alfadel",
+            "Meiyappan Nagappan",
+            "Meng Xu"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623321",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623321"
+    },
+    {
+        "title": "LibvDiff: Library Version Difference Guided OSS Version Identification in Binaries",
+        "authors": [
+            "Chaopeng Dong",
+            "Siyuan Li",
+            "Shouguo Yang",
+            "Yang Xiao",
+            "Yongpan Wang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3623336",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623336"
+    },
+    {
+        "title": "Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code",
+        "authors": [
+            "Rangeet Pan",
+            "Ali Reza Ibrahimzada",
+            "Rahul Krishna",
+            "Divya Sankar"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639226",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639226"
+    },
+    {
+        "title": "Automated Program Repair, What Is It Good For? Not Absolutely Nothing!",
+        "authors": [
+            "Hadeel Eladawy",
+            "Claire Le Goues",
+            "Yuriy Brun"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639095",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639095"
+    },
+    {
+        "title": "PyTy: Repairing Static Type Errors in Python",
+        "authors": [
+            "Yiu Wai Chow",
+            "Luca Di Grazia",
+            "Michael Pradel"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639184",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639184"
+    },
+    {
+        "title": "Constraint Based Program Repair for Persistent Memory Bugs",
+        "authors": [
+            "Zunchen Huang",
+            "Chao Wang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639204",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639204"
+    },
+    {
+        "title": "Using an LLM to Help With Code Understanding",
+        "authors": [
+            "Daye Nam",
+            "Andrew Macvean",
+            "Vincent Hellendoorn",
+            "Bogdan Vasilescu",
+            "Brad Myers"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639187",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639187"
+    },
+    {
+        "title": "Symbol-Specific Sparsification of Interprocedural Distributive Environment Problems",
+        "authors": [
+            "Kadiray Karakaya",
+            "Eric Bodden"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639092",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639092"
+    },
+    {
+        "title": "Generating REST API Specifications through Static Analysis",
+        "authors": [
+            "Ruikai Huang",
+            "Manish Motwani",
+            "Idel Martinez",
+            "Alessandro Orso"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639137",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639137"
+    },
+    {
+        "title": "Precise Sparse Abstract Execution via Cross-Domain Interaction",
+        "authors": [
+            "Xiao Cheng",
+            "Jiawei Wang",
+            "Yulei Sui"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639220",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639220"
+    },
+    {
+        "title": "ReClues: Representing and indexing failures in parallel debugging with program variables",
+        "authors": [
+            "Yi Song",
+            "Xihao Zhang",
+            "Xiaoyuan Xie",
+            "Quanming Liu",
+            "Ruizhi Gao",
+            "Chenliang Xing"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639098",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639098"
+    },
+    {
+        "title": "Detecting Automatic Software Plagiarism via Token Sequence Normalization",
+        "authors": [
+            "Timur Sağlam",
+            "Moritz Brödel",
+            "Larissa Schmid",
+            "Sebastian Hahner"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639192",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639192"
+    },
+    {
+        "title": "Hypertesting of Programs: Theoretical Foundation and Automated Test Generation",
+        "authors": [
+            "Michele Pasqua",
+            "Mariano Ceccato",
+            "Paolo Tonella"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3640323",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3640323"
+    },
+    {
+        "title": "Ripples of a Mutation — An Empirical Study of Propagation Effects in Mutation Testing",
+        "authors": [
+            "Hang Du",
+            "Vijay Krishna Palepu",
+            "James A. Jones"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639179",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639179"
+    },
+    {
+        "title": "Fast Deterministic Black-box Context-free Grammar Inference",
+        "authors": [
+            "Mohammad Rifat Arefin",
+            "Suraj Shetiya",
+            "Zili Wang",
+            "Christoph Csallner"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639214",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639214"
+    },
+    {
+        "title": "CIT4DNN: Generating Diverse and Rare Inputs for Neural Networks Using Latent Space Combinatorial Testing",
+        "authors": [
+            "Swaroopa Dola",
+            "Rory McDaniel",
+            "Matthew B. Dwyer",
+            "Mary Lou Soffa"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639106",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639106"
+    },
+    {
+        "title": "Knowledge Graph Driven Inference Testing for Question Answering Software",
+        "authors": [
+            "Jun Wang",
+            "Yanhui Li",
+            "Zhifei Chen",
+            "Lin Chen",
+            "Xiaofang Zhang",
+            "Yuming Zhou"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639109",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639109"
+    },
+    {
+        "title": "MAFT: Efficient Model-Agnostic Fairness Testing for Deep Neural Networks via Zero-Order Gradient Search",
+        "authors": [
+            "Zhaohui Wang",
+            "Min Zhang",
+            "Jingran Yang",
+            "Bojie Shao",
+            "Min Zhang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639181",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639181"
+    },
+    {
+        "title": "Concrete Constraint Guided Symbolic Execution",
+        "authors": [
+            "Yue Sun",
+            "Guowei Yang",
+            "Shichao Lv",
+            "Zhi Li",
+            "Limin Sun"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639078",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639078"
+    },
+    {
+        "title": "RPG: Rust Library Fuzzing with Pool-based Fuzz Target Generation and Generic Support",
+        "authors": [
+            "Zhiwu Xu",
+            "Bohao Wu",
+            "Cheng Wen",
+            "Bin Zhang",
+            "Shengchao Qin",
+            "Mengda He"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639102",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639102"
+    },
+    {
+        "title": "Fuzz4All: Universal Fuzzing with Large Language Models",
+        "authors": [
+            "Chunqiu Steven Xia",
+            "Matteo Paltenghi",
+            "Jia Le Tian",
+            "Michael Pradel",
+            "Lingming Zhang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639121",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639121"
+    },
+    {
+        "title": "Crossover in Parametric Fuzzing",
+        "authors": [
+            "Katherine Hough",
+            "Jonathan Bell"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639160",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639160"
+    },
+    {
+        "title": "Extrapolating Coverage Rate in Greybox Fuzzing",
+        "authors": [
+            "Danushka Liyanage",
+            "Seongmin Lee",
+            "Chakkrit Tantithamthavorn",
+            "Marcel Böhme"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639198",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639198"
+    },
+    {
+        "title": "CERT: Finding Performance Issues in Database Systems Through the Lens of Cardinality Estimation",
+        "authors": [
+            "Jinsheng Ba",
+            "Manuel Rigger"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639076",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639076"
+    },
+    {
+        "title": "Optimistic Prediction of Synchronization-Reversal Data Races",
+        "authors": [
+            "Zheng Shi",
+            "Umang Mathur",
+            "Andreas Pavlogiannis"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639099",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639099"
+    },
+    {
+        "title": "FlakeSync: Automatically Repairing Async Flaky Tests",
+        "authors": [
+            "Shanto Rahman",
+            "August Shi"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639115",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639115"
+    },
+    {
+        "title": "Towards Finding Accounting Errors in Smart Contracts",
+        "authors": [
+            "Brian Zhang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639128",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639128"
+    },
+    {
+        "title": "S3C: Spatial Semantic Scene Coverage for Autonomous Vehicles",
+        "authors": [
+            "Trey Woodlief",
+            "Felipe Toledo",
+            "Sebastian Elbaum",
+            "Matthew B Dwyer"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639178",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639178"
+    },
+    {
+        "title": "FlashSyn: Flash Loan Attack Synthesis via Counter Example Driven Approximation",
+        "authors": [
+            "Zhiyang Chen",
+            "Sidi Mohamed Beillahi",
+            "Fan Long"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639190",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639190"
+    },
+    {
+        "title": "Finding XPath Bugs in XML Document Processors via Differential Testing",
+        "authors": [
+            "Shuxin Li",
+            "Manuel Rigger"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639208",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639208"
+    },
+    {
+        "title": "VGX: Large-Scale Sample Generation for Boosting Learning-Based Software Vulnerability Analyses",
+        "authors": [
+            "Yu Nong",
+            "Richard Fang",
+            "Guangbei Yi",
+            "Kunsong Zhao",
+            "Xiapu Luo",
+            "Feng Chen"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639116",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639116"
+    },
+    {
+        "title": "Fairness Improvement with Multiple Protected Attributes: How Far Are We?",
+        "authors": [
+            "Zhenpeng Chen",
+            "Jie M. Zhang",
+            "Federica Sarro",
+            "Mark Harman"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639083",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639083"
+    },
+    {
+        "title": "Understanding Transaction Bugs in Database Systems",
+        "authors": [
+            "Ziyu Cui",
+            "Wensheng Dou",
+            "Yu Gao",
+            "Dong Wang",
+            "Jiansen Song"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639207",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639207"
+    },
+    {
+        "title": "Combining Structured Static Code Information and Dynamic Symbolic Traces for Software Vulnerability Prediction",
+        "authors": [
+            "Huanting Wang",
+            "Zhanyong Tang",
+            "Shin Hwei Tan",
+            "Jie Wang",
+            "Yuzhe Liu"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639212",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639212"
+    },
+    {
+        "title": "Safeguarding DeFi Smart Contracts against Oracle Deviations",
+        "authors": [
+            "Xun Deng",
+            "Sidi Mohamed Beillahi",
+            "Cyrus Minwalla",
+            "Han Du",
+            "Andreas Veneris"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639225",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639225"
+    },
+    {
+        "title": "Semantic-Enhanced Static Vulnerability Detection in Baseband Firmware",
+        "authors": [
+            "Yiming Liu",
+            "Cen Zhang",
+            "Feng Li",
+            "Yeting Li",
+            "Jianhua Zhou",
+            "Jian Wang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639158",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639158"
+    },
+    {
+        "title": "CSChecker: Revisiting GDPR and CCPA Compliance of Cookie Banners on the Web",
+        "authors": [
+            "Mingxue Zhang",
+            "Wei Meng",
+            "You Zhou",
+            "Kui Ren"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639159",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639159"
+    },
+    {
+        "title": "Translation Validation for JIT Compiler in the V8 JavaScript Engine",
+        "authors": [
+            "Seungwan Kwon",
+            "Jaeseong Kwon",
+            "Wooseok Kang",
+            "Juneyoung Lee",
+            "Kihong Heo"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639189",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639189"
+    },
+    {
+        "title": "Verifying Declarative Smart Contracts",
+        "authors": [
+            "Haoxian Chen",
+            "Lan Lu",
+            "Brendan Massey",
+            "Yuepeng Wang",
+            "Boon Thau Loo"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639203",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639203"
+    },
+    {
+        "title": "Breaking the Flow: A Study of Interruptions During Software Engineering Activities",
+        "authors": [
+            "Yimeng Ma",
+            "Yu Huang",
+            "Kevin Leach"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639079",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639079"
+    },
+    {
+        "title": "Supporting Web-Based API Searches in the IDE Using Signatures",
+        "authors": [
+            "Nick C. Bradley",
+            "Thomas Fritz",
+            "Reid Holmes"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639089",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639089"
+    },
+    {
+        "title": "\"My GitHub Sponsors profile is live!\" Investigating the Impact of Twitter/X Mentions on GitHub Sponsors",
+        "authors": [
+            "Youmei Fan",
+            "Tao Xiao",
+            "Hideaki Hata",
+            "Christoph Treude",
+            "Kenichi Matsumoto"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639127",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639127"
+    },
+    {
+        "title": "A Theory of Scientific Programming Efficacy",
+        "authors": [
+            "Elizaveta Pertseva",
+            "Melinda Chang",
+            "Ulia Zaman",
+            "Michael Coblenz"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639139",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639139"
+    },
+    {
+        "title": "Data-Driven Evidence-Based Syntactic Sugar Design",
+        "authors": [
+            "David OBrien",
+            "Robert Dyer",
+            "Tien Nguyen",
+            "Hridesh Rajan"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639580",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639580"
+    },
+    {
+        "title": "Revisiting Android App Categorization",
+        "authors": [
+            "Marco Alecci",
+            "Jordan Samhi",
+            "Tegawende F. Bissyande",
+            "Jacques Klein"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639094",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639094"
+    },
+    {
+        "title": "Empirical Study of the Docker Smells Impact on the Image Size",
+        "authors": [
+            "Thomas Durieux"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639143",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639143"
+    },
+    {
+        "title": "MotorEase: Automated Detection of Motor Impairment Accessibility Issues in Mobile App UIs",
+        "authors": [
+            "Arun Krishna Vajjala",
+            "S M Hasan Mansur",
+            "Justin Jose",
+            "Kevin Moran"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639167",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639167"
+    },
+    {
+        "title": "Recovering Trace Links Between Software Documentation And Code",
+        "authors": [
+            "Jan Keim",
+            "Sophie Corallo",
+            "Dominik Fuchß",
+            "Tobias Hey",
+            "Tobias Telge",
+            "Anne Koziolek"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639130",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639130"
+    },
+    {
+        "title": "TRIAD: Automated Traceability Recovery based on Biterm-enhanced Deduction of Transitive Links among Artifacts",
+        "authors": [
+            "Hui Gao",
+            "Hongyu Kuang",
+            "Wesley K. G. Assunção",
+            "Christoph Mayr-Dorn"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639164",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639164"
+    },
+    {
+        "title": "Are Prompt Engineering and TODO Comments Friends or Foes? An Evaluation on GitHub Copilot",
+        "authors": [
+            "David OBrien",
+            "Sumon Biswas",
+            "Sayem Mohammad Imtiaz",
+            "Rabe Abdalkareem"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639176",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639176"
+    },
+    {
+        "title": "PPT4J: Patch Presence Test for Java Binaries",
+        "authors": [
+            "Zhiyuan Pan",
+            "Xing Hu",
+            "Xin Xia",
+            "Xian Zhan",
+            "David Lo",
+            "Xiaohu Yang"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639231",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639231"
+    },
+    {
+        "title": "Semantic GUI Scene Learning and Video Alignment for Detecting Duplicate Video-based Bug Reports",
+        "authors": [
+            "Yanfu Yan",
+            "Nathan Cooper",
+            "Oscar Chaparro",
+            "Kevin Moran",
+            "Denys Poshyvanyk"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639163",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639163"
+    },
+    {
+        "title": "The Classics Never Go Out of Style: An Empirical Study of Downgrades from the Bazel Build Technology",
+        "authors": [
+            "Mahmoud Alfadel",
+            "Shane McIntosh"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639169",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639169"
+    },
+    {
+        "title": "Scaling Code Pattern Inference with Interactive What-If Analysis",
+        "authors": [
+            "Hong Jin Kang",
+            "Kevin Wang",
+            "Miryung Kim"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639193",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639193"
+    },
+    {
+        "title": "CNEPS: A Precise Approach for Examining Dependencies among Third-Party C/C++ Open-Source Components",
+        "authors": [
+            "Yoonjong Na",
+            "Seunghoon Woo",
+            "Joomyeong Lee",
+            "Heejo Lee"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639209",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639209"
+    },
+    {
+        "title": "A Study on the Pythonic Functional Constructs' Understandability",
+        "authors": [
+            "Cyrine Zid",
+            "Fiorella Zampetti",
+            "Giuliano Antoniol",
+            "Massimiliano Di Penta"
+        ],
+        "doi": "https://doi.org/10.1145/3597503.3639211",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639211"
+    }
+]
