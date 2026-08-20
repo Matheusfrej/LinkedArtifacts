@@ -22,8 +22,7 @@ function createArtifactIcon(paperId) {
   return icon;
 }
 
-function createBadgeIcon(badge) {
-  console.log('começo da createBadgeIcon');
+function createBadgeIcon(paperId, badge) {
   if (!badge || !badge.id || !badge.name) {
     return;
   }
@@ -37,6 +36,7 @@ function createBadgeIcon(badge) {
   icon.style.flexShrink = '0';
   icon.style.height = '18px';
   icon.title = `Artifact ${badge.name}`;
+  icon.style.cursor = 'pointer';
 
   const domainToFileName = {
     'Available': 'available',
@@ -46,19 +46,20 @@ function createBadgeIcon(badge) {
     'Results Replicated': 'replicated'
   }
   const fileName = domainToFileName[badge.name]
-  console.log('fileName: ' + fileName);
 
   if (!fileName) return;
-  console.log('passou do !filename');
   
   const iconUrl = chrome.runtime.getURL(`icons/artifact/${fileName}.svg`);
   icon.style.background = `url("${iconUrl}") no-repeat center/contain`;
-  console.log('chegou ao final da createBadgeIcon: ' + icon);
+  icon.onclick = (e) => {
+    e.stopPropagation();
+    openArtifactPage(paperId);
+  };
   
   return icon;
 }
 
-function createIcons(paperId, badges) {
+function createIcons(paper) {
   const container = document.createElement('span');
 
   container.className = 'artifact-icons';
@@ -66,18 +67,27 @@ function createIcons(paperId, badges) {
   container.style.alignItems = 'center';
   container.style.whiteSpace = 'nowrap';
 
-  const artifactIcon = createArtifactIcon(paperId);
+  const hasArtifacts =
+    (paper.artifacts && paper.artifacts.length > 0) || paper.hasArtifact;
 
-  if (artifactIcon) {
-    container.appendChild(artifactIcon);
+  if (hasArtifacts) {
+    const artifactIcon = createArtifactIcon(paper.id);
+    if (artifactIcon) {
+      container.appendChild(artifactIcon);
+    }
   }
 
+  const badges = paper.badges ?? [];
   for (const badge of badges) {
-    const badgeIcon = createBadgeIcon(badge);
+    const badgeIcon = createBadgeIcon(paper.id, badge);
 
     if (badgeIcon) {
       container.appendChild(badgeIcon);
     }
+  }
+
+  if (container.children.length === 0) {
+    return null;
   }
 
   return container;
@@ -154,10 +164,8 @@ function searchTitlesInDOM(
 
         if (hasArtifactIcon) return;
 
-        const icons = createIcons(
-          paper.id,
-          paper.badges ?? []
-        );
+        const icons = createIcons(paper);
+        if (!icons) return;
 
         if (isSearch) {
           titleElem.appendChild(icons);
@@ -230,12 +238,11 @@ async function addIconsToPaper() {
     } of tasks) {
       const paper = papersByTitle.get(normalizedTitle);
 
-      if (
-        paper &&
-        paper.artifacts &&
-        paper.artifacts.length > 0
-      ) {
-        console.log(paper);
+      const hasArtifacts =
+        (paper?.artifacts && paper.artifacts.length > 0) || paper?.hasArtifact;
+      const hasBadges = paper?.badges && paper.badges.length > 0;
+
+      if (paper && (hasArtifacts || hasBadges)) {
         inject(paper);
       }
     }
