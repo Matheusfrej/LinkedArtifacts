@@ -156,7 +156,7 @@ function searchTitlesInDOM(
 
         const icons = createIcons(
           paper.id,
-          paper.badges.sort((a, b) => a.id - b.id) ?? []
+          paper.badges ?? []
         );
 
         if (isSearch) {
