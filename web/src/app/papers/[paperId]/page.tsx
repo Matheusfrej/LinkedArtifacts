@@ -30,7 +30,9 @@ export default function Page({ params }: PageProps) {
       } catch (err: unknown) {
         console.error(err)
         if (!cancelled)
-          setError((err as AppError)?.message || 'Failed to fetch paper details')
+          setError(
+            (err as AppError)?.message || 'Failed to fetch paper details',
+          )
       } finally {
         if (!cancelled) setLoading(false)
       }
@@ -93,7 +95,7 @@ export default function Page({ params }: PageProps) {
       <PaperHeader paper={paper} />
 
       {/* Badges & Reproducibility Showcase */}
-      <PaperBadges badges={paper.badges} hasArtifact={paper.hasArtifact} />
+      <PaperBadges badges={paper.badges} />
 
       {/* Artifacts Repository Table */}
       <section className="space-y-3" aria-labelledby="paper-artifacts-heading">

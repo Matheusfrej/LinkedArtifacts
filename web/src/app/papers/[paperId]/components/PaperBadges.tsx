@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { Award, CheckCircle2, Info } from 'lucide-react'
+import { Award, CheckCircle2 } from 'lucide-react'
 import type { Badge } from '@/lib/service/papers'
 
 interface PaperBadgesProps {
@@ -40,8 +40,7 @@ const BADGE_CONFIG = {
     fileName: 'reusable',
     label: 'Evaluated & Reusable',
     shortTag: 'Reusable',
-    description:
-      'Functional, significantly exceed minimal functionality.',
+    description: 'Functional, significantly exceed minimal functionality.',
     theme: {
       border: 'border-red-500/30 hover:border-red-500/60',
       bg: 'bg-red-500/5 hover:bg-red-500/10 text-red-800 dark:text-red-300',
@@ -77,11 +76,8 @@ const BADGE_CONFIG = {
   },
 } as const
 
-export default function PaperBadges({
-  badges = [],
-  hasArtifact = false,
-}: PaperBadgesProps) {
-  if (badges.length === 0 && !hasArtifact) {
+export default function PaperBadges({ badges = [] }: PaperBadgesProps) {
+  if (badges.length === 0) {
     return null
   }
 
@@ -98,7 +94,8 @@ export default function PaperBadges({
         const label = config?.label || badge.name
         const shortTag = config?.shortTag || 'Certified'
         const description =
-          config?.description || 'Artifact evaluated and certified for this paper.'
+          config?.description ||
+          'Artifact evaluated and certified for this paper.'
         const theme = config?.theme || {
           border: 'border-border/60 hover:border-foreground/40',
           bg: 'bg-muted/50 text-foreground',
@@ -166,13 +163,6 @@ export default function PaperBadges({
           </div>
         )
       })}
-
-      {badges.length === 0 && hasArtifact && (
-        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">
-          <Info className="w-3.5 h-3.5" />
-          Artifacts Linked
-        </span>
-      )}
     </div>
   )
 }
