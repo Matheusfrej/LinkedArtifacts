@@ -1,7 +1,7 @@
 [
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "μAFL: non-intrusive feedback-driven fuzzing for microcontroller firmware",
@@ -27,7 +27,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "A grounded theory of coordination in remote-first and hybrid software teams",
@@ -47,7 +47,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "A scalable t-wise coverage estimator",
@@ -72,7 +72,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "A universal data augmentation approach for fault localization",
@@ -96,7 +96,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Adaptive performance anomaly detection for online service systems via pattern sketching",
@@ -119,7 +119,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Adaptive test selection for deep neural networks",
@@ -143,7 +143,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "An exploratory study of deep learning supply chain",
@@ -165,7 +165,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "An exploratory study of productivity perceptions in software teams",
@@ -187,7 +187,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Analyzing user perspectives on mobile app privacy at scale",
@@ -209,7 +209,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Aper: evolution-aware runtime permission misuse detection for Android apps",
@@ -232,7 +232,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "ARCLIN: automated API mention resolution for unformatted texts",
@@ -254,7 +254,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "AST-trans: code summarization with efficient tree-structured attention",
@@ -277,7 +277,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Automated assertion generation via information retrieval and its integration with deep learning",
@@ -301,7 +301,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Automated detection of password leakage from public GitHub repositories",
@@ -323,7 +323,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Automated handling of anaphoric ambiguity in requirements: a multi-solution study",
@@ -348,7 +348,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Automated patching for unreproducible builds",
@@ -372,7 +372,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Automated testing of software that uses machine learning APIs",
@@ -397,7 +397,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Automatic detection of performance bugs in database systems using equivalent queries",
@@ -422,7 +422,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "AutoTransform: automated code transformation to support modern code review process",
@@ -443,7 +443,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "BeDivFuzz: integrating behavioral diversity into generator-based fuzzing",
@@ -463,7 +463,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Big data = big insights?: operationalising brooks' law in a massive GitHub data set",
@@ -485,7 +485,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Bots for pull requests: the good, the bad, and the promising",
@@ -507,7 +507,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Bridging pre-trained models and downstream tasks for source code understanding",
@@ -530,7 +530,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "BugListener: identifying and synthesizing bug reports from collaborative live chats",
@@ -553,7 +553,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "BuildSheriff: change-aware test failure triage for continuous integration builds",
@@ -575,7 +575,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Causality in configurable software systems",
@@ -600,7 +600,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Causality-based neural network repair",
@@ -622,7 +622,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Change is the only constant: dynamic updates for workflows",
@@ -646,7 +646,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Characterizing and detecting bugs in WeChat mini-programs",
@@ -669,7 +669,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "CLEAR: <u>c</u>ontrastive <u>le</u>arning for <u>A</u>PI <u>r</u>ecommendation",
@@ -692,7 +692,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Code search based on context-aware code translation",
@@ -718,7 +718,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "CodeFill: multi-token code completion by jointly learning from structure and naming sequences",
@@ -739,7 +739,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Collaboration challenges in building ML-enabled systems: communication, documentation, engineering, and process",
@@ -761,7 +761,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Combinatorial testing of RESTful APIs",
@@ -786,7 +786,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "CONFETTI: amplifying concolic guidance for fuzzers",
@@ -811,7 +811,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Conflict-aware inference of python compatible runtime environments with domain knowledge graph",
@@ -832,7 +832,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Control parameters considered harmful: detecting range specification bugs in drone configuration modules via learning-guided search",
@@ -856,7 +856,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Controlled concurrency testing via periodical scheduling",
@@ -882,7 +882,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Cross-domain deep code search with meta learning",
@@ -904,7 +904,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Data-driven loop bound learning for termination analysis",
@@ -928,7 +928,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DEAR: a novel deep learning-based approach for automated program repair",
@@ -949,7 +949,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Decomposing convolutional neural networks into reusable and replaceable modules",
@@ -969,7 +969,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Decomposing software verification into off-the-shelf components: an application to CEGAR",
@@ -994,7 +994,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeepAnalyze: learning to localize crashes at scale",
@@ -1017,7 +1017,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeepDiagnosis: automatically diagnosing faults and recommending actionable fixes in deep learning programs",
@@ -1039,7 +1039,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeepFD: automated fault diagnosis and localization for deep learning programs",
@@ -1063,7 +1063,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeepStability: a study of unstable numerical methods and their solutions in deep learning",
@@ -1084,7 +1084,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeepState: selecting test suites to enhance the robustness of recurrent neural networks",
@@ -1106,7 +1106,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeepSTL: from english requirements to signal temporal logic",
@@ -1132,7 +1132,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeepTraLog: trace-log combined microservice anomaly detection through graph-based deep learning",
@@ -1156,7 +1156,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DeFault: mutual information-based crash triage for massive crashes",
@@ -1180,7 +1180,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Demystifying Android non-SDK APIs: measurement and understanding",
@@ -1203,7 +1203,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Demystifying the dependency challenge in kernel fuzzing",
@@ -1230,7 +1230,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Demystifying the vulnerability propagation and its evolution via dependency trees in the NPM ecosystem",
@@ -1254,7 +1254,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DescribeCtx: context-aware description synthesis for sensitive behaviors in mobile apps",
@@ -1277,7 +1277,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Detecting false alarms from automatic static analysis tools: how far are we?",
@@ -1298,7 +1298,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "\"Did you miss my comment or what?\": understanding toxicity in open source discussions",
@@ -1321,7 +1321,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Difuzer: uncovering suspicious hidden sensitive operations in Android apps",
@@ -1343,7 +1343,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Discovering repetitive code changes in python ML systems",
@@ -1368,7 +1368,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Diversity-driven automated formal verification",
@@ -1390,7 +1390,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Domain-specific analysis of mobile app reviews using keyword-assisted topic models",
@@ -1411,7 +1411,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "DrAsync: identifying and visualizing anti-patterns in asynchronous JavaScript",
@@ -1436,7 +1436,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Dynamic update for synthesized GR(1) controllers",
@@ -1458,7 +1458,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "EAGLE: creating equivalent graphs to test deep learning libraries",
@@ -1481,7 +1481,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Efficient online testing for DNN-enabled systems using surrogate-assisted and many-objective optimization",
@@ -1504,7 +1504,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Eflect: porting energy-aware applications to shared environments",
@@ -1527,7 +1527,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "EREBA: black-box energy testing of adaptive neural networks",
@@ -1549,7 +1549,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Evaluating and improving neural program-smoothing-based fuzzing",
@@ -1572,7 +1572,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "ExAIS: executable AI semantics",
@@ -1592,7 +1592,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Explanation-guided fairness testing through genetic algorithm",
@@ -1615,7 +1615,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Exploiting input sanitization for regex denial of service",
@@ -1639,7 +1639,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "FADATest: fast and adaptive performance regression testing of dynamic binary translation systems",
@@ -1663,7 +1663,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Fairness-aware configuration of machine learning libraries",
@@ -1688,7 +1688,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "FairNeuron: improving deep neural network fairness with adversary games on selective neurons",
@@ -1715,7 +1715,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Fast and precise application code analysis using a partial library",
@@ -1738,7 +1738,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Fast changeset-based bug localization with BERT",
@@ -1758,7 +1758,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Fault localization via efficient probabilistic modeling of program semantics",
@@ -1782,7 +1782,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "FIRA: <u>fi</u>ne-grained g<u>ra</u>ph-based code change representation for automated commit message generation",
@@ -1810,7 +1810,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "FlakiMe: laboratory-controlled test flakiness impact assessment",
@@ -1833,7 +1833,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Free lunch for testing: fuzzing deep-learning libraries from open source",
@@ -1855,7 +1855,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Fuzzing class specifications",
@@ -1876,7 +1876,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Garbage collection makes rust easier to use: a randomized controlled trial of the bronze garbage collector",
@@ -1900,7 +1900,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Generating and visualizing trace link explanations",
@@ -1923,7 +1923,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "GIFdroid: automated replay of visual bug reports for Android apps",
@@ -1943,7 +1943,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "GitHub sponsors: exploring a new way to contribute to open source",
@@ -1969,7 +1969,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "GraphFuzz: library API fuzzing with lifetime-aware dataflow graphs",
@@ -1989,7 +1989,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Green AI: do deep learning frameworks have different costs?",
@@ -2012,7 +2012,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Guidelines for assessing the accuracy of log message template identification techniques",
@@ -2037,7 +2037,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Hashing it out: a survey of programmers' cannabis usage, perception, and motivation",
@@ -2058,7 +2058,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Hiding critical program components via ambiguous translation",
@@ -2081,7 +2081,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "History-driven test program synthesis for JVM testing",
@@ -2104,7 +2104,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "If a human can see it, so should your system: reliability requirements for machine vision components",
@@ -2127,7 +2127,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Imperative versus declarative collection processing: an RCT on the understandability of traditional loops versus the stream API in Java",
@@ -2147,7 +2147,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Improving fault localization and program repair with deep semantic features and transferred knowledge",
@@ -2170,7 +2170,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Improving machine translation systems via isotopic replacement",
@@ -2197,7 +2197,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Inference and test generation using program invariants in chemical reaction networks",
@@ -2222,7 +2222,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Inferring and applying type changes",
@@ -2245,7 +2245,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Jigsaw: large language models meet program synthesis",
@@ -2267,7 +2267,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "JuCify: a step towards Android code unification for enhanced static analysis",
@@ -2290,7 +2290,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Knowledge-based environment dependency inference for python programs",
@@ -2313,7 +2313,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Large-scale security measurements on the android firmware ecosystem",
@@ -2336,7 +2336,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Learning and programming challenges of rust: a mixed-methods study",
@@ -2362,7 +2362,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Learning probabilistic models for static analysis alarms",
@@ -2386,7 +2386,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Learning to recommend method names with global context",
@@ -2410,7 +2410,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Learning to reduce false positives in analytic bug detectors",
@@ -2432,7 +2432,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Less is more: supporting developers in vulnerability detection during code review",
@@ -2454,7 +2454,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Lessons from eight years of operational data from a continuous integration service: an exploratory case study of CircleCI",
@@ -2475,7 +2475,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Linear-time temporal logic guided greybox fuzzing",
@@ -2498,7 +2498,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Log-based anomaly detection with deep learning: how far are we?",
@@ -2518,7 +2518,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Manas: mining software repositories to assist AutoML",
@@ -2540,7 +2540,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Modeling review history for reviewer recommendation: a hypergraph approach",
@@ -2564,7 +2564,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "ModX: binary level partially imported third-party library detection via program modularization and semantic matching",
@@ -2588,7 +2588,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Morest: model-based RESTful API testing with execution feedback",
@@ -2612,7 +2612,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Muffin: testing deep learning libraries via neural architecture fuzzing",
@@ -2634,7 +2634,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Multi-intention-aware configuration selection for performance tuning",
@@ -2657,7 +2657,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Multilingual training for software engineering",
@@ -2677,7 +2677,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "MVD: memory-related vulnerability detection based on flow-sensitive graph neural networks",
@@ -2701,7 +2701,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Nalin: learning from runtime behavior to find name-value inconsistencies in jupyter notebooks",
@@ -2724,7 +2724,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Natural attack for pre-trained models of code",
@@ -2746,7 +2746,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Nessie: automatically testing JavaScript APIs with asynchronous callbacks",
@@ -2771,7 +2771,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Neural program repair with execution-based backpropagation",
@@ -2792,7 +2792,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "NeuronFair: interpretable white-box fairness testing through biased neuron identification",
@@ -2815,7 +2815,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "NPEX: repairing Java null pointer exceptions without tests",
@@ -2839,7 +2839,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Nufix: escape from NuGet dependency maze",
@@ -2865,7 +2865,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "OJXPerf: featherlight object replica detection for Java programs",
@@ -2890,7 +2890,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "On debugging the performance of configurable software systems: developer needs and tailored tool support",
@@ -2913,7 +2913,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "On the benefits and limits of incremental build of software configurations: an exploratory study",
@@ -2938,7 +2938,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "On the evaluation of neural code summarization",
@@ -2962,7 +2962,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "On the importance of building high-quality training datasets for neural code search",
@@ -2988,7 +2988,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "On the reliability of coverage-based fuzzer benchmarking",
@@ -3009,7 +3009,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "One fuzzing strategy to rule them all",
@@ -3032,7 +3032,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Online summarizing alerts through semantic and behavior information",
@@ -3053,7 +3053,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Path transitions tell more: optimizing fuzzing schedules via runtime program states",
@@ -3077,7 +3077,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "PerfSig: extracting performance bug signatures via multi-modality causal analysis",
@@ -3100,7 +3100,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Practical automated detection of malicious npm packages",
@@ -3122,7 +3122,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Practitioners' expectations on automated code comment generation",
@@ -3146,7 +3146,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "PReach: a heuristic for probabilistic reachability to identify hard to reach statements",
@@ -3171,7 +3171,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Precise divide-by-zero detection with affirmative evidence",
@@ -3196,7 +3196,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Preempting flaky tests via non-idempotent-outcome tests",
@@ -3220,7 +3220,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Prioritizing mutants to guide mutation testing",
@@ -3246,7 +3246,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "ProMal: precise window transition graphs for android via synergy of program analysis and machine learning",
@@ -3269,7 +3269,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "PropR: property-based automatic program repair",
@@ -3293,7 +3293,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "PUS: a fast and highly efficient solver for inclusion-based pointer analysis",
@@ -3315,7 +3315,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Push-button synthesis of watch companions for Android apps",
@@ -3339,7 +3339,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Quantifying permissiveness of access control policies",
@@ -3365,7 +3365,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "R2Z2: detecting rendering regressions in web browsers through differential fuzz testing",
@@ -3390,7 +3390,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Recommending good first issues in GitHub OSS projects",
@@ -3417,7 +3417,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Refty: refinement types for valid deep learning models",
@@ -3441,7 +3441,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "ReMoS: reducing defect inheritance in transfer learning via <u>re</u>levant <u>mo</u>del <u>sl</u>icing",
@@ -3468,7 +3468,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Repairing brain-computer interfaces with fault-based data acquisition",
@@ -3491,7 +3491,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Repairing order-dependent flaky tests via test generation",
@@ -3513,7 +3513,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Retrieving data constraint implementations using fine-grained code patterns",
@@ -3538,7 +3538,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "RoPGen: towards robust code authorship attribution via automatic coding style transformation",
@@ -3561,7 +3561,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Rotten apples spoil the bunch: an anatomy of Google Play malware",
@@ -3584,7 +3584,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "SapientML: synthesizing machine learning pipelines by learning from human-writen solutions",
@@ -3608,7 +3608,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Search-based diverse sampling from real-world software product lines",
@@ -3632,7 +3632,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Semantic image fuzzing of AI perception systems",
@@ -3653,7 +3653,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "ShellFusion: answer generation for shell programming tasks via knowledge fusion",
@@ -3677,7 +3677,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "SnR: constraint-based type inference for incomplete Java code snippets",
@@ -3701,7 +3701,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Social science theories in software engineering research",
@@ -3722,7 +3722,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "SPT-code: sequence-to-sequence pre-training for learning source code representations",
@@ -3746,7 +3746,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Static inference meets deep learning: a hybrid type inference approach for python",
@@ -3770,7 +3770,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Static stack-preserving intra-procedural slicing of webassembly binaries",
@@ -3794,7 +3794,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Striking a balance: pruning false-positives from static call graphs",
@@ -3819,7 +3819,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "SugarC: scalable desugaring of real-world preprocessor usage into pure C",
@@ -3845,7 +3845,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "SymTuner: maximizing the power of symbolic execution by adaptively tuning external parameters",
@@ -3870,7 +3870,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Testing time limits in screener questions for online surveys with programmers",
@@ -3892,7 +3892,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "The art and practice of data science pipelines: A comprehensive study of data science pipelines in theory, in-the-small, and in-the-large",
@@ -3916,7 +3916,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "The extent of orphan vulnerabilities from code reuse in open source software",
@@ -3937,7 +3937,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "\"This is damn slick!\": estimating the impact of tweets on open source project popularity and new contributors",
@@ -3959,7 +3959,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "TOGA: a neural method for test oracle generation",
@@ -3981,7 +3981,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Towards automatically repairing compatibility issues in published Android apps",
@@ -4003,7 +4003,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Towards bidirectional live programming for incomplete programs",
@@ -4025,7 +4025,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Towards boosting patch execution on-the-fly",
@@ -4049,7 +4049,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Towards language-independent brown build detection",
@@ -4070,7 +4070,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Towards practical robustness analysis for DNNs based on PAC-model learning",
@@ -4096,7 +4096,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Towards training reproducible deep learning models",
@@ -4119,7 +4119,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Training data debugging for the fairness of machine learning software",
@@ -4144,7 +4144,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Trust enhancement issues in program repair",
@@ -4169,7 +4169,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Type4Py: practical deep similarity learning-based type inference for python",
@@ -4194,7 +4194,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Unleashing the power of compiler intermediate representation to enhance neural program embeddings",
@@ -4218,7 +4218,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Use of test doubles in Android testing: an in-depth investigation",
@@ -4243,7 +4243,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Using deep learning to generate complete log statements",
@@ -4264,7 +4264,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Using pre-trained models to boost code review automation",
@@ -4286,7 +4286,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Using reinforcement learning for load testing of video games",
@@ -4308,7 +4308,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Utilizing parallelism in smart contracts on decentralized blockchains by taming application-inherent conflicts",
@@ -4331,7 +4331,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "VarCLR: variable semantic representation pre-training via contrastive learning",
@@ -4353,7 +4353,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Verification of ORM-based controllers by summary inference",
@@ -4379,7 +4379,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "V-SZZ: automatic identification of version ranges affected by CVE vulnerabilities",
@@ -4401,7 +4401,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "VulCNN: an image-inspired scalable vulnerability detection system",
@@ -4425,7 +4425,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "What do they capture?: a structural analysis of pre-trained language models for source code",
@@ -4449,7 +4449,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "What makes a good commit message?",
@@ -4472,7 +4472,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "What makes effective leadership in agile software development teams?",
@@ -4492,7 +4492,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "What the fork?: finding hidden code clones in npm",
@@ -4513,7 +4513,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "Where is your app frustrating users?",
@@ -4537,7 +4537,7 @@
     },
     {
         "conference": "ICSE",
-        "year": 2025,
+        "year": 2022,
         "source": "ACM Digital Library",
         "collection_date": "2026-08-23",
         "title": "WindRanger: a directed greybox fuzzer driven by deviation basic blocks",
