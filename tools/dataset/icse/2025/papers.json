@@ -9,7 +9,9 @@
         "authors": [
             "Martin C. Rinard"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifact_links": [],
+        "pageCount": 16,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -32,7 +34,9 @@
             "Xiaofei Xie",
             "Lei Bu"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifacts_links": [],
+        "pageCount": 13,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -54,7 +58,9 @@
             "Guoqing Wang",
             "Dan Hao"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifacts_links": [],
+        "pageCount": 13,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -76,9 +82,11 @@
             "Daniel Engel",
             "Binoy Ravindran"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
+        "artifact_links": ["https://doi.org/10.5281/zenodo.14223108"],
+        "pageCount": 12,
         "artifact_available": true,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -102,10 +110,12 @@
             "Minglong Li",
             "Ji Wang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
+        "artifact_links": ["https://zenodo.org/records/14736872"],
+        "pageCount": 12,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": false,
@@ -129,7 +139,9 @@
             "Haowen Yang",
             "Pinjia He"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifact_links": [],
+        "pageCount": 12,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -154,7 +166,9 @@
             "Ang Zhou",
             "Gang Fan"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifact_links": [],
+        "pageCount": 12,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -174,11 +188,13 @@
             "Xiafa Wu",
             "Brian Demsky"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": ["https://zenodo.org/records/14681225"],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -198,7 +214,9 @@
             "Kevin Guan",
             "Owolabi Legunsen"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifact_links": [],
+        "pageCount": 13,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -221,7 +239,9 @@
             "Zhiqiang Shi",
             "Zhiwen Pan"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifact_links": [],
+        "pageCount": 13,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -243,7 +263,9 @@
             "Wenbo Shen",
             "Rui Chang"
         ],
-        "artifacts": [],
+        "badges": [],
+        "artifact_links": [],
+        "pageCount": 12,
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -267,7 +289,7 @@
             "Gang Shi",
             "Dan Meng"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -291,7 +313,7 @@
             "Claire Le Goues",
             "Xiapu Luo"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -311,11 +333,13 @@
             "Gabriel Sherman",
             "Stefan Nagy"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": ["https://github.com/FuturesLab/OGHarn"],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -335,7 +359,7 @@
             "Matteo Camilli",
             "Raffaela Mirandola"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -359,7 +383,7 @@
             "Jia Liu",
             "James A. Jones"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -381,7 +405,7 @@
             "Kate Kalcevich",
             "Sam Malek"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -404,11 +428,13 @@
             "Zitong Zhou",
             "Miryung Kim"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": ["https://doi.org/10.6084/m9.figshare.25458925", "https://github.com/UCLA-SEAL/SynthFuzz"],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -431,7 +457,7 @@
             "Yiming Tao",
             "Zulie Pan"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -456,7 +482,7 @@
             "Rui Chen",
             "Tingting Yu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -478,11 +504,13 @@
             "Heqing Huang",
             "Zhendong Su"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": ["https://github.com/wtdcode/sand-aflpp"],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -505,7 +533,7 @@
             "Chaopeng Dong",
             "Yongpan Wang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -527,7 +555,7 @@
             "Liannan Lin",
             "Hongkui He"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -550,7 +578,7 @@
             "Jay Katyan",
             "Patrick Cross"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -572,9 +600,11 @@
             "Zhanna Kaufman",
             "Dylan Zhang"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
+        "pageCount": 14,
+        "artifact_links": [],
         "artifact_available": true,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -598,7 +628,7 @@
             "Weisong Sun",
             "Yang Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -622,7 +652,7 @@
             "Zhi Jin",
             "Ge Li"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -644,11 +674,13 @@
             "Pedro Carrott",
             "Kevin Fisher"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": ["https://github.com/rkthomps/coq-modeling"],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -669,10 +701,15 @@
             "Carl Hildebrandt",
             "Sebastian Elbaum"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
+        "artifact_links": [
+            "https://github.com/less-lab-uva/DiffTest4AV", 
+            "https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/less-lab-uva/DiffTest4AV"
+        ],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": false,
@@ -694,7 +731,7 @@
             "Robert Feldt",
             "Dhasarathy Parthasarathy"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -716,7 +753,7 @@
             "Michael Vierhauser",
             "Ankit Agrawal"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -738,11 +775,13 @@
             "Andrea Stocco",
             "Paolo Tonella"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": ["https://tinyurl.com/replication-package-icse-2025"],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -765,7 +804,7 @@
             "Valtteri Kallinen",
             "Alice James"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -789,11 +828,19 @@
             "Guozhu Meng",
             "Kairui Yang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": [
+            "https://sites.google.com/view/adsdecictor", 
+            "https://sites.google.com/view/adsdecictor/primiliary-study",
+            "https://github.com/MingfeiCheng/Decictor",
+            "https://zenodo.org/records/14752134",
+            "https://zenodo.org/records/14752134"
+        ],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -813,7 +860,7 @@
             "Ali Ebrahimi Pourasad",
             "Walid Maalej"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -836,7 +883,7 @@
             "Taha Shabani",
             "Ali Mesbah"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -859,7 +906,7 @@
             "Xiwei Xu",
             "Liming Zhu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -882,11 +929,13 @@
             "Byeongguk Kwak",
             "Yuepeng Wang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "pageCount": 13,
+        "artifact_links": [],
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -908,11 +957,13 @@
             "Gunter Mussbacher",
             "Dániel Varró"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": ["https://github.com/20001LastOrder/icse2025-type4py"],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -935,9 +986,11 @@
             "Henghua Shen",
             "Yu Pei"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
+        "artifact_links": [],
+        "pageCount": 12,
         "artifact_available": true,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -958,7 +1011,7 @@
             "Zijie Zhao",
             "Wei Yang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -979,11 +1032,13 @@
             "Jingbo Wang",
             "Chao Wang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
         ],
+        "artifact_links": [],
+        "pageCount": 13,
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": true,
@@ -1005,7 +1060,7 @@
             "Kunal Suresh Pai",
             "Michael Pradel"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -1032,7 +1087,7 @@
             "Siyu Yu",
             "Haowen Yang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1055,7 +1110,7 @@
             "Shangwen Wang",
             "Kang Yang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1077,7 +1132,7 @@
             "Wenchao Gu",
             "Michael R. Lyu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1101,7 +1156,7 @@
             "Xing Hu",
             "Xin Xia"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1124,7 +1179,7 @@
             "Ke Liu",
             "Chong Wang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1146,7 +1201,7 @@
             "Jinzhao Chu",
             "Xiapu Luo"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1169,7 +1224,7 @@
             "Leyi Cui",
             "Rômulo Meira-Góes"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1196,7 +1251,7 @@
             "Shengchao Qin",
             "Jiawen Xiong"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1220,7 +1275,7 @@
             "Jingzhou Fu",
             "Yu Jiang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1244,7 +1299,7 @@
             "Mingzhe Wang",
             "Yu Jiang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1267,7 +1322,7 @@
             "Mingzhe Wang",
             "Yu Jiang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1290,7 +1345,7 @@
             "Minxue Pan",
             "Xuandong Li"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1313,7 +1368,7 @@
             "Pamela Wisniewski",
             "Fengwei Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1335,7 +1390,7 @@
             "Rudrajit Choudhuri",
             "Marco Gerosa"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1359,7 +1414,7 @@
             "Ling Shi",
             "Yang Liu"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -1384,7 +1439,7 @@
             "Federica Sarro",
             "Yang Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1407,7 +1462,7 @@
             "Min Zhang",
             "Jiangtao Wang"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -1431,7 +1486,7 @@
             "Huajie Shao",
             "Denys Poshyvanyk"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1453,7 +1508,7 @@
             "Christian Kästner",
             "Eunsuk Kang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1478,7 +1533,7 @@
             "Stefan Nagy",
             "Paul Gazzillo"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1503,7 +1558,7 @@
             "Kaitlyn Cook",
             "Alicia M. Grubb"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1528,7 +1583,7 @@
             "Dalal Alrajeh",
             "Sebastian Uchitel"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1550,7 +1605,7 @@
             "Rina R. Wehbe",
             "Paul Ralph"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1572,7 +1627,7 @@
             "Kyeling Ong",
             "Ranjit Jhala"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1595,7 +1650,7 @@
             "Adithya Bhattiprolu",
             "Iftekhar Ahmed"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1617,7 +1672,7 @@
             "Hridya Dhulipala",
             "Tien N. Nguyen"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1645,7 +1700,7 @@
             "Lyuye Zhang",
             "Yang Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1667,7 +1722,7 @@
             "Zeyu Sun",
             "Albert Merono Penuela"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1690,7 +1745,7 @@
             "Zhuangbin Chen",
             "Jianping Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1711,7 +1766,7 @@
             "Dong Jae Kim",
             "Tse-Hsun (Peter) Chen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1735,7 +1790,7 @@
             "Jie Yu",
             "Xiaodong Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1756,7 +1811,7 @@
             "Alisa Welter",
             "Sven Apel"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1777,7 +1832,7 @@
             "Yuntong Zhang",
             "Abhik Roychoudhury"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1798,7 +1853,7 @@
             "Yi Xiao",
             "Hongyu Zhang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1823,7 +1878,7 @@
             "Tao Chen",
             "Ke Li"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1846,7 +1901,7 @@
         "authors": [
             "Annibale Panichella"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1869,7 +1924,7 @@
         "authors": [
             "Kaiyao Ke"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1891,7 +1946,7 @@
             "Kui Liu",
             "Xin Xia"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1913,7 +1968,7 @@
             "Xiaodan Xu",
             "Xiaohu Yang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -1936,7 +1991,7 @@
             "Greg Tystahl",
             "William Enck"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -1961,7 +2016,7 @@
             "Alice Beideck",
             "Shiyi Wei"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -1986,7 +2041,7 @@
             "Naser Ezzati-Jivan",
             "Abdelwahab Hamou-Lhadj"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2010,7 +2065,7 @@
             "Shuangxiang Kan",
             "Yulei Sui"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2036,7 +2091,7 @@
             "Zhen Tang",
             "Jian Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2058,7 +2113,7 @@
             "Phat Nguyen",
             "Tien N. Nguyen"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2086,7 +2141,7 @@
             "Xiaohong Li",
             "Lei Bu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2110,7 +2165,7 @@
             "Ruikai Zhang",
             "Yuchi Ma"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2133,7 +2188,7 @@
             "Filipe R. Cogo",
             "Bram Adams"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2155,7 +2210,7 @@
             "Sven Peldszus",
             "Thorsten Berger"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2183,7 +2238,7 @@
             "Ting Su",
             "Chengcheng Wan"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -2208,7 +2263,7 @@
             "Cheng-Chao Huang",
             "Renjue Li"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2233,7 +2288,7 @@
             "Thomas Zimmermann",
             "Souti Chattopadhyay"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2256,7 +2311,7 @@
             "Manasvi Parikh",
             "Andrew Begel"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2279,7 +2334,7 @@
             "Adish Singla",
             "Mariya Toneva"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2302,7 +2357,7 @@
             "Boyu Tian",
             "Sorin Lerner"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2327,7 +2382,7 @@
             "Shreyas Minocha",
             "Marcel Böhme"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -2353,7 +2408,7 @@
             "Vitesh Kambara",
             "Bradley Reaves"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2377,7 +2432,7 @@
             "Beibei Li",
             "Zhangyan Lin"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2399,7 +2454,7 @@
             "Tanmay Singla",
             "Huiyun Peng"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2420,7 +2475,7 @@
             "Zhuo Zhang",
             "Xiangyu Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2443,7 +2498,7 @@
             "Robert Dyer",
             "Hridesh Rajan"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -2466,7 +2521,7 @@
             "Tao Chen",
             "Miqing Li"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2493,7 +2548,7 @@
             "Zhihan Jiang",
             "Zhuangbin Chen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2513,7 +2568,7 @@
             "Yifeng Di",
             "Tianyi Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2536,7 +2591,7 @@
             "Ruikai Zhang",
             "Yuchi Ma"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2556,7 +2611,7 @@
             "Stefan Schwedt",
             "Thomas Ströder"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2579,7 +2634,7 @@
             "Haoyu Liu",
             "Niklas Ewald"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2605,7 +2660,7 @@
             "Saurabh Sinha",
             "Alessandro Orso"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2629,7 +2684,7 @@
             "Yuming Zhou",
             "Baowen Xu"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -2655,7 +2710,7 @@
             "Cen Zhang",
             "Yang Liu"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -2680,7 +2735,7 @@
             "Maliheh Izadi",
             "Andy Zaidman"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -2706,7 +2761,7 @@
             "Junyi Jessy Li",
             "Milos Gligoric"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -2728,7 +2783,7 @@
             "Soneya Binta Hossain",
             "Matthew B. Dwyer"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -2751,7 +2806,7 @@
             "Balreet Grewal",
             "Cor-Paul Bezemer"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2773,7 +2828,7 @@
             "Vladik Kreinovich",
             "Saeid Tizpaz-Niari"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2794,7 +2849,7 @@
             "Junjie Chen",
             "Xiangyu Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2815,7 +2870,7 @@
             "Dong Jae Kim",
             "Tse-Hsun (Peter) Chen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2838,7 +2893,7 @@
             "Shurui Zhou",
             "Christian Kästner"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2859,7 +2914,7 @@
             "Juan Pablo Sandoval Alcocer",
             "Nicolas Jimenez-Fuentes"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -2879,7 +2934,7 @@
             "Octavio Galland",
             "Marcel Böhme"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2907,7 +2962,7 @@
             "Dianhui Chu",
             "Chunming Hu"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -2934,7 +2989,7 @@
             "Yongqiang Tian",
             "Chengnian Sun"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -2957,7 +3012,7 @@
             "Jaehyeok Lee",
             "Sooyoung Cha"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -2984,7 +3039,7 @@
             "Zhiqing Rui",
             "Yanjun Wu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3006,7 +3061,7 @@
             "Chengcheng Wan",
             "Xiaodong Gu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3028,7 +3083,7 @@
             "Ahmad Tayeb",
             "Ozren Dabić"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3050,7 +3105,7 @@
             "Jonathan Aldrich",
             "Rui Abreu"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3076,7 +3131,7 @@
             "Hao He",
             "Minghui Zhou"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3099,7 +3154,7 @@
             "Morteza Ziyadi",
             "Nenad Medvidovic"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3121,7 +3176,7 @@
             "Rahul Pandita",
             "Eirini Kalliamvakou"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3144,7 +3199,7 @@
             "Jie Huang",
             "Parth Thakkar"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3171,7 +3226,7 @@
             "Rahul Sharma",
             "Subhajit Roy"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3194,7 +3249,7 @@
             "Chawin Sitawarin",
             "Xinyun Chen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3217,7 +3272,7 @@
             "Tianwen Wang",
             "Shangqing Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3239,7 +3294,7 @@
             "Siddharth Bhat",
             "Sarah Fakhoury"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3262,7 +3317,7 @@
             "Paulo Carreira",
             "Nuno Santos"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3287,7 +3342,7 @@
             "Yuandao Cai",
             "Charles Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3309,7 +3364,7 @@
             "Parsa Alian",
             "Ali Mesbah"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3333,7 +3388,7 @@
             "Wei Wang",
             "Jun Wei"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3356,7 +3411,7 @@
             "Lian Li",
             "Zixuan Zhao"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3384,7 +3439,7 @@
             "Tianyi Zhang",
             "Haifeng Shen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3405,7 +3460,7 @@
             "Iftekhar Ahmed",
             "Mohammad Moshirpour"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3428,7 +3483,7 @@
             "Qi Xin",
             "Wenjie Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3452,7 +3507,7 @@
             "Ge Li",
             "Xin Xia"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3476,7 +3531,7 @@
             "Chunrong Fang",
             "Yi Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3498,7 +3553,7 @@
             "Xiangxin Meng",
             "Yang Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3522,7 +3577,7 @@
             "Sen Chen",
             "Lingxiao Jiang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3544,7 +3599,7 @@
             "Kun Wang",
             "Jun Sun"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3566,7 +3621,7 @@
             "Florian Brandherm",
             "Achref Doula"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3593,7 +3648,7 @@
             "Jianbo Gao",
             "Yanlin Wang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3616,7 +3671,7 @@
             "Yuming Zhou",
             "Jianhua Zhao"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3639,7 +3694,7 @@
             "Yuwanqi Deng",
             "JianFeng Ma"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3662,7 +3717,7 @@
             "Stephen Neuendorffer",
             "Hao Chen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3685,7 +3740,7 @@
             "August Shi",
             "Wing Lam"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3709,7 +3764,7 @@
             "Yingquan Zhao",
             "Zan Wang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3732,7 +3787,7 @@
             "Xinru Cheng",
             "Chengnian Sun"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3759,7 +3814,7 @@
             "Peng Di",
             "Shin Hwei Tan"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3780,7 +3835,7 @@
             "Marco Gutfleisch",
             "Alena Naiakshina"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3802,7 +3857,7 @@
             "Meiyappan Nagappan",
             "Samer Al-Kiswany"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3827,7 +3882,7 @@
             "Joshua Sunshine",
             "Jonathan Aldrich"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3853,7 +3908,7 @@
             "Marie-Christine Jakobs",
             "Heike Wehrheim"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -3881,7 +3936,7 @@
             "Lei Zhang",
             "Yingyuan Pu"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -3908,7 +3963,7 @@
             "Yanfeng Hu",
             "Shanshan Li"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3931,7 +3986,7 @@
             "Qingyuan Zhong",
             "Lei Xiao"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3954,7 +4009,7 @@
             "Mingxi Ye",
             "Kaiwen Ning"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -3975,7 +4030,7 @@
             "Eriky Rodrigues",
             "Tayana Conte"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -4001,7 +4056,7 @@
             "Yue Li",
             "He Zhang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -4027,7 +4082,7 @@
             "Yony Kochinski",
             "Nan Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4048,7 +4103,7 @@
             "Premkumar Devanbu",
             "Michael Pradel"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4075,7 +4130,7 @@
             "Junjie Chen",
             "Lili Huang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4096,7 +4151,7 @@
             "Weifeng Sun",
             "Meng Yan"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4119,7 +4174,7 @@
             "Jin Song Dong",
             "Manuel Rigger"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4145,7 +4200,7 @@
             "Nargiz Humbatova",
             "Mohammad Wardat"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4172,7 +4227,7 @@
             "Dongwei Xiao",
             "Zhenlan Ji"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4193,7 +4248,7 @@
             "Ali Anwar",
             "Muhammad Ali Gulzar"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4219,7 +4274,7 @@
             "Zhiqing Qiu",
             "Hui Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4242,7 +4297,7 @@
             "Lan Xia",
             "Longyu Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4266,7 +4321,7 @@
             "Shi Han",
             "Hongyu Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4286,7 +4341,7 @@
             "Antu Saha",
             "Oscar Chaparro"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4315,7 +4370,7 @@
             "Sen Nie",
             "Shi Wu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4337,7 +4392,7 @@
             "Csaba Nagy",
             "Michele Lanza"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4359,7 +4414,7 @@
             "Audris Mockus",
             "Bogdan Vasilescu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4378,7 +4433,7 @@
         "authors": [
             "Hao Zhong"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4401,7 +4456,7 @@
             "Noah Reardon",
             "Thad Polk"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4423,7 +4478,7 @@
             "Bless Jah",
             "Muhammad Ali Gulzar"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4448,7 +4503,7 @@
             "Luis Cruz",
             "Thomas Durieux"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4474,7 +4529,7 @@
             "Ettore Merlo",
             "Maxime Lamothe"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4499,7 +4554,7 @@
             "Hanyang Hu",
             "Akond Rahman"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -4525,7 +4580,7 @@
             "Kui Liu",
             "Xin Xia"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4545,7 +4600,7 @@
             "Youngjae Choi",
             "Seunghoon Woo"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4571,7 +4626,7 @@
             "Jan-Philipp Steghöfer",
             "Thorsten Berger"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -4597,7 +4652,7 @@
             "Aaron Quigley",
             "Yuyu Luo"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4620,7 +4675,7 @@
             "Yinfang Chen",
             "Suman Nath"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4643,7 +4698,7 @@
             "Michael Hicks",
             "Sam Huang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4664,7 +4719,7 @@
             "Yue Huang",
             "Tao Chen"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4690,7 +4745,7 @@
             "Shuvendu K. Lahiri",
             "Tahina Ramananandro"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4712,7 +4767,7 @@
             "Shin Hwei Tan",
             "Pinjia He"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4735,7 +4790,7 @@
             "Ruben Martins",
             "Claire Le Goues"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -4760,7 +4815,7 @@
             "Zineb Flahy",
             "Abriele Qudsi"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4784,7 +4839,7 @@
             "Shengmai Chen",
             "Lei Ma"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4808,7 +4863,7 @@
             "Yong Wang",
             "Qing Liao"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4832,7 +4887,7 @@
             "Jinbu Liu",
             "Huxing Zhang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4855,7 +4910,7 @@
             "Feross Aboukhadijeh",
             "Laurie Williams"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4878,7 +4933,7 @@
             "Kurt Thomas",
             "Marina Zhang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4903,7 +4958,7 @@
             "Kalpathy Sivaraman",
             "Renata Saldivar Gonzalez"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4930,7 +4985,7 @@
             "Chunrong Fang",
             "Zhenpeng Chen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4950,7 +5005,7 @@
             "Beatriz Souza",
             "Michael Pradel"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -4975,7 +5030,7 @@
             "Ziyao He",
             "Sam Malek"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -4997,7 +5052,7 @@
             "Bingzhou Qian",
             "Yu Jiang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5020,7 +5075,7 @@
             "Yang Zhang",
             "Hui Liu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5042,7 +5097,7 @@
             "Bin Lin",
             "Junjie Chen"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5065,7 +5120,7 @@
             "Lingling Fan",
             "Tianhong Wang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5086,7 +5141,7 @@
             "Lili Wei",
             "Julia Rubin"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -5111,7 +5166,7 @@
             "Mengjie Sun",
             "Zhenyu Huang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5134,7 +5189,7 @@
             "Zibo Liu",
             "Lingling Fan"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5158,7 +5213,7 @@
             "Zhao Li",
             "Shuai Hao"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5180,7 +5235,7 @@
             "Minxue Pan",
             "Yue Li"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -5206,7 +5261,7 @@
             "Emilien Decoux",
             "Stefano Zacchiroli"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -5231,7 +5286,7 @@
             "Anhao Xiang",
             "Chuan Yue"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -5256,7 +5311,7 @@
             "Cor-Paul Bezemer",
             "Diego Elias Costa"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5279,7 +5334,7 @@
             "Chao Feng",
             "Chaojing Tang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5303,7 +5358,7 @@
             "Jianhua Zhao",
             "Xuandong Li"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5327,7 +5382,7 @@
             "Guosheng Xu",
             "Haoyu Wang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5349,7 +5404,7 @@
             "Saad Shafiq",
             "Nenad Medvidović"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -5376,7 +5431,7 @@
             "Yang Liu",
             "Yiling Lou"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5400,7 +5455,7 @@
             "Ying Li",
             "Gang Huang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5422,7 +5477,7 @@
             "Oscar Chaparro",
             "Denys Poshyvanyk"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -5446,7 +5501,7 @@
             "Parvez Mahbub",
             "Mohammad Masudur Rahman"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -5472,7 +5527,7 @@
             "Jooyong Yi",
             "Mijung Kim"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional",
             "Reusable"
@@ -5498,7 +5553,7 @@
             "Foutse Khomh",
             "Hridesh Rajan"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5521,7 +5576,7 @@
             "Xiaokuan Zhang",
             "Taesoo Kim"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5544,7 +5599,7 @@
             "Zhuo Zhang",
             "Pranav Agrawal"
         ],
-        "artifacts": [
+        "badges": [
             "Available"
         ],
         "artifact_available": true,
@@ -5569,7 +5624,7 @@
             "Jianzhong Su",
             "Yanlin Wang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5593,7 +5648,7 @@
             "Ting Chen",
             "Yu Jiang"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5616,7 +5671,7 @@
             "Weizhe Zhang",
             "Zibin Zheng"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5639,7 +5694,7 @@
             "Amin Jalilov",
             "Zhenkai Liang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -5664,7 +5719,7 @@
             "Wei Ding",
             "Chaochao Wu"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5687,7 +5742,7 @@
             "Lavinia Stiliadou",
             "Daniel Vietz"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5710,7 +5765,7 @@
             "Le Guan",
             "Wenwen Wang"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],
@@ -5736,7 +5791,7 @@
             "Rishi Poddar",
             "Aseem Rastogi"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5759,7 +5814,7 @@
             "Xiaogang Zhu",
             "Xian Li"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5782,7 +5837,7 @@
             "Tianyuan Zhang",
             "Tianlin Li"
         ],
-        "artifacts": [],
+        "badges": [],
         "artifact_available": false,
         "artifact_functional": false,
         "artifact_reusable": false,
@@ -5803,7 +5858,7 @@
             "Vijay Krishna Palepu",
             "James A. Jones"
         ],
-        "artifacts": [
+        "badges": [
             "Available",
             "Functional"
         ],

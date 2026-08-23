@@ -77,7 +77,7 @@ const papers = [...document.querySelectorAll('.issue-item-container')]
 
 
     // Always maintain this order
-    const artifacts = ARTIFACT_TYPES
+    const badges = ARTIFACT_TYPES
       .filter(type => hasBadge(type));
 
 
@@ -95,7 +95,7 @@ const papers = [...document.querySelectorAll('.issue-item-container')]
       doi,
       authors,
 
-      artifacts,
+      badges,
 
       artifact_available: hasBadge('Available'),
       artifact_functional: hasBadge('Functional'),
@@ -141,3 +141,5 @@ for (const type of ARTIFACT_TYPES) {
 // -------------------------
 
 console.table(papers);
+
+// manual fields: artifact_links, pageCount
