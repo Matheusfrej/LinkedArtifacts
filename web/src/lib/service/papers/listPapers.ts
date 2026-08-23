@@ -8,4 +8,3 @@ export async function listPapers(): Promise<ListPapersResponse> {
   const { data } = await api.get(url)
   return data
 }
-

@@ -27,8 +27,13 @@ export default async function Page({
   return (
     <>
       <BreadcrumbSeparator />
-      <BreadcrumbItem>
-        <BreadcrumbPage className="capitalize">{idOrTitle}</BreadcrumbPage>
+      <BreadcrumbItem className="min-w-0">
+        <BreadcrumbPage
+          className="capitalize truncate max-w-[160px] xs:max-w-[240px] sm:max-w-md md:max-w-xl inline-block"
+          title={idOrTitle}
+        >
+          {idOrTitle}
+        </BreadcrumbPage>
       </BreadcrumbItem>
     </>
   )

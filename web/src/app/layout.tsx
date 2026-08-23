@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import React from 'react'
@@ -15,6 +15,16 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#171717' },
+  ],
+}
+
 export const metadata: Metadata = {
   title: 'LinkedArtifacts',
   description: 'Link papers with its artifacts',
@@ -30,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
         <ThemeProvider
           attribute="class"
@@ -39,8 +49,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {breadcrumb}
-          {children}
+          <div className="flex-1 w-full flex flex-col">
+            {breadcrumb}
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

@@ -84,7 +84,7 @@ export default function PaperBadges({ badges = [] }: PaperBadgesProps) {
   return (
     <div className="flex flex-wrap items-center gap-2">
       <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider mr-1">
-        <Award className="w-4 h-4 text-foreground/70" />
+        <Award className="w-4 h-4 text-foreground/70 shrink-0" />
         <span>Badges:</span>
       </div>
 
@@ -111,9 +111,9 @@ export default function PaperBadges({ badges = [] }: PaperBadgesProps) {
           >
             {/* Compact Badge Chip */}
             <div
-              className={`inline-flex items-center gap-2 pl-1.5 pr-2.5 py-1 rounded-full border ${theme.border} ${theme.bg} transition-all duration-200 cursor-help`}
+              className={`inline-flex items-center gap-1.5 sm:gap-2 pl-1.5 pr-2.5 py-1 rounded-full border ${theme.border} ${theme.bg} transition-all duration-200 cursor-help select-none`}
             >
-              <div className="relative w-5 h-5 shrink-0 flex items-center justify-center">
+              <div className="relative w-4.5 h-4.5 sm:w-5 sm:h-5 shrink-0 flex items-center justify-center">
                 <Image
                   src={`/icons/artifact/${fileName}.svg`}
                   alt={label}
@@ -135,30 +135,30 @@ export default function PaperBadges({ badges = [] }: PaperBadgesProps) {
             {/* Hover Tooltip Popup */}
             <div
               role="tooltip"
-              className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-72 p-3 rounded-xl bg-popover text-popover-foreground border ${theme.tooltipBorder} shadow-xl text-xs opacity-0 pointer-events-none group-hover:opacity-100 group-focus:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50`}
+              className={`absolute bottom-full left-0 sm:left-1/2 sm:-translate-x-1/2 mb-2 w-64 sm:w-72 max-w-[calc(100vw-2.5rem)] p-3 rounded-xl bg-popover text-popover-foreground border ${theme.tooltipBorder} shadow-xl text-xs opacity-0 pointer-events-none group-hover:opacity-100 group-focus:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50`}
             >
               <div className="flex items-center gap-2 mb-1.5 pb-1.5 border-b border-border/40">
                 <Image
                   src={`/icons/artifact/${fileName}.svg`}
                   alt={label}
-                  width={22}
-                  height={22}
-                  className="object-contain"
+                  width={20}
+                  height={20}
+                  className="object-contain shrink-0"
                 />
                 <span className="font-semibold text-foreground">{label}</span>
               </div>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-[11px] sm:text-xs">
                 {description}
               </p>
               <div className="mt-2 pt-1.5 border-t border-border/40 flex items-center justify-between text-[10px] text-muted-foreground">
                 <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-medium">
-                  <CheckCircle2 className="w-3 h-3" />
+                  <CheckCircle2 className="w-3 h-3 shrink-0" />
                   Verified Evaluation
                 </span>
               </div>
 
               {/* Triangle Arrow */}
-              <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-4 border-transparent border-t-popover" />
+              <div className="hidden sm:block absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-4 border-transparent border-t-popover" />
             </div>
           </div>
         )

@@ -18,30 +18,37 @@ export default function ArtifactFilter({
   onChange: (value: ArtifactFilterValue[]) => void
 }) {
   return (
-    <fieldset className="flex flex-wrap justify-end gap-x-4 gap-y-2">
-      <legend className="sr-only">Filter papers</legend>
-      {artifactFilterOptions.map((option) => (
-        <label
-          key={option.value}
-          className="flex cursor-pointer select-none items-center gap-2"
-        >
-          <input
-            type="checkbox"
-            checked={selected.includes(option.value)}
-            onChange={(event) => {
-              if (event.target.checked) {
-                onChange([...selected, option.value])
-              } else {
-                onChange(selected.filter((value) => value !== option.value))
-              }
-            }}
-            className="h-4 w-4"
-          />
-          <span className="text-sm text-gray-700 dark:text-gray-300">
-            {option.label}
-          </span>
-        </label>
-      ))}
+    <fieldset className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 w-full">
+      <legend className="sr-only">
+        Filter papers by artifact and evaluation status
+      </legend>
+      {artifactFilterOptions.map((option) => {
+        const isSelected = selected.includes(option.value)
+        return (
+          <label
+            key={option.value}
+            className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-colors cursor-pointer select-none whitespace-nowrap ${
+              isSelected
+                ? 'bg-primary text-primary-foreground border-primary shadow-xs'
+                : 'bg-muted/40 hover:bg-muted text-foreground/80 border-border/70 hover:border-border'
+            }`}
+          >
+            <input
+              type="checkbox"
+              checked={isSelected}
+              onChange={(event) => {
+                if (event.target.checked) {
+                  onChange([...selected, option.value])
+                } else {
+                  onChange(selected.filter((value) => value !== option.value))
+                }
+              }}
+              className="sr-only"
+            />
+            <span>{option.label}</span>
+          </label>
+        )
+      })}
     </fieldset>
   )
 }

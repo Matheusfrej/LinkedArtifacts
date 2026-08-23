@@ -3,5 +3,9 @@ export default function PapersLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return <div className="w-full max-w-4xl mx-auto">{children}</div>
+  return (
+    <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+      {children}
+    </div>
+  )
 }

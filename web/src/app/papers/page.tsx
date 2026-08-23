@@ -143,15 +143,12 @@ export default function Page() {
   }
 
   return (
-    <div className="py-8">
-      <SearchBar
-        value={query}
-        onChange={setQuery}
-      />
+    <div className="py-4 sm:py-8">
+      <SearchBar value={query} onChange={setQuery} />
 
       {/* Control Bar: Counter, Filters & Sorting */}
       <div className="flex flex-col gap-3 mb-6">
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/40 pb-3">
+        <div className="flex flex-row items-center justify-between gap-3 border-b border-border/40 pb-3">
           <div className="text-xs sm:text-sm text-muted-foreground font-medium">
             {papers.length > 0 && (
               <span>
@@ -162,12 +159,12 @@ export default function Page() {
             )}
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 shrink-0">
             <PaperSort value={sortBy} onChange={setSortBy} />
           </div>
         </div>
 
-        <div className="flex justify-end">
+        <div className="w-full">
           <ArtifactFilter
             selected={selectedFilters}
             onChange={setSelectedFilters}
@@ -175,10 +172,10 @@ export default function Page() {
         </div>
       </div>
 
-      <ul className="space-y-6">
+      <ul className="space-y-5 sm:space-y-6">
         {filteredPapers.length === 0 ? (
-          <li className="text-center text-gray-500 dark:text-gray-400 py-6">
-            No papers found.
+          <li className="text-center text-muted-foreground py-8 sm:py-12 text-sm sm:text-base border border-dashed border-border/60 rounded-xl">
+            No papers found matching your criteria.
           </li>
         ) : (
           filteredPapers.map((paper) => (
@@ -186,12 +183,12 @@ export default function Page() {
               key={paper.id}
               className="text-left pb-4 border-b border-border/40 last:border-b-0"
             >
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-4">
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-baseline gap-x-2">
+                  <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
                     <Link
                       href={`/papers/${paper.id}`}
-                      className="text-[19px] font-medium leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8]"
+                      className="text-base sm:text-lg md:text-[19px] font-medium leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8] break-words"
                       tabIndex={0}
                     >
                       {paper.title}
@@ -199,18 +196,15 @@ export default function Page() {
 
                     {(paper.hasArtifact ||
                       (paper.badges && paper.badges.length > 0)) && (
-                      <span className="inline-flex items-center gap-1.5 align-middle self-center">
+                      <span className="inline-flex items-center gap-1.5 align-middle self-center shrink-0">
                         {paper.hasArtifact && (
                           <Image
                             src="/icons/artifact/icon.svg"
                             alt="Show Artifacts"
                             title="Show Artifacts"
-                            width={20}
-                            height={20}
-                            style={{
-                              cursor: 'pointer',
-                              flexShrink: 0,
-                            }}
+                            width={18}
+                            height={18}
+                            className="w-4.5 h-4.5 sm:w-5 sm:h-5 cursor-pointer shrink-0"
                           />
                         )}
 
@@ -227,11 +221,9 @@ export default function Page() {
                               src={`/icons/artifact/${fileName}.svg`}
                               alt={`Artifact ${badge.name}`}
                               title={`Artifact ${badge.name}`}
-                              width={20}
-                              height={20}
-                              style={{
-                                flexShrink: 0,
-                              }}
+                              width={18}
+                              height={18}
+                              className="w-4.5 h-4.5 sm:w-5 sm:h-5 shrink-0"
                             />
                           )
                         })}
@@ -240,23 +232,25 @@ export default function Page() {
                   </div>
 
                   {formatMetadata(paper) && (
-                    <div className="text-[14px] text-[#006621] dark:text-[#68b688] leading-relaxed mt-1">
+                    <div className="text-xs sm:text-[14px] text-[#006621] dark:text-[#68b688] leading-relaxed mt-1 break-words">
                       {formatMetadata(paper)}
                     </div>
                   )}
                 </div>
 
                 {paper.doi && (
-                  <a
-                    href={getDoiUrl(paper.doi)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[14px] text-[#1a0dab] hover:underline dark:text-[#8ab4f8] whitespace-nowrap shrink-0 inline-flex items-center gap-1 pt-0.5 font-medium"
-                    title={`Open DOI: ${paper.doi}`}
-                  >
-                    <span className="font-bold">[PDF]</span>
-                    <span>doi.org</span>
-                  </a>
+                  <div className="shrink-0 self-start sm:self-auto pt-0.5">
+                    <a
+                      href={getDoiUrl(paper.doi)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs sm:text-[14px] text-[#1a0dab] hover:underline dark:text-[#8ab4f8] inline-flex items-center gap-1 font-medium px-2 py-0.5 rounded bg-muted/40 sm:bg-transparent"
+                      title={`Open DOI: ${paper.doi}`}
+                    >
+                      <span className="font-bold">[PDF]</span>
+                      <span>doi.org</span>
+                    </a>
+                  </div>
                 )}
               </div>
             </li>

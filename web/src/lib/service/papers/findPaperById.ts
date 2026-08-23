@@ -14,4 +14,3 @@ export async function findPaperById(
   const { data } = await api.get(url)
   return data
 }
-

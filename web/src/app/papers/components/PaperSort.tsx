@@ -47,25 +47,30 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
           <Button
             variant={isCustomSort ? 'secondary' : 'outline'}
             size="sm"
-            className="h-8 gap-2 text-xs sm:text-sm font-normal border-border/80 hover:border-border cursor-pointer shadow-none"
+            className="h-8.5 sm:h-8 gap-1.5 sm:gap-2 text-xs sm:text-sm font-normal border-border/80 hover:border-border cursor-pointer shadow-none px-2.5 sm:px-3"
             aria-label="Sort papers"
           >
-            <ArrowUpDown className="w-3.5 h-3.5 text-muted-foreground" />
-            <span>Sort:</span>
-            <span className="font-semibold text-foreground">
+            <ArrowUpDown className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
+            <span className="hidden xs:inline">Sort:</span>
+            <span className="font-semibold text-foreground truncate max-w-[130px] sm:max-w-none">
               {current.label}
             </span>
           </Button>
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent align="end" className="w-56 p-1.5 shadow-lg">
+        <DropdownMenuContent
+          align="end"
+          className="w-56 max-w-[calc(100vw-2rem)] p-1.5 shadow-lg"
+        >
           <DropdownMenuGroup>
             <DropdownMenuItem
               onClick={() => onChange('default')}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Default (Original order)</span>
-              {value === 'default' && <Check className="w-4 h-4 text-primary" />}
+              {value === 'default' && (
+                <Check className="w-4 h-4 text-primary" />
+              )}
             </DropdownMenuItem>
           </DropdownMenuGroup>
 

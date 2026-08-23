@@ -32,22 +32,24 @@ export default function BaseRepositoryTable<
   if (data.length === 0) return null
 
   return (
-    <div className="bg-background border border-foreground/20 rounded-lg shadow-sm">
+    <div className="bg-card border border-border/80 rounded-xl shadow-xs overflow-hidden">
       <BaseRepositoryTableHeader
         title={title}
         description={description}
         icon={icon}
         length={data.length}
       />
-      <div className="overflow-x-auto">
-        <Table>
-          <TableHeader className="bg-foreground/5">
+      <div className="overflow-x-auto w-full">
+        <Table className="min-w-full">
+          <TableHeader className="bg-muted/40">
             <TableRow>
-              <TableHead>Link</TableHead>
+              <TableHead className="px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold">
+                Link
+              </TableHead>
               {columns.map((column) => (
                 <TableHead
                   key={String(column.key)}
-                  className={`${
+                  className={`px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm font-semibold ${
                     column.align === 'center'
                       ? 'text-center'
                       : column.align === 'right'
@@ -62,22 +64,23 @@ export default function BaseRepositoryTable<
           </TableHeader>
           <TableBody>
             {data.map((item) => (
-              <TableRow key={item.id}>
-                <TableCell>
+              <TableRow key={item.id} className="hover:bg-muted/30">
+                <TableCell className="px-3 sm:px-4 py-2.5 sm:py-3">
                   <a
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 transition-colors"
+                    title={item.url}
+                    className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-primary hover:underline transition-colors font-medium max-w-[220px] xs:max-w-xs sm:max-w-md md:max-w-lg truncate"
                   >
-                    {item.url}
-                    <ExternalLink className="w-3 h-3" />
+                    <span className="truncate">{item.url}</span>
+                    <ExternalLink className="w-3.5 h-3.5 shrink-0 opacity-70" />
                   </a>
                 </TableCell>
                 {columns.map((column) => (
                   <TableCell
                     key={String(column.key)}
-                    className={`${
+                    className={`px-3 sm:px-4 py-2.5 sm:py-3 text-xs sm:text-sm ${
                       column.align === 'center'
                         ? 'text-center'
                         : column.align === 'right'
