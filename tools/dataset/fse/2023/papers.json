@@ -1,0 +1,4716 @@
+[
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards AI-Driven Software Development: Challenges and Lessons from the Field (Keynote)",
+        "doi": "https://doi.org/10.1145/3611643.3633451",
+        "authors": [
+            "Eran Yahav"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "Article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3633451"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Getting Outside the Bug Boxes (Keynote)",
+        "doi": "https://doi.org/10.1145/3611643.3633452",
+        "authors": [
+            "Margaret Burnett"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "Article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3633452"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Four-Year Study of Student Contributions to OSS vs. OSS4SG with a Lightweight Intervention",
+        "doi": "https://doi.org/10.1145/3611643.3616250",
+        "authors": [
+            "Zihan Fang",
+            "Madeline Endres",
+            "Thomas Zimmermann",
+            "Denae Ford"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616250"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Do CONTRIBUTING Files Provide Information about OSS Newcomers’ Onboarding Barriers?",
+        "doi": "https://doi.org/10.1145/3611643.3616288",
+        "authors": [
+            "Felipe Fronchetti",
+            "David C. Shepherd",
+            "Igor Wiese",
+            "Christoph Treude"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616288"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "How Early Participation Determines Long-Term Sustained Activity in GitHub Projects?",
+        "doi": "https://doi.org/10.1145/3611643.3616349",
+        "authors": [
+            "Wenxin Xiao",
+            "Hao He",
+            "Weiwei Xu",
+            "Yuxia Zhang",
+            "Minghui Zhou"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616349"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Matching Skills, Past Collaboration, and Limited Competition: Modeling When Open-Source Projects Attract Contributors",
+        "doi": "https://doi.org/10.1145/3611643.3616282",
+        "authors": [
+            "Hongbo Fang",
+            "James Herbsleb",
+            "Bogdan Vasilescu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616282"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Accelerating Continuous Integration with Parallel Batch Testing",
+        "doi": "https://doi.org/10.1145/3611643.3616255",
+        "authors": [
+            "Emad Fallahzadeh",
+            "Amir Hossein Bavand",
+            "Peter C. Rigby"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616255"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DistXplore: Distribution-Guided Testing for Evaluating and Enhancing Deep Learning Systems",
+        "doi": "https://doi.org/10.1145/3611643.3616266",
+        "authors": [
+            "Longtian Wang",
+            "Xiaofei Xie",
+            "Xiaoning Du",
+            "Meng Tian",
+            "Qing Guo",
+            "Zheng Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616266"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "CAmpactor: A Novel and Effective Local Search Algorithm for Optimizing Pairwise Covering Arrays",
+        "doi": "https://doi.org/10.1145/3611643.3616284",
+        "authors": [
+            "Qiyuan Zhao",
+            "Chuan Luo",
+            "Shaowei Cai",
+            "Wei Wu",
+            "Jinkun Lin",
+            "Hongyu Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616284"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Design by Contract for Deep Learning APIs",
+        "doi": "https://doi.org/10.1145/3611643.3616247",
+        "authors": [
+            "Shibbir Ahmed",
+            "Sayem Mohammad Imtiaz",
+            "Samantha Syeda Khairunnesa"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616247"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Testing Coreference Resolution Systems without Labeled Test Sets",
+        "doi": "https://doi.org/10.1145/3611643.3616258",
+        "authors": [
+            "Jialun Cao",
+            "Yaojie Lu",
+            "Ming Wen",
+            "Shing-Chi Cheung"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616258"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Neural-Based Test Oracle Generation: A Large-Scale Evaluation and Lessons Learned",
+        "doi": "https://doi.org/10.1145/3611643.3616265",
+        "authors": [
+            "Soneya Binta Hossain",
+            "Antonio Filieri",
+            "Matthew B. Dwyer",
+            "Sebastian Elbaum"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616265"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Revisiting Neural Program Smoothing for Fuzzing",
+        "doi": "https://doi.org/10.1145/3611643.3616308",
+        "authors": [
+            "Maria-Irina Nicolae",
+            "Max Eisele",
+            "Andreas Zeller"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616308"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "RAP-Gen: Retrieval-Augmented Patch Generation with CodeT5 for Automatic Program Repair",
+        "doi": "https://doi.org/10.1145/3611643.3616256",
+        "authors": [
+            "Weishi Wang",
+            "Yue Wang",
+            "Shafiq Joty",
+            "Steven C.H. Hoi"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616256"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "From Leaks to Fixes: Automated Repairs for Resource Leak Warnings",
+        "doi": "https://doi.org/10.1145/3611643.3616267",
+        "authors": [
+            "Akshay Utture",
+            "Jens Palsberg"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616267"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Copiloting the Copilots: Fusing Large Language Models with Completion Engines for Automated Program Repair",
+        "doi": "https://doi.org/10.1145/3611643.3616271",
+        "authors": [
+            "Yuxiang Wei",
+            "Chunqiu Steven Xia",
+            "Lingming Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616271"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "SmartFix: Fixing Vulnerable Smart Contracts by Accelerating Generate-and-Verify Repair using Statistical Models",
+        "doi": "https://doi.org/10.1145/3611643.3616341",
+        "authors": [
+            "Sunbeom So",
+            "Hakjoo Oh"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616341"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automatically Resolving Dependency-Conflict Building Failures via Behavior-Consistent Loosening of Library Version Constraints",
+        "doi": "https://doi.org/10.1145/3611643.3616264",
+        "authors": [
+            "Huiyan Wang",
+            "Shuguan Liu",
+            "Lingyu Zhang",
+            "Chang Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616264"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On the Relationship between Code Verifiability and Understandability",
+        "doi": "https://doi.org/10.1145/3611643.3616242",
+        "authors": [
+            "Kobi Feldman",
+            "Martin Kellogg",
+            "Oscar Chaparro"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616242"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Greener Yet Powerful Code Generation via Quantization: An Empirical Study",
+        "doi": "https://doi.org/10.1145/3611643.3616302",
+        "authors": [
+            "Xiaokai Wei",
+            "Sujan Kumar Gonugondla",
+            "Shiqi Wang",
+            "Wasi Ahmad"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616302"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Statfier: Automated Testing of Static Analyzers via Semantic-Preserving Program Transformations",
+        "doi": "https://doi.org/10.1145/3611643.3616272",
+        "authors": [
+            "Huaien Zhang",
+            "Yu Pei",
+            "Junjie Chen",
+            "Shin Hwei Tan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616272"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Contextual Predictive Mutation Testing",
+        "doi": "https://doi.org/10.1145/3611643.3616289",
+        "authors": [
+            "Kush Jain",
+            "Uri Alon",
+            "Alex Groce",
+            "Claire Le Goues"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616289"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "𝜇Akka: Mutation Testing for Actor Concurrency in Akka using Real-World Bugs",
+        "doi": "https://doi.org/10.1145/3611643.3616362",
+        "authors": [
+            "Mohsen Moradi Moghadam",
+            "Mehdi Bagherzadeh",
+            "Raffi Khatchadourian",
+            "Hamid Bagheri"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616362"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "EvaCRC: Evaluating Code Review Comments",
+        "doi": "https://doi.org/10.1145/3611643.3616245",
+        "authors": [
+            "Lanxin Yang",
+            "Jinwei Xu",
+            "Yifan Zhang",
+            "He Zhang",
+            "Alberto Bacchelli"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616245"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "HyperDiff: Computing Source Code Diffs at Scale",
+        "doi": "https://doi.org/10.1145/3611643.3616312",
+        "authors": [
+            "Quentin Le Dilavrec",
+            "Djamel Eddine Khelladi",
+            "Arnaud Blouin",
+            "Jean-Marc Jézéquel"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616312"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Understanding Solidity Event Logging Practices in the Wild",
+        "doi": "https://doi.org/10.1145/3611643.3616342",
+        "authors": [
+            "Lantian Li",
+            "Yejian Liang",
+            "Zhihao Liu",
+            "Zhongxing Yu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616342"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An Automated Approach to Extracting Local Variables",
+        "doi": "https://doi.org/10.1145/3611643.3616261",
+        "authors": [
+            "Xiaye Chi",
+            "Hui Liu",
+            "Guangjie Li",
+            "Weixiao Wang",
+            "Yunni Xia",
+            "Yanjie Jiang"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616261"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Statistical Reachability Analysis",
+        "doi": "https://doi.org/10.1145/3611643.3616268",
+        "authors": [
+            "Seongmin Lee",
+            "Marcel Böhme"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616268"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "PPR: Pairwise Program Reduction",
+        "doi": "https://doi.org/10.1145/3611643.3616275",
+        "authors": [
+            "Mengxiao Zhang",
+            "Zhenyang Xu",
+            "Yongqiang Tian",
+            "Yu Jiang",
+            "Chengnian Sun"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616275"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "When Function Inlining Meets WebAssembly: Counterintuitive Impacts on Runtime Performance",
+        "doi": "https://doi.org/10.1145/3611643.3616311",
+        "authors": [
+            "Alan Romano",
+            "Weihang Wang"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616311"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Self-Supervised Query Reformulation for Code Search",
+        "doi": "https://doi.org/10.1145/3611643.3616306",
+        "authors": [
+            "Yuetian Mao",
+            "Chengcheng Wan",
+            "Yuze Jiang",
+            "Xiaodong Gu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616306"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Natural Language to Code: How Far Are We?",
+        "doi": "https://doi.org/10.1145/3611643.3616323",
+        "authors": [
+            "Shangwen Wang",
+            "Mingyang Geng",
+            "Bo Lin",
+            "Zhensu Sun",
+            "Ming Wen"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616323"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Efficient Text-to-Code Retrieval with Cascaded Fast and Slow Transformer Models",
+        "doi": "https://doi.org/10.1145/3611643.3616369",
+        "authors": [
+            "Akhilesh Deepak Gotmare",
+            "Junnan Li",
+            "Shafiq Joty",
+            "Steven C.H. Hoi"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616369"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "PEM: Representing Binary Program Semantics for Similarity Analysis via a Probabilistic Execution Model",
+        "doi": "https://doi.org/10.1145/3611643.3616301",
+        "authors": [
+            "Xiangzhe Xu",
+            "Zhou Xuan",
+            "Shiwei Feng",
+            "Siyuan Cheng",
+            "Yapeng Ye"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616301"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Hue: A User-Adaptive Parser for Hybrid Logs",
+        "doi": "https://doi.org/10.1145/3611643.3616260",
+        "authors": [
+            "Junjielong Xu",
+            "Qiuai Fu",
+            "Zhouruixing Zhu",
+            "Yutong Cheng",
+            "Zhijing Li"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616260"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Log Parsing with Generalization Ability under New Log Types",
+        "doi": "https://doi.org/10.1145/3611643.3616355",
+        "authors": [
+            "Siyu Yu",
+            "Yifan Wu",
+            "Zhijing Li",
+            "Pinjia He",
+            "Ningjiang Chen",
+            "Changjian Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616355"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Semantic Debugging",
+        "doi": "https://doi.org/10.1145/3611643.3616296",
+        "authors": [
+            "Martin Eberlein",
+            "Marius Smytzek",
+            "Dominic Steinhöfel",
+            "Lars Grunske",
+            "Andreas Zeller"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616296"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Demystifying Dependency Bugs in Deep Learning Stack",
+        "doi": "https://doi.org/10.1145/3611643.3616325",
+        "authors": [
+            "Kaifeng Huang",
+            "Bihuan Chen",
+            "Susheng Wu",
+            "Junming Cao",
+            "Lei Ma",
+            "Xin Peng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616325"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Can Machine Learning Pipelines Be Better Configured?",
+        "doi": "https://doi.org/10.1145/3611643.3616352",
+        "authors": [
+            "Yibo Wang",
+            "Ying Wang",
+            "Tingwei Zhang",
+            "Yue Yu",
+            "Shing-Chi Cheung",
+            "Hai Yu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616352"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Compatibility Issues in Deep Learning Systems: Problems and Opportunities",
+        "doi": "https://doi.org/10.1145/3611643.3616321",
+        "authors": [
+            "Jun Wang",
+            "Guanping Xiao",
+            "Shuai Zhang",
+            "Huashan Lei",
+            "Yepang Liu",
+            "Yulei Sui"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616321"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An Extensive Study on Adversarial Attack against Pre-trained Models of Code",
+        "doi": "https://doi.org/10.1145/3611643.3616356",
+        "authors": [
+            "Xiaohu Du",
+            "Ming Wen",
+            "Zichao Wei",
+            "Shangwen Wang",
+            "Hai Jin"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616356"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Fix Fairness, Don’t Ruin Accuracy: Performance Aware Fairness Repair using AutoML",
+        "doi": "https://doi.org/10.1145/3611643.3616257",
+        "authors": [
+            "Giang Nguyen",
+            "Sumon Biswas",
+            "Hridesh Rajan"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616257"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "BiasAsker: Measuring the Bias in Conversational AI System",
+        "doi": "https://doi.org/10.1145/3611643.3616310",
+        "authors": [
+            "Yuxuan Wan",
+            "Wenxuan Wang",
+            "Pinjia He",
+            "Jiazhen Gu",
+            "Haonan Bai",
+            "Michael R. Lyu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616310"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Pitfalls in Experiments with DNN4SE: An Analysis of the State of the Practice",
+        "doi": "https://doi.org/10.1145/3611643.3616320",
+        "authors": [
+            "Sira Vegas",
+            "Sebastian Elbaum"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616320"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DecompoVision: Reliability Analysis of Machine Vision Components through Decomposition and Reuse",
+        "doi": "https://doi.org/10.1145/3611643.3616333",
+        "authors": [
+            "Boyue Caroline Hu",
+            "Lina Marsso",
+            "Nikita Dvornik",
+            "Huakun Shen",
+            "Marsha Chechik"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616333"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Nezha: Interpretable Fine-Grained Root Causes Analysis for Microservices on Multi-modal Observability Data",
+        "doi": "https://doi.org/10.1145/3611643.3616249",
+        "authors": [
+            "Guangba Yu",
+            "Pengfei Chen",
+            "Yufeng Li",
+            "Hongyang Chen",
+            "Xiaoyun Li",
+            "Zibin Zheng"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616249"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DiagConfig: Configuration Diagnosis of Performance Violations in Configurable Software Systems",
+        "doi": "https://doi.org/10.1145/3611643.3616300",
+        "authors": [
+            "Zhiming Chen",
+            "Pengfei Chen",
+            "Peipei Wang",
+            "Guangba Yu",
+            "Zilong He",
+            "Genting Mai"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616300"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Pre-training Code Representation with Semantic Flow Graph for Effective Bug Localization",
+        "doi": "https://doi.org/10.1145/3611643.3616338",
+        "authors": [
+            "Yali Du",
+            "Zhongxing Yu"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616338"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automata-Based Trace Analysis for Aiding Diagnosing GUI Testing Tools for Android",
+        "doi": "https://doi.org/10.1145/3611643.3616361",
+        "authors": [
+            "Enze Ma",
+            "Shan Huang",
+            "Weigang He",
+            "Ting Su",
+            "Jue Wang",
+            "Huiyu Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616361"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Practical Human Labeling Method for Online Just-in-Time Software Defect Prediction",
+        "doi": "https://doi.org/10.1145/3611643.3616307",
+        "authors": [
+            "Liyan Song",
+            "Leandro Lei Minku",
+            "Cong Teng",
+            "Xin Yao"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616307"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Flow Experience in Software Engineering",
+        "doi": "https://doi.org/10.1145/3611643.3616263",
+        "authors": [
+            "Saima Ritonummi",
+            "Valtteri Siitonen",
+            "Markus Salo",
+            "Henri Pirkkalainen",
+            "Anu Sivunen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616263"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Building and Sustaining Ethnically, Racially, and Gender Diverse Software Engineering Teams: A Study at Google",
+        "doi": "https://doi.org/10.1145/3611643.3616273",
+        "authors": [
+            "Ella Dagan",
+            "Anita Sarma",
+            "Alison Chang",
+            "Sarah D’Angelo",
+            "Jill Dicker"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616273"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Automated Detection of Unethical Behavior in Open-Source Software Projects",
+        "doi": "https://doi.org/10.1145/3611643.3616314",
+        "authors": [
+            "Hsu Myat Win",
+            "Haibo Wang",
+            "Shin Hwei Tan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616314"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "NeuRI: Diversifying DNN Generation via Inductive Rule Inference",
+        "doi": "https://doi.org/10.1145/3611643.3616337",
+        "authors": [
+            "Jiawei Liu",
+            "Jinjun Peng",
+            "Yuyao Wang",
+            "Lingming Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616337"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Heterogeneous Testing for Coverage Profilers Empowered with Debugging Support",
+        "doi": "https://doi.org/10.1145/3611643.3616340",
+        "authors": [
+            "Yibiao Yang",
+            "Maolin Sun",
+            "Yang Wang",
+            "Qingyang Li",
+            "Ming Wen",
+            "Yuming Zhou"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616340"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Outage-Watch: Early Prediction of Outages using Extreme Event Regularizer",
+        "doi": "https://doi.org/10.1145/3611643.3616316",
+        "authors": [
+            "Shubham Agarwal",
+            "Sarthak Chakraborty",
+            "Shaddy Garg",
+            "Sumit Bisht",
+            "Chahat Jain"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616316"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Multilingual Code Co-evolution using Large Language Models",
+        "doi": "https://doi.org/10.1145/3611643.3616350",
+        "authors": [
+            "Jiyang Zhang",
+            "Pengyu Nie",
+            "Junyi Jessy Li",
+            "Milos Gligoric"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616350"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Knowledge-Based Version Incompatibility Detection for Deep Learning",
+        "doi": "https://doi.org/10.1145/3611643.3616364",
+        "authors": [
+            "Zhongkai Zhao",
+            "Bonan Kou",
+            "Mohamed Yilmaz Ibrahim",
+            "Muhao Chen",
+            "Tianyi Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616364"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Statistical Type Inference for Incomplete Programs",
+        "doi": "https://doi.org/10.1145/3611643.3616283",
+        "authors": [
+            "Yaohui Peng",
+            "Jing Xie",
+            "Qiongling Yang",
+            "Hanwen Guo",
+            "Qingan Li",
+            "Jingling Xue"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616283"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "OOM-Guard: Towards Improving the Ergonomics of Rust OOM Handling via a Reservation-Based Approach",
+        "doi": "https://doi.org/10.1145/3611643.3616303",
+        "authors": [
+            "Chengjun Chen",
+            "Zhicong Zhang",
+            "Hongliang Tian",
+            "Shoumeng Yan",
+            "Hui Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616303"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeepInfer: Deep Type Inference from Smart Contract Bytecode",
+        "doi": "https://doi.org/10.1145/3611643.3616343",
+        "authors": [
+            "Kunsong Zhao",
+            "Zihao Li",
+            "Jianfeng Li",
+            "He Ye",
+            "Xiapu Luo",
+            "Ting Chen"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616343"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeMinify: Neural Variable Name Recovery and Type Inference",
+        "doi": "https://doi.org/10.1145/3611643.3616368",
+        "authors": [
+            "Yi Li",
+            "Aashish Yadavally",
+            "Jiaxing Zhang",
+            "Shaohua Wang",
+            "Tien N. Nguyen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616368"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Tritor: Detecting Semantic Code Clones by Building Social Network-Based Triads Model",
+        "doi": "https://doi.org/10.1145/3611643.3616354",
+        "authors": [
+            "Deqing Zou",
+            "Siyue Feng",
+            "Yueming Wu",
+            "Wenqi Suo",
+            "Hai Jin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616354"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Gitor: Scalable Code Clone Detection by Building Global Sample Graph",
+        "doi": "https://doi.org/10.1145/3611643.3616371",
+        "authors": [
+            "Junjie Shan",
+            "Shihan Dou",
+            "Yueming Wu",
+            "Hairu Wu",
+            "Yang Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616371"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Demystifying the Composition and Code Reuse in Solidity Smart Contracts",
+        "doi": "https://doi.org/10.1145/3611643.3616270",
+        "authors": [
+            "Kairan Sun",
+            "Zhengzi Xu",
+            "Chengwei Liu",
+            "Kaixuan Li",
+            "Yang Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616270"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Scalable Program Clone Search through Spectral Analysis",
+        "doi": "https://doi.org/10.1145/3611643.3616279",
+        "authors": [
+            "Tristan Benoit",
+            "Jean-Yves Marion",
+            "Sébastien Bardin"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616279"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Highly Scalable, Hybrid, Cross-Platform Timing Analysis Framework Providing Accurate Differential Throughput Estimation via Instruction-Level Tracing",
+        "doi": "https://doi.org/10.1145/3611643.3616246",
+        "authors": [
+            "Min-Yih Hsu",
+            "Felicitas Hetzelt",
+            "David Gens",
+            "Michael Maitland",
+            "Michael Franz"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616246"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Discovering Parallelisms in Python Programs",
+        "doi": "https://doi.org/10.1145/3611643.3616259",
+        "authors": [
+            "Siwei Wei",
+            "Guyang Song",
+            "Senlin Zhu",
+            "Ruoyi Ruan",
+            "Shihao Zhu",
+            "Yan Cai"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616259"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "IoPV: On Inconsistent Option Performance Variations",
+        "doi": "https://doi.org/10.1145/3611643.3616319",
+        "authors": [
+            "Jinfu Chen",
+            "Zishuo Ding",
+            "Yiming Tang",
+            "Mohammed Sayagh",
+            "Heng Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616319"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Predicting Software Performance with Divide-and-Learn",
+        "doi": "https://doi.org/10.1145/3611643.3616334",
+        "authors": [
+            "Jingzhi Gong",
+            "Tao Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616334"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Benchmarking Robustness of AI-Enabled Multi-sensor Fusion Systems: Challenges and Opportunities",
+        "doi": "https://doi.org/10.1145/3611643.3616278",
+        "authors": [
+            "Xinyu Gao",
+            "Zhijie Wang",
+            "Yang Feng",
+            "Lei Ma",
+            "Zhenyu Chen",
+            "Baowen Xu"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616278"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automated Testing and Improvement of Named Entity Recognition Systems",
+        "doi": "https://doi.org/10.1145/3611643.3616295",
+        "authors": [
+            "Boxi Yu",
+            "Yiyan Hu",
+            "Qiuyang Mang",
+            "Wenhan Hu",
+            "Pinjia He"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616295"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "The EarlyBIRD Catches the Bug: On Exploiting Early Layers of Encoder Models for More Efficient Code Classification",
+        "doi": "https://doi.org/10.1145/3611643.3616304",
+        "authors": [
+            "Anastasiia Grishina",
+            "Max Hort",
+            "Leon Moonen"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616304"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Deep Learning Based Feature Envy Detection Boosted by Real-World Examples",
+        "doi": "https://doi.org/10.1145/3611643.3616353",
+        "authors": [
+            "Bo Liu",
+            "Hui Liu",
+            "Guangjie Li",
+            "Nan Niu",
+            "Zimao Xu",
+            "Yifan Wang",
+            "Yunni Xia"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616353"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Comparison and Evaluation on Static Application Security Testing (SAST) Tools for Java",
+        "doi": "https://doi.org/10.1145/3611643.3616262",
+        "authors": [
+            "Kaixuan Li",
+            "Sen Chen",
+            "Lingling Fan",
+            "Ruitao Feng",
+            "Han Liu",
+            "Chengwei Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616262"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Input-Driven Dynamic Program Debloating for Code-Reuse Attack Mitigation",
+        "doi": "https://doi.org/10.1145/3611643.3616274",
+        "authors": [
+            "Xiaoke Wang",
+            "Tao Hui",
+            "Lei Zhao",
+            "Yueqiang Cheng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616274"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "TransRacer: Function Dependence-Guided Transaction Race Detection for Smart Contracts",
+        "doi": "https://doi.org/10.1145/3611643.3616281",
+        "authors": [
+            "Chenyang Ma",
+            "Wei Song",
+            "Jeff Huang"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616281"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Software Composition Analysis for Vulnerability Detection: An Empirical Study on Java Projects",
+        "doi": "https://doi.org/10.1145/3611643.3616299",
+        "authors": [
+            "Lida Zhao",
+            "Sen Chen",
+            "Zhengzi Xu",
+            "Chengwei Liu",
+            "Lyuye Zhang",
+            "Jiahui Wu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616299"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeepDebugger: An Interactive Time-Travelling Debugging Approach for Deep Classifiers",
+        "doi": "https://doi.org/10.1145/3611643.3616252",
+        "authors": [
+            "Xianglin Yang",
+            "Yun Lin",
+            "Yifan Zhang",
+            "Linpeng Huang",
+            "Jin Song Dong",
+            "Hong Mei"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616252"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Mining Resource-Operation Knowledge to Support Resource Leak Detection",
+        "doi": "https://doi.org/10.1145/3611643.3616315",
+        "authors": [
+            "Chong Wang",
+            "Yiling Lou",
+            "Xin Peng",
+            "Jianan Liu",
+            "Baihan Zou"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616315"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "TransMap: Pinpointing Mistakes in Neural Code Translation",
+        "doi": "https://doi.org/10.1145/3611643.3616322",
+        "authors": [
+            "Bo Wang",
+            "Ruishi Li",
+            "Mingkai Li",
+            "Prateek Saxena"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616322"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Dynamic Prediction of Delays in Software Projects using Delay Patterns and Bayesian Modeling",
+        "doi": "https://doi.org/10.1145/3611643.3616328",
+        "authors": [
+            "Elvan Kula",
+            "Eric Greuter",
+            "Arie van Deursen",
+            "Georgios Gousios"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616328"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Commit-Level, Neural Vulnerability Detection and Assessment",
+        "doi": "https://doi.org/10.1145/3611643.3616346",
+        "authors": [
+            "Yi Li",
+            "Aashish Yadavally",
+            "Jiaxing Zhang",
+            "Shaohua Wang",
+            "Tien N. Nguyen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616346"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Enhancing Coverage-Guided Fuzzing via Phantom Program",
+        "doi": "https://doi.org/10.1145/3611643.3616294",
+        "authors": [
+            "Mingyuan Wu",
+            "Kunqiu Chen",
+            "Qi Luo",
+            "Jiahong Xiang",
+            "Ji Qi",
+            "Junjie Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616294"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Co-dependence Aware Fuzzing for Dataflow-Based Big Data Analytics",
+        "doi": "https://doi.org/10.1145/3611643.3616298",
+        "authors": [
+            "Ahmad Humayun",
+            "Miryung Kim",
+            "Muhammad Ali Gulzar"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616298"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "SJFuzz: Seed and Mutator Scheduling for JVM Fuzzing",
+        "doi": "https://doi.org/10.1145/3611643.3616277",
+        "authors": [
+            "Mingyuan Wu",
+            "Yicheng Ouyang",
+            "Minghai Lu",
+            "Junjie Chen",
+            "Yingquan Zhao"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616277"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Metamong: Detecting Render-Update Bugs in Web Browsers through Fuzzing",
+        "doi": "https://doi.org/10.1145/3611643.3616336",
+        "authors": [
+            "Suhwan Song",
+            "Byoungyoung Lee"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616336"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Property-Based Fuzzing for Finding Data Manipulation Errors in Android Apps",
+        "doi": "https://doi.org/10.1145/3611643.3616286",
+        "authors": [
+            "Jingling Sun",
+            "Ting Su",
+            "Jiayi Jiang",
+            "Jue Wang",
+            "Geguang Pu",
+            "Zhendong Su"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616286"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Leveraging Hardware Probes and Optimizations for Accelerating Fuzz Testing of Heterogeneous Applications",
+        "doi": "https://doi.org/10.1145/3611643.3616318",
+        "authors": [
+            "Jiyuan Wang",
+            "Qian Zhang",
+            "Hongbo Rong",
+            "Guoqing Harry Xu",
+            "Miryung Kim"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616318"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "NaNofuzz: A Usable Tool for Automatic Test Generation",
+        "doi": "https://doi.org/10.1145/3611643.3616327",
+        "authors": [
+            "Matthew C. Davis",
+            "Sangheon Choi",
+            "Sam Estep",
+            "Brad A. Myers",
+            "Joshua Sunshine"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616327"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Generative and Mutational Approach for Synthesizing Bug-Exposing Test Cases to Guide Compiler Fuzzing",
+        "doi": "https://doi.org/10.1145/3611643.3616332",
+        "authors": [
+            "Guixin Ye",
+            "Tianmin Hu",
+            "Zhanyong Tang",
+            "Zhenye Fan",
+            "Shin Hwei Tan"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616332"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "State Merging with Quantifiers in Symbolic Execution",
+        "doi": "https://doi.org/10.1145/3611643.3616287",
+        "authors": [
+            "David Trabish",
+            "Noam Rinetzky",
+            "Sharon Shoham",
+            "Vaibhav Sharma"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616287"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Detecting Atomicity Violations in Interrupt-Driven Programs via Interruption Points Selecting and Delayed ISR-Triggering",
+        "doi": "https://doi.org/10.1145/3611643.3616276",
+        "authors": [
+            "Bin Yu",
+            "Cong Tian",
+            "Hengrui Xing",
+            "Zuchao Yang",
+            "Jie Su",
+            "Xu Lu",
+            "Jiyu Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616276"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Engineering a Formally Verified Automated Bug Finder",
+        "doi": "https://doi.org/10.1145/3611643.3616290",
+        "authors": [
+            "Arthur Correnson",
+            "Dominic Steinhöfel"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616290"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Speeding up SMT Solving via Compiler Optimization",
+        "doi": "https://doi.org/10.1145/3611643.3616357",
+        "authors": [
+            "Benjamin Mikek",
+            "Qirun Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616357"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Semantic Test Repair for Web Applications",
+        "doi": "https://doi.org/10.1145/3611643.3616324",
+        "authors": [
+            "Xiaofang Qi",
+            "Xiang Qian",
+            "Yanhui Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616324"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Large-Scale Empirical Review of Patch Correctness Checking Approaches",
+        "doi": "https://doi.org/10.1145/3611643.3616331",
+        "authors": [
+            "Jun Yang",
+            "Yuehan Wang",
+            "Yiling Lou",
+            "Ming Wen",
+            "Lingming Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616331"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Program Repair Guided by Datalog-Defined Static Analysis",
+        "doi": "https://doi.org/10.1145/3611643.3616363",
+        "authors": [
+            "Yu Liu",
+            "Sergey Mechtaev",
+            "Pavle Subotić",
+            "Abhik Roychoudhury"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616363"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Baldur: Whole-Proof Generation and Repair with Large Language Models",
+        "doi": "https://doi.org/10.1145/3611643.3616243",
+        "authors": [
+            "Emily First",
+            "Markus N. Rabe",
+            "Talia Ringer",
+            "Yuriy Brun"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616243"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "KG4CraSolver: Recommending Crash Solutions via Knowledge Graph",
+        "doi": "https://doi.org/10.1145/3611643.3616317",
+        "authors": [
+            "Xueying Du",
+            "Yiling Lou",
+            "Mingwei Liu",
+            "Xin Peng",
+            "Tianyong Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616317"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automated and Context-Aware Repair of Color-Related Accessibility Issues for Android Apps",
+        "doi": "https://doi.org/10.1145/3611643.3616329",
+        "authors": [
+            "Yuxin Zhang",
+            "Sen Chen",
+            "Lingling Fan",
+            "Chunyang Chen",
+            "Xiaohong Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616329"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Case Study of Developer Bots: Motivations, Perceptions, and Challenges",
+        "doi": "https://doi.org/10.1145/3611643.3616248",
+        "authors": [
+            "Sumit Asthana",
+            "Hitesh Sajnani",
+            "Elena Voyloshnikova",
+            "Birendra Acharya",
+            "Kim Herzig"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616248"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "“We Feel Like We’re Winging It:” A Study on Navigating Open-Source Dependency Abandonment",
+        "doi": "https://doi.org/10.1145/3611643.3616293",
+        "authors": [
+            "Courtney Miller",
+            "Christian Kästner",
+            "Bogdan Vasilescu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616293"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "How Practitioners Expect Code Completion?",
+        "doi": "https://doi.org/10.1145/3611643.3616280",
+        "authors": [
+            "Chaozheng Wang",
+            "Junhao Hu",
+            "Cuiyun Gao",
+            "Yu Jin",
+            "Tao Xie",
+            "Hailiang Huang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616280"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Code Coverage Criteria for Asynchronous Programs",
+        "doi": "https://doi.org/10.1145/3611643.3616292",
+        "authors": [
+            "Mohammad Ganji",
+            "Saba Alimadadi",
+            "Frank Tip"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616292"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "API-Knowledge Aware Search-Based Software Testing: Where, What, and How",
+        "doi": "https://doi.org/10.1145/3611643.3616269",
+        "authors": [
+            "Xiaoxue Ren",
+            "Xinyuan Ye",
+            "Yun Lin",
+            "Zhenchang Xing",
+            "Shuqing Li",
+            "Michael R. Lyu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616269"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "EtherDiffer: Differential Testing on RPC Services of Ethereum Nodes",
+        "doi": "https://doi.org/10.1145/3611643.3616251",
+        "authors": [
+            "Shinhae Kim",
+            "Sungjae Hwang"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616251"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Dynamic Data Fault Localization for Deep Neural Networks",
+        "doi": "https://doi.org/10.1145/3611643.3616345",
+        "authors": [
+            "Yining Yin",
+            "Yang Feng",
+            "Shihao Weng",
+            "Zixi Liu",
+            "Yuan Yao",
+            "Yichi Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616345"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Understanding the Bug Characteristics and Fix Strategies of Federated Learning Systems",
+        "doi": "https://doi.org/10.1145/3611643.3616347",
+        "authors": [
+            "Xiaohu Du",
+            "Xiao Chen",
+            "Jialun Cao",
+            "Ming Wen",
+            "Shing-Chi Cheung",
+            "Hai Jin"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616347"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Learning Program Semantics for Vulnerability Detection via Vulnerability-Specific Inter-procedural Slicing",
+        "doi": "https://doi.org/10.1145/3611643.3616351",
+        "authors": [
+            "Bozhi Wu",
+            "Shangqing Liu",
+            "Yang Xiao",
+            "Zhiming Li",
+            "Jun Sun",
+            "Shang-Wei Lin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616351"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeepRover: A Query-Efficient Blackbox Attack for Deep Neural Networks",
+        "doi": "https://doi.org/10.1145/3611643.3616370",
+        "authors": [
+            "Fuyuan Zhang",
+            "Xinwen Hu",
+            "Lei Ma",
+            "Jianjun Zhao"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616370"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Practical Inference of Nullability Types",
+        "doi": "https://doi.org/10.1145/3611643.3616326",
+        "authors": [
+            "Nima Karimipour",
+            "Justin Pham",
+            "Lazaro Clapp",
+            "Manu Sridharan"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616326"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LibKit: Detecting Third-Party Libraries in iOS Apps",
+        "doi": "https://doi.org/10.1145/3611643.3616344",
+        "authors": [
+            "Daniel Domínguez-Álvarez",
+            "Alejandro de la Cruz",
+            "Alessandra Gorla",
+            "Juan Caballero"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616344"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "FunProbe: Probing Functions from Binary Code through Probabilistic Analysis",
+        "doi": "https://doi.org/10.1145/3611643.3616366",
+        "authors": [
+            "Soomin Kim",
+            "Hyungseok Kim",
+            "Sang Kil Cha"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616366"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "BigDataflow: A Distributed Interprocedural Dataflow Analysis Framework",
+        "doi": "https://doi.org/10.1145/3611643.3616348",
+        "authors": [
+            "Zewen Sun",
+            "Duanchen Xu",
+            "Yiyu Zhang",
+            "Yun Qi",
+            "Yueyang Wang"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616348"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Understanding the Topics and Challenges of GPU Programming by Classifying and Analyzing Stack Overflow Posts",
+        "doi": "https://doi.org/10.1145/3611643.3616365",
+        "authors": [
+            "Wenhua Yang",
+            "Chong Zhang",
+            "Minxue Pan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616365"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Software Architecture in Practice: Challenges and Opportunities",
+        "doi": "https://doi.org/10.1145/3611643.3616367",
+        "authors": [
+            "Zhiyuan Wan",
+            "Yun Zhang",
+            "Xin Xia",
+            "Yi Jiang",
+            "David Lo"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616367"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On the Usage of Continual Learning for Out-of-Distribution Generalization in Pre-trained Language Models of Code",
+        "doi": "https://doi.org/10.1145/3611643.3616244",
+        "authors": [
+            "Martin Weyssow",
+            "Xin Zhou",
+            "Kisub Kim",
+            "David Lo",
+            "Houari Sahraoui"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616244"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Grace: Language Models Meet Code Edits",
+        "doi": "https://doi.org/10.1145/3611643.3616253",
+        "authors": [
+            "Priyanshu Gupta",
+            "Avishree Khare",
+            "Yasharth Bajpai",
+            "Saikat Chakraborty"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616253"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Recommending Analogical APIs via Knowledge Graph Embedding",
+        "doi": "https://doi.org/10.1145/3611643.3616305",
+        "authors": [
+            "Mingwei Liu",
+            "Yanjun Yang",
+            "Yiling Lou",
+            "Xin Peng",
+            "Zhong Zhou",
+            "Xueying Du"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616305"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "CCT5: A Code-Change-Oriented Pre-trained Model",
+        "doi": "https://doi.org/10.1145/3611643.3616339",
+        "authors": [
+            "Bo Lin",
+            "Shangwen Wang",
+            "Zhongxin Liu",
+            "Yepang Liu",
+            "Xin Xia",
+            "Xiaoguang Mao"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616339"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LExecutor: Learning-Guided Execution",
+        "doi": "https://doi.org/10.1145/3611643.3616254",
+        "authors": [
+            "Beatriz Souza",
+            "Michael Pradel"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616254"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Software Architecture Recovery with Information Fusion",
+        "doi": "https://doi.org/10.1145/3611643.3616285",
+        "authors": [
+            "Yiran Zhang",
+            "Zhengzi Xu",
+            "Chengwei Liu",
+            "Hongxu Chen",
+            "Jianwen Sun"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616285"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Evaluating Transfer Learning for Simplifying GitHub READMEs",
+        "doi": "https://doi.org/10.1145/3611643.3616291",
+        "authors": [
+            "Haoyu Gao",
+            "Christoph Treude",
+            "Mansooreh Zahedi"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616291"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "CodeMark: Imperceptible Watermarking for Code Datasets against Neural Code Completion Models",
+        "doi": "https://doi.org/10.1145/3611643.3616297",
+        "authors": [
+            "Zhensu Sun",
+            "Xiaoning Du",
+            "Fu Song",
+            "Li Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616297"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Mate! Are You Really Aware? An Explainability-Guided Testing Framework for Robustness of Malware Detectors",
+        "doi": "https://doi.org/10.1145/3611643.3616309",
+        "authors": [
+            "Ruoxi Sun",
+            "Minhui Xue",
+            "Gareth Tyson",
+            "Tian Dong",
+            "Shaofeng Li",
+            "Shuo Wang"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616309"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Crystallizer: A Hybrid Path Analysis Framework to Aid in Uncovering Deserialization Vulnerabilities",
+        "doi": "https://doi.org/10.1145/3611643.3616313",
+        "authors": [
+            "Prashast Srivastava",
+            "Flavio Toffalini",
+            "Kostyantyn Vorobyov",
+            "François Gauthier"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616313"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ViaLin: Path-Aware Dynamic Taint Analysis for Android",
+        "doi": "https://doi.org/10.1145/3611643.3616330",
+        "authors": [
+            "Khaled Ahmed",
+            "Yingying Wang",
+            "Mieszko Lis",
+            "Julia Rubin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616330"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Distinguishing Look-Alike Innocent and Vulnerable Code by Subtle Semantic Representation Learning and Explanation",
+        "doi": "https://doi.org/10.1145/3611643.3616358",
+        "authors": [
+            "Chao Ni",
+            "Xin Yin",
+            "Kaiwen Yang",
+            "Dehai Zhao",
+            "Zhenchang Xing",
+            "Xin Xia"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3616358"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Unified Framework for Mini-game Testing: Experience on WeChat",
+        "doi": "https://doi.org/10.1145/3611643.3613868",
+        "authors": [
+            "Chaozheng Wang",
+            "Haochuan Lu",
+            "Cuiyun Gao",
+            "Zongjie Li",
+            "Ting Xiong",
+            "Yuetang Deng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613868"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Beyond Sharing: Conflict-Aware Multivariate Time Series Anomaly Detection",
+        "doi": "https://doi.org/10.1145/3611643.3613896",
+        "authors": [
+            "Haotian Si",
+            "Changhua Pei",
+            "Zhihan Li",
+            "Yadong Zhao",
+            "Jingjing Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613896"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "InferFix: End-to-End Program Repair with LLMs",
+        "doi": "https://doi.org/10.1145/3611643.3613892",
+        "authors": [
+            "Matthew Jin",
+            "Syed Shahriar",
+            "Michele Tufano",
+            "Xin Shi",
+            "Shuai Lu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613892"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Assess and Summarize: Improve Outage Understanding with Large Language Models",
+        "doi": "https://doi.org/10.1145/3611643.3613891",
+        "authors": [
+            "Pengxiang Jin",
+            "Shenglin Zhang",
+            "Minghua Ma",
+            "Haozhe Li",
+            "Yu Kang",
+            "Liqun Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613891"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Understanding Hackers’ Work: An Empirical Study of Offensive Security Practitioners",
+        "doi": "https://doi.org/10.1145/3611643.3613900",
+        "authors": [
+            "Andreas Happe",
+            "Jürgen Cito"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613900"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Efficient Record and Replay: A Case Study in WeChat",
+        "doi": "https://doi.org/10.1145/3611643.3613880",
+        "authors": [
+            "Sidong Feng",
+            "Haochuan Lu",
+            "Ting Xiong",
+            "Yuetang Deng",
+            "Chunyang Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613880"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Last Diff Analyzer: Multi-language Automated Approver for Behavior-Preserving Code Revisions",
+        "doi": "https://doi.org/10.1145/3611643.3613870",
+        "authors": [
+            "Yuxin Wang",
+            "Adam Welc",
+            "Lazaro Clapp",
+            "Lingchao Chen"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613870"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Dead Code Removal at Meta: Automatically Deleting Millions of Lines of Code and Petabytes of Deprecated Data",
+        "doi": "https://doi.org/10.1145/3611643.3613871",
+        "authors": [
+            "Will Shackleton",
+            "Katriel Cohn-Gordon",
+            "Peter C. Rigby",
+            "Rui Abreu",
+            "James Gill"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613871"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Incrementalizing Production CodeQL Analyses",
+        "doi": "https://doi.org/10.1145/3611643.3613860",
+        "authors": [
+            "Tamás Szabó"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613860"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "xASTNN: Improved Code Representations for Industrial Practice",
+        "doi": "https://doi.org/10.1145/3611643.3613869",
+        "authors": [
+            "Zhiwei Xu",
+            "Min Zhou",
+            "Xibin Zhao",
+            "Yang Chen",
+            "Xi Cheng",
+            "Hongyu Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613869"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "From Point-wise to Group-wise: A Fast and Accurate Microservice Trace Anomaly Detection Approach",
+        "doi": "https://doi.org/10.1145/3611643.3613861",
+        "authors": [
+            "Zhe Xie",
+            "Changhua Pei",
+            "Wanxue Li",
+            "Huai Jiang",
+            "Liangfei Su",
+            "Jianhui Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613861"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "STEAM: Observability-Preserving Trace Sampling",
+        "doi": "https://doi.org/10.1145/3611643.3613881",
+        "authors": [
+            "Shilin He",
+            "Botao Feng",
+            "Liqun Li",
+            "Xu Zhang",
+            "Yu Kang",
+            "Qingwei Lin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613881"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "TraceDiag: Adaptive, Interpretable, and Efficient Root Cause Analysis on Large-Scale Microservice Systems",
+        "doi": "https://doi.org/10.1145/3611643.3613864",
+        "authors": [
+            "Ruomeng Ding",
+            "Chaoyun Zhang",
+            "Lu Wang",
+            "Yong Xu",
+            "Minghua Ma"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613864"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Triggering Modes in Spectrum-Based Multi-location Fault Localization",
+        "doi": "https://doi.org/10.1145/3611643.3613884",
+        "authors": [
+            "Tung Dao",
+            "Na Meng",
+            "ThanhVu Nguyen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613884"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Appaction: Automatic GUI Interaction for Mobile Apps via Holistic Widget Perception",
+        "doi": "https://doi.org/10.1145/3611643.3613885",
+        "authors": [
+            "Yongxiang Hu",
+            "Jiazhen Gu",
+            "Shuqing Hu",
+            "Yu Zhang",
+            "Wenjie Tian",
+            "Shiyu Guo"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613885"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MuRS: Mutant Ranking and Suppression using Identifier Templates",
+        "doi": "https://doi.org/10.1145/3611643.3613901",
+        "authors": [
+            "Zimin Chen",
+            "Małgorzata Salawa",
+            "Manushree Vijayvergiya",
+            "Goran Petrović"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613901"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Modeling the Centrality of Developer Output with Software Supply Chains",
+        "doi": "https://doi.org/10.1145/3611643.3613873",
+        "authors": [
+            "Audris Mockus",
+            "Peter C. Rigby",
+            "Rui Abreu",
+            "Parth Suresh",
+            "Yifen Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613873"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On-Premise AIOps Infrastructure for a Software Editor SME: An Experience Report",
+        "doi": "https://doi.org/10.1145/3611643.3613876",
+        "authors": [
+            "Anes Bendimerad",
+            "Youcef Remil",
+            "Romain Mathonat",
+            "Mehdi Kaytoue"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613876"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "C³: Code Clone-Based Identification of Duplicated Components",
+        "doi": "https://doi.org/10.1145/3611643.3613883",
+        "authors": [
+            "Yanming Yang",
+            "Ying Zou",
+            "Xing Hu",
+            "David Lo",
+            "Chao Ni",
+            "John Grundy",
+            "Xin Xia"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613883"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "AdaptivePaste: Intelligent Copy-Paste in IDE",
+        "doi": "https://doi.org/10.1145/3611643.3613895",
+        "authors": [
+            "Xiaoyu Liu",
+            "Jinu Jang",
+            "Neel Sundaresan",
+            "Miltiadis Allamanis",
+            "Alexey Svyatkovskiy"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613895"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Adapting Performance Analytic Techniques in a Real-World Database-Centric System: An Industrial Experience Report",
+        "doi": "https://doi.org/10.1145/3611643.3613893",
+        "authors": [
+            "Lizhi Liao",
+            "Heng Li",
+            "Weiyi Shang",
+            "Catalin Sporea",
+            "Andrei Toma",
+            "Sarah Sajedi"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613893"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "KDDT: Knowledge Distillation-Empowered Digital Twin for Anomaly Detection",
+        "doi": "https://doi.org/10.1145/3611643.3613879",
+        "authors": [
+            "Qinghua Xu",
+            "Shaukat Ali",
+            "Tao Yue",
+            "Zaimovic Nedim",
+            "Inderjeet Singh"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613879"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "AG3: Automated Game GUI Text Glitch Detection Based on Computer Vision",
+        "doi": "https://doi.org/10.1145/3611643.3613867",
+        "authors": [
+            "Xiaoyun Liang",
+            "Jiayi Qi",
+            "Yongqiang Gao",
+            "Chao Peng",
+            "Ping Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613867"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Detection Is Better Than Cure: A Cloud Incidents Perspective",
+        "doi": "https://doi.org/10.1145/3611643.3613898",
+        "authors": [
+            "Vaibhav Ganatra",
+            "Anjaly Parayil",
+            "Supriyo Ghosh",
+            "Yu Kang",
+            "Minghua Ma"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613898"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "PropProof: Free Model-Checking Harnesses from PBT",
+        "doi": "https://doi.org/10.1145/3611643.3613863",
+        "authors": [
+            "Yoshiki Takashima"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613863"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LightF3: A Lightweight Fully-Process Formal Framework for Automated Verifying Railway Interlocking Systems",
+        "doi": "https://doi.org/10.1145/3611643.3613874",
+        "authors": [
+            "Yibo Dong",
+            "Xiaoyu Zhang",
+            "Yicong Xu",
+            "Chang Cai",
+            "Yu Chen",
+            "Weikai Miao"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613874"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "BFSig: Leveraging File Significance in Bus Factor Estimation",
+        "doi": "https://doi.org/10.1145/3611643.3613877",
+        "authors": [
+            "Vahid Haratian",
+            "Mikhail Evtikhiev",
+            "Pouria Derakhshanfar",
+            "Eray Tüzün"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613877"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automated Test Generation for Medical Rules Web Services: A Case Study at the Cancer Registry of Norway",
+        "doi": "https://doi.org/10.1145/3611643.3613882",
+        "authors": [
+            "Christoph Laaber",
+            "Tao Yue",
+            "Shaukat Ali",
+            "Thomas Schwitalla",
+            "Jan F. Nygård"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613882"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Test Case Generation for Drivability Requirements of an Automotive Cruise Controller: An Experience with an Industrial Simulator",
+        "doi": "https://doi.org/10.1145/3611643.3613894",
+        "authors": [
+            "Federico Formica",
+            "Nicholas Petrunti",
+            "Lucas Bruck",
+            "Vera Pantelic",
+            "Mark Lawford"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613894"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Prioritizing Natural Language Test Cases Based on Highly-Used Game Features",
+        "doi": "https://doi.org/10.1145/3611643.3613872",
+        "authors": [
+            "Markos Viggiato",
+            "Dale Paas",
+            "Cor-Paul Bezemer"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613872"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "EvoCLINICAL: Evolving Cyber-Cyber Digital Twin with Active Transfer Learning for Automated Cancer Registry System",
+        "doi": "https://doi.org/10.1145/3611643.3613897",
+        "authors": [
+            "Chengjie Lu",
+            "Qinghua Xu",
+            "Tao Yue",
+            "Shaukat Ali",
+            "Thomas Schwitalla",
+            "Jan F. Nygård"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613897"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Compositional Taint Analysis for Enforcing Security Policies at Scale",
+        "doi": "https://doi.org/10.1145/3611643.3613889",
+        "authors": [
+            "Subarno Banerjee",
+            "Siwei Cui",
+            "Michael Emmi",
+            "Antonio Filieri",
+            "Liana Hadarean"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613889"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Multidimensional Analysis of Bug Density in SAP HANA",
+        "doi": "https://doi.org/10.1145/3611643.3613875",
+        "authors": [
+            "Julian Reck",
+            "Thomas Bach",
+            "Jan Stoess"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613875"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Ownership in the Hands of Accountability at Brightsquid: A Case Study and a Developer Survey",
+        "doi": "https://doi.org/10.1145/3611643.3613890",
+        "authors": [
+            "Umme Ayman Koana",
+            "Francis Chew",
+            "Chris Carlson",
+            "Maleknaz Nayebi"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613890"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Rotten Green Tests in Google Test",
+        "doi": "https://doi.org/10.1145/3611643.3613865",
+        "authors": [
+            "Paul T. Robinson"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613865"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Issue Report Validation in an Industrial Context",
+        "doi": "https://doi.org/10.1145/3611643.3613887",
+        "authors": [
+            "Ethem Utku Aktas",
+            "Ebru Cakmak",
+            "Mete Cihad Inan",
+            "Cemal Yilmaz"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613887"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On the Dual Nature of Necessity in Use of Rust Unsafe Code",
+        "doi": "https://doi.org/10.1145/3611643.3613878",
+        "authors": [
+            "Yuchen Zhang",
+            "Ashish Kundu",
+            "Georgios Portokalidis",
+            "Jun Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613878"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Analyzing Microservice Connectivity with Kubesonde",
+        "doi": "https://doi.org/10.1145/3611643.3613899",
+        "authors": [
+            "Jacopo Bufalino",
+            "Mario Di Francesco",
+            "Tuomas Aura"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613899"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Testing Real-World Healthcare IoT Application: Experiences and Lessons Learned",
+        "doi": "https://doi.org/10.1145/3611643.3613888",
+        "authors": [
+            "Hassan Sartaj",
+            "Shaukat Ali",
+            "Tao Yue",
+            "Kjetil Moberg"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613888"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Diffusion-Based Time Series Data Imputation for Cloud Failure Prediction at Microsoft 365",
+        "doi": "https://doi.org/10.1145/3611643.3613866",
+        "authors": [
+            "Fangkai Yang",
+            "Wenjie Yin",
+            "Lu Wang",
+            "Tianci Li",
+            "Pu Zhao",
+            "Bo Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613866"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "The Most Agile Teams Are the Most Disciplined: On Scaling out Agile Development",
+        "doi": "https://doi.org/10.1145/3611643.3613886",
+        "authors": [
+            "Zheng Li",
+            "Austen Rainer"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613886"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Contribution-Based Firing of Developers?",
+        "doi": "https://doi.org/10.1145/3611643.3613085",
+        "authors": [
+            "Vincenzo Orrei",
+            "Marco Raglianti",
+            "Csaba Nagy",
+            "Michele Lanza"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613085"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Keeping Mutation Test Suites Consistent and Relevant with Long-Standing Mutants",
+        "doi": "https://doi.org/10.1145/3611643.3613089",
+        "authors": [
+            "Milos Ojdanic",
+            "Mike Papadakis",
+            "Mark Harman"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613089"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Top-Down Automated Development in Limited Scopes: A Neuro-Symbolic Framework from Expressibles to Executables",
+        "doi": "https://doi.org/10.1145/3611643.3613076",
+        "authors": [
+            "Jian Gu",
+            "Harald C. Gall"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613076"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Lessons from the Long Tail: Analysing Unsafe Dependency Updates across Software Ecosystems",
+        "doi": "https://doi.org/10.1145/3611643.3613086",
+        "authors": [
+            "Supatsara Wattanakriengkrai",
+            "Raula Gaikovina Kula",
+            "Christoph Treude",
+            "Kenichi Matsumoto"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613086"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Getting pwn’d by AI: Penetration Testing with Large Language Models",
+        "doi": "https://doi.org/10.1145/3611643.3613083",
+        "authors": [
+            "Andreas Happe",
+            "Jürgen Cito"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613083"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Feature-Based Analysis of the Machine Learning Development Lifecycle",
+        "doi": "https://doi.org/10.1145/3611643.3613082",
+        "authors": [
+            "Boyue Caroline Hu",
+            "Marsha Chechik"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613082"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Exploring Moral Principles Exhibited in OSS: A Case Study on GitHub Heated Issues",
+        "doi": "https://doi.org/10.1145/3611643.3613077",
+        "authors": [
+            "Ramtin Ehsani",
+            "Rezvaneh Rezapour",
+            "Preetha Chatterjee"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613077"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Understanding Emotions in Informal Developer Interactions: A Gitter Chat Study",
+        "doi": "https://doi.org/10.1145/3611643.3613084",
+        "authors": [
+            "Amirali Sajadi",
+            "Kostadin Damevski",
+            "Preetha Chatterjee"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613084"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Strengthening Formal Specifications with Mutation Model Checking",
+        "doi": "https://doi.org/10.1145/3611643.3613080",
+        "authors": [
+            "Maxime Cordy",
+            "Sami Lazreg",
+            "Axel Legay",
+            "Pierre Yves Schobbens"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613080"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Assisting Static Analysis with Large Language Models: A ChatGPT Experiment",
+        "doi": "https://doi.org/10.1145/3611643.3613078",
+        "authors": [
+            "Haonan Li",
+            "Yu Hao",
+            "Yizhuo Zhai",
+            "Zhiyun Qian"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613078"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Reflecting on the Use of the Policy-Process-Product Theory in Empirical Software Engineering",
+        "doi": "https://doi.org/10.1145/3611643.3613075",
+        "authors": [
+            "Kelechi G. Kalu",
+            "Taylor R. Schorlemmer",
+            "Sophie Chen",
+            "Kyle A. Robinson"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613075"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Vision on Intentions in Software Engineering",
+        "doi": "https://doi.org/10.1145/3611643.3613087",
+        "authors": [
+            "Jacob Krüger",
+            "Yi Li",
+            "Chenguang Zhu",
+            "Marsha Chechik",
+            "Thorsten Berger",
+            "Julia Rubin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613087"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Deeper Notions of Correctness in Image-Based DNNs: Lifting Properties from Pixel to Entities",
+        "doi": "https://doi.org/10.1145/3611643.3613079",
+        "authors": [
+            "Felipe Toledo",
+            "David Shriver",
+            "Sebastian Elbaum",
+            "Matthew B. Dwyer"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613079"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LazyCow: A Lightweight Crowdsourced Testing Tool for Taming Android Fragmentation",
+        "doi": "https://doi.org/10.1145/3611643.3613098",
+        "authors": [
+            "Xiaoyu Sun",
+            "Xiao Chen",
+            "Yonghui Liu",
+            "John Grundy",
+            "Li Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613098"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "npm-follower: A Complete Dataset Tracking the NPM Ecosystem",
+        "doi": "https://doi.org/10.1145/3611643.3613094",
+        "authors": [
+            "Donald Pinckney",
+            "Federico Cassano",
+            "Arjun Guha",
+            "Jonathan Bell"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613094"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Ad Hoc Syntax-Guided Program Reduction",
+        "doi": "https://doi.org/10.1145/3611643.3613101",
+        "authors": [
+            "Jia Le Tian",
+            "Mengxiao Zhang",
+            "Zhenyang Xu",
+            "Yongqiang Tian",
+            "Yiwen Dong"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613101"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On Using Information Retrieval to Recommend Machine Learning Good Practices for Software Engineers",
+        "doi": "https://doi.org/10.1145/3611643.3613093",
+        "authors": [
+            "Laura Cabra-Acela",
+            "Anamaria Mojica-Hanke",
+            "Mario Linares-Vásquez",
+            "Steffen Herbold"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613093"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Helion: Enabling Natural Testing of Smart Homes",
+        "doi": "https://doi.org/10.1145/3611643.3613095",
+        "authors": [
+            "Prianka Mandal",
+            "Sunil Manandhar",
+            "Kaushal Kafle",
+            "Kevin Moran"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613095"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Language Model of Java Methods with Train/Test Deduplication",
+        "doi": "https://doi.org/10.1145/3611643.3613090",
+        "authors": [
+            "Chia-Yi Su",
+            "Aakash Bansal",
+            "Vijayanta Jain",
+            "Sepideh Ghanavati",
+            "Collin McMillan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613090"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DENT: A Tool for Tagging Stack Overflow Posts with Deep Learning Energy Patterns",
+        "doi": "https://doi.org/10.1145/3611643.3613092",
+        "authors": [
+            "Shriram Shanbhag",
+            "Sridhar Chimalakonda",
+            "Vibhu Saujanya Sharma",
+            "Vikrant Kaulgud"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613092"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MASC: A Tool for Mutation-Based Evaluation of Static Crypto-API Misuse Detectors",
+        "doi": "https://doi.org/10.1145/3611643.3613099",
+        "authors": [
+            "Amit Seal Ami",
+            "Syed Yusuf Ahmed",
+            "Radowan Mahmud Redoy",
+            "Nathan Cooper"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613099"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "llvm2CryptoLine: Verifying Arithmetic in Cryptographic C Programs",
+        "doi": "https://doi.org/10.1145/3611643.3613096",
+        "authors": [
+            "Ruiling Chen",
+            "Jiaxiang Liu",
+            "Xiaomu Shi",
+            "Ming-Hsien Tsai",
+            "Bow-Yaw Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613096"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "P4b: A Translator from P4 Programs to Boogie",
+        "doi": "https://doi.org/10.1145/3611643.3613091",
+        "authors": [
+            "Chong Ye",
+            "Fei He"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613091"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "D2S2: Drag ’n’ Drop Mobile App Screen Search",
+        "doi": "https://doi.org/10.1145/3611643.3613100",
+        "authors": [
+            "Soumik Mohian",
+            "Tony Tang",
+            "Tuan Trinh",
+            "Don Dang",
+            "Christoph Csallner"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613100"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "CONAN: Statically Detecting Connectivity Issues in Android Applications",
+        "doi": "https://doi.org/10.1145/3611643.3613097",
+        "authors": [
+            "Alejandro Mazuera-Rozo",
+            "Camilo Escobar-Velásquez",
+            "Juan Espitia-Acero"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3613097"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Data Set of Extracted Rationale from Linux Kernel Commit Messages",
+        "doi": "https://doi.org/10.1145/3611643.3617851",
+        "authors": [
+            "Mouna Dhaouadi"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617851"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Detecting Overfitting of Machine Learning Techniques for Automatic Vulnerability Detection",
+        "doi": "https://doi.org/10.1145/3611643.3617845",
+        "authors": [
+            "Niklas Risse"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617845"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Detection of Optimizations Missed by the Compiler",
+        "doi": "https://doi.org/10.1145/3611643.3617846",
+        "authors": [
+            "Yi Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617846"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Do All Software Projects Die When Not Maintained? Analyzing Developer Maintenance to Predict OSS Usage",
+        "doi": "https://doi.org/10.1145/3611643.3617849",
+        "authors": [
+            "Emily Nguyen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617849"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Inferring Complexity Bounds from Recurrence Relations",
+        "doi": "https://doi.org/10.1145/3611643.3617853",
+        "authors": [
+            "Didier Ishimwe"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617853"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LLM-Based Code Generation Method for Golang Compiler Testing",
+        "doi": "https://doi.org/10.1145/3611643.3617850",
+        "authors": [
+            "Qiuhan Gu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617850"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Privacy-Centric Log Parsing for Timely, Proactive Personal Data Protection",
+        "doi": "https://doi.org/10.1145/3611643.3617847",
+        "authors": [
+            "Issam Sedki"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617847"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "STraceBERT: Source Code Retrieval using Semantic Application Traces",
+        "doi": "https://doi.org/10.1145/3611643.3617852",
+        "authors": [
+            "Claudio Spiess"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617852"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "The Call Graph Chronicles: Unleashing the Power Within",
+        "doi": "https://doi.org/10.1145/3611643.3617854",
+        "authors": [
+            "Masudul Hasan Masud Bhuiyan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617854"
+    },
+    {
+        "conference": "FSE",
+        "year": 2023,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "The State of Survival in OSS: The Impact of Diversity",
+        "doi": "https://doi.org/10.1145/3611643.3617848",
+        "authors": [
+            "Zixuan Feng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "short-paper",
+        "url": "https://dl.acm.org/doi/10.1145/3611643.3617848"
+    }
+]
