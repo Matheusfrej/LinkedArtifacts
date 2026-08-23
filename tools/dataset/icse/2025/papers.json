@@ -1064,6 +1064,8 @@
             "Available",
             "Functional"
         ],
+        "pageCount": 13,
+        "artifact_links": [],
         "artifact_available": true,
         "artifact_functional": true,
         "artifact_reusable": false,
