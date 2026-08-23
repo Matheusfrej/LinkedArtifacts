@@ -1,17 +1,160 @@
 [
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Challenges and Opportunities in Model Checking Large-scale Distributed Systems",
+        "doi": "https://doi.org/10.1145/3597503.3649398",
+        "authors": [
+            "Rupak Majumdar"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "keynote",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3649398"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Software Engineering Research in a World with Generative Artificial Intelligence",
+        "doi": "https://doi.org/10.1145/3597503.3649399",
+        "authors": [
+            "Martin Rinard"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "keynote",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3649399"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Trustworthy by Design",
+        "doi": "https://doi.org/10.1145/3597503.3649400",
+        "authors": [
+            "Carol Smith"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "keynote",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3649400"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Domain Knowledge Matters: Improving Prompts with Fix Templates for Repairing Python Type Errors",
+        "doi": "https://doi.org/10.1145/3597503.3608132",
+        "authors": [
+            "Yun Peng",
+            "Shuzheng Gao",
+            "Cuiyun Gao",
+            "Yintong Huo",
+            "Michael Lyu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608132"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Practical Program Repair via Preference-based Ensemble Strategy",
+        "doi": "https://doi.org/10.1145/3597503.3623310",
+        "authors": [
+            "Wenkang Zhong",
+            "Chuanyi Li",
+            "Kui Liu",
+            "Tongtong Xu",
+            "Jidong Ge"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623310"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Learning and Repair of Deep Reinforcement Learning Policies from Fuzz-Testing Data",
+        "doi": "https://doi.org/10.1145/3597503.3623311",
         "authors": [
             "Martin Tappler",
             "Andrea Pferscher",
             "Bernhard K. Aichernig",
             "Bettina Könighofer"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623311",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623311"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "BinAug: Enhancing Binary Similarity Analysis with Low-Cost Input Repairing",
+        "doi": "https://doi.org/10.1145/3597503.3623328",
+        "authors": [
+            "Wai Kin Wong",
+            "Huaijin Wang",
+            "Zongjie Li",
+            "Shuai Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623328"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "VeRe: Verification Guided Synthesis for Repairing Deep Neural Networks",
+        "doi": "https://doi.org/10.1145/3597503.3623332",
         "authors": [
             "Jianan Ma",
             "Pengfei Yang",
@@ -19,39 +162,364 @@
             "Youcheng Sun",
             "Cheng-Chao Huang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623332",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623332"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "RUNNER: Responsible UNfair NEuron Repair for Enhancing Deep Neural Network Fairness",
+        "doi": "https://doi.org/10.1145/3597503.3623334",
+        "authors": [
+            "Tianlin Li",
+            "Yue Cao",
+            "Jian Zhang",
+            "Shiqian Zhao",
+            "Yihao Huang",
+            "Aishan Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623334"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ITER: Iterative Neural Repair for Multi-Location Patches",
+        "doi": "https://doi.org/10.1145/3597503.3623337",
+        "authors": [
+            "He Ye",
+            "Martin Monperrus"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623337"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "EGFE: End-to-end Grouping of Fragmented Elements in UI Designs with Multimodal Learning",
+        "doi": "https://doi.org/10.1145/3597503.3623313",
+        "authors": [
+            "Liuqing Chen",
+            "Yunnong Chen",
+            "Shuhong Xiao",
+            "Yaxuan Song",
+            "Lingyun Sun"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623313"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Comprehensive Study of Learning-based Android Malware Detectors under Challenging Environments",
+        "doi": "https://doi.org/10.1145/3597503.3623320",
+        "authors": [
+            "Cuiying Gao",
+            "Gaozhun Huang",
+            "Heng Li",
+            "Bang Wu",
+            "Yueming Wu",
+            "Wei Yuan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623320"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Toward Automatically Completing GitHub Workflows",
+        "doi": "https://doi.org/10.1145/3597503.3623351",
+        "authors": [
+            "Antonio Mastropaolo",
+            "Fiorella Zampetti",
+            "Gabriele Bavota",
+            "Massimiliano Di Penta"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623351"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "UniLog: Automatic Logging via LLM and In-Context Learning",
+        "doi": "https://doi.org/10.1145/3597503.3623326",
+        "authors": [
+            "Junjielong Xu",
+            "Ziang Cui",
+            "Yuan Zhao",
+            "Xu Zhang",
+            "Shilin He",
+            "Pinjia He"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623326"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Predicting Performance and Accuracy of Mixed-Precision Programs for Precision Tuning",
+        "doi": "https://doi.org/10.1145/3597503.3623338",
         "authors": [
             "Yutong Wang",
             "Cindy Rubio-González"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623338",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623338"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Dataflow Analysis-Inspired Deep Learning for Efficient Vulnerability Detection",
+        "doi": "https://doi.org/10.1145/3597503.3623345",
         "authors": [
             "Benjamin Steenhoek",
             "Hongyang Gao",
             "Wei Le"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623345",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623345"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Large Language Models for Test-Free Fault Localization",
+        "doi": "https://doi.org/10.1145/3597503.3623342",
+        "authors": [
+            "Aidan Z. H. Yang",
+            "Claire Le Goues",
+            "Ruben Martins",
+            "Vincent Hellendoorn"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623342"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "CrashTranslator: Automatically Reproducing Mobile Application Crashes Directly from Stack Trace",
+        "doi": "https://doi.org/10.1145/3597503.3623298",
+        "authors": [
+            "Yuchao Huang",
+            "Junjie Wang",
+            "Zhe Liu",
+            "Yawen Wang",
+            "Song Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623298"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Reorder Pointer Flow in Sound Concurrency Bug Prediction",
+        "doi": "https://doi.org/10.1145/3597503.3623300",
+        "authors": [
+            "Yuqi Guo",
+            "Shihao Zhu",
+            "Yan Cai",
+            "Liang He",
+            "Jian Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623300"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Object Graph Programming",
+        "doi": "https://doi.org/10.1145/3597503.3623319",
+        "authors": [
+            "Aditya Thimmaiah",
+            "Leonidas Lampropoulos",
+            "Christopher Rossbach",
+            "Milos Gligoric"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623319"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Semantic Analysis of Macro Usage for Portability",
+        "doi": "https://doi.org/10.1145/3597503.3623323",
         "authors": [
             "Brent Pappas",
             "Paul Gazzillo"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623323",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623323"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "NuzzleBug: Debugging Block-Based Programs in Scratch",
+        "doi": "https://doi.org/10.1145/3597503.3623331",
+        "authors": [
+            "Adina Deiner",
+            "Gordon Fraser"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623331"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LogShrink: Effective Log Compression by Leveraging Commonality and Variability of Log Data",
+        "doi": "https://doi.org/10.1145/3597503.3608129",
+        "authors": [
+            "Xiaoyun Li",
+            "Hongyu Zhang",
+            "Van-Hoang Le",
+            "Pengfei Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608129"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Demystifying Compiler Unstable Feature Usage and Impacts in the Rust Ecosystem",
+        "doi": "https://doi.org/10.1145/3597503.3623352",
         "authors": [
             "Chenghao Li",
             "Yifei Wu",
@@ -60,40 +528,165 @@
             "Rui Chang",
             "Chengwei Liu"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623352",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623352"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Resource Usage and Optimization Opportunities in Workflows of GitHub Actions",
+        "doi": "https://doi.org/10.1145/3597503.3623303",
         "authors": [
             "Islem Bouzenia",
             "Michael Pradel"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623303",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623303"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Revealing Hidden Threats: An Empirical Study of Library Misuse in Smart Contracts",
+        "doi": "https://doi.org/10.1145/3597503.3623335",
+        "authors": [
+            "Mingyuan Huang",
+            "Jiachi Chen",
+            "Zigui Jiang",
+            "Zibin Zheng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623335"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Fine-SE: Integrating Semantic Features and Expert Features for Software Effort Estimation",
+        "doi": "https://doi.org/10.1145/3597503.3623349",
+        "authors": [
+            "Yue Li",
+            "Zhong Ren",
+            "Zhiqi Wang",
+            "Lanxin Yang",
+            "Liming Dong",
+            "Chenxing Zhong"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623349"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Kind Controllers and Fast Heuristics for Non-Well-Separated GR(1) Specifications",
+        "doi": "https://doi.org/10.1145/3597503.3608131",
         "authors": [
             "Ariel Gorenstein",
             "Shahar Maoz",
             "Jan Oliver Ringert"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3608131",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3608131"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "It's Not a Feature, It's a Bug: Fault-Tolerant Model Mining from Noisy Data",
+        "doi": "https://doi.org/10.1145/3597503.3623346",
         "authors": [
             "Felix Wallner",
             "Bernhard K. Aichernig",
             "Christian Burghard"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623346",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623346"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Enabling Runtime Verification of Causal Discovery Algorithms with Automated Conditional Independence Reasoning",
+        "doi": "https://doi.org/10.1145/3597503.3623348",
+        "authors": [
+            "Pingchuan Ma",
+            "Zhenlan Ji",
+            "Peisen Yao",
+            "Shuai Wang",
+            "Kui Ren"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623348"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Modularizing while Training: A New Paradigm for Modularizing DNN Models",
+        "doi": "https://doi.org/10.1145/3597503.3608135",
         "authors": [
             "Binhang Qi",
             "Hailong Sun",
@@ -101,11 +694,144 @@
             "Ruobing Zhao",
             "Xiang Gao"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3608135",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3608135"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "KnowLog: Knowledge Enhanced Pre-trained Language Model for Log Understanding",
+        "doi": "https://doi.org/10.1145/3597503.3623304",
+        "authors": [
+            "Lipeng Ma",
+            "Weidong Yang",
+            "Bo Xu",
+            "Sihang Jiang",
+            "Ben Fei",
+            "Jiaqing Liang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623304"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "FAIR: Flow Type-Aware Pre-Training of Compiler Intermediate Representations",
+        "doi": "https://doi.org/10.1145/3597503.3608136",
+        "authors": [
+            "Changan Niu",
+            "Chuanyi Li",
+            "Vincent Ng",
+            "David Lo",
+            "Bin Luo"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608136"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Exploring the Potential of ChatGPT in Automated Code Refinement: An Empirical Study",
+        "doi": "https://doi.org/10.1145/3597503.3623306",
+        "authors": [
+            "Qi Guo",
+            "Junming Cao",
+            "Xiaofei Xie",
+            "Shangqing Liu",
+            "Xiaohong Li",
+            "Bihuan Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623306"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Deep Learning or Classical Machine Learning? An Empirical Study on Log-Based Anomaly Detection",
+        "doi": "https://doi.org/10.1145/3597503.3623308",
+        "authors": [
+            "Boxi Yu",
+            "Jiayi Yao",
+            "Qiuai Fu",
+            "Zhiqing Zhong",
+            "Haotian Xie",
+            "Yaoliang Wu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623308"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "TRACED: Execution-aware Pre-training for Source Code",
+        "doi": "https://doi.org/10.1145/3597503.3608140",
+        "authors": [
+            "Yangruibo Ding",
+            "Benjamin Steenhoek",
+            "Kexin Pei",
+            "Gail Kaiser",
+            "Wei Le",
+            "Baishakhi Ray"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608140"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "CoderEval: A Benchmark of Pragmatic Code Generation with Generative Pre-trained Models",
+        "doi": "https://doi.org/10.1145/3597503.3623316",
         "authors": [
             "Hao Yu",
             "Bo Shen",
@@ -114,54 +840,214 @@
             "Qi Zhang",
             "Yuchi Ma"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623316",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623316"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Inferring Data Preconditions from Deep Learning Models for Trustworthy Prediction in Deployment",
+        "doi": "https://doi.org/10.1145/3597503.3623333",
         "authors": [
             "Shibbir Ahmed",
             "Hongyang Gao",
             "Hridesh Rajan"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623333",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623333"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Large Language Models are Few-Shot Summarizers: Multi-Intent Comment Generation via In-Context Learning",
+        "doi": "https://doi.org/10.1145/3597503.3608134",
+        "authors": [
+            "Mingyang Geng",
+            "Shangwen Wang",
+            "Dezun Dong",
+            "Haotian Wang",
+            "Ge Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608134"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "On Using GUI Interaction Data to Improve Text Retrieval-based Bug Localization",
+        "doi": "https://doi.org/10.1145/3597503.3608139",
         "authors": [
             "Junayed Mahmud",
             "Nadeeshan De Silva",
             "Safwat Ali Khan",
             "Seyed Hooman Mostafavi"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3608139",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3608139"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DEMISTIFY: Identifying On-device Machine Learning Models Stealing and Reuse Vulnerabilities in Mobile Apps",
+        "doi": "https://doi.org/10.1145/3597503.3623325",
+        "authors": [
+            "Pengcheng Ren",
+            "Chaoshun Zuo",
+            "Xiaofeng Liu",
+            "Wenrui Diao",
+            "Qingchuan Zhao"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623325"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "How do Developers Talk about GitHub Actions? Evidence from Online Software Development Community",
+        "doi": "https://doi.org/10.1145/3597503.3623327",
+        "authors": [
+            "Yang Zhang",
+            "Yiwen Wu",
+            "Tingting Chen",
+            "Tao Wang",
+            "Hui Liu",
+            "Huaimin Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623327"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Block-based Programming for Two-Armed Robots: A Comparative Study",
+        "doi": "https://doi.org/10.1145/3597503.3623329",
+        "authors": [
+            "Felipe Fronchetti",
+            "Nico Ritschel",
+            "Logan Schorr",
+            "Chandler Barfield"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623329"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "BOMs Away! Inside the Minds of Stakeholders: A Comprehensive Study of Bills of Materials for Software Systems",
+        "doi": "https://doi.org/10.1145/3597503.3623347",
         "authors": [
             "Trevor Stalnaker",
             "Nathan Wintersgill",
             "Oscar Chaparro",
             "Massimiliano Di Penta"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623347",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623347"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "EDEFuzz: A Web API Fuzzer for Excessive Data Exposures",
+        "doi": "https://doi.org/10.1145/3597503.3608133",
         "authors": [
             "Lianglu Pan",
             "Shaanan Cohney",
             "Toby Murray",
             "Van-Thuan Pham"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3608133",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3608133"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Detecting Logic Bugs in Graph Database Management Systems via Injective and Surjective Graph Query Transformation",
+        "doi": "https://doi.org/10.1145/3597503.3623307",
         "authors": [
             "Yuancheng Jiang",
             "Jiahao Liu",
@@ -169,11 +1055,46 @@
             "Roland H. C. Yap",
             "Zhenkai Liang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623307",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623307"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Do Automatic Test Generation Tools Generate Flaky Tests?",
+        "doi": "https://doi.org/10.1145/3597503.3608138",
+        "authors": [
+            "Martin Gruber",
+            "Muhammad Firhard Roslan",
+            "Owain Parry",
+            "Fabian Scharnböck"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608138"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "ECFuzz: Effective Configuration Fuzzing for Large-Scale Systems",
+        "doi": "https://doi.org/10.1145/3597503.3623315",
         "authors": [
             "Junqiang Li",
             "Senyi Li",
@@ -183,11 +1104,45 @@
             "Shanshan Li",
             "Xiang Li"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623315",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623315"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Improving Testing Behavior by Gamifying IntelliJ",
+        "doi": "https://doi.org/10.1145/3597503.3623339",
+        "authors": [
+            "Philipp Straubinger",
+            "Gordon Fraser"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623339"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "SCTrans: Constructing a Large Public Scenario Dataset for Simulation Testing of Autonomous Driving Systems",
+        "doi": "https://doi.org/10.1145/3597503.3623350",
         "authors": [
             "Jiarun Dai",
             "Bufan Gao",
@@ -195,63 +1150,344 @@
             "Zongan Huang",
             "Zhongrui Li"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623350",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623350"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Co-Creation in Fully Remote Software Teams",
+        "doi": "https://doi.org/10.1145/3597503.3623297",
         "authors": [
             "Victoria Jackson",
             "Rafael Prikladnicki",
             "Andre van der Hoek"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623297",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623297"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Large-Scale Survey on the Usability of AI Programming Assistants: Successes and Challenges",
+        "doi": "https://doi.org/10.1145/3597503.3608128",
+        "authors": [
+            "Jenny T. Liang",
+            "Chenyang Yang",
+            "Brad A. Myers"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608128"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "How to Support ML End-User Programmers through a Conversational Agent",
+        "doi": "https://doi.org/10.1145/3597503.3608130",
         "authors": [
             "Emily Judith Arteaga Garcia",
             "João Felipe Nicolaci Pimentel",
             "Zixuan Feng"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3608130",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3608130"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Unveiling the Life Cycle of User Feedback: Best Practices from Software Practitioners",
+        "doi": "https://doi.org/10.1145/3597503.3623309",
+        "authors": [
+            "Ze Shi Li",
+            "Nowshin Nawar Arony",
+            "Kezia Devathasan",
+            "Manish Sihag",
+            "Neil Ernst"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623309"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Novelty Begets Popularity, But Curbs Participation - A Macroscopic View of the Python Open-Source Ecosystem",
+        "doi": "https://doi.org/10.1145/3597503.3608142",
+        "authors": [
+            "Hongbo Fang",
+            "James Herbsleb",
+            "Bogdan Vasilescu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608142"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Characterizing Software Maintenance Meetings: Information Shared, Discussion Outcomes, and Information Captured",
+        "doi": "https://doi.org/10.1145/3597503.3623330",
+        "authors": [
+            "Adriana Meza Soria",
+            "Taylor Lopez",
+            "Elizabeth Seero",
+            "Negin Mashhadi"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623330"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Predicting open source contributor turnover from value-related discussions: An analysis of GitHub issues",
+        "doi": "https://doi.org/10.1145/3597503.3623340",
+        "authors": [
+            "Jack Jamieson",
+            "Naomi Yamashita",
+            "Eureka Foong"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623340"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "On the Helpfulness of Answering Developer Questions on Discord with Similar Conversations and Posts from the Past",
+        "doi": "https://doi.org/10.1145/3597503.3623341",
         "authors": [
             "Alexander Lill",
             "André N. Meyer",
             "Thomas Fritz"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623341",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623341"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Marco: A Stochastic Asynchronous Concolic Explorer",
+        "doi": "https://doi.org/10.1145/3597503.3623301",
+        "authors": [
+            "Jie Hu",
+            "Yue Duan",
+            "Heng Yin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623301"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Smart Contract and DeFi Security Tools: Do They Meet the Needs of Practitioners?",
+        "doi": "https://doi.org/10.1145/3597503.3623302",
         "authors": [
             "Stefanos Chaliasos",
             "Marcos Antonios Charalambous",
             "Liyi Zhou",
             "Rafaila Galanopoulou"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623302",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623302"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DocFlow: Extracting Taint Specifications from Software Documentation",
+        "doi": "https://doi.org/10.1145/3597503.3623312",
+        "authors": [
+            "Marcos Tileria",
+            "Jorge Blasco",
+            "Santanu Kumar Dash"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623312"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Toward Improved Deep Learning-based Vulnerability Detection",
+        "doi": "https://doi.org/10.1145/3597503.3608141",
         "authors": [
             "Adriana Sejfia",
             "Satyaki Das",
             "Saad Shafiq",
             "Nenad Medvidović"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3608141",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3608141"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Attention! Your Copied Data is Under Monitoring: A Systematic Study of Clipboard Usage in Android Apps",
+        "doi": "https://doi.org/10.1145/3597503.3623317",
+        "authors": [
+            "Yongliang Chen",
+            "Ruoqin Tang",
+            "Chaoshun Zuo",
+            "Xiaokuan Zhang",
+            "Lei Xue"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623317"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "PonziGuard: Detecting Ponzi Schemes on Ethereum with Contract Runtime Behavior Graph (CRBG)",
+        "doi": "https://doi.org/10.1145/3597503.3623318",
+        "authors": [
+            "Ruichao Liang",
+            "Jing Chen",
+            "Kun He",
+            "Yueming Wu",
+            "Gelei Deng",
+            "Ruiying Du"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623318"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "FuzzSlice: Pruning False Positives in Static Analysis Warnings through Function-Level Fuzzing",
+        "doi": "https://doi.org/10.1145/3597503.3623321",
         "authors": [
             "Aniruddhan Murali",
             "Noble Mathews",
@@ -259,11 +1495,25 @@
             "Meiyappan Nagappan",
             "Meng Xu"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623321",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623321"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "LibvDiff: Library Version Difference Guided OSS Version Identification in Binaries",
+        "doi": "https://doi.org/10.1145/3597503.3623336",
         "authors": [
             "Chaopeng Dong",
             "Siyuan Li",
@@ -271,51 +1521,703 @@
             "Yang Xiao",
             "Yongpan Wang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3623336",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3623336"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Prompting Is All You Need: Automated Android Bug Replay with Large Language Models",
+        "doi": "https://doi.org/10.1145/3597503.3608137",
+        "authors": [
+            "Sidong Feng",
+            "Chunyang Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3608137"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Reliable AI: Adequacy Metrics for Ensuring the Quality of System-level Testing of Autonomous Vehicles",
+        "doi": "https://doi.org/10.1145/3597503.3623314",
+        "authors": [
+            "Neelofar Neelofar",
+            "Aldeida Aleti"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623314"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Learning-based Widget Matching for Migrating GUI Test Cases",
+        "doi": "https://doi.org/10.1145/3597503.3623322",
+        "authors": [
+            "Yakun Zhang",
+            "Wenjie Zhang",
+            "Dezhi Ran",
+            "Qihao Zhu",
+            "Chengfeng Dou"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623322"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Large Language Models are Edge-Case Generators: Crafting Unusual Programs for Fuzzing Deep Learning Libraries",
+        "doi": "https://doi.org/10.1145/3597503.3623343",
+        "authors": [
+            "Yinlin Deng",
+            "Chunqiu Steven Xia",
+            "Chenyuan Yang",
+            "Shizhuo Dylan Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623343"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Deeply Reinforcing Android GUI Testing with Deep Reinforcement Learning",
+        "doi": "https://doi.org/10.1145/3597503.3623344",
+        "authors": [
+            "Yuanhong Lan",
+            "Yifei Lu",
+            "Zhong Li",
+            "Minxue Pan",
+            "Wenhua Yang",
+            "Tian Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3623344"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Unveiling Memorization in Code Models",
+        "doi": "https://doi.org/10.1145/3597503.3639074",
+        "authors": [
+            "Zhou Yang",
+            "Zhipeng Zhao",
+            "Chenyu Wang",
+            "Jieke Shi",
+            "Dongsun Kim"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639074"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Code Search is All You Need? Improving Code Suggestions with Code Search",
+        "doi": "https://doi.org/10.1145/3597503.3639085",
+        "authors": [
+            "Junkai Chen",
+            "Xing Hu",
+            "Zhenhao Li",
+            "Cuiyun Gao",
+            "Xin Xia",
+            "David Lo"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639085"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On Extracting Specialized Code Abilities from Large Language Models: A Feasibility Study",
+        "doi": "https://doi.org/10.1145/3597503.3639091",
+        "authors": [
+            "Zongjie Li",
+            "Chaozheng Wang",
+            "Pingchuan Ma",
+            "Chaowei Liu",
+            "Shuai Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639091"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "When Neural Code Completion Models Size up the Situation: Attaining Cheaper and Faster Completion through Dynamic Model Inference",
+        "doi": "https://doi.org/10.1145/3597503.3639120",
+        "authors": [
+            "Zhensu Sun",
+            "Xiaoning Du",
+            "Fu Song",
+            "Shangwen Wang",
+            "Li Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639120"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "GrammarT5: Grammar-Integrated Pretrained Encoder-Decoder Neural Model for Code",
+        "doi": "https://doi.org/10.1145/3597503.3639125",
+        "authors": [
+            "Qihao Zhu",
+            "Qingyuan Liang",
+            "Zeyu Sun",
+            "Yingfei Xiong",
+            "Lu Zhang",
+            "Shengyu Cheng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639125"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On Calibration of Pre-trained Code Models",
+        "doi": "https://doi.org/10.1145/3597503.3639126",
+        "authors": [
+            "Zhenhao Zhou",
+            "Chaofeng Sha",
+            "Xin Peng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639126"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Traces of Memorisation in Large Language Models for Code",
+        "doi": "https://doi.org/10.1145/3597503.3639133",
+        "authors": [
+            "Ali Al-Kaswan",
+            "Maliheh Izadi",
+            "Arie van Deursen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639133"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Language Models for Code Completion: A Practical Evaluation",
+        "doi": "https://doi.org/10.1145/3597503.3639138",
+        "authors": [
+            "Maliheh Izadi",
+            "Jonathan Katzy",
+            "Tim Van Dam",
+            "Marc Otten"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639138"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Learning in the Wild: Towards Leveraging Unlabeled Data for Effectively Tuning Pre-trained Code Models",
+        "doi": "https://doi.org/10.1145/3597503.3639216",
+        "authors": [
+            "Shuzheng Gao",
+            "Wenxin Mao",
+            "Cuiyun Gao",
+            "Li Li",
+            "Xing Hu",
+            "Xin Xia",
+            "Michael R. Lyu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639216"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Evaluating Large Language Models in Class-Level Code Generation",
+        "doi": "https://doi.org/10.1145/3597503.3639219",
+        "authors": [
+            "Xueying Du",
+            "Mingwei Liu",
+            "Kaixin Wang",
+            "Hanlin Wang",
+            "Junwei Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639219"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Lost in Translation: A Study of Bugs Introduced by Large Language Models while Translating Code",
+        "doi": "https://doi.org/10.1145/3597503.3639226",
         "authors": [
             "Rangeet Pan",
             "Ali Reza Ibrahimzada",
             "Rahul Krishna",
             "Divya Sankar"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639226",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639226"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Out of Context: How important is Local Context in Neural Program Repair?",
+        "doi": "https://doi.org/10.1145/3597503.3639086",
+        "authors": [
+            "Julian Aron Prenner",
+            "Romain Robbes"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639086"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Automated Program Repair, What Is It Good For? Not Absolutely Nothing!",
+        "doi": "https://doi.org/10.1145/3597503.3639095",
         "authors": [
             "Hadeel Eladawy",
             "Claire Le Goues",
             "Yuriy Brun"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639095",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639095"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Rust-lancet: Automated Ownership-Rule-Violation Fixing with Behavior Preservation",
+        "doi": "https://doi.org/10.1145/3597503.3639103",
+        "authors": [
+            "Wenzhang Yang",
+            "Linhai Song",
+            "Yinxing Xue"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639103"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Exploring Experiences with Automated Program Repair in Practice",
+        "doi": "https://doi.org/10.1145/3597503.3639182",
+        "authors": [
+            "Fairuz Nawer Meem",
+            "Justin Smith",
+            "Brittany Johnson"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639182"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "PyTy: Repairing Static Type Errors in Python",
+        "doi": "https://doi.org/10.1145/3597503.3639184",
         "authors": [
             "Yiu Wai Chow",
             "Luca Di Grazia",
             "Michael Pradel"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639184",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639184"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Out of Sight, Out of Mind: Better Automatic Vulnerability Repair by Broadening Input Ranges and Sources",
+        "doi": "https://doi.org/10.1145/3597503.3639222",
+        "authors": [
+            "Xin Zhou",
+            "Kisub Kim",
+            "Bowen Xu",
+            "Donggyun Han",
+            "David Lo"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639222"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Strengthening Supply Chain Security with Fine-grained Safe Patch Identification",
+        "doi": "https://doi.org/10.1145/3597503.3639104",
+        "authors": [
+            "Changhua Luo",
+            "Wei Meng",
+            "Shuai Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639104"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Comprehensive Semantic Repair of Obsolete GUI Test Scripts for Mobile Applications",
+        "doi": "https://doi.org/10.1145/3597503.3639108",
+        "authors": [
+            "Shaoheng Cao",
+            "Minxue Pan",
+            "Yu Pei",
+            "Wenhua Yang",
+            "Tian Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639108"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Constraint Based Program Repair for Persistent Memory Bugs",
+        "doi": "https://doi.org/10.1145/3597503.3639204",
         "authors": [
             "Zunchen Huang",
             "Chao Wang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639204",
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639204"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Xpert: Empowering Incident Management with Query Recommendations via Large Language Models",
+        "doi": "https://doi.org/10.1145/3597503.3639081",
+        "authors": [
+            "Yuxuan Jiang",
+            "Chaoyun Zhang",
+            "Shilin He",
+            "Zhihao Yang",
+            "Minghua Ma",
+            "Si Qin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639081"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Tensor-Aware Energy Accounting",
+        "doi": "https://doi.org/10.1145/3597503.3639156",
+        "authors": [
+            "Timur Babakol",
+            "Yu David Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639156"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Programming Assistant for Exception Handling with CodeBERT",
+        "doi": "https://doi.org/10.1145/3597503.3639188",
+        "authors": [
+            "Yuchen Cai",
+            "Aashish Yadavally",
+            "Abhishek Mishra",
+            "Genesis Montejo",
+            "Tien Nguyen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639188"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An Empirical Study on Noisy Label Learning for Program Understanding",
+        "doi": "https://doi.org/10.1145/3597503.3639217",
+        "authors": [
+            "Wenhan Wang",
+            "Yanzhou Li",
+            "Anran Li",
+            "Jian Zhang",
+            "Wei Ma",
+            "Yang Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639217"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An Empirical Study on Low GPU Utilization of Deep Learning Jobs",
+        "doi": "https://doi.org/10.1145/3597503.3639232",
+        "authors": [
+            "Yanjie Gao",
+            "Yichen He",
+            "Xinze Li",
+            "Bo Zhao",
+            "Haoxiang Lin",
+            "Yoyo Liang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639232"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Using an LLM to Help With Code Understanding",
+        "doi": "https://doi.org/10.1145/3597503.3639187",
         "authors": [
             "Daye Nam",
             "Andrew Macvean",
@@ -323,41 +2225,325 @@
             "Bogdan Vasilescu",
             "Brad Myers"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639187",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639187"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Enhancing Exploratory Testing by Large Language Model and Knowledge Graph",
+        "doi": "https://doi.org/10.1145/3597503.3639157",
+        "authors": [
+            "Yanqi Su",
+            "Dianshu Liao",
+            "Zhenchang Xing",
+            "Qing Huang",
+            "Mulong Xie"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639157"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LLMParser: An Exploratory Study on Using Large Language Models for Log Parsing",
+        "doi": "https://doi.org/10.1145/3597503.3639150",
+        "authors": [
+            "Zeyang Ma",
+            "An Ran Chen",
+            "Dong Jae Kim",
+            "Tse-Hsun Chen",
+            "Shaowei Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639150"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Make LLM a Testing Expert: Bringing Human-like Interaction to Mobile GUI Testing via Functionality-aware Decisions",
+        "doi": "https://doi.org/10.1145/3597503.3639180",
+        "authors": [
+            "Zhe Liu",
+            "Chunyang Chen",
+            "Junjie Wang",
+            "Mengzhuo Chen",
+            "Boyu Wu",
+            "Xing Che"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639180"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "RogueOne: Detecting Rogue Updates via Differential Data-flow Analysis Using Trust Domains",
+        "doi": "https://doi.org/10.1145/3597503.3639199",
+        "authors": [
+            "Raphael J. Sofaer",
+            "Yaniv David",
+            "Mingqing Kang",
+            "Jianjia Yu",
+            "Yinzhi Cao"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639199"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ACAV: A Framework for Automatic Causality Analysis in Autonomous Vehicle Accident Recordings",
+        "doi": "https://doi.org/10.1145/3597503.3639175",
+        "authors": [
+            "Huijia Sun",
+            "Christopher M. Poskitt",
+            "Yang Sun",
+            "Jun Sun",
+            "Yuqi Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639175"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Efficiently Trimming the Fat: Streamlining Software Dependencies with Java Reflection and Dependency Analysis",
+        "doi": "https://doi.org/10.1145/3597503.3639123",
+        "authors": [
+            "Xiaohu Song",
+            "Ying Wang",
+            "Xiao Cheng",
+            "Guangtai Liang",
+            "Qianxiang Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639123"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Symbol-Specific Sparsification of Interprocedural Distributive Environment Problems",
+        "doi": "https://doi.org/10.1145/3597503.3639092",
         "authors": [
             "Kadiray Karakaya",
             "Eric Bodden"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639092",
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639092"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "LibAlchemy: A Two-Layer Persistent Summary Design for Taming Third-Party Libraries in Static Bug-Finding Systems",
+        "doi": "https://doi.org/10.1145/3597503.3639132",
+        "authors": [
+            "Rongxin Wu",
+            "Yuxuan He",
+            "Jiafeng Huang",
+            "Chengpeng Wang",
+            "Wensheng Tang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639132"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Is unsafe an Achilles' Heel? A Comprehensive Study of Safety Requirements in Unsafe Rust Programming",
+        "doi": "https://doi.org/10.1145/3597503.3639136",
+        "authors": [
+            "Mohan Cui",
+            "Shuran Sun",
+            "Hui Xu",
+            "Yangfan Zhou"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639136"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Generating REST API Specifications through Static Analysis",
+        "doi": "https://doi.org/10.1145/3597503.3639137",
         "authors": [
             "Ruikai Huang",
             "Manish Motwani",
             "Idel Martinez",
             "Alessandro Orso"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639137",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639137"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A Framework For Inferring Properties of User-Defined Functions",
+        "doi": "https://doi.org/10.1145/3597503.3639147",
+        "authors": [
+            "Xinyu Liu",
+            "Joy Arulraj",
+            "Alessandro Orso"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639147"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Precise Sparse Abstract Execution via Cross-Domain Interaction",
+        "doi": "https://doi.org/10.1145/3597503.3639220",
         "authors": [
             "Xiao Cheng",
             "Jiawei Wang",
             "Yulei Sui"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639220",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639220"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Trace-based Multi-Dimensional Root Cause Localization of Performance Issues in Microservice Systems",
+        "doi": "https://doi.org/10.1145/3597503.3639088",
+        "authors": [
+            "Chenxi Zhang",
+            "Zhen Dong",
+            "Xin Peng",
+            "Bicheng Zhang",
+            "Miao Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639088"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "ReClues: Representing and indexing failures in parallel debugging with program variables",
+        "doi": "https://doi.org/10.1145/3597503.3639098",
         "authors": [
             "Yi Song",
             "Xihao Zhang",
@@ -366,64 +2552,193 @@
             "Ruizhi Gao",
             "Chenliang Xing"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639098",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639098"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "PyAnalyzer: An Effective and Practical Approach for Dependency Extraction from Python Code",
+        "doi": "https://doi.org/10.1145/3597503.3640325",
+        "authors": [
+            "Wuxia Jin",
+            "Shuo Xu",
+            "Dawei Chen",
+            "Jiajun He",
+            "Dinghong Zhong",
+            "Ming Fan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3640325"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Detecting Automatic Software Plagiarism via Token Sequence Normalization",
+        "doi": "https://doi.org/10.1145/3597503.3639192",
         "authors": [
             "Timur Sağlam",
             "Moritz Brödel",
             "Larissa Schmid",
             "Sebastian Hahner"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639192",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639192"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A First Look at the Inheritance-Induced Redundant Test Execution",
+        "doi": "https://doi.org/10.1145/3597503.3639166",
+        "authors": [
+            "Dong Jae Kim",
+            "Jinqiu Yang",
+            "Tse-Hsun Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639166"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Hypertesting of Programs: Theoretical Foundation and Automated Test Generation",
+        "doi": "https://doi.org/10.1145/3597503.3640323",
         "authors": [
             "Michele Pasqua",
             "Mariano Ceccato",
             "Paolo Tonella"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3640323",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3640323"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Ripples of a Mutation — An Empirical Study of Propagation Effects in Mutation Testing",
+        "doi": "https://doi.org/10.1145/3597503.3639179",
         "authors": [
             "Hang Du",
             "Vijay Krishna Palepu",
             "James A. Jones"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639179",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639179"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Fast Deterministic Black-box Context-free Grammar Inference",
+        "doi": "https://doi.org/10.1145/3597503.3639214",
         "authors": [
             "Mohammad Rifat Arefin",
             "Suraj Shetiya",
             "Zili Wang",
             "Christoph Csallner"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639214",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639214"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "CIT4DNN: Generating Diverse and Rare Inputs for Neural Networks Using Latent Space Combinatorial Testing",
+        "doi": "https://doi.org/10.1145/3597503.3639106",
         "authors": [
             "Swaroopa Dola",
             "Rory McDaniel",
             "Matthew B. Dwyer",
             "Mary Lou Soffa"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639106",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639106"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Knowledge Graph Driven Inference Testing for Question Answering Software",
+        "doi": "https://doi.org/10.1145/3597503.3639109",
         "authors": [
             "Jun Wang",
             "Yanhui Li",
@@ -432,11 +2747,46 @@
             "Xiaofang Zhang",
             "Yuming Zhou"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639109",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639109"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeepSample: DNN sampling-based testing for operational accuracy assessment",
+        "doi": "https://doi.org/10.1145/3597503.3639584",
+        "authors": [
+            "Antonio Guerriero",
+            "Roberto Pietrantuono",
+            "Stefano Russo"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639584"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "MAFT: Efficient Model-Agnostic Fairness Testing for Deep Neural Networks via Zero-Order Gradient Search",
+        "doi": "https://doi.org/10.1145/3597503.3639181",
         "authors": [
             "Zhaohui Wang",
             "Min Zhang",
@@ -444,11 +2794,24 @@
             "Bojie Shao",
             "Min Zhang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639181",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639181"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Concrete Constraint Guided Symbolic Execution",
+        "doi": "https://doi.org/10.1145/3597503.3639078",
         "authors": [
             "Yue Sun",
             "Guowei Yang",
@@ -456,11 +2819,46 @@
             "Zhi Li",
             "Limin Sun"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639078",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639078"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "SpecBCFuzz: Fuzzing LTL Solvers with Boundary Conditions",
+        "doi": "https://doi.org/10.1145/3597503.3639087",
+        "authors": [
+            "Luiz Carvalho",
+            "Renzo Degiovanni",
+            "Maxime Cordy",
+            "Nazareno Aguirre"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639087"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "RPG: Rust Library Fuzzing with Pool-based Fuzz Target Generation and Generic Support",
+        "doi": "https://doi.org/10.1145/3597503.3639102",
         "authors": [
             "Zhiwu Xu",
             "Bohao Wu",
@@ -469,11 +2867,45 @@
             "Shengchao Qin",
             "Mengda He"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639102",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639102"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Deep Combination of CDCL(T) and Local Search for Satisfiability Modulo Non-Linear Integer Arithmetic Theory",
+        "doi": "https://doi.org/10.1145/3597503.3639105",
+        "authors": [
+            "Xindi Zhang",
+            "Bohan Li",
+            "Shaowei Cai"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639105"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Fuzz4All: Universal Fuzzing with Large Language Models",
+        "doi": "https://doi.org/10.1145/3597503.3639121",
         "authors": [
             "Chunqiu Steven Xia",
             "Matteo Paltenghi",
@@ -481,97 +2913,539 @@
             "Michael Pradel",
             "Lingming Zhang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639121",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639121"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Are We There Yet? Unraveling the State-of-the-Art Smart Contract Fuzzers",
+        "doi": "https://doi.org/10.1145/3597503.3639152",
+        "authors": [
+            "Shuohan Wu",
+            "Zihao Li",
+            "Luyi Yan",
+            "Weimin Chen",
+            "Muhui Jiang",
+            "Chenxu Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639152"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Uncover the Premeditated Attacks: Detecting Exploitable Reentrancy Vulnerabilities by Identifying Attacker Contracts",
+        "doi": "https://doi.org/10.1145/3597503.3639153",
+        "authors": [
+            "Shuo Yang",
+            "Jiachi Chen",
+            "Mingyuan Huang",
+            "Zibin Zheng",
+            "Yuan Huang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639153"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Crossover in Parametric Fuzzing",
+        "doi": "https://doi.org/10.1145/3597503.3639160",
         "authors": [
             "Katherine Hough",
             "Jonathan Bell"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639160",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639160"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Practical Non-Intrusive GUI Exploration Testing with Visual-based Robotic Arms",
+        "doi": "https://doi.org/10.1145/3597503.3639161",
+        "authors": [
+            "Shengcheng Yu",
+            "Chunrong Fang",
+            "Mingzhe Du",
+            "Yuchen Ling",
+            "Zhenyu Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639161"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "FuzzInMem: Fuzzing Programs via In-memory Structures",
+        "doi": "https://doi.org/10.1145/3597503.3639172",
+        "authors": [
+            "Xuwei Liu",
+            "Wei You",
+            "Yapeng Ye",
+            "Zhuo Zhang",
+            "Jianjun Huang",
+            "Xiangyu Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639172"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Extrapolating Coverage Rate in Greybox Fuzzing",
+        "doi": "https://doi.org/10.1145/3597503.3639198",
         "authors": [
             "Danushka Liyanage",
             "Seongmin Lee",
             "Chakkrit Tantithamthavorn",
             "Marcel Böhme"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639198",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639198"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "CERT: Finding Performance Issues in Database Systems Through the Lens of Cardinality Estimation",
+        "doi": "https://doi.org/10.1145/3597503.3639076",
         "authors": [
             "Jinsheng Ba",
             "Manuel Rigger"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639076",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639076"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Optimistic Prediction of Synchronization-Reversal Data Races",
+        "doi": "https://doi.org/10.1145/3597503.3639099",
         "authors": [
             "Zheng Shi",
             "Umang Mathur",
             "Andreas Pavlogiannis"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639099",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639099"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Mozi: Discovering DBMS Bugs via Configuration-Based Equivalent Transformation",
+        "doi": "https://doi.org/10.1145/3597503.3639112",
+        "authors": [
+            "Jie Liang",
+            "Zhiyong Wu",
+            "Jingzhou Fu",
+            "Mingzhe Wang",
+            "Chengnian Sun",
+            "Yu Jiang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639112"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "FlakeSync: Automatically Repairing Async Flaky Tests",
+        "doi": "https://doi.org/10.1145/3597503.3639115",
         "authors": [
             "Shanto Rahman",
             "August Shi"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639115",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639115"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Testing the Limits: Unusual Text Inputs Generation for Mobile App Crash Detection with Large Language Model",
+        "doi": "https://doi.org/10.1145/3597503.3639118",
+        "authors": [
+            "Zhe Liu",
+            "Chunyang Chen",
+            "Junjie Wang",
+            "Mengzhuo Chen",
+            "Boyu Wu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639118"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Towards Finding Accounting Errors in Smart Contracts",
+        "doi": "https://doi.org/10.1145/3597503.3639128",
         "authors": [
             "Brian Zhang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639128",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639128"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MultiTest: Physical-Aware Object Insertion for Testing Multi-sensor Fusion Perception Systems",
+        "doi": "https://doi.org/10.1145/3597503.3639191",
+        "authors": [
+            "Xinyu Gao",
+            "Zhijie Wang",
+            "Yang Feng",
+            "Lei Ma",
+            "Zhenyu Chen",
+            "Baowen Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639191"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "JLeaks: A Featured Resource Leak Repository Collected From Hundreds of Open-Source Java Projects",
+        "doi": "https://doi.org/10.1145/3597503.3639162",
+        "authors": [
+            "Tianyang Liu",
+            "Weixing Ji",
+            "Xiaohui Dong",
+            "Wuhuang Yao",
+            "Yizhuo Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639162"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "S3C: Spatial Semantic Scene Coverage for Autonomous Vehicles",
+        "doi": "https://doi.org/10.1145/3597503.3639178",
         "authors": [
             "Trey Woodlief",
             "Felipe Toledo",
             "Sebastian Elbaum",
             "Matthew B Dwyer"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639178",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639178"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "FlashSyn: Flash Loan Attack Synthesis via Counter Example Driven Approximation",
+        "doi": "https://doi.org/10.1145/3597503.3639190",
         "authors": [
             "Zhiyang Chen",
             "Sidi Mohamed Beillahi",
             "Fan Long"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639190",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639190"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Testing Graph Database Systems via Equivalent Query Rewriting",
+        "doi": "https://doi.org/10.1145/3597503.3639200",
+        "authors": [
+            "Qiuyang Mang",
+            "Aoyang Fang",
+            "Boxi Yu",
+            "Hanfei Chen",
+            "Pinjia He"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639200"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ROSInfer: Statically Inferring Behavioral Component Models for ROS-based Robotics Systems",
+        "doi": "https://doi.org/10.1145/3597503.3639206",
+        "authors": [
+            "Tobias Dürschmid",
+            "Christopher Steven Timperley",
+            "David Garlan",
+            "Claire Le Goues"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639206"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Finding XPath Bugs in XML Document Processors via Differential Testing",
+        "doi": "https://doi.org/10.1145/3597503.3639208",
         "authors": [
             "Shuxin Li",
             "Manuel Rigger"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639208",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639208"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Sedar: Obtaining High-Quality Seeds for DBMS Fuzzing via Cross-DBMS SQL Transfer",
+        "doi": "https://doi.org/10.1145/3597503.3639210",
+        "authors": [
+            "Jingzhou Fu",
+            "Jie Liang",
+            "Zhiyong Wu",
+            "Yu Jiang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639210"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automatically Detecting Reflow Accessibility Issues in Responsive Web Pages",
+        "doi": "https://doi.org/10.1145/3597503.3639229",
+        "authors": [
+            "Paul T. Chiou",
+            "Robert Winn",
+            "Ali S. Alotaibi",
+            "William G. J. Halfond"
+        ],
+        "badges": [
+            "Reusable"
+        ],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639229"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards More Practical Automation of Vulnerability Assessment",
+        "doi": "https://doi.org/10.1145/3597503.3639110",
+        "authors": [
+            "Shengyi Pan",
+            "Lingfeng Bao",
+            "Jiayuan Zhou",
+            "Xing Hu",
+            "Xin Xia",
+            "Shanping Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639110"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "VGX: Large-Scale Sample Generation for Boosting Learning-Based Software Vulnerability Analyses",
+        "doi": "https://doi.org/10.1145/3597503.3639116",
         "authors": [
             "Yu Nong",
             "Richard Fang",
@@ -580,22 +3454,328 @@
             "Xiapu Luo",
             "Feng Chen"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639116",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639116"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MalCertain: Enhancing Deep Neural Network Based Android Malware Detection by Tackling Prediction Uncertainty",
+        "doi": "https://doi.org/10.1145/3597503.3639122",
+        "authors": [
+            "Haodong Li",
+            "Guosheng Xu",
+            "Liu Wang",
+            "Xusheng Xiao",
+            "Xiapu Luo",
+            "Guoai Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639122"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Pre-training by Predicting Program Dependencies for Vulnerability Analysis Tasks",
+        "doi": "https://doi.org/10.1145/3597503.3639142",
+        "authors": [
+            "Zhongxin Liu",
+            "Zhijie Tang",
+            "Junwei Zhang",
+            "Xin Xia",
+            "Xiaohu Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639142"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Investigating White-Box Attacks for On-Device Models",
+        "doi": "https://doi.org/10.1145/3597503.3639144",
+        "authors": [
+            "Mingyi Zhou",
+            "Xiang Gao",
+            "Jing Wu",
+            "Kui Liu",
+            "Hailong Sun",
+            "Li Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639144"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Towards Causal Deep Learning for Vulnerability Detection",
+        "doi": "https://doi.org/10.1145/3597503.3639170",
+        "authors": [
+            "Md Mahbubur Rahman",
+            "Ira Ceka",
+            "Chengzhi Mao",
+            "Saikat Chakraborty"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639170"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MetaLog: Generalizable Cross-System Anomaly Detection from Logs with Meta-Learning",
+        "doi": "https://doi.org/10.1145/3597503.3639205",
+        "authors": [
+            "Chenyangguang Zhang",
+            "Tong Jia",
+            "Guopeng Shen",
+            "Pinyan Zhu",
+            "Ying Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639205"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Coca: Improving and Explaining Graph Neural Network-Based Vulnerability Detection Systems",
+        "doi": "https://doi.org/10.1145/3597503.3639168",
+        "authors": [
+            "Sicong Cao",
+            "Xiaobing Sun",
+            "Xiaoxue Wu",
+            "David Lo",
+            "Lili Bo",
+            "Bin Li",
+            "Wei Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639168"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Improving Smart Contract Security with Contrastive Learning-based Vulnerability Detection",
+        "doi": "https://doi.org/10.1145/3597503.3639173",
+        "authors": [
+            "Yizhou Chen",
+            "Zeyu Sun",
+            "Zhihao Gong",
+            "Dan Hao"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639173"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "On the Effectiveness of Function-Level Vulnerability Detectors for Inter-Procedural Vulnerabilities",
+        "doi": "https://doi.org/10.1145/3597503.3639218",
+        "authors": [
+            "Zhen Li",
+            "Ning Wang",
+            "Deqing Zou",
+            "Yating Li",
+            "Ruqian Zhang",
+            "Shouhuai Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639218"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A User-centered Security Evaluation of Copilot",
+        "doi": "https://doi.org/10.1145/3597503.3639154",
+        "authors": [
+            "Owura Asare",
+            "Meiyappan Nagappan",
+            "N. Asokan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639154"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An Empirical Study on Oculus Virtual Reality Applications: Security and Privacy Perspectives",
+        "doi": "https://doi.org/10.1145/3597503.3639082",
+        "authors": [
+            "Hanyang Guo",
+            "Hong-Ning Dai",
+            "Xiapu Luo",
+            "Zibin Zheng",
+            "Gengyang Xu",
+            "Fengliang He"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639082"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Fairness Improvement with Multiple Protected Attributes: How Far Are We?",
+        "doi": "https://doi.org/10.1145/3597503.3639083",
         "authors": [
             "Zhenpeng Chen",
             "Jie M. Zhang",
             "Federica Sarro",
             "Mark Harman"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639083",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639083"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An Empirical Study of Data Disruption by Ransomware Attacks",
+        "doi": "https://doi.org/10.1145/3597503.3639090",
+        "authors": [
+            "Yiwei Hou",
+            "Lihua Guo",
+            "Chijin Zhou",
+            "Yiwen Xu",
+            "Zijing Yin",
+            "Shanshan Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639090"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Identifying Affected Libraries and Their Ecosystems for Open Source Software Vulnerabilities",
+        "doi": "https://doi.org/10.1145/3597503.3639582",
+        "authors": [
+            "Susheng Wu",
+            "Wenyan Song",
+            "Kaifeng Huang",
+            "Bihuan Chen",
+            "Xin Peng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639582"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Understanding Transaction Bugs in Database Systems",
+        "doi": "https://doi.org/10.1145/3597503.3639207",
         "authors": [
             "Ziyu Cui",
             "Wensheng Dou",
@@ -603,11 +3783,144 @@
             "Dong Wang",
             "Jiansen Song"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639207",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639207"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "When Contracts Meets Crypto: Exploring Developers' Struggles with Ethereum Cryptographic APIs",
+        "doi": "https://doi.org/10.1145/3597503.3639131",
+        "authors": [
+            "Jiashuo Zhang",
+            "Jiachi Chen",
+            "Zhiyuan Wan",
+            "Ting Chen",
+            "Jianbo Gao",
+            "Zhong Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639131"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Curiosity-Driven Testing for Sequential Decision-Making Process",
+        "doi": "https://doi.org/10.1145/3597503.3639149",
+        "authors": [
+            "Junda He",
+            "Zhou Yang",
+            "Jieke Shi",
+            "Chengran Yang",
+            "Kisub Kim",
+            "Bowen Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639149"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "GPTScan: Detecting Logic Vulnerabilities in Smart Contracts by Combining GPT with Program Analysis",
+        "doi": "https://doi.org/10.1145/3597503.3639117",
+        "authors": [
+            "Yuqiang Sun",
+            "Daoyuan Wu",
+            "Yue Xue",
+            "Han Liu",
+            "Haijun Wang",
+            "Zhengzi Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639117"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "PS3: Precise Patch Presence Test based on Semantic Symbolic Signature",
+        "doi": "https://doi.org/10.1145/3597503.3639134",
+        "authors": [
+            "Qi Zhan",
+            "Xing Hu",
+            "Zhiyang Li",
+            "Xin Xia",
+            "David Lo",
+            "Shanping Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639134"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "PrettySmart: Detecting Permission Re-delegation Vulnerability for Token Behaviors in Smart Contracts",
+        "doi": "https://doi.org/10.1145/3597503.3639140",
+        "authors": [
+            "Zhijie Zhong",
+            "Zibin Zheng",
+            "Hong-Ning Dai",
+            "Qing Xue",
+            "Junjia Chen",
+            "Yuhong Nan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639140"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Combining Structured Static Code Information and Dynamic Symbolic Traces for Software Vulnerability Prediction",
+        "doi": "https://doi.org/10.1145/3597503.3639212",
         "authors": [
             "Huanting Wang",
             "Zhanyong Tang",
@@ -615,11 +3928,49 @@
             "Jie Wang",
             "Yuzhe Liu"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639212",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639212"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "SCVHunter: Smart Contract Vulnerability Detection Based on Heterogeneous Graph Attention Network",
+        "doi": "https://doi.org/10.1145/3597503.3639213",
+        "authors": [
+            "Feng Luo",
+            "Ruijie Luo",
+            "Ting Chen",
+            "Ao Qiao",
+            "Zheyuan He",
+            "Shuwei Song"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639213"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Safeguarding DeFi Smart Contracts against Oracle Deviations",
+        "doi": "https://doi.org/10.1145/3597503.3639225",
         "authors": [
             "Xun Deng",
             "Sidi Mohamed Beillahi",
@@ -627,11 +3978,49 @@
             "Han Du",
             "Andreas Veneris"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639225",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639225"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MalwareTotal: Multi-Faceted and Sequence-Aware Bypass Tactics against Static Malware Detection",
+        "doi": "https://doi.org/10.1145/3597503.3639141",
+        "authors": [
+            "Shuai He",
+            "Cai Fu",
+            "Hong Hu",
+            "Jiahe Chen",
+            "Jianqiang Lv",
+            "Shuai Jiang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639141"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Semantic-Enhanced Static Vulnerability Detection in Baseband Firmware",
+        "doi": "https://doi.org/10.1145/3597503.3639158",
         "authors": [
             "Yiming Liu",
             "Cen Zhang",
@@ -640,22 +4029,115 @@
             "Jianhua Zhou",
             "Jian Wang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639158",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639158"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "CSChecker: Revisiting GDPR and CCPA Compliance of Cookie Banners on the Web",
+        "doi": "https://doi.org/10.1145/3597503.3639159",
         "authors": [
             "Mingxue Zhang",
             "Wei Meng",
             "You Zhou",
             "Kui Ren"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639159",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639159"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Raisin: Identifying Rare Sensitive Functions for Bug Detection",
+        "doi": "https://doi.org/10.1145/3597503.3639165",
+        "authors": [
+            "Jianjun Huang",
+            "Jianglei Nie",
+            "Yuanjun Gong",
+            "Wei You",
+            "Bin Liang",
+            "Pan Bian"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639165"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "REDriver: Runtime Enforcement for Autonomous Vehicles",
+        "doi": "https://doi.org/10.1145/3597503.3639151",
+        "authors": [
+            "Yang Sun",
+            "Christopher M. Poskitt",
+            "Xiaodong Zhang",
+            "Jun Sun"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639151"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Scalable Relational Analysis via Relational Bound Propagation",
+        "doi": "https://doi.org/10.1145/3597503.3639171",
+        "authors": [
+            "Clay Stevens",
+            "Hamid Bagheri"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639171"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Translation Validation for JIT Compiler in the V8 JavaScript Engine",
+        "doi": "https://doi.org/10.1145/3597503.3639189",
         "authors": [
             "Seungwan Kwon",
             "Jaeseong Kwon",
@@ -663,11 +4145,25 @@
             "Juneyoung Lee",
             "Kihong Heo"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639189",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639189"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Verifying Declarative Smart Contracts",
+        "doi": "https://doi.org/10.1145/3597503.3639203",
         "authors": [
             "Haoxian Chen",
             "Lan Lu",
@@ -675,31 +4171,267 @@
             "Yuepeng Wang",
             "Boon Thau Loo"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639203",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639203"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ChatGPT Incorrectness Detection in Software Reviews",
+        "doi": "https://doi.org/10.1145/3597503.3639194",
+        "authors": [
+            "Minaoar Hossain Tanzil",
+            "Junaed Younus Khan",
+            "Gias Uddin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639194"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ChatGPT-Resistant Screening Instrument for Identifying Non-Programmers",
+        "doi": "https://doi.org/10.1145/3597503.3639075",
+        "authors": [
+            "Raphael Serafini",
+            "Clemens Otto",
+            "Stefan Albert Horstmann",
+            "Alena Naiakshina"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639075"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Uncovering the Causes of Emotions in Software Developer Communication Using Zero-shot LLMs",
+        "doi": "https://doi.org/10.1145/3597503.3639223",
+        "authors": [
+            "Mia Mohammad Imran",
+            "Preetha Chatterjee",
+            "Kostadin Damevski"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639223"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Development in times of hype: How freelancers explore Generative AI?",
+        "doi": "https://doi.org/10.1145/3597503.3639111",
+        "authors": [
+            "Mateusz Dolata",
+            "Norbert Lange",
+            "Gerhard Schwabe"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639111"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "How Far Are We? The Triumphs and Trials of Generative AI in Learning Software Engineering",
+        "doi": "https://doi.org/10.1145/3597503.3639201",
+        "authors": [
+            "Rudrajit Choudhuri",
+            "Dylan Liu",
+            "Igor Steinmacher",
+            "Marco Gerosa",
+            "Anita Sarma"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639201"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Breaking the Flow: A Study of Interruptions During Software Engineering Activities",
+        "doi": "https://doi.org/10.1145/3597503.3639079",
         "authors": [
             "Yimeng Ma",
             "Yu Huang",
             "Kevin Leach"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639079",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639079"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Supporting Web-Based API Searches in the IDE Using Signatures",
+        "doi": "https://doi.org/10.1145/3597503.3639089",
         "authors": [
             "Nick C. Bradley",
             "Thomas Fritz",
             "Reid Holmes"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639089",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639089"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Property-Based Testing in Practice",
+        "doi": "https://doi.org/10.1145/3597503.3639581",
+        "authors": [
+            "Harrison Goldstein",
+            "Joseph W. Cutler",
+            "Daniel Dickstein",
+            "Benjamin C. Pierce",
+            "Andrew Head"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639581"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Causal Relationships and Programming Outcomes: A Transcranial Magnetic Stimulation Experiment",
+        "doi": "https://doi.org/10.1145/3597503.3639096",
+        "authors": [
+            "Hammad Ahmad",
+            "Madeline Endres",
+            "Kaia Newman",
+            "Priscila Santiesteban"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639096"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "GenderMag Improves Discoverability in the Field, Especially for Women: An Multi-Year Case Study of Suggest Edit, a Code Review Feature",
+        "doi": "https://doi.org/10.1145/3597503.3639097",
+        "authors": [
+            "Emerson Murphy-Hill",
+            "Alberto Elizondo",
+            "Ambar Murillo",
+            "Marian Harbach"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639097"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Unraveling the Drivers of Sense of Belonging in Software Delivery Teams: Insights from a Large-Scale Survey",
+        "doi": "https://doi.org/10.1145/3597503.3639119",
+        "authors": [
+            "Bianca Trinkenreich",
+            "Marco Aurelio Gerosa",
+            "Igor Steinmacher"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639119"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "\"My GitHub Sponsors profile is live!\" Investigating the Impact of Twitter/X Mentions on GitHub Sponsors",
+        "doi": "https://doi.org/10.1145/3597503.3639127",
         "authors": [
             "Youmei Fan",
             "Tao Xiao",
@@ -707,63 +4439,557 @@
             "Christoph Treude",
             "Kenichi Matsumoto"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639127",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639127"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "A Theory of Scientific Programming Efficacy",
+        "doi": "https://doi.org/10.1145/3597503.3639139",
         "authors": [
             "Elizaveta Pertseva",
             "Melinda Chang",
             "Ulia Zaman",
             "Michael Coblenz"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639139",
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639139"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "High Expectations: An Observational Study of Programming and Cannabis Intoxication",
+        "doi": "https://doi.org/10.1145/3597503.3639145",
+        "authors": [
+            "Wenxin He",
+            "Manasvi Parikh",
+            "Westley Weimer",
+            "Madeline Endres"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639145"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Mining Pull Requests to Detect Process Anomalies in Open Source Software Development",
+        "doi": "https://doi.org/10.1145/3597503.3639196",
+        "authors": [
+            "Bohan Liu",
+            "He Zhang",
+            "Weigang Ma",
+            "Hongyu Kuang",
+            "Yi Yang",
+            "Jinwei Xu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639196"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "How Are Paid and Volunteer Open Source Developers Different? A Study of the Rust Project",
+        "doi": "https://doi.org/10.1145/3597503.3639197",
+        "authors": [
+            "Yuxia Zhang",
+            "Mian Qin",
+            "Klaas-Jan Stol",
+            "Minghui Zhou",
+            "Hui Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639197"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Barriers for Students During Code Change Comprehension",
+        "doi": "https://doi.org/10.1145/3597503.3639227",
+        "authors": [
+            "Justin Middleton",
+            "John-Paul Ore",
+            "Kathryn T Stolee"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639227"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "\"I tend to view ads almost like a pestilence\": On the Accessibility Implications of Mobile Ads for Blind Users",
+        "doi": "https://doi.org/10.1145/3597503.3639228",
+        "authors": [
+            "Ziyao He",
+            "Syed Fatiul Huq",
+            "Sam Malek"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639228"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeepLSH: Deep Locality-Sensitive Hash Learning for Fast and Efficient Near-Duplicate Crash Report Detection",
+        "doi": "https://doi.org/10.1145/3597503.3639146",
+        "authors": [
+            "Youcef Remil",
+            "Anes Bendimerad",
+            "Romain Mathonat",
+            "Chedy Raïssi",
+            "Mehdi Kaytoue"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639146"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DivLog: Log Parsing with Prompt Enhanced In-Context Learning",
+        "doi": "https://doi.org/10.1145/3597503.3639155",
+        "authors": [
+            "Junjielong Xu",
+            "Ruichun Yang",
+            "Yintong Huo",
+            "Chengyu Zhang",
+            "Pinjia He"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639155"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Where is it? Tracing the Vulnerability-relevant Files from Vulnerability Reports",
+        "doi": "https://doi.org/10.1145/3597503.3639202",
+        "authors": [
+            "Jiamou Sun",
+            "Jieshan Chen",
+            "Zhenchang Xing",
+            "Qinghua Lu",
+            "Xiwei Xu",
+            "Liming Zhu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639202"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Demystifying and Detecting Misuses of Deep Learning APIs",
+        "doi": "https://doi.org/10.1145/3597503.3639177",
+        "authors": [
+            "Moshi Wei",
+            "Nima Shiri Harzevili",
+            "Yuekai Huang",
+            "Jinqiu Yang",
+            "Junjie Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639177"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Less is More? An Empirical Study on Configuration Issues in Python PyPI Ecosystem",
+        "doi": "https://doi.org/10.1145/3597503.3639077",
+        "authors": [
+            "Yun Peng",
+            "Ruida Hu",
+            "Ruoke Wang",
+            "Cuiyun Gao",
+            "Shuqing Li",
+            "Michael R. Lyu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639077"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Data-Driven Evidence-Based Syntactic Sugar Design",
+        "doi": "https://doi.org/10.1145/3597503.3639580",
         "authors": [
             "David OBrien",
             "Robert Dyer",
             "Tien Nguyen",
             "Hridesh Rajan"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639580",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639580"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Revisiting Android App Categorization",
+        "doi": "https://doi.org/10.1145/3597503.3639094",
         "authors": [
             "Marco Alecci",
             "Jordan Samhi",
             "Tegawende F. Bissyande",
             "Jacques Klein"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639094",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639094"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Are Your Requests Your True Needs? Checking Excessive Data Collection in VPA App",
+        "doi": "https://doi.org/10.1145/3597503.3639107",
+        "authors": [
+            "Fuman Xie",
+            "Chuan Yan",
+            "Mark Huasong Meng",
+            "Shaoming Teng",
+            "Yanjun Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639107"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MiniMon: Minimizing Android Applications with Intelligent Monitoring-Based Debloating",
+        "doi": "https://doi.org/10.1145/3597503.3639113",
+        "authors": [
+            "Jiakun Liu",
+            "Zicheng Zhang",
+            "Xing Hu",
+            "Ferdian Thung",
+            "Shahar Maoz"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639113"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Shedding Light on Software Engineering-specific Metaphors and Idioms",
+        "doi": "https://doi.org/10.1145/3597503.3639585",
+        "authors": [
+            "Mia Mohammad Imran",
+            "Preetha Chatterjee",
+            "Kostadin Damevski"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639585"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Empirical Study of the Docker Smells Impact on the Image Size",
+        "doi": "https://doi.org/10.1145/3597503.3639143",
         "authors": [
             "Thomas Durieux"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639143",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639143"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "MotorEase: Automated Detection of Motor Impairment Accessibility Issues in Mobile App UIs",
+        "doi": "https://doi.org/10.1145/3597503.3639167",
         "authors": [
             "Arun Krishna Vajjala",
             "S M Hasan Mansur",
             "Justin Jose",
             "Kevin Moran"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639167",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639167"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An Exploratory Investigation of Log Anomalies in Unmanned Aerial Vehicles",
+        "doi": "https://doi.org/10.1145/3597503.3639186",
+        "authors": [
+            "Dinghua Wang",
+            "Shuqing Li",
+            "Guanping Xiao",
+            "Yepang Liu",
+            "Yulei Sui",
+            "Pinjia He"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639186"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ModuleGuard: Understanding and Detecting Module Conflicts in Python Ecosystem",
+        "doi": "https://doi.org/10.1145/3597503.3639221",
+        "authors": [
+            "Ruofan Zhu",
+            "Xingyu Wang",
+            "Chengwei Liu",
+            "Zhengzi Xu",
+            "Wenbo Shen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639221"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Empirical Analysis of Vulnerabilities Life Cycle in Golang Ecosystem",
+        "doi": "https://doi.org/10.1145/3597503.3639230",
+        "authors": [
+            "Jinchang Hu",
+            "Lyuye Zhang",
+            "Chengwei Liu",
+            "Sen Yang",
+            "Song Huang",
+            "Yang Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639230"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ReFAIR: Toward a Context-Aware Recommender for Fairness Requirements Engineering",
+        "doi": "https://doi.org/10.1145/3597503.3639185",
+        "authors": [
+            "Carmine Ferrara",
+            "Francesco Casillo",
+            "Carmine Gravino",
+            "Andrea De Lucia",
+            "Fabio Palomba"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639185"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Analyzing and Debugging Normative Requirements via Satisfiability Checking",
+        "doi": "https://doi.org/10.1145/3597503.3639093",
+        "authors": [
+            "Nick Feng",
+            "Lina Marsso",
+            "Sinem Getir Yaman",
+            "Yesugen Baatartogtokh"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639093"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Recovering Trace Links Between Software Documentation And Code",
+        "doi": "https://doi.org/10.1145/3597503.3639130",
         "authors": [
             "Jan Keim",
             "Sophie Corallo",
@@ -772,33 +4998,240 @@
             "Tobias Telge",
             "Anne Koziolek"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639130",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639130"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "TRIAD: Automated Traceability Recovery based on Biterm-enhanced Deduction of Transitive Links among Artifacts",
+        "doi": "https://doi.org/10.1145/3597503.3639164",
         "authors": [
             "Hui Gao",
             "Hongyu Kuang",
             "Wesley K. G. Assunção",
             "Christoph Mayr-Dorn"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639164",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639164"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Prism: Decomposing Program Semantics for Code Clone Detection through Compilation",
+        "doi": "https://doi.org/10.1145/3597503.3639129",
+        "authors": [
+            "Haoran Li",
+            "Siqian Wang",
+            "Weihong Quan",
+            "Xiaoli Gong",
+            "Huayou Su",
+            "Jin Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639129"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Evaluating Code Summarization Techniques: A New Metric and an Empirical Characterization",
+        "doi": "https://doi.org/10.1145/3597503.3639174",
+        "authors": [
+            "Antonio Mastropaolo",
+            "Matteo Ciniselli",
+            "Massimiliano Di Penta",
+            "Gabriele Bavota"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639174"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Are Prompt Engineering and TODO Comments Friends or Foes? An Evaluation on GitHub Copilot",
+        "doi": "https://doi.org/10.1145/3597503.3639176",
         "authors": [
             "David OBrien",
             "Sumon Biswas",
             "Sayem Mohammad Imtiaz",
             "Rabe Abdalkareem"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639176",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639176"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automatic Semantic Augmentation of Language Model Prompts (for Code Summarization)",
+        "doi": "https://doi.org/10.1145/3597503.3639183",
+        "authors": [
+            "Toufique Ahmed",
+            "Kunal Suresh Pai",
+            "Premkumar Devanbu",
+            "Earl Barr"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639183"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DSFM: Enhancing Functional Code Clone Detection with Deep Subtree Interactions",
+        "doi": "https://doi.org/10.1145/3597503.3639215",
+        "authors": [
+            "Zhiwei Xu",
+            "Shaohua Qiang",
+            "Dinghong Song",
+            "Min Zhou",
+            "Hai Wan",
+            "Xibin Zhao"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639215"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Machine Learning is All You Need: A Simple Token-based Approach for Effective Code Clone Detection",
+        "doi": "https://doi.org/10.1145/3597503.3639114",
+        "authors": [
+            "Siyue Feng",
+            "Wenqi Suo",
+            "Yueming Wu",
+            "Deqing Zou",
+            "Yang Liu",
+            "Hai Jin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639114"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Cross-Inlining Binary Function Similarity Detection",
+        "doi": "https://doi.org/10.1145/3597503.3639080",
+        "authors": [
+            "Ang Jia",
+            "Ming Fan",
+            "Xi Xu",
+            "Wuxia Jin",
+            "Haijun Wang",
+            "Ting Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639080"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "BinaryAI: Binary Software Composition Analysis via Intelligent Binary Source Code Matching",
+        "doi": "https://doi.org/10.1145/3597503.3639100",
+        "authors": [
+            "Ling Jiang",
+            "Junwen An",
+            "Huihui Huang",
+            "Qiyi Tang",
+            "Sen Nie",
+            "Shi Wu",
+            "Yuqun Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639100"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "PPT4J: Patch Presence Test for Java Binaries",
+        "doi": "https://doi.org/10.1145/3597503.3639231",
         "authors": [
             "Zhiyuan Pan",
             "Xing Hu",
@@ -807,11 +5240,161 @@
             "David Lo",
             "Xiaohu Yang"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639231",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639231"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Compiler-directed Migrating API Callsite of Client Code",
+        "doi": "https://doi.org/10.1145/3597503.3639084",
+        "authors": [
+            "Hao Zhong",
+            "Na Meng"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639084"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Hard to Read and Understand Pythonic Idioms? DeIdiom and Explain Them in Non-Idiomatic Equivalent Code",
+        "doi": "https://doi.org/10.1145/3597503.3639101",
+        "authors": [
+            "Zejun Zhang",
+            "Zhenchang Xing",
+            "Dehai Zhao",
+            "Qinghua Lu",
+            "Xiwei Xu",
+            "Liming Zhu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639101"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Exploiting Library Vulnerability via Migration Based Automating Test Generation",
+        "doi": "https://doi.org/10.1145/3597503.3639583",
+        "authors": [
+            "Zirui Chen",
+            "Xing Hu",
+            "Xin Xia",
+            "Yi Gao",
+            "Tongtong Xu",
+            "David Lo",
+            "Xiaohu Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639583"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MUT: Human-in-the-Loop Unit Test Migration",
+        "doi": "https://doi.org/10.1145/3597503.3639124",
+        "authors": [
+            "Yi Gao",
+            "Xing Hu",
+            "Tongtong Xu",
+            "Xin Xia",
+            "David Lo",
+            "Xiaohu Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639124"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Streamlining Java Programming: Uncovering Well-Formed Idioms with IdioMine",
+        "doi": "https://doi.org/10.1145/3597503.3639135",
+        "authors": [
+            "Yanming Yang",
+            "Xing Hu",
+            "Xin Xia",
+            "David Lo",
+            "Xiaohu Yang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639135"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Fine-grained, accurate and scalable source differencing",
+        "doi": "https://doi.org/10.1145/3597503.3639148",
+        "authors": [
+            "Jean-Remy Falleri",
+            "Matias Martinez"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639148"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Semantic GUI Scene Learning and Video Alignment for Detecting Duplicate Video-based Bug Reports",
+        "doi": "https://doi.org/10.1145/3597503.3639163",
         "authors": [
             "Yanfu Yan",
             "Nathan Cooper",
@@ -819,48 +5402,136 @@
             "Kevin Moran",
             "Denys Poshyvanyk"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639163",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639163"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "The Classics Never Go Out of Style: An Empirical Study of Downgrades from the Bazel Build Technology",
+        "doi": "https://doi.org/10.1145/3597503.3639169",
         "authors": [
             "Mahmoud Alfadel",
             "Shane McIntosh"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639169",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639169"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "Scaling Code Pattern Inference with Interactive What-If Analysis",
+        "doi": "https://doi.org/10.1145/3597503.3639193",
         "authors": [
             "Hong Jin Kang",
             "Kevin Wang",
             "Miryung Kim"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639193",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639193"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Context-Aware Name Recommendation for Field Renaming",
+        "doi": "https://doi.org/10.1145/3597503.3639195",
+        "authors": [
+            "Chunhao Dong",
+            "Yanjie Jiang",
+            "Nan Niu",
+            "Yuxia Zhang",
+            "Hui Liu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3597503.3639195"
+    },
+    {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "CNEPS: A Precise Approach for Examining Dependencies among Third-Party C/C++ Open-Source Components",
+        "doi": "https://doi.org/10.1145/3597503.3639209",
         "authors": [
             "Yoonjong Na",
             "Seunghoon Woo",
             "Joomyeong Lee",
             "Heejo Lee"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639209",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639209"
     },
     {
+        "conference": "ICSE",
+        "year": 2025,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
         "title": "A Study on the Pythonic Functional Constructs' Understandability",
+        "doi": "https://doi.org/10.1145/3597503.3639211",
         "authors": [
             "Cyrine Zid",
             "Fiorella Zampetti",
             "Giuliano Antoniol",
             "Massimiliano Di Penta"
         ],
-        "doi": "https://doi.org/10.1145/3597503.3639211",
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3597503.3639211"
     }
 ]

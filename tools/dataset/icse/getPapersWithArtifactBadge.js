@@ -122,15 +122,15 @@ console.log(`Collection date: ${COLLECTION_DATE}`);
 console.log(`Total papers: ${papers.length}`);
 
 console.log(
-  `Papers with artifacts: ${
-    papers.filter(p => p.artifacts.length > 0).length
+  `Papers with badges: ${
+    papers.filter(p => p.badges.length > 0).length
   }`
 );
 
 for (const type of ARTIFACT_TYPES) {
   console.log(
     `${type}: ${
-      papers.filter(p => p.artifacts.includes(type)).length
+      papers.filter(p => p.badges.includes(type)).length
     }`
   );
 }
