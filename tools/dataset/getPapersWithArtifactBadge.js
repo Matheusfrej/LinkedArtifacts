@@ -1,5 +1,5 @@
-const CONFERENCE = 'FSE';
-const YEAR = 2021;
+const CONFERENCE = 'ICSE'; // MODIFY HERE
+const YEAR = 2025;  // MODIFY HERE
 const SOURCE = 'ACM Digital Library';
 
 const COLLECTION_DATE = new Date().toISOString().split('T')[0];

@@ -2261,13 +2261,15 @@
         ],
         "badges": [
             "Available",
-            "Reusable"
+            "Reusable",
+            "Reproduced",
+            "Replicated"
         ],
         "artifact_available": true,
         "artifact_functional": false,
         "artifact_reusable": true,
-        "results_reproduced": false,
-        "results_replicated": false,
+        "results_reproduced": true,
+        "results_replicated": true,
         "articleType": "research-article",
         "url": "https://dl.acm.org/doi/10.1145/3660805"
     },

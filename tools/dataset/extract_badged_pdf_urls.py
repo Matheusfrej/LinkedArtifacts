@@ -7,7 +7,7 @@ Usage:
     # Process a specific year folder (e.g. 2025):
     python3 extract_badged_pdf_urls.py 2025
 
-    # Process all year subdirectories (2021, 2022, 2023, 2024, 2025):
+    # Process all year subdirectories under icse and fse:
     python3 extract_badged_pdf_urls.py --all
 
     # Explicit input and output files:
@@ -17,8 +17,8 @@ Usage:
 import json
 import sys
 import os
-import glob
 from typing import List
+import glob
 
 
 def extract_badged_pdf_urls_from_file(
@@ -82,12 +82,15 @@ def process_directory(dir_path: str) -> None:
 
 
 def process_all_year_folders() -> None:
-    """Finds all year folders (e.g. 2021, 2022, ...) and processes each one."""
+    """Finds and processes every folder containing papers.json under dataset."""
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    subdirs = sorted([
-        d for d in glob.glob(os.path.join(current_dir, "*"))
-        if os.path.isdir(d) and os.path.exists(os.path.join(d, "papers.json"))
-    ])
+    subdirs = sorted(
+        os.path.dirname(input_file)
+        for input_file in glob.glob(
+            os.path.join(current_dir, "**", "papers.json"),
+            recursive=True
+        )
+    )
 
     if not subdirs:
         print("No year subdirectories containing 'papers.json' found.")
@@ -95,8 +98,7 @@ def process_all_year_folders() -> None:
 
     print(f"Found {len(subdirs)} dataset folder(s) to process:\n")
     for d in subdirs:
-        rel_dir = os.path.relpath(d, current_dir)
-        process_directory(rel_dir)
+        process_directory(d)
         print()
 
 

@@ -35,7 +35,7 @@ BRACKETED_EMAIL_PATTERN = re.compile(
 )
 
 # Domain / link false positives commonly found in papers
-IGNORED_DOMAINS = {"example.com", "domain.com", "email.com", "github.com", "zenodo.org", "doi.org"}
+IGNORED_DOMAINS = {"example.com", "domain.com", "email.com", "github.com", "zenodo.org", "doi.org", "acm.org"}
 
 
 def clean_email(email_str: str) -> str:
@@ -53,11 +53,14 @@ def extract_emails_from_text(text: str) -> List[str]:
     # Bracketed format: {user1, user2}@domain.com
     for match in BRACKETED_EMAIL_PATTERN.finditer(text):
         users_raw, domain = match.groups()
+        normalized_domain = domain.strip().lower()
+        if normalized_domain in IGNORED_DOMAINS:
+            continue
         users = [u.strip() for u in users_raw.replace(",", " ").split() if u.strip()]
         for u in users:
             clean_u = clean_email(u)
             if clean_u and not clean_u.startswith("@"):
-                found_emails.add(f"{clean_u}@{domain.strip()}".lower())
+                found_emails.add(f"{clean_u}@{normalized_domain}")
 
     # Standard format
     for match in EMAIL_PATTERN.findall(text):
