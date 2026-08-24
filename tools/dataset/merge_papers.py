@@ -1,14 +1,17 @@
 """
 Merge Conference Papers List
 ----------------------------
-Finds all `papers.json` files across conference folders (e.g. `fse` and `icse`
-for each year), merges all paper entries into a single list with deduplication
+Finds all `papers.json` files across conference folders (e.g. `fse`, `icse`,
+`issta`, etc. for each year), merges all paper entries into a single list with deduplication
 (keyed by DOI / URL / Title), and exports the consolidated dataset to
 `tools/dataset/papers.json`.
 
 Usage:
-    # Run using default settings (scans fse/ and icse/ subfolders -> dataset/papers.json):
+    # Run using default settings (scans all conference subfolders -> dataset/papers.json):
     python3 merge_papers.py
+
+    # Filter specific conferences:
+    python3 merge_papers.py --conferences issta fse
 
     # Specify custom output path:
     python3 merge_papers.py --output custom_papers.json
@@ -22,22 +25,40 @@ import argparse
 from typing import List, Dict, Any, Tuple, Set
 
 
+def get_conference_folders(dataset_dir: str, conferences: List[str] = None) -> List[str]:
+    """
+    Returns the list of conference directory paths to scan.
+    If conferences is None or empty, dynamically discovers all non-hidden subdirectories
+    in dataset_dir.
+    """
+    dataset_abs = os.path.abspath(dataset_dir)
+    if conferences:
+        return sorted([
+            os.path.join(dataset_abs, conf)
+            for conf in conferences
+            if os.path.isdir(os.path.join(dataset_abs, conf))
+        ])
+
+    conf_dirs = []
+    try:
+        for entry in os.scandir(dataset_abs):
+            if entry.is_dir() and not entry.name.startswith(".") and entry.name != "__pycache__":
+                conf_dirs.append(entry.path)
+    except Exception as e:
+        print(f"  [Error] Failed scanning directory '{dataset_abs}': {e}")
+    return sorted(conf_dirs)
+
+
 def find_conference_paper_files(dataset_dir: str, conferences: List[str] = None) -> List[str]:
     """
-    Finds all papers.json files inside specified conference directories
-    (or any year folder under dataset_dir if conferences is None).
+    Finds all papers.json files inside conference directories (or all conference
+    folders in dataset_dir if conferences is None).
     Excludes top-level papers.json in dataset_dir itself to prevent recursive self-merges.
     """
-    if conferences is None:
-        conferences = ["fse", "icse"]
-
     paper_files = []
-    dataset_abs = os.path.abspath(dataset_dir)
+    conf_dirs = get_conference_folders(dataset_dir, conferences)
 
-    for conf in conferences:
-        conf_path = os.path.join(dataset_abs, conf)
-        if not os.path.isdir(conf_path):
-            continue
+    for conf_path in conf_dirs:
         pattern = os.path.join(conf_path, "**", "papers.json")
         matched = glob.glob(pattern, recursive=True)
         paper_files.extend(matched)
@@ -127,20 +148,25 @@ def main():
     parser.add_argument(
         "--conferences", "-c",
         nargs="+",
-        default=["fse", "icse"],
-        help="List of conference folder names to search in (default: ['fse', 'icse'])."
+        default=None,
+        help="List of conference folder names to search in (default: all conference folders in dataset directory)."
     )
 
     args = parser.parse_args()
 
     dataset_dir = os.path.abspath(args.dataset_dir)
     output_file = os.path.abspath(args.output)
+    conf_dirs = get_conference_folders(dataset_dir, args.conferences)
+    conf_names = [os.path.basename(p) for p in conf_dirs]
+    conferences_display = ", ".join(conf_names) if conf_names else "None found"
+    if args.conferences is None:
+        conferences_display = f"All detected ({conferences_display})"
 
     print("==================================================")
     print("           MERGING CONFERENCE PAPERS              ")
     print("==================================================")
     print(f"Dataset directory : {dataset_dir}")
-    print(f"Conferences       : {', '.join(args.conferences)}")
+    print(f"Conferences       : {conferences_display}")
     print(f"Output file       : {output_file}\n")
 
     merged_papers, stats = merge_and_deduplicate_papers(dataset_dir, args.conferences)
@@ -181,3 +207,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

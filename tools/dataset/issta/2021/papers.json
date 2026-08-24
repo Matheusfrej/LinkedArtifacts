@@ -1,0 +1,1394 @@
+[
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automated debugging: past, present, and future (ISSTA impact paper award)",
+        "doi": "https://doi.org/10.1145/3460319.3472397",
+        "authors": [
+            "Chris Parnin",
+            "Alessandro Orso"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "abstract",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3472397"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Identifying privacy weaknesses from multi-party trigger-action integration platforms",
+        "doi": "https://doi.org/10.1145/3460319.3464838",
+        "authors": [
+            "Kulani Mahadewa",
+            "Yanjun Zhang",
+            "Guangdong Bai",
+            "Lei Bu",
+            "Zhiqiang Zuo"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464838"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "WebEvo: taming web application evolution via detecting semantic structure changes",
+        "doi": "https://doi.org/10.1145/3460319.3464800",
+        "authors": [
+            "Fei Shao",
+            "Rui Xu",
+            "Wasif Haque",
+            "Jingwei Xu",
+            "Ying Zhang",
+            "Wei Yang"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464800"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Modular call graph construction for security scanning of Node.js applications",
+        "doi": "https://doi.org/10.1145/3460319.3464836",
+        "authors": [
+            "Benjamin Barslev Nielsen",
+            "Martin Toldam Torp",
+            "Anders Møller"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464836"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Attack as defense: characterizing adversarial examples using robustness",
+        "doi": "https://doi.org/10.1145/3460319.3464822",
+        "authors": [
+            "Zhe Zhao",
+            "Guangke Chen",
+            "Jingyi Wang",
+            "Yiwei Yang",
+            "Fu Song",
+            "Jun Sun"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464822"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Exposing previously undetectable faults in deep neural networks",
+        "doi": "https://doi.org/10.1145/3460319.3464801",
+        "authors": [
+            "Isaac Dunn",
+            "Hadrien Pouget",
+            "Daniel Kroening",
+            "Tom Melham"
+        ],
+        "badges": [
+            "Functional"
+        ],
+        "artifact_available": false,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464801"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeepCrime: mutation testing of deep learning systems based on real faults",
+        "doi": "https://doi.org/10.1145/3460319.3464825",
+        "authors": [
+            "Nargiz Humbatova",
+            "Gunel Jahangirova",
+            "Paolo Tonella"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464825"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DeepHyperion: exploring the feature space of deep learning-based systems through illumination search",
+        "doi": "https://doi.org/10.1145/3460319.3464811",
+        "authors": [
+            "Tahereh Zohdinasab",
+            "Vincenzo Riccio",
+            "Alessio Gambi",
+            "Paolo Tonella"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464811"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automatic test suite generation for key-points detection DNNs using many-objective search (experience paper)",
+        "doi": "https://doi.org/10.1145/3460319.3464802",
+        "authors": [
+            "Fitash Ul Haq",
+            "Donghwan Shin",
+            "Lionel C. Briand",
+            "Thomas Stifter",
+            "Jun Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464802"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Efficient white-box fairness testing through gradient search",
+        "doi": "https://doi.org/10.1145/3460319.3464820",
+        "authors": [
+            "Lingfeng Zhang",
+            "Yueling Zhang",
+            "Min Zhang"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464820"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "DialTest: automated testing for recurrent-neural-network-driven dialogue systems",
+        "doi": "https://doi.org/10.1145/3460319.3464829",
+        "authors": [
+            "Zixi Liu",
+            "Yang Feng",
+            "Zhenyu Chen"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464829"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "AdvDoor: adversarial backdoor attack of deep learning system",
+        "doi": "https://doi.org/10.1145/3460319.3464809",
+        "authors": [
+            "Quan Zhang",
+            "Yifeng Ding",
+            "Yongqiang Tian",
+            "Jianmin Guo",
+            "Min Yuan",
+            "Yu Jiang"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464809"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ModelDiff: testing-based DNN similarity comparison for model reuse detection",
+        "doi": "https://doi.org/10.1145/3460319.3464816",
+        "authors": [
+            "Yuanchun Li",
+            "Ziqi Zhang",
+            "Bingyan Liu",
+            "Ziyue Yang",
+            "Yunxin Liu"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464816"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Parema: an unpacking framework for demystifying VM-based Android packers",
+        "doi": "https://doi.org/10.1145/3460319.3464839",
+        "authors": [
+            "Lei Xue",
+            "Yuxiao Yan",
+            "Luyi Yan",
+            "Muhui Jiang",
+            "Xiapu Luo",
+            "Dinghao Wu",
+            "Yajin Zhou"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464839"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "An infrastructure approach to improving effectiveness of Android UI testing tools",
+        "doi": "https://doi.org/10.1145/3460319.3464828",
+        "authors": [
+            "Wenyu Wang",
+            "Wing Lam",
+            "Tao Xie"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464828"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Semantic matching of GUI events for test reuse: are we there yet?",
+        "doi": "https://doi.org/10.1145/3460319.3464827",
+        "authors": [
+            "Leonardo Mariani",
+            "Ali Mohebbi",
+            "Mauro Pezzè",
+            "Valerio Terragni"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464827"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "GUIDER: GUI structure and vision co-guided test script repair for Android apps",
+        "doi": "https://doi.org/10.1145/3460319.3464830",
+        "authors": [
+            "Tongtong Xu",
+            "Minxue Pan",
+            "Yu Pei",
+            "Guiyin Li",
+            "Xia Zeng",
+            "Tian Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464830"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Understanding and finding system setting-related defects in Android apps",
+        "doi": "https://doi.org/10.1145/3460319.3464806",
+        "authors": [
+            "Jingling Sun",
+            "Ting Su",
+            "Junxin Li",
+            "Zhen Dong",
+            "Geguang Pu",
+            "Tao Xie",
+            "Zhendong Su"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464806"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "HomDroid: detecting Android covert malware by social-network homophily analysis",
+        "doi": "https://doi.org/10.1145/3460319.3464833",
+        "authors": [
+            "Yueming Wu",
+            "Deqing Zou",
+            "Wei Yang",
+            "Xiang Li",
+            "Hai Jin"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464833"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Seed selection for successful fuzzing",
+        "doi": "https://doi.org/10.1145/3460319.3464795",
+        "authors": [
+            "Adrian Herrera",
+            "Hendra Gunadi",
+            "Shane Magrath",
+            "Michael Norrish",
+            "Mathias Payer"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464795"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Gramatron: effective grammar-aware fuzzing",
+        "doi": "https://doi.org/10.1145/3460319.3464814",
+        "authors": [
+            "Prashast Srivastava",
+            "Mathias Payer"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464814"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "QFuzz: quantitative fuzzing for side channels",
+        "doi": "https://doi.org/10.1145/3460319.3464817",
+        "authors": [
+            "Yannic Noller",
+            "Saeid Tizpaz-Niari"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464817"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "SAND: a static analysis approach for detecting SQL antipatterns",
+        "doi": "https://doi.org/10.1145/3460319.3464818",
+        "authors": [
+            "Yingjun Lyu",
+            "Sasha Volokh",
+            "William G. J. Halfond",
+            "Omer Tripp"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464818"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Semantic table structure identification in spreadsheets",
+        "doi": "https://doi.org/10.1145/3460319.3464812",
+        "authors": [
+            "Yakun Zhang",
+            "Xiao Lv",
+            "Haoyu Dong",
+            "Wensheng Dou",
+            "Shi Han"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464812"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Runtime detection of memory errors with smart status",
+        "doi": "https://doi.org/10.1145/3460319.3464807",
+        "authors": [
+            "Zhe Chen",
+            "Chong Wang",
+            "Junqi Yan",
+            "Yulei Sui",
+            "Jingling Xue"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464807"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "UAFSan: an object-identifier-based dynamic approach for detecting use-after-free vulnerabilities",
+        "doi": "https://doi.org/10.1145/3460319.3464835",
+        "authors": [
+            "Binfa Gui",
+            "Wei Song",
+            "Jeff Huang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464835"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Fuzzing SMT solvers via two-dimensional input space exploration",
+        "doi": "https://doi.org/10.1145/3460319.3464803",
+        "authors": [
+            "Peisen Yao",
+            "Heqing Huang",
+            "Wensheng Tang",
+            "Qingkai Shi",
+            "Rongxin Wu"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464803"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Boosting symbolic execution via constraint solving time prediction (experience paper)",
+        "doi": "https://doi.org/10.1145/3460319.3464813",
+        "authors": [
+            "Sicheng Luo",
+            "Hui Xu",
+            "Yanxiang Bi",
+            "Xin Wang",
+            "Yangfan Zhou"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464813"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Synthesize solving strategy for symbolic execution",
+        "doi": "https://doi.org/10.1145/3460319.3464815",
+        "authors": [
+            "Zhenbang Chen",
+            "Zehua Chen",
+            "Ziqi Shuai",
+            "Guofeng Zhang",
+            "Weiyu Pan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464815"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Type and interval aware array constraint solving for symbolic execution",
+        "doi": "https://doi.org/10.1145/3460319.3464826",
+        "authors": [
+            "Ziqi Shuai",
+            "Zhenbang Chen",
+            "Yufeng Zhang",
+            "Jun Sun",
+            "Ji Wang"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464826"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Grammar-agnostic symbolic execution by token symbolization",
+        "doi": "https://doi.org/10.1145/3460319.3464845",
+        "authors": [
+            "Weiyu Pan",
+            "Zhenbang Chen",
+            "Guofeng Zhang",
+            "Yunlai Luo",
+            "Yufeng Zhang",
+            "Ji Wang"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464845"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Interval constraint-based mutation testing of numerical specifications",
+        "doi": "https://doi.org/10.1145/3460319.3464808",
+        "authors": [
+            "Clothilde Jeangoudoux",
+            "Eva Darulova",
+            "Christoph Lauter"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464808"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Predoo: precision testing of deep learning operators",
+        "doi": "https://doi.org/10.1145/3460319.3464843",
+        "authors": [
+            "Xufan Zhang",
+            "Ning Sun",
+            "Chunrong Fang",
+            "Jiawei Liu",
+            "Jia Liu",
+            "Dong Chai"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464843"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "TERA: optimizing stochastic regression tests in machine learning projects",
+        "doi": "https://doi.org/10.1145/3460319.3464844",
+        "authors": [
+            "Saikat Dutta",
+            "Jeeva Selvam",
+            "Aryaman Jain",
+            "Sasa Misailovic"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464844"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Deep just-in-time defect prediction: how far are we?",
+        "doi": "https://doi.org/10.1145/3460319.3464819",
+        "authors": [
+            "Zhengran Zeng",
+            "Yuqun Zhang",
+            "Haotian Zhang",
+            "Lingming Zhang"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464819"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Fixing dependency errors for Python build reproducibility",
+        "doi": "https://doi.org/10.1145/3460319.3464797",
+        "authors": [
+            "Suchita Mukherjee",
+            "Abigail Almanza",
+            "Cindy Rubio-González"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464797"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Test-case prioritization for configuration testing",
+        "doi": "https://doi.org/10.1145/3460319.3464810",
+        "authors": [
+            "Runxiang Cheng",
+            "Lingming Zhang",
+            "Darko Marinov",
+            "Tianyin Xu"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464810"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "The impact of tool configuration spaces on the evaluation of configurable taint analysis for Android",
+        "doi": "https://doi.org/10.1145/3460319.3464823",
+        "authors": [
+            "Austin Mordahl",
+            "Shiyi Wei"
+        ],
+        "badges": [
+            "Available",
+            "Functional"
+        ],
+        "artifact_available": true,
+        "artifact_functional": true,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464823"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Challenges and opportunities: an in-depth empirical study on configuration error injection testing",
+        "doi": "https://doi.org/10.1145/3460319.3464799",
+        "authors": [
+            "Wang Li",
+            "Zhouyang Jia",
+            "Shanshan Li",
+            "Yuanliang Zhang",
+            "Teng Wang",
+            "Erci Xu"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464799"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Empirically evaluating readily available information for regression test optimization in continuous integration",
+        "doi": "https://doi.org/10.1145/3460319.3464834",
+        "authors": [
+            "Daniel Elsner",
+            "Florian Hauer",
+            "Alexander Pretschner",
+            "Silke Reimer"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464834"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Toward optimal mc/dc test case generation",
+        "doi": "https://doi.org/10.1145/3460319.3464841",
+        "authors": [
+            "Sangharatna Godboley",
+            "Joxan Jaffar",
+            "Rasool Maghareh",
+            "Arpita Dutta"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464841"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Log-based slicing for system-level test cases",
+        "doi": "https://doi.org/10.1145/3460319.3464824",
+        "authors": [
+            "Salma Messaoudi",
+            "Donghwan Shin",
+            "Annibale Panichella",
+            "Domenico Bianculli"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464824"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Model-based testing of networked applications",
+        "doi": "https://doi.org/10.1145/3460319.3464798",
+        "authors": [
+            "Yishuai Li",
+            "Benjamin C. Pierce",
+            "Steve Zdancewic"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464798"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Validating static warnings via testing code fragments",
+        "doi": "https://doi.org/10.1145/3460319.3464832",
+        "authors": [
+            "Ashwin Kallingal Joshy",
+            "Xueyuan Chen",
+            "Benjamin Steenhoek",
+            "Wei Le"
+        ],
+        "badges": [
+            "Available"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464832"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Continuous test suite failure prediction",
+        "doi": "https://doi.org/10.1145/3460319.3464840",
+        "authors": [
+            "Cong Pan",
+            "Michael Pradel"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464840"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Empirical evaluation of smart contract testing: what is the best choice?",
+        "doi": "https://doi.org/10.1145/3460319.3464837",
+        "authors": [
+            "Meng Ren",
+            "Zijing Yin",
+            "Fuchen Ma",
+            "Zhenyang Xu",
+            "Yu Jiang",
+            "Chengnian Sun"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464837"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "iDEV: exploring and exploiting semantic deviations in ARM instruction processing",
+        "doi": "https://doi.org/10.1145/3460319.3464842",
+        "authors": [
+            "Shisong Qin",
+            "Chao Zhang",
+            "Kaixiang Chen",
+            "Zheming Li"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464842"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "RAProducer: efficiently diagnose and reproduce data race bugs for binaries via trace analysis",
+        "doi": "https://doi.org/10.1145/3460319.3464831",
+        "authors": [
+            "Ming Yuan",
+            "Yeseop Lee",
+            "Chao Zhang",
+            "Yun Li",
+            "Yan Cai",
+            "Bodong Zhao"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464831"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "A lightweight framework for function name reassignment based on large-scale stripped binaries",
+        "doi": "https://doi.org/10.1145/3460319.3464804",
+        "authors": [
+            "Han Gao",
+            "Shaoyin Cheng",
+            "Yinxing Xue",
+            "Weiming Zhang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464804"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Finding data compatibility bugs with JSON subschema checking",
+        "doi": "https://doi.org/10.1145/3460319.3464796",
+        "authors": [
+            "Andrew Habib",
+            "Avraham Shinnar",
+            "Martin Hirzel",
+            "Michael Pradel"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464796"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Automated patch backporting in Linux (experience paper)",
+        "doi": "https://doi.org/10.1145/3460319.3464821",
+        "authors": [
+            "Ridwan Shariffdeen",
+            "Xiang Gao",
+            "Gregory J. Duck",
+            "Shin Hwei Tan",
+            "Julia Lawall"
+        ],
+        "badges": [
+            "Available",
+            "Reusable"
+        ],
+        "artifact_available": true,
+        "artifact_functional": false,
+        "artifact_reusable": true,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464821"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "Faster, deeper, easier: crowdsourcing diagnosis of microservice kernel failure from user space",
+        "doi": "https://doi.org/10.1145/3460319.3464805",
+        "authors": [
+            "Yicheng Pan",
+            "Meng Ma",
+            "Xinrui Jiang",
+            "Ping Wang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3464805"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "echidna-parade: a tool for diverse multicore smart contract fuzzing",
+        "doi": "https://doi.org/10.1145/3460319.3469076",
+        "authors": [
+            "Alex Groce",
+            "Gustavo Grieco"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3469076"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "ProFuzzBench: a benchmark for stateful protocol fuzzing",
+        "doi": "https://doi.org/10.1145/3460319.3469077",
+        "authors": [
+            "Roberto Natella",
+            "Van-Thuan Pham"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3469077"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "SCStudio: a secure and efficient integrated development environment for smart contracts",
+        "doi": "https://doi.org/10.1145/3460319.3469078",
+        "authors": [
+            "Meng Ren",
+            "Fuchen Ma",
+            "Zijing Yin",
+            "Huizhong Li",
+            "Ying Fu",
+            "Ting Chen",
+            "Yu Jiang"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3469078"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "C4: the C compiler concurrency checker",
+        "doi": "https://doi.org/10.1145/3460319.3469079",
+        "authors": [
+            "Matt Windsor",
+            "Alastair F. Donaldson",
+            "John Wickerson"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3469079"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "TauMed: test augmentation of deep learning in medical diagnosis",
+        "doi": "https://doi.org/10.1145/3460319.3469080",
+        "authors": [
+            "Yunhan Hou",
+            "Jiawei Liu",
+            "Daiwei Wang",
+            "Jiawei He",
+            "Chunrong Fang",
+            "Zhenyu Chen"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3469080"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "MoScan: a model-based vulnerability scanner for web single sign-on services",
+        "doi": "https://doi.org/10.1145/3460319.3469081",
+        "authors": [
+            "Hanlin Wei",
+            "Behnaz Hassanshahi",
+            "Guangdong Bai",
+            "Padmanabhan Krishnan"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3469081"
+    },
+    {
+        "conference": "ISSTA",
+        "year": 2021,
+        "source": "ACM Digital Library",
+        "collection_date": "2026-08-23",
+        "title": "RESTest: automated black-box testing of RESTful web APIs",
+        "doi": "https://doi.org/10.1145/3460319.3469082",
+        "authors": [
+            "Alberto Martin-Lopez",
+            "Sergio Segura",
+            "Antonio Ruiz-Cortés"
+        ],
+        "badges": [],
+        "artifact_available": false,
+        "artifact_functional": false,
+        "artifact_reusable": false,
+        "results_reproduced": false,
+        "results_replicated": false,
+        "articleType": "research-article",
+        "url": "https://dl.acm.org/doi/10.1145/3460319.3469082"
+    }
+]
