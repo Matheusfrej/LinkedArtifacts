@@ -9,7 +9,7 @@ export class Paper {
   private readonly venue: string
   private readonly year: number
   private readonly authors: string
-  private readonly pageCount: number
+  private readonly pageCount?: number | null
   private readonly doi?: DOI
   private readonly createdAt?: Date
   private artifacts?: Artifact[]
@@ -21,7 +21,7 @@ export class Paper {
       venue: string,
       year: number,
       authors: string,
-      pageCount: number,
+      pageCount?: number | null,
       doi?: DOI,
       createdAt?: Date,
       artifacts?: Artifact[],
@@ -61,8 +61,8 @@ export class Paper {
     return this.authors
   }
 
-  getPageCount(): number {
-    return this.pageCount
+  getPageCount(): number | null {
+    return this.pageCount ?? null
   }
 
   getDOI(): DOI | undefined {

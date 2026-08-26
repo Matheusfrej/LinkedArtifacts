@@ -16,7 +16,7 @@ export const papers = pgTable('papers', {
   venue: text('venue').notNull(),
   year: integer('year').notNull(),
   authors: text('authors').notNull(),
-  pageCount: integer('page_count').notNull(),
+  pageCount: integer('page_count'),
   createdAt: timestamp('created_at').notNull().defaultNow()
 });
 

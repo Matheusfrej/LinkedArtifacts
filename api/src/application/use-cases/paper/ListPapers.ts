@@ -8,7 +8,7 @@ type Paper = {
   venue: string,
   year: number,
   authors: string,
-  pageCount: number,
+  pageCount: number | null,
   doi: string | null,
   hasArtifact: boolean,
   badges: {

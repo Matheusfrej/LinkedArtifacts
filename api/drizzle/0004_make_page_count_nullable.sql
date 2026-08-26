@@ -1,0 +1,1 @@
+ALTER TABLE "papers" ALTER COLUMN "page_count" DROP NOT NULL;
