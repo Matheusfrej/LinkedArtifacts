@@ -1,5 +1,6 @@
 emails_list.json
 extracted_emails.csv
 extracted_emails.xlsx
+emails_with_papers.json
 .venv
 pdfs

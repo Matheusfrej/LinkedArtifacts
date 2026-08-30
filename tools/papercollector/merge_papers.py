@@ -2,19 +2,19 @@
 Merge Conference Papers List
 ----------------------------
 Finds all `papers.json` files across conference folders (e.g. `fse`, `icse`,
-`issta`, etc. for each year), merges all paper entries into a single list with deduplication
+`issta`, `ase` for each year), merges all paper entries into a single list with deduplication
 (keyed by DOI / URL / Title), and exports the consolidated dataset to
 `tools/dataset/papers.json`.
 
 Usage:
-    # Run using default settings (scans all conference subfolders -> dataset/papers.json):
+    # Run using default settings (scans ../dataset -> ../dataset/papers.json):
     python3 merge_papers.py
 
     # Filter specific conferences:
     python3 merge_papers.py --conferences issta fse
 
-    # Specify custom output path:
-    python3 merge_papers.py --output custom_papers.json
+    # Specify custom dataset directory or output path:
+    python3 merge_papers.py --dataset-dir /path/to/dataset --output /path/to/papers.json
 """
 
 import os
@@ -23,6 +23,15 @@ import glob
 import json
 import argparse
 from typing import List, Dict, Any, Tuple, Set
+
+
+def get_default_dataset_dir() -> str:
+    """Returns the default dataset directory path relative to this script."""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    candidate = os.path.abspath(os.path.join(current_dir, "..", "dataset"))
+    if os.path.isdir(candidate):
+        return candidate
+    return os.path.abspath("./dataset")
 
 
 def get_conference_folders(dataset_dir: str, conferences: List[str] = None) -> List[str]:
@@ -129,21 +138,21 @@ def merge_and_deduplicate_papers(
 
 
 def main():
+    default_dataset = get_default_dataset_dir()
+    default_output = os.path.join(default_dataset, "papers.json")
+
     parser = argparse.ArgumentParser(
         description="Merge all papers.json from conference folders into a single deduplicated dataset."
     )
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    default_output = os.path.join(current_dir, "papers.json")
-
     parser.add_argument(
-        "--dataset-dir",
-        default=current_dir,
-        help="Root directory of the dataset containing conference folders (default: current script directory)."
+        "--dataset-dir", "-d",
+        default=default_dataset,
+        help=f"Root directory of the dataset containing conference folders (default: '{default_dataset}')."
     )
     parser.add_argument(
         "--output", "-o",
-        default=default_output,
-        help=f"Output path for merged JSON file (default: {default_output})."
+        default=None,
+        help=f"Output path for merged JSON file (default: '<dataset_dir>/papers.json')."
     )
     parser.add_argument(
         "--conferences", "-c",
@@ -155,7 +164,8 @@ def main():
     args = parser.parse_args()
 
     dataset_dir = os.path.abspath(args.dataset_dir)
-    output_file = os.path.abspath(args.output)
+    output_file = os.path.abspath(args.output) if args.output else os.path.join(dataset_dir, "papers.json")
+
     conf_dirs = get_conference_folders(dataset_dir, args.conferences)
     conf_names = [os.path.basename(p) for p in conf_dirs]
     conferences_display = ", ".join(conf_names) if conf_names else "None found"
@@ -207,4 +217,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
