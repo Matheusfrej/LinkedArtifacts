@@ -15,15 +15,18 @@ Tools for scraping academic paper metadata and artifact badges from the ACM Digi
 
 ### 1. Scraping Papers from ACM Digital Library
 
-1. Open the conference proceedings page on ACM Digital Library (e.g., *Proceedings of the 47th International Conference on Software Engineering*).
-2. Open the Browser Console (`F12` -> Console tab).
-3. Open `getPapersWithArtifactBadge.js` and configure the constants at the top:
+1. Open the conference proceedings table of contents on the ACM Digital Library.
+2. Navigate to the specific proceedings edition, track, or publication year (e.g., `https://dl.acm.org/doi/proceedings/10.5555/3767285`).
+3. Ensure all paper entries are fully expanded and loaded in the DOM (e.g., expand collapsed session sections, scroll down, or click "Load More" / adjust pagination to display all items). The script queries `.issue-item-container` elements currently rendered in the page HTML.
+4. **Artifact Badges Note:** To extract artifact badge metadata, badges must be visually displayed on the proceedings page. Some ACM DL volumes or tracks do not render badge icons in the table of contents; for those editions, badge fields will automatically default to empty/false.
+5. Open the Browser Developer Tools Console (`F12` or `Ctrl+Shift+I` / `Cmd+Option+I` -> **Console** tab).
+6. In `getPapersWithArtifactBadge.js`, update the constants at the top:
    ```javascript
    const CONFERENCE = 'ICSE'; // Conference name: 'ICSE', 'FSE', 'ISSTA', 'ASE'
    const YEAR = 2025;         // Publication year: 2021, 2022, 2023, 2024, 2025
    ```
-4. Paste the script into the console and press `Enter`.
-5. Copy the generated JSON array and save it into the respective dataset directory (e.g. `tools/dataset/icse/2025/papers.json`).
+7. Paste the script into the console and press `Enter`.
+8. Copy the generated JSON array and save it into the respective dataset directory (e.g. `tools/dataset/icse/2025/papers.json`).
 
 ---
 
