@@ -47,16 +47,7 @@ export default function PrivacyPage() {
         </h3>
         <p className="text-sm sm:text-base text-gray-800 dark:text-gray-200 leading-relaxed">
           The titles captured by the extension are sent to the LinkedArtifacts
-          backend at{' '}
-          <a
-            className="text-blue-600 dark:text-blue-400 hover:underline break-all"
-            href="https://linkedartifacts.onrender.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://linkedartifacts.onrender.com
-          </a>{' '}
-          so we can:
+          backend so we can:
         </p>
         <ul className="list-disc ml-5 sm:ml-6 mt-2 text-sm sm:text-base text-gray-800 dark:text-gray-200 space-y-1">
           <li>identify whether an artifact is associated with the paper;</li>

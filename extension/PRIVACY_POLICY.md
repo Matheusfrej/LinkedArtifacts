@@ -17,7 +17,7 @@ These titles are used only to look up matches in our API and determine whether a
 
 ## Use of Data
 
-The titles captured by the extension are sent to the LinkedArtifacts backend at `https://linkedartifacts.onrender.com` so we can:
+The titles captured by the extension are sent to the LinkedArtifacts backend so we can:
 
 - identify whether an artifact is associated with the paper;
 - retrieve the internal paper identifier;
