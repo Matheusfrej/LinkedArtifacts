@@ -15,6 +15,8 @@ import PapersPageSkeleton, {
   PaperListItemsSkeleton,
 } from './components/PapersListSkeleton'
 
+const PAGE_SIZE = 20
+
 export default function Page() {
   const [query, setQuery] = useState('')
   const [selectedFilters, setSelectedFilters] = useState<ArtifactFilterValue[]>(
@@ -24,6 +26,7 @@ export default function Page() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [papers, setPapers] = useState<Paper[]>([])
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
 
   // Transitions & loading indicators
   const [isSearching, setIsSearching] = useState(false)
@@ -34,6 +37,7 @@ export default function Page() {
 
   const isTransitioning = isSearching || isFiltering || isSorting
   const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+  const observerRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
     return () => {
@@ -99,6 +103,12 @@ export default function Page() {
     })
   }, [papers, query, selectedFilters, sortBy])
 
+  const visiblePapers = useMemo(() => {
+    return filteredPapers.slice(0, visibleCount)
+  }, [filteredPapers, visibleCount])
+
+  const hasMore = visibleCount < filteredPapers.length
+
   useEffect(() => {
     let cancelled = false
     const fetchData = async () => {
@@ -122,11 +132,36 @@ export default function Page() {
     }
   }, [])
 
+  // Infinite scroll observer
+  useEffect(() => {
+    if (!hasMore || isTransitioning || loading) return
+
+    const target = observerRef.current
+    if (!target) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount((prev) =>
+            Math.min(prev + PAGE_SIZE, filteredPapers.length),
+          )
+        }
+      },
+      { rootMargin: '200px' },
+    )
+
+    observer.observe(target)
+    return () => {
+      observer.disconnect()
+    }
+  }, [hasMore, isTransitioning, loading, filteredPapers.length])
+
   const handleSearch = (newQuery: string) => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current)
     setIsSearching(true)
     timeoutRef.current = setTimeout(() => {
       setQuery(newQuery)
+      setVisibleCount(PAGE_SIZE)
       setIsSearching(false)
     }, 280)
   }
@@ -140,6 +175,7 @@ export default function Page() {
     setPendingFilter(changedFilter || null)
     timeoutRef.current = setTimeout(() => {
       setSelectedFilters(newFilters)
+      setVisibleCount(PAGE_SIZE)
       setIsFiltering(false)
       setPendingFilter(null)
     }, 280)
@@ -151,6 +187,7 @@ export default function Page() {
     setIsSorting(true)
     timeoutRef.current = setTimeout(() => {
       setSortBy(newSort)
+      setVisibleCount(PAGE_SIZE)
       setIsSorting(false)
     }, 280)
   }
@@ -253,91 +290,113 @@ export default function Page() {
           count={Math.min(filteredPapers.length || 3, 5)}
         />
       ) : (
-        <ul className="space-y-5 sm:space-y-6">
-          {filteredPapers.length === 0 ? (
-            <li className="text-center text-muted-foreground py-8 sm:py-12 text-sm sm:text-base border border-dashed border-border/60 rounded-xl">
-              No papers found matching your criteria.
-            </li>
-          ) : (
-            filteredPapers.map((paper) => (
-              <li
-                key={paper.id}
-                className="text-left pb-4 border-b border-border/40 last:border-b-0"
-              >
-                <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-4">
-                  <div className="flex-1 min-w-0">
-                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                      <Link
-                        href={`/papers/${paper.id}`}
-                        className="text-base sm:text-lg md:text-[19px] font-medium leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8] break-words"
-                        tabIndex={0}
-                      >
-                        {paper.title}
-                      </Link>
+        <>
+          <ul className="space-y-5 sm:space-y-6">
+            {filteredPapers.length === 0 ? (
+              <li className="text-center text-muted-foreground py-8 sm:py-12 text-sm sm:text-base border border-dashed border-border/60 rounded-xl">
+                No papers found matching your criteria.
+              </li>
+            ) : (
+              visiblePapers.map((paper) => (
+                <li
+                  key={paper.id}
+                  className="text-left pb-4 border-b border-border/40 last:border-b-0"
+                >
+                  <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-4">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+                        <Link
+                          href={`/papers/${paper.id}`}
+                          className="text-base sm:text-lg md:text-[19px] font-medium leading-snug hover:underline cursor-pointer text-[#1a0dab] dark:text-[#8ab4f8] break-words"
+                          tabIndex={0}
+                        >
+                          {paper.title}
+                        </Link>
 
-                      {(paper.hasArtifact ||
-                        (paper.badges && paper.badges.length > 0)) && (
-                        <span className="inline-flex items-center gap-1.5 align-middle self-center shrink-0">
-                          {paper.hasArtifact && (
-                            <Image
-                              src="/icons/artifact/icon.svg"
-                              alt="Show Artifacts"
-                              title="Show Artifacts"
-                              width={18}
-                              height={18}
-                              className="w-4.5 h-4.5 sm:w-5 sm:h-5 cursor-pointer shrink-0"
-                            />
-                          )}
-
-                          {paper.badges?.map((badge) => {
-                            const fileName =
-                              badgeNameToFileName[
-                                badge.name as keyof typeof badgeNameToFileName
-                              ]
-                            if (!fileName) return null
-
-                            return (
+                        {(paper.hasArtifact ||
+                          (paper.badges && paper.badges.length > 0)) && (
+                          <span className="inline-flex items-center gap-1.5 align-middle self-center shrink-0">
+                            {paper.hasArtifact && (
                               <Image
-                                key={badge.id}
-                                src={`/icons/artifact/${fileName}.svg`}
-                                alt={`Artifact ${badge.name}`}
-                                title={`Artifact ${badge.name}`}
+                                src="/icons/artifact/icon.svg"
+                                alt="Show Artifacts"
+                                title="Show Artifacts"
                                 width={18}
                                 height={18}
-                                className="w-4.5 h-4.5 sm:w-5 sm:h-5 shrink-0"
+                                className="w-4.5 h-4.5 sm:w-5 sm:h-5 cursor-pointer shrink-0"
                               />
-                            )
-                          })}
-                        </span>
+                            )}
+
+                            {paper.badges?.map((badge) => {
+                              const fileName =
+                                badgeNameToFileName[
+                                  badge.name as keyof typeof badgeNameToFileName
+                                ]
+                              if (!fileName) return null
+
+                              return (
+                                <Image
+                                  key={badge.id}
+                                  src={`/icons/artifact/${fileName}.svg`}
+                                  alt={`Artifact ${badge.name}`}
+                                  title={`Artifact ${badge.name}`}
+                                  width={18}
+                                  height={18}
+                                  className="w-4.5 h-4.5 sm:w-5 sm:h-5 shrink-0"
+                                />
+                              )
+                            })}
+                          </span>
+                        )}
+                      </div>
+
+                      {formatMetadata(paper) && (
+                        <div className="text-xs sm:text-[14px] text-[#006621] dark:text-[#68b688] leading-relaxed mt-1 break-words">
+                          {formatMetadata(paper)}
+                        </div>
                       )}
                     </div>
 
-                    {formatMetadata(paper) && (
-                      <div className="text-xs sm:text-[14px] text-[#006621] dark:text-[#68b688] leading-relaxed mt-1 break-words">
-                        {formatMetadata(paper)}
+                    {paper.doi && (
+                      <div className="shrink-0 self-start sm:self-auto pt-0.5">
+                        <a
+                          href={getDoiUrl(paper.doi)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs sm:text-[14px] text-[#1a0dab] hover:underline dark:text-[#8ab4f8] inline-flex items-center gap-1 font-medium px-2 py-0.5 rounded bg-muted/40 sm:bg-transparent"
+                          title={`Open DOI: ${paper.doi}`}
+                        >
+                          <span className="font-bold">[PDF]</span>
+                          <span>doi.org</span>
+                        </a>
                       </div>
                     )}
                   </div>
+                </li>
+              ))
+            )}
+          </ul>
 
-                  {paper.doi && (
-                    <div className="shrink-0 self-start sm:self-auto pt-0.5">
-                      <a
-                        href={getDoiUrl(paper.doi)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs sm:text-[14px] text-[#1a0dab] hover:underline dark:text-[#8ab4f8] inline-flex items-center gap-1 font-medium px-2 py-0.5 rounded bg-muted/40 sm:bg-transparent"
-                        title={`Open DOI: ${paper.doi}`}
-                      >
-                        <span className="font-bold">[PDF]</span>
-                        <span>doi.org</span>
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </li>
-            ))
+          {/* Infinite scroll sentinel & progress indicator */}
+          {hasMore && (
+            <div
+              ref={observerRef}
+              className="py-6 flex justify-center items-center gap-2 text-xs sm:text-sm text-muted-foreground"
+            >
+              <Loader2 className="w-4 h-4 animate-spin text-primary shrink-0" />
+              <span>
+                Loaded {visiblePapers.length} of {filteredPapers.length}{' '}
+                papers...
+              </span>
+            </div>
           )}
-        </ul>
+
+          {!hasMore && filteredPapers.length > PAGE_SIZE && (
+            <div className="py-6 text-center text-xs text-muted-foreground">
+              All {filteredPapers.length} papers loaded
+            </div>
+          )}
+        </>
       )}
     </div>
   )
