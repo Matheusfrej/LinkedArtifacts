@@ -9,6 +9,8 @@ import PaperBadges from './components/PaperBadges'
 import { AppError } from '@/utils/AppError'
 import ArtifactTable from './components/ArtifactTable'
 
+import Loading from './loading'
+
 interface PageProps {
   params: Promise<{ paperId: number }>
 }
@@ -45,19 +47,7 @@ export default function Page({ params }: PageProps) {
   }, [paperId])
 
   if (loading) {
-    return (
-      <div className="py-4 sm:py-8 space-y-5 sm:space-y-6 animate-pulse">
-        <div className="h-4 w-24 sm:w-28 bg-muted rounded"></div>
-        <div className="h-8 sm:h-10 w-full sm:w-3/4 bg-muted rounded"></div>
-        <div className="h-4 sm:h-5 w-2/3 sm:w-1/2 bg-muted rounded"></div>
-        <div className="h-24 sm:h-28 w-full bg-muted rounded-xl"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-          <div className="h-28 sm:h-36 bg-muted rounded-xl"></div>
-          <div className="h-28 sm:h-36 bg-muted rounded-xl"></div>
-          <div className="h-28 sm:h-36 bg-muted rounded-xl"></div>
-        </div>
-      </div>
-    )
+    return <Loading />
   }
 
   if (error || !paper) {

@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowUpDown, Check } from 'lucide-react'
+import { ArrowUpDown, Check, Loader2 } from 'lucide-react'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,6 +24,7 @@ export type SortOption =
 interface PaperSortProps {
   value: SortOption
   onChange: (value: SortOption) => void
+  isLoading?: boolean
 }
 
 const SORT_LABELS: Record<SortOption, { label: string; short: string }> = {
@@ -36,7 +37,11 @@ const SORT_LABELS: Record<SortOption, { label: string; short: string }> = {
   'venue-desc': { label: 'Venue (Z → A)', short: 'Venue Z-A' },
 }
 
-export default function PaperSort({ value, onChange }: PaperSortProps) {
+export default function PaperSort({
+  value,
+  onChange,
+  isLoading = false,
+}: PaperSortProps) {
   const current = SORT_LABELS[value] || SORT_LABELS.default
   const isCustomSort = value !== 'default'
 
@@ -47,10 +52,15 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
           <Button
             variant={isCustomSort ? 'secondary' : 'outline'}
             size="sm"
-            className="h-8.5 sm:h-8 gap-1.5 sm:gap-2 text-xs sm:text-sm font-normal border-border/80 hover:border-border cursor-pointer shadow-none px-2.5 sm:px-3"
+            disabled={isLoading}
+            className="h-8.5 sm:h-8 gap-1.5 sm:gap-2 text-xs sm:text-sm font-normal border-border/80 hover:border-border cursor-pointer shadow-none px-2.5 sm:px-3 transition-all"
             aria-label="Sort papers"
           >
-            <ArrowUpDown className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
+            {isLoading ? (
+              <Loader2 className="w-3.5 h-3.5 animate-spin text-primary shrink-0" />
+            ) : (
+              <ArrowUpDown className="w-3.5 h-3.5 text-muted-foreground shrink-0" />
+            )}
             <span className="hidden xs:inline">Sort:</span>
             <span className="font-semibold text-foreground truncate max-w-[130px] sm:max-w-none">
               {current.label}
@@ -65,6 +75,7 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
           <DropdownMenuGroup>
             <DropdownMenuItem
               onClick={() => onChange('default')}
+              disabled={isLoading}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Default (Original order)</span>
@@ -82,6 +93,7 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
             </DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => onChange('year-desc')}
+              disabled={isLoading}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Newest first</span>
@@ -91,6 +103,7 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => onChange('year-asc')}
+              disabled={isLoading}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Oldest first</span>
@@ -108,6 +121,7 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
             </DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => onChange('title-asc')}
+              disabled={isLoading}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Title (A → Z)</span>
@@ -117,6 +131,7 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => onChange('title-desc')}
+              disabled={isLoading}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Title (Z → A)</span>
@@ -134,6 +149,7 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
             </DropdownMenuLabel>
             <DropdownMenuItem
               onClick={() => onChange('venue-asc')}
+              disabled={isLoading}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Venue (A → Z)</span>
@@ -143,6 +159,7 @@ export default function PaperSort({ value, onChange }: PaperSortProps) {
             </DropdownMenuItem>
             <DropdownMenuItem
               onClick={() => onChange('venue-desc')}
+              disabled={isLoading}
               className="flex items-center justify-between cursor-pointer text-xs sm:text-sm"
             >
               <span>Venue (Z → A)</span>
