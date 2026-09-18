@@ -11,7 +11,8 @@ tools/
 ├── dataset/             Data storage for all conferences and publication years
 ├── papercollector/      Tool for scraping ACM DL metadata and merging papers.json files
 ├── pdfurlextractor/     Tool for extracting direct PDF download links for badged papers
-└── emailextractor/      Tool for batch-extracting author emails and linking to metadata
+├── emailextractor/      Tool for batch-extracting author emails and linking to metadata
+└── emailconverter/      Tool for converting emails JSON datasets to Excel (.xlsx) spreadsheets
 ```
 
 ---
@@ -39,6 +40,11 @@ Extracts direct PDF download links for papers with artifact badges:
 Extracts corresponding author emails from the first page of PDF papers and correlates each email with paper metadata:
 * `extract_paper_emails.py` - Performs cascading matching (DOI/URL ID, normalized title, prefix, fuzzy) and outputs enriched spreadsheets (`.csv`, `.xlsx`) and structured JSON files (`emails_list.json`, `emails_with_papers.json`).
 * For setup and detailed command options, see [emailextractor/README.md](emailextractor/README.md).
+
+### 5. [emailconverter/](emailconverter/README.md)
+Converts JSON datasets (`emails_with_papers.json`) into Microsoft Excel spreadsheets (`.xlsx`) with optional deduplication:
+* `convert_emails_to_xlsx.py` - Deduplicates emails by default (keeping first paper occurrence) or preserves all entries via `--keep-duplicates`.
+* For setup and command options, see [emailconverter/README.md](emailconverter/README.md).
 
 ---
 
