@@ -10,6 +10,7 @@ import { AppError } from '@/utils/AppError'
 import ArtifactFilter, {
   type ArtifactFilterValue,
 } from './components/ArtifactFilter'
+import ArtifactIconsGuideModal from './components/ArtifactIconsGuideModal'
 import PaperSort, { type SortOption } from './components/PaperSort'
 import PapersPageSkeleton, {
   PaperListItemsSkeleton,
@@ -266,6 +267,7 @@ export default function Page() {
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
+            <ArtifactIconsGuideModal />
             <PaperSort
               value={sortBy}
               onChange={handleSortChange}
