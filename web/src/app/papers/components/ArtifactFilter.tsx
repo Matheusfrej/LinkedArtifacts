@@ -1,14 +1,45 @@
 'use client'
 
+import Image from 'next/image'
 import { Loader2 } from 'lucide-react'
 
 export const artifactFilterOptions = [
-  { value: 'artifact', label: 'With artifact' },
-  { value: 'Available', label: 'Available' },
-  { value: 'Evaluated & Functional', label: 'Evaluated & Functional' },
-  { value: 'Evaluated & Reusable', label: 'Evaluated & Reusable' },
-  { value: 'Results Reproduced', label: 'Results Reproduced' },
-  { value: 'Results Replicated', label: 'Results Replicated' },
+  {
+    value: 'artifact',
+    label: 'With artifact',
+    fullLabel: 'With artifact',
+    icon: '/icons/artifact/icon.svg',
+  },
+  {
+    value: 'Available',
+    label: 'Available',
+    fullLabel: 'Artifacts Available',
+    icon: '/icons/artifact/available.svg',
+  },
+  {
+    value: 'Evaluated & Functional',
+    label: 'Functional',
+    fullLabel: 'Evaluated & Functional',
+    icon: '/icons/artifact/functional.svg',
+  },
+  {
+    value: 'Evaluated & Reusable',
+    label: 'Reusable',
+    fullLabel: 'Evaluated & Reusable',
+    icon: '/icons/artifact/reusable.svg',
+  },
+  {
+    value: 'Results Reproduced',
+    label: 'Reproduced',
+    fullLabel: 'Results Reproduced',
+    icon: '/icons/artifact/reproduced.svg',
+  },
+  {
+    value: 'Results Replicated',
+    label: 'Replicated',
+    fullLabel: 'Results Replicated',
+    icon: '/icons/artifact/replicated.svg',
+  },
 ] as const
 
 export type ArtifactFilterValue =
@@ -42,7 +73,8 @@ export default function ArtifactFilter({
         return (
           <label
             key={option.value}
-            className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all select-none whitespace-nowrap ${
+            title={option.fullLabel}
+            className={`inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium border transition-all select-none whitespace-nowrap ${
               isLoading ? 'cursor-not-allowed opacity-80' : 'cursor-pointer'
             } ${
               isSelected
@@ -67,8 +99,17 @@ export default function ArtifactFilter({
               }}
               className="sr-only"
             />
-            {isPending && (
-              <Loader2 className="w-3.5 h-3.5 animate-spin shrink-0" />
+            {isPending ? (
+              <Loader2 className="w-4 h-4 sm:w-4.5 sm:h-4.5 animate-spin shrink-0" />
+            ) : (
+              <Image
+                src={option.icon}
+                alt=""
+                width={18}
+                height={18}
+                className="w-4 h-4 sm:w-4.5 sm:h-4.5 object-contain shrink-0"
+                aria-hidden="true"
+              />
             )}
             <span>{option.label}</span>
           </label>
